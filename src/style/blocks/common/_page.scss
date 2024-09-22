@@ -1,0 +1,52 @@
+.page {
+  padding: 32px 0 72px;
+
+  @include media-min ($lg) {
+    padding: 24px 0 128px;
+  }
+
+  &__title {
+    font-size: 36px;
+    text-transform: uppercase;
+    color: var(--green);
+
+    margin-bottom: 30px;
+
+    @include media-min ($lg) {
+      margin-bottom: 48px;
+    }
+  }
+
+  &__cont {
+    @include media-min ($lg) {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+  }
+
+  &__section {
+
+    flex-basis: 100%;
+    width: 100%;
+
+    @include media-min ($lg) {
+      margin-right: var(--gap-column-section-page, 64px);
+    }
+  }
+
+  &__aside {
+
+    flex-shrink: 0;
+
+    @include media-min ($md) {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    @include media-min ($lg) {
+      max-width: 400px;
+      margin: 0;
+    }
+  }
+}

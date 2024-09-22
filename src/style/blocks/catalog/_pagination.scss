@@ -1,0 +1,50 @@
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 64px;
+
+  &__prev,
+  &__next {
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #bdbdbd;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    transition: color .2s ease-in-out;
+
+    @include media-min ($lg) {
+      gap: 20px
+    }
+
+    &:hover {
+      color: var(--green);
+    }
+  }
+
+  &__info {
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: lowercase;
+    color: #828282;
+
+    & a {
+      font-size: inherit;
+      color: inherit;
+
+      transition: color .2s ease-in-out;
+
+      &:hover {
+        color: var(--green);
+      }
+    }
+  }
+
+  &__next {
+    & svg {
+      transform: rotate(180deg);
+    }
+  }
+}

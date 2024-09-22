@@ -1,0 +1,32 @@
+.btn {
+  @include btn-reset;
+
+
+  //
+  // justify-content: center;
+  // align-items: center;
+  // padding: var(--btn-offset, var(--btn-offset-vertical, 14px) var(--btn-offset-horizontal, 26px));
+  // color: var(--btn-text);
+  // background-color: var(--btn-bg);
+  // text-decoration: none;
+
+  &--icon-reverse {
+    & svg {
+      margin-right: 0;
+      margin-left: 12px;
+    }
+  }
+
+  &--view {
+    @include set-font(15px, 1.3, 400);
+
+    color: var(--btn-text);
+    letter-spacing: 0.1em;
+    font-size: 15px;
+    text-transform: uppercase;
+
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
+  }
+}

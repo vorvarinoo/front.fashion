@@ -1,0 +1,202 @@
+.basket {
+  &__list {
+    @include list-reset;
+  }
+}
+
+.basket-product {
+  width: 100%;
+
+  padding: 20px 0;
+
+  border-bottom: 1px solid var(--gray-light);
+
+  @include media-min ($md) {
+    padding: 32px 0;
+  }
+
+  &__cont {
+    position: relative;
+    display: flex;
+
+    @include media-min ($md) {
+      padding-right: 80px;
+    }
+  }
+
+  &__img {
+    max-width: 96px;
+    height: 128px;
+
+    margin-right: 16px;
+
+    @include media-min ($md) {
+      max-width: 175px;
+      height: 225px;
+
+      margin-right: 48px;
+    }
+
+    & > img {
+      height: 100%;
+    }
+  }
+
+  &__details {
+    flex-grow: 1;
+
+    @include media-min ($xl) {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+  }
+
+  &__title {
+    @include indent-reset;
+
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--green);
+
+    margin-bottom: 10px;
+
+    @include media-min ($md) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__info {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+
+
+  &__category {
+    font-size: 14px;
+    color: var(--black-90);
+    margin-right: 8px;
+  }
+
+  &__price {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 8px;
+
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--black-90);
+
+    & del {
+      position: relative;
+      color: #bdbdbd;
+
+      &::after {
+        content: 'без скидки';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 80%);
+        font-weight: 300;
+        font-size: 10px;
+        white-space: nowrap;
+      }
+    }
+
+    & del + span {
+      position: relative;
+      color: var(--purple);
+
+      &::after {
+        content: 'промокод';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 80%);
+        font-weight: 300;
+        font-size: 10px;
+      }
+    }
+  }
+
+  &__code {
+    font-weight: 400;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #bdbdbd;
+
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+    @include media-min ($xl) {
+      margin-bottom: 0;
+      margin-top: 40px;
+    }
+  }
+
+  &__delete {
+    color: #bdbdbd;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    cursor: pointer;
+    user-select: none;
+
+    transition: color .2s ease-in-out;
+
+    @include media-min ($xl) {
+      top: 15px;
+    }
+
+    @media (hover: hover) {
+      &:hover {
+        color: var(--black-90);
+      }
+    }
+
+    @media (hover: none) {
+      &:active {
+        color: var(--black-90);
+      }
+    }
+  }
+}
+
+
+.size {
+  &__top {
+    font-weight: 400;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: var(--black-90);
+
+    margin-bottom: 6px;
+
+    @include media-min ($md) {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__item {
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+    border: 1px solid var(--purple);
+    background-color: transparent;
+
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--purple);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+  }
+}

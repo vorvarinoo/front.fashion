@@ -1,0 +1,81 @@
+.about {
+  padding: 10px 0 35px;
+
+  @include media-min ($lg) {
+    padding: 60px 0;
+  }
+
+  &__wrap {
+    background-color: var(--green);
+    max-width: 1296px;
+    margin: 0 auto;
+  }
+
+  &__cont {
+    display: grid;
+    padding: 50px 0;
+    column-gap: 80px;
+
+    @include media-min ($lg) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include media-min ($xl) {
+      column-gap: 154px;
+    }
+  }
+
+  &__name {
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 0.2em;
+    color: var(--white);
+    opacity: .3;
+  }
+
+  &__title {
+    font-size: 36px;
+    text-transform: uppercase;
+    color: var(--white);
+    max-width: 300px;
+    margin-bottom: 24px;
+
+    @include media-min ($lg) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__img {
+    text-align: center;
+    align-self: center;
+
+    @include media-min ($lg) {
+      height: 100%;
+    }
+
+    & > img {
+      min-height: 390px;
+      height: inherit;
+    }
+  }
+
+  &__txt {
+    display: grid;
+    gap: 25px;
+    font-size: 16px;
+    line-height: 1.625;
+    color: var(--white);
+    margin-bottom: 34px;
+
+    & p {
+      @include indent-reset;
+    }
+
+
+    @include media-min ($lg) {
+      margin-bottom: 50px;
+    }
+  }
+
+
+}

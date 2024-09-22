@@ -1,0 +1,57 @@
+.header-modal {
+  --container-padding: 20px;
+
+  pointer-events: none;
+
+  &[aria-hidden="false"] {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    pointer-events: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    & .header-modal__content {
+      @include anim(fade-left, .4s);
+
+      display: block;
+    }
+  }
+
+  &__content {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    display: none;
+    width: 100%;
+    color: var(--black);
+    background-color: var(--white);
+    overflow: auto;
+    padding-top: 30px;
+    padding-bottom: 50px;
+
+    @include media-min ($lg) {
+      max-width: 480px;
+    }
+  }
+
+  .container {
+    @include media-max ($lg) {
+      padding-left: 10px;
+    }
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+
+
+}

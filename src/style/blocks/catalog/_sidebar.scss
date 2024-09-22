@@ -1,0 +1,40 @@
+.sidebar {
+  padding: 70px 45px 0 0;
+  flex-shrink: 0;
+
+  &__list {
+    @include list-reset;
+
+    display: grid;
+    row-gap: 10px;
+
+    &--category {
+      padding-bottom: 15px;
+      border-bottom: 1px solid var(--gray-light);
+      margin-bottom: 45px;
+    }
+
+    &--brand {
+      row-gap: 15px;
+    }
+  }
+
+  &__link {
+    color: #828282;
+    font-weight: 400;
+    font-size: 16px;
+    text-transform: uppercase;
+
+    &--active {
+      color: var(--black-90);
+    }
+  }
+
+  &__title {
+    font-weight: 400;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: var(--black-90);
+    margin-bottom: 20px;
+  }
+}

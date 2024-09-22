@@ -1,0 +1,44 @@
+.category {
+  position: relative;
+  height: min-content;
+
+  &__title {
+    @include indent-reset;
+
+    & > a {
+      font-weight: 400;
+      font-size: 18px;
+      text-transform: uppercase;
+      color: var(--gray-dark);
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+      }
+    }
+  }
+
+  &__img {
+    position: relative;
+    padding-top: 100%;
+    margin-bottom: 16px;
+
+    @include media-min ($md) {
+      padding-top: 127%;
+      margin-bottom: 24px;
+    }
+
+    & img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

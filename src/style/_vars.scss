@@ -1,0 +1,43 @@
+:root {
+  --white: #FFFFFF;
+  --black: #000000;
+  --black-90: #191919; //--front.fashion-cod-gray
+  --gray-dark: #333333; //--front.fashion-mine-shaft
+  --gray-medium: #828282;
+  --gray-light: #e0e0e0;
+  --purple: #78003e;
+  --green: #667e71; //--front.fashion-viridian-green
+  --green-96: rgba(102, 126, 113, 0.96);
+
+  --gray100: #1F2D33;
+  --gray70: #505565;
+  --gray50: #BDC1C2;
+  --gray10: #F3F5F6;
+  --red100: #BD0300;
+  --red40: #F56C69;
+
+  // other vars
+  --min-site-width: 360px;
+  --max-site-width: 1590px;
+  --b-radius: 4px;
+
+  // theme vars
+  --main-text: var(--black-90);
+  --main-text-inv: var(--white);
+  --main-bg: var(--white);
+  --main-bg-inv: var(--gray-dark);
+  --accent: var(--green);
+  --link-hover: var(--red40);
+  --btn-text: var(--white);
+  --btn-bg: var(--red100);
+  --border: var(--gray50);
+  --error: var(--red100);
+}
+
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1600px;
+$main-font: "Rubik";
+$alt-font: "Cormorant";

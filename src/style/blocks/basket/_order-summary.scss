@@ -1,0 +1,135 @@
+.order-summary {
+  display: grid;
+  row-gap: 50px;
+
+  padding-top: 24px;
+
+  @include media-min ($lg) {
+    border-top: 1px solid var(--gray-light);
+    margin-top: 130px;
+
+    max-width: 330px;
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &--lg {
+
+      & .order-summary__label,
+      & .order-summary__value {
+        font-family: $alt-font, Arial, Helvetica, sans-serif;
+        font-weight: 700;
+        font-size: 28px;
+        color: var(--black-90);
+      }
+    }
+  }
+
+  &__label {
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #4f4f4f;
+  }
+
+  &__value {
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: var(--black-90);
+  }
+
+  &__delivery {
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--black-90);
+
+    padding: 24px 0;
+
+    & > *:first-child {
+      margin-top: 0;
+      padding-top: 0;
+    }
+
+    & > *:last-child {
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+  }
+
+  &__form {
+    --main-form-color: var(--purple);
+
+    display: flex;
+
+    &[inert] {
+      --main-form-color: var(--black-90);
+
+      pointer-events: none;
+      user-select: none;
+    }
+  }
+
+  &__form-input {
+    background-color: #f5f5f5;
+    border: none;
+    padding: 18px;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    border-left: 1px solid transparent;
+
+    font-weight: 400;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: var(--main-form-color);
+
+    &::placeholder {
+      font-weight: 300;
+      color: #d5d2d2;
+    }
+
+    &:focus-visible {
+      box-shadow: none;
+      border-color: var(--main-form-color);
+    }
+  }
+
+  &__form-btn {
+    @include btn-reset;
+
+    padding: 12px;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: var(--white);
+
+    background-color: var(--main-form-color);
+  }
+
+
+  &__btn {
+    @include btn-reset;
+
+    background-color: var(--black-90);
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 18px 24px;
+    color: var(--white);
+
+    margin: 32px 0;
+  }
+
+  &__info {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    color: var(--green);
+  }
+}

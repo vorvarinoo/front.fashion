@@ -1,0 +1,7 @@
+@include font-face("Open Sans", "opensans-regular", 400, normal);
+@include font-face($main-font, "rubik-light", 300, normal);
+@include font-face($main-font, "rubik-regular", 400, normal);
+@include font-face($main-font, "rubik-medium", 500, normal);
+@include font-face($main-font, "rubik-semibold", 600, normal);
+@include font-face($alt-font, "cormorant-medium", 500, normal);
+@include font-face($alt-font, "cormorant-bold", 700, normal);

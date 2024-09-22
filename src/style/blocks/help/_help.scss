@@ -1,0 +1,51 @@
+.help {
+  --gap-column-section-page: 64px;
+
+  padding-bottom: 75px;
+
+  @include media-min ($lg) {
+    padding-bottom: 150px;
+  }
+
+  @include media-min ($xl) {
+    --gap-column-section-page: 150px;
+  }
+
+  &__item {
+    margin-bottom: 86px;
+
+    & .accordion {
+      border-bottom: none;
+    }
+
+    & .accordion__title {
+      padding-right: 40px;
+      font-size: 16px;
+
+      @include media-min ($lg) {
+        padding-right: 150px;
+      }
+    }
+
+    & .accordion__cont {
+      @include media-min ($lg) {
+        padding-right: 40px;
+      }
+    }
+
+    &:last-child {
+      @include media-min ($lg) {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__subtitle {
+    font-weight: 700;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: var(--black-90);
+
+    margin-bottom: 20px;
+  }
+}

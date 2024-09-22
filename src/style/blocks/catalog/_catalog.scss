@@ -1,0 +1,139 @@
+.catalog {
+  &__title {
+    margin-bottom: 24px;
+
+    @include media-min ($lg) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__cont {
+    display: flex;
+  }
+
+  &__products {
+    flex-grow: 1;
+  }
+
+  &__designer {
+    position: relative;
+    margin-bottom: 80px;
+
+    @include media-min ($lg) {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: flex-start;
+
+      margin-bottom: 52px;
+      min-height: 500px;
+    }
+  }
+
+
+
+  &__designer-info {
+    padding: 30px 20px 280px;
+
+    width: 100%;
+    margin-left: auto;
+    background-color: var(--green);
+
+    @include media-min ($lg) {
+      width: calc(100% - 142px);
+      padding: 72px 55px 114px 222px;
+    }
+  }
+
+  &__designer-img {
+    width: 180px;
+    height: 260px;
+    position: absolute;
+
+    bottom: -30px;
+    left: 15px;
+    flex-shrink: 0;
+
+    @include media-min ($lg) {
+      bottom: none;
+      left: 0;
+      top: 72px;
+      width: 300px;
+      height: 440px;
+
+    }
+
+  }
+
+  &__designer-title {
+    font-weight: 500;
+    font-size: 26px;
+    text-transform: uppercase;
+    color: var(--white);
+    margin-bottom: 30px;
+
+    @include media-min ($lg) {
+      font-size: 28px;
+    }
+  }
+
+  &__designer-txt {
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--gray-light);
+    margin-bottom: 20px;
+
+    @include media-min ($lg) {
+      font-size: 16px;
+      margin-bottom: 32px;
+    }
+  }
+
+  &__designer-btn {
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--gray-light);
+
+    margin-bottom: 30px;
+
+    @include media-min ($lg) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__products-list {
+    @include list-reset;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
+    column-gap: 12px;
+    row-gap: 20px;
+
+    @include media-min ($md) {
+      grid-template-columns: repeat(3, 1fr);
+
+    }
+
+    @include media-min ($xl) {
+      column-gap: 64px;
+      row-gap: 80px;
+    }
+
+
+  }
+
+  &__item {
+    display: grid;
+
+    &--wide {
+      @include media-max ($md) {
+        grid-column: 1 / -1;
+      }
+    }
+
+  }
+
+}

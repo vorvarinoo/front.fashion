@@ -1,0 +1,86 @@
+.form-input {
+  font-size: 16px;
+  padding: var(--input-offset, var(--input-offset-vertical, 14px) var(--input-offset-horizontal, 18px));
+  width: 100%;
+  color: var(--main-text, inherit);
+  background-color: var(--main-bg, inherit);
+  border: 1px solid var(--border, currentColor);
+  appearance: none;
+  outline: none;
+
+  &.is-invalid {
+    border-color: var(--error, #BD0300);
+  }
+
+  &--area {
+    resize: none;
+    height: var(--input-height, 6em);
+  }
+
+  &:focus-visible {
+    box-shadow: 0 0 0 1px #FFFFFF, 0 0 0 2px var(--accent);
+  }
+
+  &:-webkit-autofill,
+  &:-webkit-autofill:focus {
+    transition: background-color 0s 600000s, color 0s 600000s !important;
+  }
+}
+
+.form-checkbox {
+  font-size: 12px;
+  line-height: 1.25;
+  color: #bdbdbd;
+
+  & > input {
+    @include visually-hidden;
+
+    &:focus-visible + span::before {
+      box-shadow: 0 0 0 1px #FFFFFF, 0 0 0 2px var(--accent);
+    }
+
+    &:checked + span::after {
+      background-color: var(--color-checked, var(--white));
+      border-radius: 100%;
+    }
+  }
+
+  & > span {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+    cursor: pointer;
+
+    &::before {
+      content: '';
+      display: inline-block;
+      width: 18px;
+      height: 18px;
+      flex: 0 0 auto;
+      background-color: transparent;
+      border: 1px solid var(--border, var(--accent));
+      margin-right: 0.7em;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: contain;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 3px;
+      transform: translateY(-50%);
+      width: 12px;
+      height: 12px;
+    }
+  }
+
+  & a {
+    color: inherit;
+    font-size: inherit;
+    border-bottom: 1px solid;
+    color: #bdbdbd;
+  }
+}

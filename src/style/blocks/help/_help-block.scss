@@ -1,0 +1,43 @@
+.help-block {
+  display: grid;
+  justify-items: center;
+  align-items: flex-start;
+  padding: 40px;
+  background-color: #f2f2f2;
+
+
+
+  &__title {
+    font-weight: 700;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: var(--black-90);
+    margin-bottom: 32px;
+  }
+
+  &__text {
+    @include indent-reset;
+
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--black-90);
+    margin-bottom: 40px;
+  }
+
+  &__btn {
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--black-90);
+
+    background-color: var(--white);
+    padding: 20px;
+
+    max-width: 240px;
+    width: 100%;
+  }
+}

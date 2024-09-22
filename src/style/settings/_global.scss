@@ -1,0 +1,37 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  min-width: var(--min-site-width);
+  -webkit-tap-highlight-color: transparent;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+a {
+  color: var(--accent);
+  text-decoration-color: var(--link-line, transparent);
+}
+
+.container {
+  --max-width: 1360px;
+  width: min(var(--max-width), 100% - var(--container-padding, 32px));
+  margin: 0 auto;
+  box-sizing: border-box;
+
+  @include media-min ($lg) {
+    --container-padding: 128px;
+  }
+
+}
