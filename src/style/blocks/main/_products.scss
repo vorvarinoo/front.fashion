@@ -1,6 +1,10 @@
 .products {
   position: relative;
-  padding: 60px 0 0;
+  padding: 35px 0 60px;
+
+  @include media-min ($lg) {
+    padding: 60px 0 100px;
+  }
 
   &--background-image {
     &::after {
