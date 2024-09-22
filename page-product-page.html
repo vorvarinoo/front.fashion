@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="preload" href="fonts/opensans-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="style/vendor-bundle.css">
+  <link rel="stylesheet" href="style/main.css">
+  <title>Главная</title>
+</head>
+
+<body class="indent-reset site">
+  <div aria-hidden="true" id="site-top"></div>
+  <div class="site__container">
+    <header class="site__header header">
+      <div class="container">
+        <div class="header__wrap">
+          <div class="header__left">
+            <ul class="list-reset header__list">
+              <li class="header__item d-none-lg">
+                <button id="btn-mob-menu" class="btn-reset header__burger">
+                  <svg width="30" height="16" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#icon-burger"></use>
+                  </svg>
+                </button>
+              </li>
+              <li class="header__item d-none-sm">
+                <button id="btn-catalog-menu" class="btn-reset">
+                  каталог
+                </button>
+              </li>
+              <li class="header__item d-none-sm">
+                <button id="btn-customers-menu" class="btn-reset">
+                  покупателям
+                </button>
+              </li>
+              <li class="header__item d-none-sm">
+                <a href="#">Контакты</a>
+              </li>
+            </ul>
+          </div>
+          <div class="header__middle">
+            <a class="logo" href="/">
+              <img src="/img/logo.svg" alt="Logo FRONT">
+            </a>
+          </div>
+          <div class="header__right">
+            <ul class="list-reset header__list header__list--justify-end">
+
+              <li class="header__item">
+                <button class="btn-reset header__search">
+                  <svg width="24" height="24" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#icon-search"></use>
+                  </svg>
+                </button>
+              </li>
+              <li class="header__item d-none-sm">
+                <button class="language language--lg">ENglish</button>
+              </li>
+              <li class="header__item d-none-sm">
+                <a class="header__login" href="#">
+                  <svg width="24" height="24" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#icon-person"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="header__item">
+                <a class="header__basket" data-backet="1" href="#">
+                  <svg width="24" height="24" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#icon-basket"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div id="mob-menu" class="header-modal" aria-hidden="true">
+        <div class="header-modal__content">
+          <div class="container">
+            <div class="header-modal__top">
+              <button class="btn-reset header-modal__close">
+                <svg width="16" height="16" aria-hidden="true">
+                  <use xlink:href="img/sprite.svg#icon-close"></use>
+                </svg>
+              </button>
+              <button class="language d-none-lg">ENglish</button>
+            </div>
+            <nav class="menu">
+              <ul>
+                <li class="menu__item">
+                  <details class="menu__dropdown">
+                    <summary class="menu__link">
+                      Каталог
+                      <svg width="10" height="17" aria-hidden="true">
+                        <use xlink:href="img/sprite.svg#icon-small-arrow"></use>
+                      </svg>
+                    </summary>
+                    <ul>
+                      <li class="menu__item">
+                        <details class="menu__dropdown">
+                          <summary class="menu__link">
+                            Одежда
+                            <svg width="10" height="17" aria-hidden="true">
+                              <use xlink:href="img/sprite.svg#icon-small-arrow"></use>
+                            </svg>
+                          </summary>
+                          <ul>
+                            <li class="menu__item">
+                              <a class="menu__link" href="#">посмотреть все</a>
+                            </li>
+                            <li class="menu__item">
+                              <a class="menu__link" href="#">женское</a>
+                            </li>
+                            <li class="menu__item">
+                              <a class="menu__link" href="#">мужское</a>
+                            </li>
+                          </ul>
+                        </details>
+                      </li>
+                      <li class="menu__item">
+                        <a class="menu__link" href="#">Аксессуары</a>
+                      </li>
+                      <li class="menu__item">
+                        <a class="menu__link menu__link--purple" href="#">SALE</a>
+                      </li>
+                      <li class="menu__item">
+                        <a class="menu__link" href="#">Дизайнеры</a>
+                      </li>
+                      <li class="menu__item">
+                        <a class="menu__link" href="#">Свадебная коллекция</a>
+                      </li>
+                      <li class="menu__item">
+                        <a class="menu__link" href="#">Дом</a>
+                      </li>
+                      <li class="menu__item">
+                        <a class="menu__link" href="#">Подарки</a>
+                      </li>
+                      <li class="menu__item">
+                        <a class="menu__link" href="#">Подарочные сертификаты</a>
+                      </li>
+                    </ul>
+                  </details>
+                </li>
+                <li class="menu__item">
+                  <details class="menu__dropdown">
+                    <summary class="menu__link">
+                      Покупателям
+                      <svg width="10" height="17" aria-hidden="true">
+                        <use xlink:href="img/sprite.svg#icon-small-arrow"></use>
+                      </svg>
+                    </summary>
+                    <ul>
+                      <li class="menu__item">
+                        <a class="menu__link" href="#">Доставка и оплата</a>
+                      </li>
+                      <li class="menu__item">
+                        <a class="menu__link" href="#">Помощь</a>
+                      </li>
+                      <li class="menu__item">
+                        <a class="menu__link" href="#">Политика</a>
+                      </li>
+                      <li class="menu__item">
+                        <a class="menu__link" href="#">Оферта</a>
+                      </li>
+                      <li class="menu__item">
+                        <a class="menu__link" href="#">Подарочный сертификат</a>
+                      </li>
+                    </ul>
+                  </details>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link menu__link--purple" href="#">О нас</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#">Блог</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+        </div>
+      </div>
+      <div id="catalog-menu" class="header-modal" aria-hidden="true">
+        <div class="header-modal__content">
+          <div class="container">
+            <div class="header-modal__top">
+              <button class="btn header-modal__close">
+                <svg width="16" height="16" aria-hidden="true">
+                  <use xlink:href="img/sprite.svg#icon-close"></use>
+                </svg>
+              </button>
+            </div>
+            <nav class="menu">
+              <ul>
+                <li class="menu__item">
+                  <details class="menu__dropdown">
+                    <summary class="menu__link">
+                      Одежда
+                      <svg width="10" height="17" aria-hidden="true">
+                        <use xlink:href="img/sprite.svg#icon-small-arrow"></use>
+                      </svg>
+                    </summary>
+                    <ul>
+                      <li class="menu__item">
+                        <a class="menu__link" href="#">посмотреть все</a>
+                      </li>
+                      <li class="menu__item">
+                        <a class="menu__link" href="#">женское</a>
+                      </li>
+                      <li class="menu__item">
+                        <a class="menu__link" href="#">мужское</a>
+                      </li>
+                      <li class="menu__item">
+                        <a class="menu__link" href="#">детское</a>
+                      </li>
+                    </ul>
+                  </details>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#">Аксессуары</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link menu__link--purple" href="#">SALE</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#">Дизайнеры</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#">Свадебная коллекция</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#">Дом</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#">Подарки</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#">Подарочные сертификаты</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+        </div>
+      </div>
+      <div id="customers-menu" class="header-modal" aria-hidden="true">
+        <div class="header-modal__content">
+          <div class="container">
+            <div class="header-modal__top">
+              <button class="btn-reset header-modal__close">
+                <svg width="16" height="16" aria-hidden="true">
+                  <use xlink:href="img/sprite.svg#icon-close"></use>
+                </svg>
+              </button>
+            </div>
+            <nav class="menu">
+              <ul>
+                <li class="menu__item">
+                  <a class="menu__link" href="#">Доставка и оплата</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#">Помощь</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#">Политика</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#">Оферта</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#">Подарочный сертификат</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#">О нас</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#">Блог</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+        </div>
+      </div>
+    </header>
+    <div class="site__content">
+      <div class="breadcrumbs" typeof="BreadcrumbList" vocab="https://schema.org/">
+        <div class="container">
+          <a href="page-main.html">Главная</a>&ensp;&frasl;&ensp;<a href="page-catalog.html">Каталог</a>&ensp;&frasl;&ensp;<span class="current-item">Masha Andrianova</span>
+        </div>
+      </div>
+
+      <main>
+        <section class="product-page page">
+          <div class="container page__cont">
+            <div class="page__section">
+              <div class="swiper product-page__slider">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide">
+                    <img src="/img/img-product-page-2.png" alt="MASHA ANDRIANOVA">
+                  </div>
+
+                  <div class="swiper-slide">
+                    <img src="/img/img-product-page-1.png" alt="MASHA ANDRIANOVA">
+                  </div>
+
+                  <div class="swiper-slide">
+                    <img src="/img/img-product-page-2.png" alt="MASHA ANDRIANOVA">
+                  </div>
+
+                  <div class="swiper-slide">
+                    <img src="/img/img-product-page-1.png" alt="MASHA ANDRIANOVA">
+                  </div>
+
+                  <div class="swiper-slide">
+                    <img src="/img/img-product-page-2.png" alt="MASHA ANDRIANOVA">
+                  </div>
+                </div>
+
+                <div class="swiper-pagination"></div>
+
+                <div class="swiper-button-prev slider-controls-btn"></div>
+                <div class="swiper-button-next slider-controls-btn"></div>
+
+              </div>
+            </div>
+            <div class="page__aside">
+              <div class="product-page__details">
+                <h1 class="title product-page__title"><a href="#">MASHA ANDRIANOVA</a></h1>
+                <div class="product-page__info">
+                  <div class="product-page__category">Платье</div>
+                  <div class="product-page__price">
+                    <del>17 300 ₽</del>
+                    <span data-discount="20">15 300 ₽</span>
+                  </div>
+                </div>
+                <div class="product-page__size">
+                  <div class="product-page__size-top"><span>Размер</span> <a href="">таблица размеров</a></div>
+                  <ul class="product-page__size-list">
+                    <li>
+                      <label class="product-page__label">
+                        <input type="checkbox" name="sizeGroup">
+                        <span>one size</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="product-page__label" data-disable>
+                        <input type="checkbox" name="sizeGroup">
+                        <span>s</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="product-page__label">
+                        <input type="checkbox" name="sizeGroup">
+                        <span>sm</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="product-page__label" data-disable>
+                        <input type="checkbox" name="sizeGroup">
+                        <span>m</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="product-page__label">
+                        <input type="checkbox" name="sizeGroup">
+                        <span>ml</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="product-page__label">
+                        <input type="checkbox" name="sizeGroup">
+                        <span>l</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="product-page__label">
+                        <input type="checkbox" name="sizeGroup">
+                        <span>lxl</span>
+                      </label>
+                    </li>
+
+
+                  </ul>
+                </div>
+                <button class="product-page__btn">в корзину</button>
+
+                <div class="product-page__descr">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </div>
+
+                <div>
+                  <div>
+                    <details class="accordion">
+                      <summary class="accordion__title accordion__title--icon-reverse">Детали</summary>
+                      <div class="accordion__cont">
+                        <p>Подчеркнуто приталенный крой дизайнеры сформировали лифом-бюстье и пышным подолом, которые разделили широким вшитым поясом. Модель выполнили из легкого тюля и гладкого атласа.</p>
+                        <p>
+                          Подкладка-нейлон: 80%; Нейлон: 77%;
+                          Шелк: 5%; Эластан (Полиуретан): 5%; Подкладка-эластан (полиуретан): 2%; Подкладка-шелк: 18%; Хлопок: 13%</p>
+                      </div>
+                    </details>
+                    <details class="accordion">
+                      <summary class="accordion__title accordion__title--icon-reverse">размеры</summary>
+                      <div class="accordion__cont">
+                        <p>
+                          Размер на модели:<br>
+                          Рост модели: 169 см<br>
+                          Весь образ: <u>платье</u>, <u>блузка</u>, <u>очки</u><br>
+                        </p>
+                      </div>
+                    </details>
+                    <details class="accordion">
+                      <summary class="accordion__title accordion__title--icon-reverse">оплата и Доставка</summary>
+                      <div class="accordion__cont">
+                        <p><b><u>СПОСОБЫ ОПЛАТЫ:</u></b></p>
+                        <ul>
+                          <li>картой онлайн,</li>
+                          <li>наличными курьеру,</li>
+                          <li>картой курьеру</li>
+                        </ul>
+
+                        <p><b><u>ДОСТАВКА:</u></b></p>
+                        <ul>
+                          <li>Доставка по Москве и Санкт-Петербургу бесплатно</li>
+                          <li>Бесплатная курьерская доставка по России на заказы от 15 000 ₽.</li>
+                          <li>Бесплатная курьерская доставка по Миру на заказы от 300 €.</li>
+                        </ul>
+
+                        <p><b><u>ПРАВИЛА ВОЗВРАТА</u></b></p>
+
+                      </div>
+                    </details>
+                  </div>
+
+                  <div class="product-page__note">
+                    *Эта вещь может быть изготовлена
+                    по вашим меркам. <a href="">Подробнее</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="products">
+          <div class="container">
+            <h2 class="title products__title">вам понравится</h2>
+
+            <ul class="products__list">
+              <li>
+                <article class="product">
+                  <div class="product__img">
+                    <img src="/img/img-product-1.png" alt="MASHA ANDRIANOVA">
+                  </div>
+                  <div class="product__bottom">
+                    <h3 class="product__title">
+                      <a href="#">MASHA ANDRIANOVA</a>
+                    </h3>
+                    <div class="product__info">
+                      <span class="product__category">Платье</span>
+                      <span class="product__price">17 300</span>
+                    </div>
+                  </div>
+                </article>
+              </li>
+              <li>
+                <article class="product">
+                  <div class="product__img">
+                    <img src="/img/img-product-1.png" alt="MASHA ANDRIANOVA">
+                  </div>
+                  <div class="product__bottom">
+                    <h3 class="product__title">
+                      <a href="#">MASHA ANDRIANOVA</a>
+                    </h3>
+                    <div class="product__info">
+                      <span class="product__category">Платье</span>
+                      <span class="product__price">17 300</span>
+                    </div>
+                  </div>
+                </article>
+              </li>
+              <li>
+                <article class="product">
+                  <div class="product__img">
+                    <img src="/img/img-product-1.png" alt="MASHA ANDRIANOVA">
+                  </div>
+                  <div class="product__bottom">
+                    <h3 class="product__title">
+                      <a href="#">MASHA ANDRIANOVA</a>
+                    </h3>
+                    <div class="product__info">
+                      <span class="product__category">Платье</span>
+                      <span class="product__price">17 300</span>
+                    </div>
+                  </div>
+                </article>
+              </li>
+              <li>
+                <article class="product">
+                  <div class="product__img">
+                    <img src="/img/img-product-1.png" alt="MASHA ANDRIANOVA">
+                  </div>
+                  <div class="product__bottom">
+                    <h3 class="product__title">
+                      <a href="#">MASHA ANDRIANOVA</a>
+                    </h3>
+                    <div class="product__info">
+                      <span class="product__category">Платье</span>
+                      <span class="product__price">17 300</span>
+                    </div>
+                  </div>
+                </article>
+              </li>
+            </ul>
+
+            <a href="#" class="products__link">Смотреть всё
+              <svg width="87" height="16" aria-hidden="true">
+                <use xlink:href="img/sprite.svg#icon-long-arrow"></use>
+              </svg>
+            </a>
+          </div>
+        </section>
+
+
+      </main>
+    </div>
+    <footer class="site__footer footer">
+      <div class="footer__cont">
+        <div class="container">
+          <div class="footer__top">
+            <div class="footer__form">
+              <div class="footer__item">
+                Подпишитесь на&nbsp;нашу рассылку и&nbsp;получите -10%&nbsp;на&nbsp;первый заказ </div>
+              <form action="" id="subscribe" data-validate>
+                <div class="footer__form-field">
+                  <input class="form-input footer__form-input" type="mail" name="Почта" required placeholder="E-mail" data-validate="email">
+                  <button class="btn footer__form-btn" type="submit">
+                    <svg width="29" height="16" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#icon-average-arrow"></use>
+                    </svg>
+                  </button>
+                </div>
+                <label class="form-checkbox">
+                  <input class="visually-hidden" type="checkbox" required="" data-validate="confirm">
+                  <span>
+                    <span>Соглашаюсь с <a href="#" target="_blank" rel="nofollow noreferer noopener">политикой конфиденциальности</a> и <a href="#" target="_blank" rel="nofollow noreferer noopener">условиями публичной оферты</a>.</span>
+                  </span>
+                </label>
+              </form>
+            </div>
+            <div class="footer__nav">
+              <ul class="footer__list">
+                <li><a class="footer__item" href="#">О нас</a></li>
+                <li><a class="footer__item" href="#">ДОСТАВКА И ВОЗВРАТ</a></li>
+                <li><a class="footer__item" href="#">УСЛОВИЯ И ПОЛОЖЕНИЯ</a></li>
+              </ul>
+              <ul class="footer__list">
+                <li><a class="footer__item" href="#">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</a></li>
+                <li><a class="footer__item" href="#">ПОМОЩЬ</a></li>
+              </ul>
+            </div>
+            <ul class="list-reset footer__contacts d-none-sm">
+              <li><a class="footer__item" href="#">+7 (999) 999—99—99</a></li>
+              <li><a class="footer__item" href="">russia@mail.ru</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__bottom">
+            <div class="footer__logo">
+              <a href="/">
+                <img src="/img/logo-footer.svg" alt="Logo">
+              </a>
+            </div>
+            <ul class="list-reset footer__contacts d-none-lg">
+              <li><a class="footer__item" href="#">+7 (999) 999—99—99</a></li>
+              <li><a class="footer__item" href="">russia@mail.ru</a></li>
+            </ul>
+            <ul class="list-reset social">
+              <li><a href="#"><img src="/img/icon-vk.svg" alt="VK"></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="scroll-top" id="scroll-top">
+      <a class="scroll-top__link" href="#site-top" aria-label="Наверх страницы">
+        <svg width="14" height="8" aria-hidden="true">
+          <use xlink:href="img/sprite.svg#icon-up"></use>
+        </svg>
+      </a>
+    </div>
+    <div class="hystmodal hystmodal--simple" id="send-ok-modal" aria-hidden="true">
+      <div class="hystmodal__wrap">
+        <div class="hystmodal__window hystmodal__window--form" role="dialog" aria-modal="true">
+          <div class="modal">
+            <button class="modal__close" type="button" aria-label="Close window" data-hystclose>
+              <svg class="modal__close-icon" width="32" height="32" aria-hidden="true">
+                <use xlink:href="img/sprite.svg#icon-cross"></use>
+              </svg>
+            </button>
+            <div class="title-md modal__title">Спасибо за заявку!</div>
+            <div class="modal__text">Мы свяжемся с вами в ближайшее время и обсудим все детали.</div>
+            <div class="modal__bottom-btn">
+              <button class="btn-reset btn" data-hystclose>Хорошо</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/vendor-bundle.js"></script>
+  <script src="js/main.js" type="module"></script>
+</body>
+
+</html>
