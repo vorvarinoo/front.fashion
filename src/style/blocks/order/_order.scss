@@ -1,0 +1,241 @@
+.order {}
+
+.order-form {
+  &__subtitle {
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: var(--purple);
+    margin-bottom: 21px;
+  }
+
+  &__row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 40px;
+  }
+
+  &__field {
+    position: relative;
+
+    & input {
+      font-weight: 400;
+      font-size: 14px;
+      text-transform: uppercase;
+      color: var(--black-90);
+      width: 100%;
+      padding-left: 0;
+      padding-bottom: 24px;
+
+      border: none;
+      border-bottom: 1px solid var(--gray-light);
+
+    }
+
+    & label {
+      position: absolute;
+      left: 0;
+      top: 14px;
+
+      font-weight: 400;
+      font-size: 14px;
+      text-transform: uppercase;
+      color: #bdbdbd;
+
+      pointer-events: none;
+
+      transition: transform .3s ease-in-out, font-size, .3s ease-in-out;
+    }
+
+    & input:focus-visible,
+    & input:valid {
+      box-shadow: none;
+      border-bottom: 2px solid var(--green);
+    }
+
+    & input:focus-visible + label,
+    & input:valid + label {
+      top: -10px;
+      font-size: 10px;
+    }
+  }
+
+  &__top {
+    display: grid;
+    row-gap: 30px;
+    margin-bottom: 48px;
+  }
+
+
+  & [data-jtabs="order-form-tabs"] {}
+
+  & [data-jtabs="nav"] {
+    @include list-reset;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: stretch;
+    border-bottom: 1px solid var(--gray-light);
+
+  }
+
+  & [data-jtabs="control"] {
+    @include btn-reset;
+
+    position: relative;
+
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--green);
+
+
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 18px;
+
+
+    &.is-selected {
+      color: var(--black-90);
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: -2px;
+
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background-color: var(--black-90);
+        border-radius: 2px;
+      }
+    }
+  }
+
+  &__section {
+    padding: 60px 0;
+  }
+
+  &__delivery-title {
+    font-weight: 700;
+    font-size: 36px;
+    text-transform: uppercase;
+    color: var(--green);
+
+    font-family: $alt-font, Arial, Helvetica, sans-serif;
+
+    margin-bottom: 50px;
+  }
+
+  &__list-radio {
+    @include list-reset;
+    display: grid;
+    row-gap: 10px;
+  }
+
+  &__radio {
+    display: flex;
+    align-items: center;
+    position: relative;
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: var(--black-90);
+
+    & input + span {
+      display: inline-flex;
+      align-items: center;
+      user-select: none;
+      cursor: pointer;
+
+      &::before {
+        content: "";
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        flex: 0 0 auto;
+        background-color: transparent;
+        border: 1px solid var(--black-90);
+        margin-right: 16px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;
+        border-radius: 100%;
+      }
+    }
+
+    & input:checked + span {
+      &::after {
+        content: "";
+        position: absolute;
+        left: 5px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 6px;
+        height: 6px;
+        border-radius: 100%;
+        background-color: var(--black-90);
+      }
+    }
+  }
+
+  &__delivery-info {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__detail {
+    display: flex;
+
+    &:nth-child(odd) {
+      flex-basis: 70%;
+    }
+
+    &:nth-child(even) {
+      flex-basis: 30%;
+    }
+
+    & dt {
+      font-weight: 400;
+      font-size: 14px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--black-90);
+    }
+
+    & dd {
+      font-weight: 400;
+      font-size: 14px;
+      color: var(--black-90);
+      flex-shrink: 0;
+    }
+  }
+
+  &__btn {
+    @include btn-reset;
+
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--white);
+
+    background: var(--black-90);
+    padding: 20px 0;
+  }
+
+  &__total-amount {
+    font-weight: 700;
+    font-size: 28px;
+    text-transform: uppercase;
+    color: var(--black-90);
+
+    font-family: $alt-font, Arial, Helvetica, sans-serif;
+
+    justify-self: flex-end;
+  }
+}

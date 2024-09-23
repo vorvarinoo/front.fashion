@@ -2,34 +2,173 @@
   <div class="container page__cont">
     <div class="page__section">
       <h1 class="title page__title">оформление заказа</h1>
-      <form class="order__form"
+      <form class="order-form"
             action="">
-        <div>личные данные</div>
-        <div class="order__form-row">
-          <label for="">
-            <input class="form-input"
-                   type="text"
-                   name="Имя">
-          </label>
-          <label for="">
-            <input class="form-input"
-                   type="text"
-                   name="Фамилия">
-          </label>
+        <div class="order-form__subtitle">личные данные</div>
+        <div class="order-form__top">
+          <div class="order-form__row">
+            <div class="order-form__field">
+              <input class="form-input"
+                     type="text"
+                     name="Имя"
+                     required>
+              <label>имя <span>*</span></label>
+            </div>
+            <div class="order-form__field">
+              <input class="form-input"
+                     type="text"
+                     name="Фамилия"
+                     required>
+              <label>Фамилия <span>*</span></label>
+            </div>
+          </div>
+          <div class="order-form__row">
+            <div class="order-form__field">
+              <input class="form-input"
+                     type="tel"
+                     name="Контактный телефон"
+                     required>
+              <label>телефон <span>*</span></label>
+            </div>
+            <div class="order-form__field">
+              <input class="form-input"
+                     type="mail"
+                     name="Контактная почта"
+                     required>
+              <label>E-mail <span>*</span></label>
+            </div>
+          </div>
         </div>
-        <div class="order__form-row">
-          <label for="">
-            <input class="form-input"
-                   type="tel"
-                   name="Контактный телефон">
-          </label>
-          <label for="">
-            <input class="form-input"
-                   type="text"
-                   name="Контактная почта">
-          </label>
+        <div class="order-form__middle">
+          <div class="order-form__subtitle">выбор доставки</div>
+          <div data-jtabs="order-form-tabs">
+            <ul data-jtabs="nav">
+              <li>
+                <button type="button"
+                        data-jtabs="control">Курьерская</button>
+              </li>
+              <li>
+                <button type="button"
+                        data-jtabs="control">Сдек до ПВЗ</button>
+              </li>
+              <li>
+                <button type="button"
+                        data-jtabs="control">Самовывоз</button>
+              </li>
+            </ul>
+            <div>
+              <div data-jtabs="panel">
+                <div class="order-form__section">
+                  <div class="order-form__subtitle">Адрес</div>
+                  <label for="">
+                    <input class="form-input"
+                           type="text"
+                           name="Контактная почта">
+                  </label>
+                  <div class="order-form__row">
+                    <label for="">
+                      <input class="form-input"
+                             type="text"
+                             name="Имя">
+                    </label>
+                    <label for="">
+                      <input class="form-input"
+                             type="text"
+                             name="Фамилия">
+                    </label>
+                  </div>
+                  <label for="">
+                    <input class="form-input"
+                           type="text"
+                           name="Контактная почта">
+                  </label>
+                </div>
+              </div>
+              <div data-jtabs="panel">
+                <div class="order-form__section">
+                  <div class="order-form__map"></div>
+                  <div>вы выбрали пункт пвз</div>
+                </div>
+              </div>
+              <div data-jtabs="panel">
+                <div class="order-form__section">
+                  <div class="order-form__map"></div>
+                  <div>шоурум</div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+        <div class="order-form__bottom">
+          <div class="order-form__row">
+            <div>
+              <div class="order-form__subtitle">способ оплаты</div>
+              <ul class="order-form__list-radio">
+                <li>
+                  <label class="order-form__radio">
+                    <input class="visually-hidden"
+                           type="radio"
+                           name="paymentGroup">
+                    <span></span>
+                    наличными при получении
+                  </label>
+                </li>
+                <li>
+                  <label class="order-form__radio">
+                    <input class="visually-hidden"
+                           type="radio"
+                           name="paymentGroup">
+                    <span></span>
+                    картой при получении
+                  </label>
+                </li>
+                <li>
+                  <label class="order-form__radio">
+                    <input class="visually-hidden"
+                           type="radio"
+                           name="paymentGroup">
+                    <span></span>
+                    картой на сайте
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <div class="order-form__subtitle">Подтвердите ваше согласие</div>
+            </div>
+          </div>
+          <div class="order-form__delivery">
+            <div class="order-form__delivery-title">Доставка</div>
+            <div class="order-form__delivery-info">
 
+              <dl class="order-form__detail">
+                <dt>курьерская До двери</dt>
+                <dd>{ от 1 до 3х дней }</dd>
+              </dl>
+
+              <dl class="order-form__detail">
+                <dt>стоимость</dt>
+                <dd>0.00 ₽</dd>
+              </dl>
+
+              <dl class="order-form__detail">
+                <dt>Первый платёж</dt>
+                <dd></dd>
+              </dl>
+
+              <dl class="order-form__detail">
+                <dt>долями</dt>
+                <dd>5 457 ₽</dd>
+              </dl>
+
+            </div>
+          </div>
+
+          <div class="order-form__row">
+            <button class="order-form__btn">подтвердить</button>
+            <div class="order-form__total-amount">Итого: <span>26 300 ₽</span></div>
+          </div>
+        </div>
       </form>
     </div>
     <div class="page__aside"></div>

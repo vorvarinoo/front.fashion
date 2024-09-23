@@ -30,6 +30,10 @@ import {
   initStepper,
 } from './modules/stepper.js';
 
+import {
+  initTabs,
+} from './modules/tabs.js';
+
 document.addEventListener( 'DOMContentLoaded', () => {
   iosVhFix();
 
@@ -40,5 +44,6 @@ document.addEventListener( 'DOMContentLoaded', () => {
     initScrollTop();
     initHeaderMenu();
     initStepper();
+    initTabs();
   } );
 } );
