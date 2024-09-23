@@ -6,13 +6,17 @@
     font-size: 14px;
     text-transform: uppercase;
     color: var(--purple);
-    margin-bottom: 21px;
+    margin-bottom: 24px;
   }
 
   &__row {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
     column-gap: 40px;
+    row-gap: 30px;
+
+    @include media-min ($lg) {
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
 
   &__field {
@@ -63,7 +67,8 @@
   &__top {
     display: grid;
     row-gap: 30px;
-    margin-bottom: 48px;
+    align-content: flex-start;
+    margin-bottom: 60px;
   }
 
 
@@ -85,7 +90,7 @@
     position: relative;
 
     font-weight: 400;
-    font-size: 14px;
+    font-size: 12px;
     letter-spacing: 0.1em;
     text-transform: uppercase;
     text-align: center;
@@ -95,7 +100,12 @@
     display: flex;
     justify-content: center;
     width: 100%;
-    padding: 18px;
+    padding: 15px 0;
+
+    @include media-min ($lg) {
+      font-size: 14px;
+      padding: 18px;
+    }
 
 
     &.is-selected {
@@ -115,8 +125,34 @@
     }
   }
 
-  &__section {
+  & [data-jtabs="panel"] {
     padding: 60px 0;
+  }
+
+  &__map {
+    margin-bottom: 20px;
+  }
+
+  &__bottom {
+    display: grid;
+    row-gap: 30px;
+  }
+
+  &__section {
+    display: grid;
+    row-gap: 30px;
+    align-content: flex-start;
+  }
+
+  &__list-radio {
+    @include list-reset;
+    display: grid;
+    row-gap: 10px;
+  }
+
+  &__delivery {
+    border-top: 2px solid var(--green);
+    padding-top: 40px;
   }
 
   &__delivery-title {
@@ -130,61 +166,10 @@
     margin-bottom: 50px;
   }
 
-  &__list-radio {
-    @include list-reset;
-    display: grid;
-    row-gap: 10px;
-  }
-
-  &__radio {
-    display: flex;
-    align-items: center;
-    position: relative;
-    font-weight: 400;
-    font-size: 14px;
-    text-transform: uppercase;
-    color: var(--black-90);
-
-    & input + span {
-      display: inline-flex;
-      align-items: center;
-      user-select: none;
-      cursor: pointer;
-
-      &::before {
-        content: "";
-        display: inline-block;
-        width: 16px;
-        height: 16px;
-        flex: 0 0 auto;
-        background-color: transparent;
-        border: 1px solid var(--black-90);
-        margin-right: 16px;
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: contain;
-        border-radius: 100%;
-      }
-    }
-
-    & input:checked + span {
-      &::after {
-        content: "";
-        position: absolute;
-        left: 5px;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 6px;
-        height: 6px;
-        border-radius: 100%;
-        background-color: var(--black-90);
-      }
-    }
-  }
-
   &__delivery-info {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 60px;
   }
 
   &__detail {

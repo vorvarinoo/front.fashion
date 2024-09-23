@@ -81,6 +81,82 @@
     color: inherit;
     font-size: inherit;
     border-bottom: 1px solid;
-    color: #bdbdbd;
   }
+
+  &--black {
+    --border: var(--black-90);
+    --color-checked: var(--black-90);
+
+    color: var(--black-90);
+    line-height: 1.7;
+    font-size: 14px;
+
+    & a {
+      border: none;
+    }
+  }
+}
+
+
+.form-radio {
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--black-90);
+
+  & > input {
+    @include visually-hidden;
+
+    &:focus-visible + span::before {
+      box-shadow: 0 0 0 1px #FFFFFF, 0 0 0 2px var(--accent);
+    }
+
+    &:checked + span::before {
+      border-color: var(--purple);
+    }
+
+    &:checked + span::after {
+      background-color: var(--purple);
+      border-radius: 100%;
+    }
+  }
+
+  & > span {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+    cursor: pointer;
+
+    &::before {
+      content: '';
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      flex: 0 0 auto;
+      background-color: transparent;
+      border: 1px solid var(--black-90);
+      border-radius: 100%;
+      margin-right: 0.7em;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: contain;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 5px;
+      transform: translateY(-50%);
+      width: 6px;
+      height: 6px;
+    }
+  }
+
+  & a {
+    color: inherit;
+    font-size: inherit;
+    border-bottom: 1px solid;
+  }
+
 }
