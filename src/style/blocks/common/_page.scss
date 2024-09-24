@@ -17,12 +17,19 @@
     }
   }
 
-  &__cont {
+  &__flex {
     @include media-min ($lg) {
       display: flex;
       align-items: flex-start;
       justify-content: space-between;
     }
+  }
+
+  &__centered {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
   }
 
   &__section {

@@ -1,0 +1,81 @@
+<section class="auth page">
+  <div class="container page__centered">
+    <h1 class="title page__title">Личный кабинет</h1>
+
+    <div class="auth__links">
+      <a class="auth__link"
+         href="/page-login.html">вход</a>
+      <a class="auth__link is-selected"
+         href="">регистрация</a>
+    </div>
+
+    <form class="auth-register"
+          id="register-form">
+      <div class="form-subtitle">личные данные</div>
+      <div class="auth-register__cont">
+        <div class="form-row">
+          <div class="form-field">
+            <input class="form-input"
+                   type="text"
+                   name="Имя"
+                   required>
+            <label>имя <span>*</span></label>
+          </div>
+          <div class="form-field">
+            <input class="form-input"
+                   type="text"
+                   name="Фамилия"
+                   required>
+            <label>фамилия <span>*</span> </label>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-field">
+            <input class="form-input"
+                   type="tel"
+                   name="Контактный телефон"
+                   required>
+            <label>Телефон <span>*</span></label>
+          </div>
+          <div class="form-field">
+            <input class="form-input"
+                   type="mail"
+                   name="Контактная почты"
+                   required>
+            <label>E-mail <span>*</span></label>
+          </div>
+        </div>
+        <div class="form-field">
+          <input class="form-input"
+                 type="text"
+                 name="День рождение"
+                 required>
+          <label>День рождение </label>
+        </div>
+        <div class="form-field">
+          <input class="form-input"
+                 type="password"
+                 name="Пароль"
+                 required>
+          <label>пароль <span>*</span> </label>
+        </div>
+
+        <div>
+          <div class="form-subtitle form-subtitle--sm">Подтвердите ваше согласие</div>
+          <label class="form-checkbox form-checkbox--black">
+            <input class="visually-hidden"
+                   type="checkbox"
+                   required=""
+                   data-validate="confirm">
+            <span>
+              <span>@include('../order/confirm-text.html')</span>
+            </span>
+          </label>
+        </div>
+      </div>
+      <button class="btn btn--primary"
+              type="submit">зарегистрироваться</button>
+    </form>
+
+  </div>
+</section>

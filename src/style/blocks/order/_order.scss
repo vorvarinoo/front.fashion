@@ -1,68 +1,27 @@
-.order {}
+.order {
 
-.order-form {
-  &__subtitle {
-    font-weight: 400;
-    font-size: 14px;
-    text-transform: uppercase;
-    color: var(--purple);
-    margin-bottom: 24px;
+  &__list {
+    @include list-reset;
+    max-width: 330px;
   }
 
-  &__row {
-    display: grid;
-    column-gap: 40px;
-    row-gap: 30px;
+  & .page__section {
+    @include media-min ($lg) {
+      max-width: 680px;
+    }
+  }
+
+  & .page__aside {
+    display: none;
+    margin-top: 80px;
 
     @include media-min ($lg) {
-      grid-template-columns: repeat(2, 1fr);
+      display: block;
     }
   }
+}
 
-  &__field {
-    position: relative;
-
-    & input {
-      font-weight: 400;
-      font-size: 14px;
-      text-transform: uppercase;
-      color: var(--black-90);
-      width: 100%;
-      padding-left: 0;
-      padding-bottom: 24px;
-
-      border: none;
-      border-bottom: 1px solid var(--gray-light);
-
-    }
-
-    & label {
-      position: absolute;
-      left: 0;
-      top: 14px;
-
-      font-weight: 400;
-      font-size: 14px;
-      text-transform: uppercase;
-      color: #bdbdbd;
-
-      pointer-events: none;
-
-      transition: transform .3s ease-in-out, font-size, .3s ease-in-out;
-    }
-
-    & input:focus-visible,
-    & input:valid {
-      box-shadow: none;
-      border-bottom: 2px solid var(--green);
-    }
-
-    & input:focus-visible + label,
-    & input:valid + label {
-      top: -10px;
-      font-size: 10px;
-    }
-  }
+.order-form {
 
   &__top {
     display: grid;
@@ -125,12 +84,22 @@
     }
   }
 
-  & [data-jtabs="panel"] {
+  &__cont {
+    display: grid;
+    row-gap: 60px;
+
     padding: 60px 0;
   }
 
   &__map {
     margin-bottom: 20px;
+    max-height: 520px;
+    height: 100%;
+
+    & > img {
+      width: 100%;
+      height: 100%;
+    }
   }
 
   &__bottom {
@@ -152,7 +121,13 @@
 
   &__delivery {
     border-top: 2px solid var(--green);
-    padding-top: 40px;
+    margin-top: 60px;
+    padding-top: 60px;
+
+    @include media-min ($md) {
+      margin-top: 30px;
+      padding-top: 40px;
+    }
   }
 
   &__delivery-title {
@@ -168,19 +143,26 @@
 
   &__delivery-info {
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
-    margin-bottom: 60px;
   }
 
   &__detail {
     display: flex;
+    justify-content: space-between;
+    flex-basis: 100%;
+    width: 100%;
 
     &:nth-child(odd) {
-      flex-basis: 70%;
+      @include media-min ($md) {
+        flex-basis: 55%;
+      }
     }
 
     &:nth-child(even) {
-      flex-basis: 30%;
+      @include media-min ($md) {
+        flex-basis: 35%;
+      }
     }
 
     & dt {
@@ -199,18 +181,11 @@
     }
   }
 
-  &__btn {
-    @include btn-reset;
-
-    font-weight: 400;
-    font-size: 14px;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    text-align: center;
-    color: var(--white);
-
-    background: var(--black-90);
-    padding: 20px 0;
+  &__total {
+    @include media-min ($lg) {
+      display: flex;
+      flex-direction: row-reverse;
+    }
   }
 
   &__total-amount {
@@ -221,6 +196,44 @@
 
     font-family: $alt-font, Arial, Helvetica, sans-serif;
 
-    justify-self: flex-end;
+    margin-bottom: 60px;
+
+
+    display: flex;
+    justify-content: space-between;
+
+    @include media-min ($lg) {
+      margin-bottom: 0;
+
+      flex-basis: 50%;
+      width: 50%;
+      justify-content: flex-end;
+      align-items: center;
+
+      & span {
+        margin-left: 16px;
+      }
+    }
+  }
+
+  &__btn {
+    @include btn-reset;
+
+    width: 100%;
+
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--white);
+
+    background: var(--black-90);
+    padding: 20px 0;
+
+    @include media-min ($lg) {
+      flex-basis: 50%;
+      width: 50%;
+    }
   }
 }

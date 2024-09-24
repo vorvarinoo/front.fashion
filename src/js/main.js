@@ -34,6 +34,10 @@ import {
   initTabs,
 } from './modules/tabs.js';
 
+import {
+  checkFilledSelect,
+} from './modules/select.js';
+
 document.addEventListener( 'DOMContentLoaded', () => {
   iosVhFix();
 
@@ -45,5 +49,6 @@ document.addEventListener( 'DOMContentLoaded', () => {
     initHeaderMenu();
     initStepper();
     initTabs();
+    checkFilledSelect();
   } );
 } );

@@ -1,0 +1,40 @@
+.thanks {
+
+  &__cont {
+    display: grid;
+    justify-content: center;
+  }
+
+  & .page__title {
+    text-align: center;
+    margin-bottom: 32px;
+
+    @include media-min ($lg) {
+      font-size: 48px;
+    }
+
+  }
+
+  &__descr {
+    font-weight: 300;
+    font-size: 16px;
+    text-align: center;
+    color: var(--black-90);
+
+    margin-bottom: 60px;
+    display: grid;
+    row-gap: 30px;
+
+    @include media-min ($lg) {
+      row-gap: 0;
+    }
+
+    & p {
+      @include indent-reset;
+    }
+
+    & span {
+      font-weight: 500;
+    }
+  }
+}
