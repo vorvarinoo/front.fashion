@@ -88,8 +88,9 @@
 
   & input:focus-visible,
   & input:valid,
-  select:focus-visible,
-  select[data-state] {
+  & input[data-state],
+  & select:focus-visible,
+  & select[data-state] {
     box-shadow: none;
     z-index: 1;
     border-bottom: 2px solid var(--green);
@@ -97,8 +98,9 @@
 
   & input:focus-visible + label,
   & input:valid + label,
-  select:focus-visible + label,
-  select[data-state] + label {
+  & input[data-state] + label,
+  & select:focus-visible + label,
+  & select[data-state] + label {
     top: -10px;
     font-size: 10px;
   }
@@ -219,24 +221,20 @@
   font-size: 14px;
   color: var(--black-90);
 
-  & > input {
-    @include visually-hidden;
-
-    &:focus-visible + span::before {
-      box-shadow: 0 0 0 1px #FFFFFF, 0 0 0 2px var(--accent);
-    }
-
-    &:checked + span::before {
-      border-color: var(--purple);
-    }
-
-    &:checked + span::after {
-      background-color: var(--purple);
-      border-radius: 100%;
-    }
+  &:focus-visible + span::before {
+    box-shadow: 0 0 0 1px #FFFFFF, 0 0 0 2px var(--accent);
   }
 
-  & > span {
+  &:checked + span::before {
+    border-color: var(--purple);
+  }
+
+  &:checked + span::after {
+    background-color: var(--purple);
+    border-radius: 100%;
+  }
+
+  & + span {
     position: relative;
     display: inline-flex;
     align-items: center;
@@ -284,4 +282,60 @@
   &::-ms-expand {
     display: none;
   }
+}
+
+
+.form-radio-tab,
+.form-radio {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  border: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+}
+
+.form-radio-tab + span {
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--green);
+
+
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 15px 0;
+
+  @include media-min ($lg) {
+    font-size: 14px;
+    padding: 18px;
+  }
+}
+
+.form-radio-tab:checked + span {
+  position: relative;
+  z-index: 1;
+  color: var(--black-90);
+  border-bottom: 3px solid var(--black-90);
+}
+
+
+.form-add-adress {
+  @include btn-reset;
+
+  font-weight: 300;
+  font-size: 14px;
+  text-align: right;
+  color: var(--green);
 }

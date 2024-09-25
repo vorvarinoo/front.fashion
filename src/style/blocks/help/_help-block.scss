@@ -1,4 +1,6 @@
 .help-block {
+  position: sticky;
+  top: calc(var(--offset-top) + 25px);
   display: grid;
   justify-items: center;
   align-items: flex-start;

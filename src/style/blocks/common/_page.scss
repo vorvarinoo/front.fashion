@@ -5,6 +5,16 @@
     padding: 24px 0 128px;
   }
 
+  &__top {
+    margin-bottom: 30px;
+
+    @include media-min ($md) {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-end;
+    }
+  }
+
   &__title {
     font-size: 36px;
     text-transform: uppercase;
@@ -20,7 +30,6 @@
   &__flex {
     @include media-min ($lg) {
       display: flex;
-      align-items: flex-start;
       justify-content: space-between;
     }
   }
@@ -43,8 +52,11 @@
   }
 
   &__aside {
-
+    position: relative;
+    display: flex;
     flex-shrink: 0;
+    flex-grow: 1;
+    align-items: flex-start;
 
     @include media-min ($md) {
       max-width: 600px;

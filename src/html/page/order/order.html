@@ -1,361 +1,96 @@
 <section class="order page">
   <div class="container page__flex">
     <div class="page__section">
+
       <h1 class="title page__title">оформление заказа</h1>
-      <form class="order-form"
-            action="">
-        <div class="form-subtitle">личные данные</div>
-        <div class="order-form__top">
-          <div class="form-row">
-            <div class="form-field">
-              <input class="form-input"
-                     type="text"
-                     name="Имя"
-                     required>
-              <label>имя <span>*</span></label>
-            </div>
-            <div class="form-field">
-              <input class="form-input"
-                     type="text"
-                     name="Фамилия"
-                     required>
-              <label>Фамилия <span>*</span></label>
-            </div>
-          </div>
-          <div class="form-row">
-            <div class="form-field">
-              <input class="form-input"
-                     type="tel"
-                     name="Контактный телефон"
-                     required>
-              <label>телефон <span>*</span></label>
-            </div>
-            <div class="form-field">
-              <input class="form-input"
-                     type="mail"
-                     name="Контактная почта"
-                     required>
-              <label>E-mail <span>*</span></label>
-            </div>
-          </div>
-        </div>
-        <div class="order-form__middle">
-          <div class="form-subtitle">выбор доставки</div>
-          <div class="delivery-type-container"></div>
-          <div data-jtabs="order-form-tabs">
-            <ul data-jtabs="nav">
-              <li>
-                <button type="button"
-                        data-jtabs="control">Курьерская</button>
-              </li>
-              <li>
-                <button type="button"
-                        data-jtabs="control">Сдек до ПВЗ</button>
-              </li>
-              <li>
-                <button type="button"
-                        data-jtabs="control">Самовывоз</button>
-              </li>
-            </ul>
-            <div>
-              <div data-jtabs="panel">
+      <form id="order-form"
+            class="order__form">
 
-                <div class="order-form__cont">
-                  <div>
-                    <div class="form-subtitle">Адрес</div>
-                    <div class="order-form__section">
-                      <div class="form-field form-field--select">
-                        <select class="form-select"
-                                name="Страна"
-                                id="">
-                          <option value=""
-                                  selected></option>
-                          <option value="1">Российская федерация</option>
-                          <option value="1">Беларусь</option>
-                        </select>
-                        <label>страна <span>*</span></label>
-                      </div>
-                      <div class="form-row">
-                        <div class="form-field form-field--select">
-                          <select class="form-select"
-                                  name="Город"
-                                  id="">
-                            <option value=""
-                                    selected></option>
-                            <option value="1">Москва и моск. область</option>
-                            <option value="1">Пенза и пенз. область</option>
-                          </select>
-                          <label>город <span>*</span></label>
-                        </div>
-                        <div class="form-field">
-                          <input class="form-input"
-                                 type="text"
-                                 name="Индекс"
-                                 required>
-                          <label>индекс <span>*</span></label>
-                        </div>
-                      </div>
-                      <div class="form-field">
-                        <input class="form-input"
-                               type="text"
-                               name="Адрес"
-                               required>
-                        <label>адрес <span>*</span></label>
-                      </div>
-                    </div>
-                  </div>
-                  <div>
-                    <div class="form-row">
-                      <div>
-                        <div class="form-subtitle">способ оплаты</div>
-                        <ul class="order-form__list-radio">
-                          <li>
-                            <label class="form-radio">
-                              <input class="visually-hidden"
-                                     type="radio"
-                                     name="paymentGroup">
-                              <span>
-                                наличными при получении
-                              </span>
-                            </label>
-                          </li>
-                          <li>
-                            <label class="form-radio">
-                              <input class="visually-hidden"
-                                     type="radio"
-                                     name="paymentGroup">
-                              <span>
-                                картой при получении
-                              </span>
-                            </label>
-                          </li>
-                          <li>
-                            <label class="form-radio">
-                              <input class="visually-hidden"
-                                     type="radio"
-                                     name="paymentGroup">
-                              <span>картой на сайте</span>
-                            </label>
-                          </li>
-                        </ul>
-                      </div>
-                      <div>
-                        <div class="form-subtitle">Подтвердите ваше согласие</div>
-                        <label class="form-checkbox form-checkbox--black">
-                          <input class="visually-hidden"
-                                 type="checkbox"
-                                 required=""
-                                 data-validate="confirm">
-                          <span>
-                            <span>@include('confirm-text.html')</span>
-                          </span>
-                        </label>
-                      </div>
-                    </div>
-                    <div class="order-form__delivery">
-                      <div class="order-form__delivery-title">Доставка</div>
-                      <div class="order-form__delivery-info">
-                        <dl class="order-form__detail">
-                          <dt>курьерская До двери</dt>
-                          <dd>{ от 1 до 3х дней }</dd>
-                        </dl>
-                        <dl class="order-form__detail">
-                          <dt>стоимость</dt>
-                          <dd>0.00 ₽</dd>
-                        </dl>
-                        <dl class="order-form__detail">
-                          <dt>Первый платёж</dt>
-                          <dd></dd>
-                        </dl>
-                        <dl class="order-form__detail">
-                          <dt>долями</dt>
-                          <dd>5 457 ₽</dd>
-                        </dl>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+        <fieldset class="order-fieldset">
+          <legend class="form-subtitle">личные данные</legend>
 
+          <div class="order-fieldset__cont">
+            <div class="form-row">
+              <div class="form-field">
+                <input class="form-input"
+                       type="text"
+                       name="Имя"
+                       required>
+                <label>имя <span>*</span></label>
               </div>
-              <div data-jtabs="panel">
-
-                <div class="order-form__cont">
-                  <div>
-                    <div class="order-form__map">
-                      <img src="/img/img-map-sdek.png">
-                    </div>
-                    <div class="form-subtitle">вы выбрали пункт пвз</div>
-                    <div class="location">
-                      <div class="location__top">
-                        <div class="location__row">
-                          <div class="location__title">САНКТ-ПЕТЕРБУРГ</div>
-                          <button class="location__btn">Изменить</button>
-                        </div>
-                        <span class="location__address">Ул. Студенческая, 14, Корп. 2, Стр. 1, Пом. 4Н</span>
-                      </div>
-                      <div class="location__bottom">
-                        <div class="location__subtitle">График работы:</div>
-                        <div>
-                          <span class="location__item">Пн-Пт с 10 до 20</span>
-                          <span class="location__item">Сб с 11 до 21</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div>
-                    <div class="form-row">
-                      <div>
-                        <div class="form-subtitle">способ оплаты</div>
-                        <ul class="order-form__list-radio">
-                          <li>
-                            <label class="form-radio">
-                              <input class="visually-hidden"
-                                     type="radio"
-                                     name="paymentGroup">
-                              <span>
-                                наличными при получении
-                              </span>
-                            </label>
-                          </li>
-                          <li>
-                            <label class="form-radio">
-                              <input class="visually-hidden"
-                                     type="radio"
-                                     name="paymentGroup">
-                              <span>
-                                картой при получении
-                              </span>
-                            </label>
-                          </li>
-                          <li>
-                            <label class="form-radio">
-                              <input class="visually-hidden"
-                                     type="radio"
-                                     name="paymentGroup">
-                              <span>картой на сайте</span>
-                            </label>
-                          </li>
-                        </ul>
-                      </div>
-                      <div>
-                        <div class="form-subtitle">Подтвердите ваше согласие</div>
-                        <label class="form-checkbox form-checkbox--black">
-                          <input class="visually-hidden"
-                                 type="checkbox"
-                                 required=""
-                                 data-validate="confirm">
-                          <span>
-                            <span>@include('confirm-text.html')</span>
-                          </span>
-                        </label>
-                      </div>
-                    </div>
-                    <div class="order-form__delivery">
-                      <div class="order-form__delivery-title">Доставка</div>
-                      <div class="order-form__delivery-info">
-                        <dl class="order-form__detail">
-                          <dt>сдэк до пункта пвз</dt>
-                          <dd>{ от 2 до 3х дней }</dd>
-                        </dl>
-                        <dl class="order-form__detail">
-                          <dt>стоимость</dt>
-                          <dd>0.00 ₽</dd>
-                        </dl>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
+              <div class="form-field">
+                <input class="form-input"
+                       type="text"
+                       name="Фамилия"
+                       required>
+                <label>Фамилия <span>*</span></label>
               </div>
-              <div data-jtabs="panel">
-
-                <div class="order-form__cont">
-                  <div>
-                    <div class="order-form__map">
-                      <img src="/img/img-map-pickup.png">
-                    </div>
-                    <div class="form-subtitle">шоурум</div>
-
-                    <div class="location">
-                      <div class="location__top">
-                        <div class="location__row">
-                          <div class="location__title">Москва</div>
-                        </div>
-                        <span class="location__address">Большой Сухаревский пер, д. 13, стр. 1.</span>
-                      </div>
-
-                      <div class="location__bottom">
-                        <div class="location__subtitle">График работы:</div>
-                        <div class="location__list">
-                          <span class="location__item">ПН-ПТ с 12 до 21 </span>
-                          <span class="location__item"> СБ с 12 до 18</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="form-row">
-                    <div>
-                      <div class="form-subtitle">способ оплаты</div>
-                      <ul class="order-form__list-radio">
-                        <li>
-                          <label class="form-radio">
-                            <input class="visually-hidden"
-                                   type="radio"
-                                   name="paymentGroup">
-                            <span>
-                              наличными при получении
-                            </span>
-
-                          </label>
-                        </li>
-                        <li>
-                          <label class="form-radio">
-                            <input class="visually-hidden"
-                                   type="radio"
-                                   name="paymentGroup">
-                            <span>
-                              картой при получении
-                            </span>
-
-                          </label>
-                        </li>
-                        <li>
-                          <label class="form-radio">
-                            <input class="visually-hidden"
-                                   type="radio"
-                                   name="paymentGroup">
-                            <span>картой на сайте</span>
-                          </label>
-                        </li>
-                      </ul>
-                    </div>
-                    <div>
-                      <div class="form-subtitle">Подтвердите ваше согласие</div>
-                      <label class="form-checkbox form-checkbox--black">
-                        <input class="visually-hidden"
-                               type="checkbox"
-                               required=""
-                               data-validate="confirm">
-                        <span>
-                          <span>@include('confirm-text.html')</span>
-                        </span>
-                      </label>
-                    </div>
-                  </div>
-                </div>
-
+            </div>
+            <div class="form-row">
+              <div class="form-field">
+                <input class="form-input"
+                       type="tel"
+                       name="Контактный телефон"
+                       required>
+                <label>телефон <span>*</span></label>
+              </div>
+              <div class="form-field">
+                <input class="form-input"
+                       type="mail"
+                       name="Контактная почта"
+                       required>
+                <label>E-mail <span>*</span></label>
               </div>
             </div>
           </div>
-        </div>
-        <div class="order-form__bottom">
-          <div class="order-form__total">
-            <div class="order-form__total-amount">Итого: <span>26 300 ₽</span></div>
-            <button class="order-form__btn">подтвердить</button>
+        </fieldset>
+
+        <fieldset class="order-fieldset">
+          <legend class="form-subtitle">выбор доставки</legend>
+          <div class="delivery">
+            <div class="delivery__type"
+                 id="delivery-type">
+              <label>
+                <input class="form-radio-tab"
+                       type="radio"
+                       name="Тип доставки"
+                       data-delivery-type="courier"
+                       value="Доставка"
+                       checked>
+                <span>Курьерская</span>
+              </label>
+              <label>
+                <input class="form-radio-tab"
+                       type="radio"
+                       name="Тип доставки"
+                       data-delivery-type="delivery"
+                       value="Доставка">
+                <span>Сдэк до ПВЗ</span>
+              </label>
+              <label>
+                <input class="form-radio-tab"
+                       type="radio"
+                       name="Тип доставки"
+                       data-delivery-type="pickup"
+                       value="Доставка">
+                <span>Самовывоз</span>
+              </label>
+            </div>
+            <div id="delivery-type-container">
+
+            </div>
+          </div>
+        </fieldset>
+
+        <div class="order-result">
+          <div class="order-result__total">
+            <div class="order-result__total-amount">Итого: <span>26 300 ₽</span></div>
+            <button class="order-result__btn">подтвердить</button>
           </div>
         </div>
+
       </form>
+
     </div>
     <aside class="page__aside">
 
@@ -502,10 +237,298 @@
   </div>
 </section>
 
-<template id="">
+<template id="courier">
+  <div class="delivery__section">
+    <div>
+      <div class="form-subtitle">Адрес</div>
+      <div class="order-fieldset__cont">
+        <div class="form-field form-field--select">
+          <select class="form-select"
+                  name="Страна"
+                  id="">
+            <option value=""
+                    selected></option>
+            <option value="1">Российская федерация</option>
+            <option value="2">Беларусь</option>
+          </select>
+          <label>страна <span>*</span></label>
+        </div>
+        <div class="form-row">
+          <div class="form-field form-field--select">
+            <select class="form-select"
+                    name="Город"
+                    id="">
+              <option value=""
+                      selected></option>
+              <option value="1">Москва и моск. область</option>
+              <option value="2">Пенза и пенз. область</option>
+            </select>
+            <label>город <span>*</span></label>
+          </div>
+          <div class="form-field">
+            <input class="form-input"
+                   type="text"
+                   name="Индекс"
+                   required>
+            <label>индекс <span>*</span></label>
+          </div>
+        </div>
+        <div class="form-field">
+          <input class="form-input"
+                 type="text"
+                 name="Адрес"
+                 required>
+          <label>адрес <span>*</span></label>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="form-row">
+        <div>
+          <div class="form-subtitle">способ оплаты</div>
+          <ul class="delivery__payments">
+            <li>
+              <label>
+                <input class="form-radio"
+                       type="radio"
+                       name="Способ оплаты"
+                       value="Наличными при получении">
+                <span>
+                  наличными при получении
+                </span>
+              </label>
+            </li>
+            <li>
+              <label>
+                <input class="form-radio"
+                       type="radio"
+                       name="Способ оплаты"
+                       value="Картой при получении">
+                <span>
+                  картой при получении
+                </span>
+              </label>
+            </li>
+            <li>
+              <label>
+                <input class="form-radio"
+                       type="radio"
+                       name="Способ оплаты"
+                       value="Картой на сайте">
+                <span>картой на сайте</span>
+              </label>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <div class="form-subtitle">Подтвердите ваше согласие</div>
+          <label class="form-checkbox form-checkbox--black">
+            <input class="visually-hidden"
+                   type="checkbox"
+                   required=""
+                   data-validate="confirm">
+            <span>
+              <span>@include('confirm-text.html')</span>
+            </span>
+          </label>
+        </div>
+      </div>
+      <div class="delivery__info">
+        <div class="delivery__title">Доставка</div>
+        <div class="delivery__details">
+          <dl class="delivery__detail">
+            <dt>курьерская До двери</dt>
+            <dd>{ от 1 до 3х дней }</dd>
+          </dl>
+          <dl class="delivery__detail">
+            <dt>стоимость</dt>
+            <dd>0.00 ₽</dd>
+          </dl>
+          <dl class="delivery__detail">
+            <dt>Первый платёж</dt>
+            <dd></dd>
+          </dl>
+          <dl class="delivery__detail">
+            <dt>долями</dt>
+            <dd>5 457 ₽</dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
 
+<template id="delivery">
+  <div class="delivery__section">
+    <div>
+      <div class="delivery__map">
+        <img src="/img/img-map-sdek.png">
+      </div>
+      <div class="form-subtitle">вы выбрали пункт пвз</div>
+      <div class="location">
+        <div class="location__top">
+          <div class="location__row">
+            <div class="location__title">САНКТ-ПЕТЕРБУРГ</div>
+            <button class="location__btn">Изменить</button>
+          </div>
+          <span class="location__address">Ул. Студенческая, 14, Корп. 2, Стр. 1, Пом. 4Н</span>
+        </div>
+        <div class="location__bottom">
+          <div class="location__subtitle">График работы:</div>
+          <div>
+            <span class="location__item">Пн-Пт с 10 до 20</span>
+            <span class="location__item">Сб с 11 до 21</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="form-row">
+        <div>
+          <div class="form-subtitle">способ оплаты</div>
+          <ul class="delivery__payments">
+            <li>
+              <label>
+                <input class="form-radio"
+                       type="radio"
+                       name="Способ оплаты"
+                       value="Наличными при получении">
+                <span>
+                  наличными при получении
+                </span>
+              </label>
+            </li>
+            <li>
+              <label>
+                <input class="form-radio"
+                       type="radio"
+                       name="Способ оплаты"
+                       value="Картой при получении">
+                <span>
+                  картой при получении
+                </span>
+              </label>
+            </li>
+            <li>
+              <label>
+                <input class="form-radio"
+                       type="radio"
+                       name="Способ оплаты"
+                       value="Картой на сайте">
+                <span>картой на сайте</span>
+              </label>
+            </li>
+          </ul>
+        </div>
+        <div>
+
+          <div class="form-subtitle">Подтвердите ваше согласие</div>
+          <label class="form-checkbox form-checkbox--black">
+            <input class="visually-hidden"
+                   type="checkbox"
+                   required=""
+                   data-validate="confirm">
+            <span>
+              <span>@include('confirm-text.html')</span>
+            </span>
+          </label>
+        </div>
+
+      </div>
+      <div class="delivery__info">
+        <div class="delivery__title">Доставка</div>
+        <div class="delivery__details">
+          <dl class="delivery__detail">
+            <dt>сдэк до пункта пвз</dt>
+            <dd>{ от 2 до 3х дней }</dd>
+          </dl>
+          <dl class="delivery__detail">
+            <dt>стоимость</dt>
+            <dd>0.00 ₽</dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </div>
 </template>
-<template id="">
-</template>
-<template id="">
+
+<template id="pickup">
+  <div class="delivery__section">
+    <div>
+      <div class="delivery__map">
+        <img src="/img/img-map-pickup.png">
+      </div>
+      <div class="form-subtitle">шоурум</div>
+
+      <div class="location">
+        <div class="location__top">
+          <div class="location__row">
+            <div class="location__title">Москва</div>
+          </div>
+          <span class="location__address">Большой Сухаревский пер, д. 13, стр. 1.</span>
+        </div>
+
+        <div class="location__bottom">
+          <div class="location__subtitle">График работы:</div>
+          <div class="location__list">
+            <span class="location__item">ПН-ПТ с 12 до 21 </span>
+            <span class="location__item"> СБ с 12 до 18</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div>
+        <div class="form-subtitle">способ оплаты</div>
+        <ul class="delivery__payments">
+          <li>
+            <label>
+              <input class="form-radio"
+                     type="radio"
+                     name="Способ оплаты"
+                     value="Наличными при получении">
+              <span>
+                наличными при получении
+              </span>
+            </label>
+          </li>
+          <li>
+            <label>
+              <input class="form-radio"
+                     type="radio"
+                     name="Способ оплаты"
+                     value="Картой при получении">
+              <span>
+                картой при получении
+              </span>
+            </label>
+          </li>
+          <li>
+            <label>
+              <input class="form-radio"
+                     type="radio"
+                     name="Способ оплаты"
+                     value="Картой на сайте">
+              <span>
+                картой на сайте
+              </span>
+            </label>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <div class="form-subtitle">Подтвердите ваше согласие</div>
+        <label class="form-checkbox form-checkbox--black">
+          <input class="visually-hidden"
+                 type="checkbox"
+                 required=""
+                 data-validate="confirm">
+          <span>
+            <span>@include('confirm-text.html')</span>
+          </span>
+        </label>
+      </div>
+    </div>
+  </div>
 </template>

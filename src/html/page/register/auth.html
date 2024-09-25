@@ -2,11 +2,20 @@
   <div class="container page__centered">
     <h1 class="title page__title">Личный кабинет</h1>
 
-    <div class="auth__links">
-      <a class="auth__link"
-         href="/page-login.html">вход</a>
-      <a class="auth__link is-selected"
-         href="">регистрация</a>
+    <div class="links links--max-width">
+      <ul class="links__list">
+
+        <li>
+          <a class="links__item"
+             href="/page-login.html">вход</a>
+        </li>
+
+        <li>
+          <a class="links__item is-selected"
+             href="">регистрация</a>
+        </li>
+
+      </ul>
     </div>
 
     <form class="auth-register"
@@ -45,12 +54,19 @@
             <label>E-mail <span>*</span></label>
           </div>
         </div>
-        <div class="form-field">
+        <div class="form-field flatpickr"
+             data-id="birthday">
           <input class="form-input"
-                 type="text"
+                 id="birthday"
+                 type="date"
                  name="День рождение"
-                 required>
+                 required
+                 data-input>
           <label>День рождение </label>
+          <a class="flatpickr-clear visually-hidden"
+             title="clear"
+             data-clear>
+          </a>
         </div>
         <div class="form-field">
           <input class="form-input"

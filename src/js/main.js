@@ -35,8 +35,10 @@ import {
 } from './modules/tabs.js';
 
 import {
-  checkFilledSelect,
-} from './modules/select.js';
+  initDeliveryType,
+} from './modules/delivery-type.js';
+
+import './modules/flatpickr.js';
 
 document.addEventListener( 'DOMContentLoaded', () => {
   iosVhFix();
@@ -49,6 +51,8 @@ document.addEventListener( 'DOMContentLoaded', () => {
     initHeaderMenu();
     initStepper();
     initTabs();
-    checkFilledSelect();
+    initDeliveryType();
+    checkFilledInputDate();
+    appendBtnReset();
   } );
 } );

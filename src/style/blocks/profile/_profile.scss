@@ -1,0 +1,41 @@
+.profile {
+  & .page__title {
+    margin-bottom: 0;
+  }
+
+  &__quit {
+    @include btn-reset;
+
+    display: block;
+    font-weight: 300;
+    font-size: 14px;
+    color: var(--green);
+    margin: 20px 20px 0 0;
+
+    @include media-min ($md) {
+      margin: 0;
+      margin-left: 20px;
+    }
+  }
+
+  & .page__section {
+    margin-right: 150px;
+  }
+
+  &__form {
+    display: grid;
+    row-gap: 30px;
+  }
+
+  &__form-btns {
+    display: grid;
+    row-gap: 15px;
+    column-gap: 40px;
+    justify-items: center;
+    margin-top: 30px;
+
+    @include media-min ($md) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}

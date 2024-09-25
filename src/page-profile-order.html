@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  @include('html/head/index.html')
+  <title>Главная</title>
+</head>
+
+<body class="indent-reset site">
+  <div aria-hidden="true"
+       id="site-top"></div>
+  <div class="site__container">
+    @include('html/header/index.html')
+    <div class="site__content">
+      @include('html/page/profile-order/breadcrumbs.html', {title: 'Заказы'})
+      <main>
+        @include('html/page/profile-order/index.html')
+      </main>
+    </div>
+    @include('html/footer/index.html')
+  </div>
+  @include('html/common/scripts.html')
+</body>
+
+</html>

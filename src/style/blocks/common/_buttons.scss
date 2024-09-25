@@ -2,6 +2,17 @@
   @include btn-reset;
 
 
+  padding: 20px;
+  width: 100%;
+  max-width: 400px;
+
+
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-align: center;
+
   //
   // justify-content: center;
   // align-items: center;
@@ -30,19 +41,27 @@
     text-align: center;
   }
 
-  &--primary {
+  &--dark {
     background-color: var(--black-90);
-
-    max-width: 400px;
-
-    font-weight: 400;
-    font-size: 14px;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    text-align: center;
     color: var(--white);
 
-    padding: 20px;
-    width: 100%;
+
   }
+
+  &--white {}
+
+  &--purple {
+    background-color: rgba(120, 0, 62, .1);
+    ;
+    color: var(--purple);
+  }
+}
+
+.flatpickr-clear-button {
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--green);
+  padding: 20px;
+  border-top: 1px solid var(--gray-light);
+  margin: 0 10px;
 }

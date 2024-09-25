@@ -6,3 +6,38 @@
 .swiper-slide {
   height: var(--swiper-height, 100%);
 }
+
+.flatpickr-innerContainer {
+  display: grid;
+}
+
+.flatpickr-day,
+.flatpickr-weekday {
+  color: var(--black-90);
+}
+
+.flatpickr-day.selected:hover,
+.flatpickr-day:hover,
+.flatpickr-day.today:hover {
+  color: var(--green);
+  background: rgba(183, 211, 196, 0.1);
+  border-color: var(--green);
+}
+
+.flatpickr-day.selected {
+  color: var(--green);
+  background: rgba(183, 211, 196, 0.1);
+  border-color: var(--green);
+}
+
+.flatpickr-day.today {
+  border-color: transparent;
+  background: none;
+  color: var(--black-90);
+}
+
+.flatpickr-day.today.selected {
+  color: var(--green);
+  background: rgba(183, 211, 196, 0.1);
+  border-color: var(--green);
+}
