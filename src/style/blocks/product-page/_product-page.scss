@@ -201,20 +201,6 @@
     }
   }
 
-  &__btn {
-    @include btn-reset;
-
-    margin-top: 16px;
-
-    background-color: var(--black-90);
-    font-weight: 400;
-    font-size: 14px;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: var(--white);
-    padding: 20px;
-  }
-
   &__descr {
     font-weight: 300;
     font-size: 14px;

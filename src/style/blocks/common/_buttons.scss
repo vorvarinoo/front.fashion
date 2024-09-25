@@ -45,6 +45,17 @@
     background-color: var(--black-90);
     color: var(--white);
 
+    @media (nover: hover) {
+      &:hover {
+        background-color: var(--purple);
+      }
+    }
+
+    @media (nover: none) {
+      &:active {
+        background-color: var(--purple);
+      }
+    }
 
   }
 
@@ -52,7 +63,6 @@
 
   &--purple {
     background-color: rgba(120, 0, 62, .1);
-    ;
     color: var(--purple);
   }
 }

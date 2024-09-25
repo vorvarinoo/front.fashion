@@ -278,9 +278,14 @@
 .form-select {
   padding-top: 14px;
   appearance: none;
+  background-color: transparent;
 
   &::-ms-expand {
     display: none;
+  }
+
+  & option {
+    background-color: var(--white);
   }
 }
 
