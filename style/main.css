@@ -910,7 +910,6 @@ strong {
   width: 100%;
   max-width: 400px;
   padding: 0;
-  padding: 20px;
 
   font-weight: 400;
   font-size: 14px;
@@ -943,6 +942,8 @@ strong {
   letter-spacing: 0.1em;
 }
 .btn--dark {
+  padding: 20px;
+
   color: var(--white);
 
   background-color: var(--black-90);
@@ -958,6 +959,8 @@ strong {
   }
 }
 .btn--purple {
+  padding: 20px;
+
   color: var(--purple);
 
   background-color: rgba(120, 0, 62, 0.1);
@@ -2412,12 +2415,14 @@ strong {
 }
 .about__img {
   align-self: center;
+  margin-bottom: 24px;
 
   text-align: center;
 }
 @media (min-width: 992px) {
   .about__img {
     height: 100%;
+    margin-bottom: 0;
   }
 }
 .about__img > img {
