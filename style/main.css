@@ -1696,7 +1696,7 @@ strong {
   }
 }
 .logo > img {
-  height: 100%;
+  height: auto;
 }
 
 .promo-code {
