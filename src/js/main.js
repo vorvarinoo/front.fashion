@@ -40,6 +40,10 @@ import {
 
 import './modules/flatpickr.js';
 
+import {
+  passwordToggle,
+} from './modules/input.js';
+
 document.addEventListener( 'DOMContentLoaded', () => {
   iosVhFix();
 
@@ -52,7 +56,8 @@ document.addEventListener( 'DOMContentLoaded', () => {
     initStepper();
     initTabs();
     initDeliveryType();
-    checkFilledInputDate();
-    appendBtnReset();
+    // checkFilledInputDate();
+    // appendBtnReset();
+    passwordToggle();
   } );
 } );

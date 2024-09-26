@@ -3,10 +3,23 @@
   border: 1px solid transparent;
   padding: 3px;
 
+  transition: opacity .2s ease-in-out;
 
   @include media-min ($xl) {
     border-width: 2px;
     padding: 10px;
+  }
+
+  @media (hover: hover) {
+    &:hover {
+      opacity: .8;
+    }
+  }
+
+  @media (hover: none) {
+    &:active {
+      opacity: .8;
+    }
   }
 
   &--none {

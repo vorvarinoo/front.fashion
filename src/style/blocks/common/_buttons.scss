@@ -1,17 +1,27 @@
 .btn {
   @include btn-reset;
 
-
-
-  width: 100%;
-  max-width: 400px;
-
-
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   text-align: center;
+
+  transition: opacity .2s ease-in-out,
+    background-color .2s ease-in-out,
+    color .2s ease-in-out;
+
+  @media (hover: hover) {
+    &:hover {
+      opacity: .8;
+    }
+  }
+
+  @media (hover: none) {
+    &:active {
+      opacity: .8;
+    }
+  }
 
   //
   // justify-content: center;
@@ -39,6 +49,7 @@
     display: inline-flex;
     align-items: center;
     text-align: center;
+
   }
 
   &--dark {
@@ -46,13 +57,18 @@
     background-color: var(--black-90);
     color: var(--white);
 
-    @media (nover: hover) {
+    width: 100%;
+    max-width: 400px;
+
+    transition: background-color .2s ease-in-out;
+
+    @media (hover: hover) {
       &:hover {
         background-color: var(--purple);
       }
     }
 
-    @media (nover: none) {
+    @media (hover: none) {
       &:active {
         background-color: var(--purple);
       }
@@ -60,12 +76,26 @@
 
   }
 
-  &--white {}
+  &--white {
+    padding: 20px;
+    background: var(--white);
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--black-90);
+    max-width: 240px;
+    width: 100%;
+
+  }
 
   &--purple {
     padding: 20px;
     background-color: rgba(120, 0, 62, .1);
     color: var(--purple);
+
+    width: 100%;
+    max-width: 400px;
   }
 }
 
