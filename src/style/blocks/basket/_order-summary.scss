@@ -6,9 +6,11 @@
 
   @include media-min ($lg) {
     border-top: 1px solid var(--gray-light);
-    margin-top: 130px;
 
     max-width: 330px;
+
+    position: sticky;
+    top: calc(var(--offset-top) + 24px);
   }
 
   &__row {

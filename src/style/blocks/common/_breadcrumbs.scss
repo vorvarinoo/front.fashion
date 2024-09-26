@@ -1,8 +1,7 @@
 .breadcrumbs {
-  --breadcrumbs-text: #4f4f4f;
   display: none;
 
-  color: var(--breadcrumbs-text, var(--main-text));
+  color: var(--accent);
   background-color: transparent;
 
   padding-top: 48px;
@@ -19,13 +18,12 @@
       transition: color .2s ease-in-out, text-decoration-color .2s ease-in-out;
 
       &:hover {
-        color: var(--accent);
         text-decoration-color: var(--accent);
       }
     }
   }
 
   & .current-item {
-    color: var(--accent);
+    color: #4f4f4f;
   }
 }

@@ -39,9 +39,6 @@
       font-weight: 400;
       font-size: 14px;
 
-      cursor: pointer;
-      user-select: none;
-
     }
 
     &[data-toggle="dropdown"] {
@@ -60,9 +57,18 @@
           margin-left: 20px;
         }
 
-        &:hover {
-          color: var(--green);
+        @media (hover: hover) {
+          &:hover {
+            color: var(--green);
+          }
         }
+
+        @media (hover: none) {
+          &:active {
+            color: var(--green);
+          }
+        }
+
       }
     }
 
@@ -77,7 +83,7 @@
       max-height: 298px;
       width: 100%;
       right: 0;
-
+      overscroll-behavior: none;
       box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
 
       scrollbar-color: var(--green) #f6f6f6;

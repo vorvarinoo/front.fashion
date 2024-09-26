@@ -1,5 +1,6 @@
 .slider {
-  --swiper-pagination-bullet-size: 8px;
+  --swiper-pagination-bullet-size: 6px;
+  --swiper-pagination-bullet-horizontal-gap: 3px;
   --swiper-theme-color: var(--accent);
   --swiper-pagination-bullet-inactive-opacity: 1;
   --swiper-pagination-bullet-inactive-color: var(--white);
@@ -9,6 +10,11 @@
 
   position: relative;
   overflow: hidden;
+
+  @include media-min ($lg) {
+    --swiper-pagination-bullet-size: 8px;
+    --swiper-pagination-bullet-horizontal-gap: 4px;
+  }
 
   &__wrapper {
     box-sizing: border-box;
@@ -27,9 +33,6 @@
 .swiper-pagination {
   bottom: 8px;
 
-  @include media-min (524px) {
-    display: none;
-  }
 }
 
 .slider-controls-btn {

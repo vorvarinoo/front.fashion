@@ -5,6 +5,14 @@ body {
   font-family: $main-font, Arial, Helvetica, sans-serif;
   color: var(--main-text);
   background-color: var(--main-bg);
+  -webkit-font-feature-settings: "lnum";
+  -moz-font-feature-settings: "lnum";
+  font-feature-settings: "lnum";
+  font-variant-numeric: lining-nums;
+
+  @include media-min ($lg) {
+    font-size: 16px;
+  }
 }
 
 h1,
@@ -18,7 +26,7 @@ h6 {
 
 b,
 strong {
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .text-sm {

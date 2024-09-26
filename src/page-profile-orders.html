@@ -12,8 +12,9 @@
   <div class="site__container">
     @include('html/header/index.html')
     <div class="site__content">
+      @include('html/page/profile-orders/breadcrumbs.html', {title: 'Заказы'})
       <main>
-        @include('html/page/search/index.html')
+        @include('html/page/profile-orders/index.html')
       </main>
     </div>
     @include('html/footer/index.html')

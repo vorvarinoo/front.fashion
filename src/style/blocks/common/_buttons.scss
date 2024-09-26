@@ -2,7 +2,7 @@
   @include btn-reset;
 
 
-  padding: 20px;
+
   width: 100%;
   max-width: 400px;
 
@@ -42,6 +42,7 @@
   }
 
   &--dark {
+    padding: 20px;
     background-color: var(--black-90);
     color: var(--white);
 
@@ -62,6 +63,7 @@
   &--white {}
 
   &--purple {
+    padding: 20px;
     background-color: rgba(120, 0, 62, .1);
     color: var(--purple);
   }

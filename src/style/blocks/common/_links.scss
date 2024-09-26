@@ -32,7 +32,7 @@
     grid-auto-columns: 1fr;
     width: 100%;
 
-    @include media-min ($lg) {
+    @include media-min ($md) {
       max-width: 400px;
     }
   }
@@ -41,7 +41,6 @@
     position: relative;
     display: block;
     z-index: 1;
-    max-width: 200px;
     width: 100%;
 
     text-align: center;
@@ -60,6 +59,10 @@
     &.is-selected {
       color: var(--black-90);
       border-bottom: 3px solid var(--black-90);
+    }
+
+    @include media-min ($md) {
+      max-width: 200px;
     }
   }
 }

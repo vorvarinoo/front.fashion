@@ -1,6 +1,11 @@
 .basket {
+
   &__list {
     @include list-reset;
+
+    & li:first-child {
+      padding-top: 0;
+    }
   }
 }
 

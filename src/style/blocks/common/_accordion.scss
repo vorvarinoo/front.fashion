@@ -18,13 +18,22 @@
     --before-item-cross-rotate: 225deg;
   }
 
-  &:hover {
-    --item-color: var(--purple);
+
+
+  @media (hover: hover) {
+    &:hover {
+      --item-color: var(--purple);
+    }
+  }
+
+  @media (hover: none) {
+    &:active {
+      --item-color: var(--purple);
+    }
   }
 
 
   &__title {
-    list-style: none;
     position: relative;
     font-weight: 400;
     font-size: 14px;
@@ -33,9 +42,6 @@
 
     display: flex;
     align-items: center;
-
-    cursor: pointer;
-    user-select: none;
 
     transition: color .3s ease-in-out;
 

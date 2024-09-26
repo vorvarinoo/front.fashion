@@ -1,97 +1,101 @@
 <section class="auth page">
-  <div class="container page__centered">
+  <div class="container ">
     <h1 class="title page__title">Личный кабинет</h1>
+    <div class="page__centered">
+      <div class="auth__cont">
+        <div class="links links--max-width">
+          <ul class="links__list">
 
-    <div class="links links--max-width">
-      <ul class="links__list">
+            <li>
+              <a class="links__item"
+                 href="/page-login.html">вход</a>
+            </li>
 
-        <li>
-          <a class="links__item"
-             href="/page-login.html">вход</a>
-        </li>
+            <li>
+              <a class="links__item is-selected"
+                 href="">регистрация</a>
+            </li>
 
-        <li>
-          <a class="links__item is-selected"
-             href="">регистрация</a>
-        </li>
+          </ul>
+        </div>
 
-      </ul>
+        <form class="auth-register"
+              id="register-form">
+          <div class="form-subtitle">личные данные</div>
+          <div class="auth-register__cont">
+            <div class="form-row">
+              <div class="form-field">
+                <input class="form-input"
+                       type="text"
+                       name="Имя"
+                       required>
+                <label>имя <span>*</span></label>
+              </div>
+              <div class="form-field">
+                <input class="form-input"
+                       type="text"
+                       name="Фамилия"
+                       required>
+                <label>фамилия <span>*</span> </label>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-field">
+                <input class="form-input"
+                       type="tel"
+                       name="Контактный телефон"
+                       required>
+                <label>Телефон <span>*</span></label>
+              </div>
+              <div class="form-field">
+                <input class="form-input"
+                       type="mail"
+                       name="Контактная почты"
+                       required>
+                <label>E-mail <span>*</span></label>
+              </div>
+            </div>
+            <div class="form-field flatpickr"
+                 data-id="birthday">
+              <input class="form-input"
+                     id="birthday"
+                     type="date"
+                     name="День рождение"
+                     required
+                     data-input>
+              <label>День рождение </label>
+              <a class="flatpickr-clear visually-hidden"
+                 title="clear"
+                 data-clear>
+              </a>
+            </div>
+            <div class="form-field">
+              <input class="form-input"
+                     type="password"
+                     name="Пароль"
+                     required>
+              <label>пароль <span>*</span> </label>
+            </div>
+
+            <div>
+              <div class="form-subtitle form-subtitle--sm">Подтвердите ваше согласие</div>
+              <label class="form-checkbox form-checkbox--black">
+                <input class="visually-hidden"
+                       type="checkbox"
+                       required=""
+                       data-validate="confirm">
+                <span>
+                  <span>@include('../order/confirm-text.html')</span>
+                </span>
+              </label>
+            </div>
+          </div>
+          <button class="btn btn--dark"
+                  type="submit">зарегистрироваться</button>
+        </form>
+      </div>
     </div>
 
-    <form class="auth-register"
-          id="register-form">
-      <div class="form-subtitle">личные данные</div>
-      <div class="auth-register__cont">
-        <div class="form-row">
-          <div class="form-field">
-            <input class="form-input"
-                   type="text"
-                   name="Имя"
-                   required>
-            <label>имя <span>*</span></label>
-          </div>
-          <div class="form-field">
-            <input class="form-input"
-                   type="text"
-                   name="Фамилия"
-                   required>
-            <label>фамилия <span>*</span> </label>
-          </div>
-        </div>
-        <div class="form-row">
-          <div class="form-field">
-            <input class="form-input"
-                   type="tel"
-                   name="Контактный телефон"
-                   required>
-            <label>Телефон <span>*</span></label>
-          </div>
-          <div class="form-field">
-            <input class="form-input"
-                   type="mail"
-                   name="Контактная почты"
-                   required>
-            <label>E-mail <span>*</span></label>
-          </div>
-        </div>
-        <div class="form-field flatpickr"
-             data-id="birthday">
-          <input class="form-input"
-                 id="birthday"
-                 type="date"
-                 name="День рождение"
-                 required
-                 data-input>
-          <label>День рождение </label>
-          <a class="flatpickr-clear visually-hidden"
-             title="clear"
-             data-clear>
-          </a>
-        </div>
-        <div class="form-field">
-          <input class="form-input"
-                 type="password"
-                 name="Пароль"
-                 required>
-          <label>пароль <span>*</span> </label>
-        </div>
-
-        <div>
-          <div class="form-subtitle form-subtitle--sm">Подтвердите ваше согласие</div>
-          <label class="form-checkbox form-checkbox--black">
-            <input class="visually-hidden"
-                   type="checkbox"
-                   required=""
-                   data-validate="confirm">
-            <span>
-              <span>@include('../order/confirm-text.html')</span>
-            </span>
-          </label>
-        </div>
-      </div>
-      <button class="btn btn--primary"
-              type="submit">зарегистрироваться</button>
-    </form>
 
   </div>
 </section>

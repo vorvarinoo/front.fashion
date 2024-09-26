@@ -1,0 +1,99 @@
+.orders-details {
+  display: grid;
+
+  border-top: 1px solid var(--green);
+  border-bottom: 1px solid var(--green);
+  margin-bottom: 40px;
+
+  @include media-min ($md) {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 48px;
+    row-gap: 20px;
+  }
+
+  @include media-min ($lg) {
+    border-top: 0;
+    border-bottom: 1px solid var(--gray-light);
+    padding-bottom: 48px;
+  }
+
+  @include media-min ($xl) {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 100px;
+  }
+
+  &__item {
+    display: grid;
+    grid-template-rows: 1fr;
+    align-self: flex-start;
+
+    @include media-min ($md) {
+      row-gap: 20px;
+    }
+
+    & dl,
+    & dt,
+    & dd {
+      margin: 0;
+      padding: 0;
+    }
+
+    & dl {
+      display: grid;
+      row-gap: 16px;
+      padding: 20px 0;
+      grid-template-rows: min-content;
+      align-self: flex-start;
+
+      border-bottom: 1px dashed var(--gray-light);
+
+      @include media-min ($md) {
+        border: none;
+      }
+
+      @include media-min ($lg) {
+        padding: 0;
+        grid-template-columns: .4fr 1fr;
+      }
+    }
+
+    & dt,
+    & dd {
+      margin: 0;
+      padding: 0;
+
+      font-weight: 500;
+      font-size: 14px;
+      text-transform: uppercase;
+      color: var(--black-90);
+    }
+
+    & dd {
+      font-weight: 400;
+      display: grid;
+      align-items: flex-start;
+      justify-content: flex-start;
+      grid-template-rows: min-content;
+
+      @include media-min ($lg) {
+        margin-left: 20px;
+      }
+    }
+  }
+
+  &__btn {
+    @include btn-reset;
+    padding: 20px 0;
+
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: var(--black-90);
+    align-self: flex-start;
+    justify-self: flex-start;
+
+    @include media-min ($lg) {
+      padding: 0;
+    }
+  }
+}

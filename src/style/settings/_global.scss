@@ -24,8 +24,24 @@ a {
   text-decoration-color: var(--link-line, transparent);
 }
 
+details {
+  list-style: none;
+
+
+  & summary {
+    list-style-type: none;
+    user-select: none;
+    cursor: pointer;
+
+    &::-webkit-details-marker {
+      display: none;
+      /* Chrome */
+    }
+  }
+}
+
 .container {
-  --max-width: 1360px;
+  --max-width: 1232px;
   width: min(var(--max-width), 100% - var(--container-padding, 32px));
   margin: 0 auto;
   box-sizing: border-box;

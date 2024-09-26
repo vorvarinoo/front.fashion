@@ -1,11 +1,46 @@
 .modal {
+  --modal-icon-color: var(--white);
+
+
   position: relative;
   margin: 0 auto;
   padding: 24px;
   width: 100%;
-  max-width: 330px;
+  max-width: 740px;
   color: var(--modal-text, var(--main-text));
   background-color: var(--modal-bg, var(--main-bg));
+
+  &--sizes {
+    --modal-icon-color: #bdbdbd;
+    --modal-bg: var(--white);
+    padding: 32px 10px;
+
+    @include media-min ($lg) {
+      padding: 48px 48px 32px;
+    }
+
+    & .modal__close {
+      top: 10px;
+      right: 10px;
+
+      @include media-min ($lg) {
+        top: 24px;
+        right: 24px;
+      }
+
+      @media (hover: hover) {
+        &:hover {
+          --modal-icon-color: var(--green);
+        }
+      }
+
+      @media (hover: none) {
+        &:active {
+          --modal-icon-color: var(--green);
+        }
+      }
+    }
+  }
 
   &__close {
     @include btn-reset;
@@ -16,8 +51,62 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: var(--modal-icon-size, var(--modal-icon-width, 32px));
-    height: var(--smodal-icon-size, var(--modal-icon-height, 32px));
+    width: var(--modal-icon-size, var(--modal-icon-width, 18px));
+    height: var(--smodal-icon-size, var(--modal-icon-height, 18px));
     color: var(--modal-icon-color, currentColor);
+
+    transition: color .2s ease-in-out;
+  }
+}
+
+.modal-size {
+
+
+  &__title {
+    font-size: 24px;
+    color: var(--green);
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+
+    @include media-min ($lg) {
+      font-size: 36px;
+    }
+  }
+
+  &__table {
+    --main-size-text: 10px;
+
+    width: 100%;
+    border-collapse: collapse;
+
+    @include media-min ($md) {
+      --main-size-text: 14px;
+    }
+
+    & th {
+      border-bottom: 1px solid var(--gray-light);
+      text-align: center;
+      font-weight: 400;
+      font-size: var(--main-size-text);
+      text-transform: uppercase;
+      color: var(--black-90);
+
+      padding-bottom: 12px;
+
+    }
+
+
+
+    & td {
+      text-align: center;
+      font-weight: 400;
+      font-size: var(--main-size-text);
+      text-transform: uppercase;
+      color: var(--black-90);
+
+      padding: 12px 0;
+      width: 127px;
+    }
   }
 }

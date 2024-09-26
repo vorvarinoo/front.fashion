@@ -25,10 +25,12 @@
     text-transform: uppercase;
     text-align: center;
     color: var(--black-90);
-    margin-bottom: 40px;
+
   }
 
   &__btn {
+    margin-top: 40px;
+
     font-weight: 400;
     font-size: 14px;
     letter-spacing: 0.1em;
