@@ -349,6 +349,10 @@
       -ms-user-select: none;
           user-select: none;
 }
+.menu__dropdown summary::before,
+.menu__dropdown summary::after {
+  content: none;
+}
 .menu__dropdown svg {
   color: #acacac;
 
