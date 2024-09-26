@@ -3,1083 +3,855 @@
 
 <head>
   <meta charset="utf-8">
-<meta name="viewport"
-      content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible"
-      content="ie=edge">
-<link rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="favicon-16x16.png">
-<link rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="favicon-32x32.png">
-<link rel="apple-touch-icon"
-      sizes="180x180"
-      href="apple-touch-icon.png">
-<link rel="manifest"
-      href="site.webmanifest">
-<link rel="preload"
-      href="fonts/opensans-regular.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin>
-<link rel="stylesheet"
-      href="style/vendor-bundle.css">
-<link rel="stylesheet"
-      href="style/main.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="preload" href="fonts/opensans-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="style/vendor-bundle.css">
+  <link rel="stylesheet" href="style/main.css">
   <title>Главная</title>
 </head>
 
 <body class="indent-reset site">
-  <div aria-hidden="true"
-       id="site-top"></div>
+  <div aria-hidden="true" id="site-top"></div>
   <div class="site__container">
     <header class="site__header header">
-  <div class="container">
-    <div class="header__wrap">
-      <div class="header__left">
-        <ul class="list-reset header__list">
-          <li class="header__item d-none-lg">
-            <button id="btn-mob-menu"
-                    class="btn-reset header__burger">
-              <svg width="30"
-                   height="16"
-                   aria-hidden="true">
-                <use xlink:href="img/sprite.svg#icon-burger"></use>
-              </svg>
-            </button>
-          </li>
-          <li class="header__item d-none-sm">
-            <button id="btn-catalog-menu"
-                    class="btn-reset">
-              каталог
-            </button>
-          </li>
-          <li class="header__item d-none-sm">
-            <button id="btn-customers-menu"
-                    class="btn-reset">
-              покупателям
-            </button>
-          </li>
-          <li class="header__item d-none-sm">
-            <a href="#">Контакты</a>
-          </li>
-        </ul>
-      </div>
-      <div class="header__middle">
-        <a class="logo"
-           href="/">
-          <img src="/img/logo.svg"
-               alt="Logo FRONT">
-        </a>
-      </div>
-      <div class="header__right">
-        <ul class="list-reset header__list header__list--justify-end">
+      <div class="container">
+        <div class="header__wrap">
+          <div class="header__left">
+            <ul class="list-reset header__list">
+              <li class="header__item d-none-lg">
+                <button id="btn-mob-menu" class="btn-reset header__burger">
+                  <svg width="30" height="16" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#icon-burger"></use>
+                  </svg>
+                </button>
+              </li>
+              <li class="header__item d-none-sm">
+                <button id="btn-catalog-menu" class="btn-reset">
+                  каталог
+                </button>
+              </li>
+              <li class="header__item d-none-sm">
+                <button id="btn-customers-menu" class="btn-reset">
+                  покупателям
+                </button>
+              </li>
+              <li class="header__item d-none-sm">
+                <a href="#">Контакты</a>
+              </li>
+            </ul>
+          </div>
+          <div class="header__middle">
+            <a class="logo" href="/">
+              <img src="/img/logo.svg" alt="Logo FRONT">
+            </a>
+          </div>
+          <div class="header__right">
+            <ul class="list-reset header__list header__list--justify-end">
 
-          <li class="header__item">
-            <button class="btn-reset header__search">
-              <svg width="24"
-                   height="24"
-                   aria-hidden="true">
-                <use xlink:href="img/sprite.svg#icon-search"></use>
-              </svg>
-            </button>
-          </li>
-          <li class="header__item d-none-sm">
-            <button class="language language--lg">ENglish</button>
-          </li>
-          <li class="header__item d-none-sm">
-            <a class="header__login"
-               href="#">
-              <svg width="24"
-                   height="24"
-                   aria-hidden="true">
-                <use xlink:href="img/sprite.svg#icon-person"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="header__item">
-            <a class="header__basket"
-               data-backet="1"
-               href="#">
-              <svg width="24"
-                   height="24"
-                   aria-hidden="true">
-                <use xlink:href="img/sprite.svg#icon-basket"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
+              <li class="header__item">
+                <button class="btn-reset header__search">
+                  <svg width="24" height="24" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#icon-search"></use>
+                  </svg>
+                </button>
+              </li>
+              <li class="header__item d-none-sm">
+                <button class="language language--lg">ENglish</button>
+              </li>
+              <li class="header__item d-none-sm">
+                <a class="header__login" href="#">
+                  <svg width="24" height="24" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#icon-person"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="header__item">
+                <a class="header__basket" data-backet="1" href="#">
+                  <svg width="24" height="24" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#icon-basket"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-  <div id="mob-menu"
-     class="header-modal"
-     aria-hidden="true">
-  <div class="header-modal__content">
-    <div class="container">
-      <div class="header-modal__top">
-        <button class="btn-reset header-modal__close">
-          <svg width="16"
-               height="16"
-               aria-hidden="true">
-            <use xlink:href="img/sprite.svg#icon-close"></use>
-          </svg>
-        </button>
-        <button class="language d-none-lg">ENglish</button>
-      </div>
-      <nav class="menu">
-        <ul>
-          <li class="menu__item">
-            <details class="menu__dropdown">
-              <summary class="menu__link">
-                Каталог
-                <svg width="10"
-                     height="17"
-                     aria-hidden="true">
-                  <use xlink:href="img/sprite.svg#icon-small-arrow"></use>
+      <div id="mob-menu" class="header-modal" aria-hidden="true">
+        <div class="header-modal__content">
+          <div class="container">
+            <div class="header-modal__top">
+              <button class="btn-reset header-modal__close">
+                <svg width="16" height="16" aria-hidden="true">
+                  <use xlink:href="img/sprite.svg#icon-close"></use>
                 </svg>
-              </summary>
+              </button>
+              <button class="language d-none-lg">ENglish</button>
+            </div>
+            <nav class="menu">
               <ul>
                 <li class="menu__item">
                   <details class="menu__dropdown">
                     <summary class="menu__link">
-                      Одежда
-                      <svg width="10"
-                           height="17"
-                           aria-hidden="true">
+                      Каталог
+                      <svg width="10" height="17" aria-hidden="true">
                         <use xlink:href="img/sprite.svg#icon-small-arrow"></use>
                       </svg>
                     </summary>
                     <ul>
                       <li class="menu__item">
-                        <a class="menu__link"
-                           href="#">посмотреть все</a>
+                        <details class="menu__dropdown">
+                          <summary class="menu__link">
+                            Одежда
+                            <svg width="10" height="17" aria-hidden="true">
+                              <use xlink:href="img/sprite.svg#icon-small-arrow"></use>
+                            </svg>
+                          </summary>
+                          <ul>
+                            <li class="menu__item">
+                              <a class="menu__link" href="#">посмотреть все</a>
+                            </li>
+                            <li class="menu__item">
+                              <a class="menu__link" href="#">женское</a>
+                            </li>
+                            <li class="menu__item">
+                              <a class="menu__link" href="#">мужское</a>
+                            </li>
+                          </ul>
+                        </details>
                       </li>
                       <li class="menu__item">
-                        <a class="menu__link"
-                           href="#">женское</a>
+                        <a class="menu__link" href="#">Аксессуары</a>
                       </li>
                       <li class="menu__item">
-                        <a class="menu__link"
-                           href="#">мужское</a>
+                        <a class="menu__link menu__link--purple" href="#">SALE</a>
+                      </li>
+                      <li class="menu__item">
+                        <a class="menu__link" href="#">Дизайнеры</a>
+                      </li>
+                      <li class="menu__item">
+                        <a class="menu__link" href="#">Свадебная коллекция</a>
+                      </li>
+                      <li class="menu__item">
+                        <a class="menu__link" href="#">Дом</a>
+                      </li>
+                      <li class="menu__item">
+                        <a class="menu__link" href="#">Подарки</a>
+                      </li>
+                      <li class="menu__item">
+                        <a class="menu__link" href="#">Подарочные сертификаты</a>
                       </li>
                     </ul>
                   </details>
                 </li>
                 <li class="menu__item">
-                  <a class="menu__link"
-                     href="#">Аксессуары</a>
+                  <details class="menu__dropdown">
+                    <summary class="menu__link">
+                      Покупателям
+                      <svg width="10" height="17" aria-hidden="true">
+                        <use xlink:href="img/sprite.svg#icon-small-arrow"></use>
+                      </svg>
+                    </summary>
+                    <ul>
+                      <li class="menu__item">
+                        <a class="menu__link" href="#">Доставка и оплата</a>
+                      </li>
+                      <li class="menu__item">
+                        <a class="menu__link" href="#">Помощь</a>
+                      </li>
+                      <li class="menu__item">
+                        <a class="menu__link" href="#">Политика</a>
+                      </li>
+                      <li class="menu__item">
+                        <a class="menu__link" href="#">Оферта</a>
+                      </li>
+                      <li class="menu__item">
+                        <a class="menu__link" href="#">Подарочный сертификат</a>
+                      </li>
+                    </ul>
+                  </details>
                 </li>
                 <li class="menu__item">
-                  <a class="menu__link menu__link--purple"
-                     href="#">SALE</a>
+                  <a class="menu__link menu__link--purple" href="#">О нас</a>
                 </li>
                 <li class="menu__item">
-                  <a class="menu__link"
-                     href="#">Дизайнеры</a>
+                  <a class="menu__link" href="#">Блог</a>
                 </li>
                 <li class="menu__item">
-                  <a class="menu__link"
-                     href="#">Свадебная коллекция</a>
-                </li>
-                <li class="menu__item">
-                  <a class="menu__link"
-                     href="#">Дом</a>
-                </li>
-                <li class="menu__item">
-                  <a class="menu__link"
-                     href="#">Подарки</a>
-                </li>
-                <li class="menu__item">
-                  <a class="menu__link"
-                     href="#">Подарочные сертификаты</a>
+                  <a class="menu__link" href="#">Контакты</a>
                 </li>
               </ul>
-            </details>
-          </li>
-          <li class="menu__item">
-            <details class="menu__dropdown">
-              <summary class="menu__link">
-                Покупателям
-                <svg width="10"
-                     height="17"
-                     aria-hidden="true">
-                  <use xlink:href="img/sprite.svg#icon-small-arrow"></use>
+            </nav>
+          </div>
+
+        </div>
+      </div>
+      <div id="catalog-menu" class="header-modal" aria-hidden="true">
+        <div class="header-modal__content">
+          <div class="container">
+            <div class="header-modal__top">
+              <button class="btn-reset header-modal__close">
+                <svg width="16" height="16" aria-hidden="true">
+                  <use xlink:href="img/sprite.svg#icon-close"></use>
                 </svg>
-              </summary>
+              </button>
+            </div>
+            <nav class="menu">
               <ul>
                 <li class="menu__item">
-                  <a class="menu__link"
-                     href="#">Доставка и оплата</a>
+                  <details class="menu__dropdown">
+                    <summary class="menu__link">
+                      Одежда
+                      <svg width="10" height="17" aria-hidden="true">
+                        <use xlink:href="img/sprite.svg#icon-small-arrow"></use>
+                      </svg>
+                    </summary>
+                    <ul>
+                      <li class="menu__item">
+                        <a class="menu__link" href="#">посмотреть все</a>
+                      </li>
+                      <li class="menu__item">
+                        <a class="menu__link" href="#">женское</a>
+                      </li>
+                      <li class="menu__item">
+                        <a class="menu__link" href="#">мужское</a>
+                      </li>
+                      <li class="menu__item">
+                        <a class="menu__link" href="#">детское</a>
+                      </li>
+                    </ul>
+                  </details>
                 </li>
                 <li class="menu__item">
-                  <a class="menu__link"
-                     href="#">Помощь</a>
+                  <a class="menu__link" href="#">Аксессуары</a>
                 </li>
                 <li class="menu__item">
-                  <a class="menu__link"
-                     href="#">Политика</a>
+                  <a class="menu__link menu__link--purple" href="#">SALE</a>
                 </li>
                 <li class="menu__item">
-                  <a class="menu__link"
-                     href="#">Оферта</a>
+                  <a class="menu__link" href="#">Дизайнеры</a>
                 </li>
                 <li class="menu__item">
-                  <a class="menu__link"
-                     href="#">Подарочный сертификат</a>
+                  <a class="menu__link" href="#">Свадебная коллекция</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#">Дом</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#">Подарки</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#">Подарочные сертификаты</a>
                 </li>
               </ul>
-            </details>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link menu__link--purple"
-               href="#">О нас</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link"
-               href="#">Блог</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link"
-               href="#">Контакты</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
+            </nav>
+          </div>
 
-  </div>
-</div>
-<div id="catalog-menu"
-     class="header-modal"
-     aria-hidden="true">
-  <div class="header-modal__content">
-    <div class="container">
-      <div class="header-modal__top">
-        <button class="btn-reset header-modal__close">
-          <svg width="16"
-               height="16"
-               aria-hidden="true">
-            <use xlink:href="img/sprite.svg#icon-close"></use>
-          </svg>
-        </button>
+        </div>
       </div>
-      <nav class="menu">
-        <ul>
-          <li class="menu__item">
-            <details class="menu__dropdown">
-              <summary class="menu__link">
-                Одежда
-                <svg width="10"
-                     height="17"
-                     aria-hidden="true">
-                  <use xlink:href="img/sprite.svg#icon-small-arrow"></use>
+      <div id="customers-menu" class="header-modal" aria-hidden="true">
+        <div class="header-modal__content">
+          <div class="container">
+            <div class="header-modal__top">
+              <button class="btn-reset header-modal__close">
+                <svg width="16" height="16" aria-hidden="true">
+                  <use xlink:href="img/sprite.svg#icon-close"></use>
                 </svg>
-              </summary>
+              </button>
+            </div>
+            <nav class="menu">
               <ul>
                 <li class="menu__item">
-                  <a class="menu__link"
-                     href="#">посмотреть все</a>
+                  <a class="menu__link" href="#">Доставка и оплата</a>
                 </li>
                 <li class="menu__item">
-                  <a class="menu__link"
-                     href="#">женское</a>
+                  <a class="menu__link" href="#">Помощь</a>
                 </li>
                 <li class="menu__item">
-                  <a class="menu__link"
-                     href="#">мужское</a>
+                  <a class="menu__link" href="#">Политика</a>
                 </li>
                 <li class="menu__item">
-                  <a class="menu__link"
-                     href="#">детское</a>
+                  <a class="menu__link" href="#">Оферта</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#">Подарочный сертификат</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#">О нас</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#">Блог</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#">Контакты</a>
                 </li>
               </ul>
-            </details>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link"
-               href="#">Аксессуары</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link menu__link--purple"
-               href="#">SALE</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link"
-               href="#">Дизайнеры</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link"
-               href="#">Свадебная коллекция</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link"
-               href="#">Дом</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link"
-               href="#">Подарки</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link"
-               href="#">Подарочные сертификаты</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
+            </nav>
+          </div>
 
-  </div>
-</div>
-<div id="customers-menu"
-     class="header-modal"
-     aria-hidden="true">
-  <div class="header-modal__content">
-    <div class="container">
-      <div class="header-modal__top">
-        <button class="btn-reset header-modal__close">
-          <svg width="16"
-               height="16"
-               aria-hidden="true">
-            <use xlink:href="img/sprite.svg#icon-close"></use>
-          </svg>
-        </button>
+        </div>
       </div>
-      <nav class="menu">
-        <ul>
-          <li class="menu__item">
-            <a class="menu__link"
-               href="#">Доставка и оплата</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link"
-               href="#">Помощь</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link"
-               href="#">Политика</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link"
-               href="#">Оферта</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link"
-               href="#">Подарочный сертификат</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link"
-               href="#">О нас</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link"
-               href="#">Блог</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link"
-               href="#">Контакты</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-
-  </div>
-</div>
-</header>
+    </header>
     <div class="site__content">
-      <div class="breadcrumbs"
-     typeof="BreadcrumbList"
-     vocab="https://schema.org/">
-  <div class="container">
-    <a href="page-main.html">Главная</a>&ensp;&frasl;&ensp;<a href="page-basket.html">Корзина</a>&ensp;&frasl;&ensp;<span class="current-item">Оформление заказа</span>
-  </div>
-</div>
+      <div class="breadcrumbs" typeof="BreadcrumbList" vocab="https://schema.org/">
+        <div class="container">
+          <a href="page-main.html">Главная</a>&ensp;&frasl;&ensp;<a href="page-basket.html">Корзина</a>&ensp;&frasl;&ensp;<span class="current-item">Оформление заказа</span>
+        </div>
+      </div>
 
       <main>
         <section class="order page">
-  <div class="container page__flex">
-    <div class="page__section">
+          <div class="container page__flex">
+            <div class="page__section">
 
-      <h1 class="title page__title">оформление заказа</h1>
-      <form id="order-form"
-            class="order__form">
+              <h1 class="title page__title">оформление заказа</h1>
+              <form id="order-form" class="order__form">
 
-        <fieldset class="order-fieldset">
-          <legend class="form-subtitle">личные данные</legend>
+                <fieldset class="order-fieldset">
+                  <legend class="form-subtitle">личные данные</legend>
 
-          <div class="order-fieldset__cont">
+                  <div class="order-fieldset__cont">
+                    <div class="form-row">
+                      <div class="form-field">
+                        <input class="form-input" type="text" name="Имя" required>
+                        <label>имя <span>*</span></label>
+                      </div>
+                      <div class="form-field">
+                        <input class="form-input" type="text" name="Фамилия" required>
+                        <label>Фамилия <span>*</span></label>
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="form-field">
+                        <input class="form-input" type="tel" name="Контактный телефон" required>
+                        <label>телефон <span>*</span></label>
+                      </div>
+                      <div class="form-field">
+                        <input class="form-input" type="mail" name="Контактная почта" required>
+                        <label>E-mail <span>*</span></label>
+                      </div>
+                    </div>
+                  </div>
+                </fieldset>
+
+                <fieldset class="order-fieldset">
+                  <legend class="form-subtitle">выбор доставки</legend>
+                  <div class="delivery">
+                    <div class="delivery__type" id="delivery-type">
+                      <label>
+                        <input class="form-radio-tab" type="radio" name="Тип доставки" data-delivery-type="courier" value="Доставка" checked>
+                        <span>Курьерская</span>
+                      </label>
+                      <label>
+                        <input class="form-radio-tab" type="radio" name="Тип доставки" data-delivery-type="delivery" value="Доставка">
+                        <span>Сдэк до ПВЗ</span>
+                      </label>
+                      <label>
+                        <input class="form-radio-tab" type="radio" name="Тип доставки" data-delivery-type="pickup" value="Доставка">
+                        <span>Самовывоз</span>
+                      </label>
+                    </div>
+                    <div id="delivery-type-container">
+
+                    </div>
+                  </div>
+                </fieldset>
+
+                <div class="order-result">
+                  <div class="order-result__total">
+                    <div class="order-result__total-amount">Итого: <span>26 300 ₽</span></div>
+                    <button class="btn btn--dark">подтвердить</button>
+                  </div>
+                </div>
+
+              </form>
+
+            </div>
+            <aside class="page__aside">
+
+              <ul class="order__list">
+                <li class="basket-product basket-product--sm">
+
+                  <div class="basket-product__cont">
+                    <div class="basket-product__img">
+                      <img src="/img/img-product-1.png" alt="">
+                    </div>
+
+                    <div class="basket-product__details">
+                      <div>
+                        <h2 class="basket-product__title">MASHA ANDRIANOVA</h2>
+                        <div class="basket-product__info">
+                          <div class="basket-product__category">Платье</div>
+                          <div class="basket-product__price">
+                            <span>17 300 ₽</span>
+                          </div>
+                        </div>
+
+                        <div class="size">
+                          <div class="size__top">Размер</div>
+                          <div class="size__item">
+                            sm
+                          </div>
+                        </div>
+
+                        <div class="basket-product__count">
+                          1
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+
+                </li>
+                <li class="basket-product basket-product--sm">
+
+                  <div class="basket-product__cont">
+                    <div class="basket-product__img">
+                      <img src="/img/img-product-1.png" alt="">
+                    </div>
+
+                    <div class="basket-product__details">
+                      <div>
+                        <h2 class="basket-product__title">MASHA ANDRIANOVA</h2>
+                        <div class="basket-product__info">
+                          <div class="basket-product__category">Платье</div>
+                          <div class="basket-product__price">
+                            <span>17 300 ₽</span>
+                          </div>
+                        </div>
+
+                        <div class="size">
+                          <div class="size__top">Размер</div>
+                          <div class="size__item">
+                            sm
+                          </div>
+                        </div>
+
+                        <div class="basket-product__count">
+                          1
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+
+                </li>
+                <li class="basket-product basket-product--sm">
+
+                  <div class="basket-product__cont">
+                    <div class="basket-product__img">
+                      <img src="/img/img-product-1.png" alt="">
+                    </div>
+
+                    <div class="basket-product__details">
+                      <div>
+                        <h2 class="basket-product__title">MASHA ANDRIANOVA</h2>
+                        <div class="basket-product__info">
+                          <div class="basket-product__category">Платье</div>
+                          <div class="basket-product__price">
+                            <span>17 300 ₽</span>
+                          </div>
+                        </div>
+
+                        <div class="size">
+                          <div class="size__top">Размер</div>
+                          <div class="size__item">
+                            sm
+                          </div>
+                        </div>
+
+                        <div class="basket-product__count">
+                          1
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+
+                </li>
+                <li class="basket-product basket-product--sm">
+
+                  <div class="basket-product__cont">
+                    <div class="basket-product__img">
+                      <img src="/img/img-product-1.png" alt="">
+                    </div>
+
+                    <div class="basket-product__details">
+                      <div>
+                        <h2 class="basket-product__title">MASHA ANDRIANOVA</h2>
+                        <div class="basket-product__info">
+                          <div class="basket-product__category">Платье</div>
+                          <div class="basket-product__price">
+                            <span>17 300 ₽</span>
+                          </div>
+                        </div>
+
+                        <div class="size">
+                          <div class="size__top">Размер</div>
+                          <div class="size__item">
+                            sm
+                          </div>
+                        </div>
+
+                        <div class="basket-product__count">
+                          1
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+
+                </li>
+              </ul>
+
+            </aside>
+          </div>
+        </section>
+
+        <template id="courier">
+          <div class="delivery__section">
+            <div>
+              <div class="form-subtitle">Адрес</div>
+              <div class="order-fieldset__cont">
+                <div class="form-field form-field--select">
+                  <select class="form-select" name="Страна" id="">
+                    <option value="" selected></option>
+                    <option value="1">Российская федерация</option>
+                    <option value="2">Беларусь</option>
+                  </select>
+                  <label>страна <span>*</span></label>
+                </div>
+                <div class="form-row">
+                  <div class="form-field form-field--select">
+                    <select class="form-select" name="Город" id="">
+                      <option value="" selected></option>
+                      <option value="1">Москва и моск. область</option>
+                      <option value="2">Пенза и пенз. область</option>
+                    </select>
+                    <label>город <span>*</span></label>
+                  </div>
+                  <div class="form-field">
+                    <input class="form-input" type="text" name="Индекс" required>
+                    <label>индекс <span>*</span></label>
+                  </div>
+                </div>
+                <div class="form-field">
+                  <input class="form-input" type="text" name="Адрес" required>
+                  <label>адрес <span>*</span></label>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="form-row">
+                <div>
+                  <div class="form-subtitle">способ оплаты</div>
+                  <ul class="delivery__payments">
+                    <li>
+                      <label>
+                        <input class="form-radio" type="radio" name="Способ оплаты" value="Наличными при получении">
+                        <span>
+                          наличными при получении
+                        </span>
+                      </label>
+                    </li>
+                    <li>
+                      <label>
+                        <input class="form-radio" type="radio" name="Способ оплаты" value="Картой при получении">
+                        <span>
+                          картой при получении
+                        </span>
+                      </label>
+                    </li>
+                    <li>
+                      <label>
+                        <input class="form-radio" type="radio" name="Способ оплаты" value="Картой на сайте">
+                        <span>картой на сайте</span>
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <div class="form-subtitle">Подтвердите ваше согласие</div>
+                  <label class="form-checkbox form-checkbox--black">
+                    <input class="visually-hidden" type="checkbox" required="" data-validate="confirm">
+                    <span>
+                      <span>Даю согласие на обработку политикой конфиденциальности c <a href="#" target="_blank" rel="nofollow noreferer noopener">Политикой конфиденциальности</a> и <a href="#" target="_blank" rel="nofollow noreferer noopener">Публичной офертой ознакомлен</a>.
+                      </span>
+                    </span>
+                  </label>
+                </div>
+              </div>
+              <div class="delivery__info">
+                <div class="delivery__title">Доставка</div>
+                <div class="delivery__details">
+                  <dl class="delivery__detail">
+                    <dt>курьерская До двери</dt>
+                    <dd>{ от 1 до 3х дней }</dd>
+                  </dl>
+                  <dl class="delivery__detail">
+                    <dt>стоимость</dt>
+                    <dd>0.00 ₽</dd>
+                  </dl>
+                  <dl class="delivery__detail">
+                    <dt>Первый платёж</dt>
+                    <dd></dd>
+                  </dl>
+                  <dl class="delivery__detail">
+                    <dt>долями</dt>
+                    <dd>5 457 ₽</dd>
+                  </dl>
+                </div>
+              </div>
+            </div>
+          </div>
+        </template>
+
+        <template id="delivery">
+          <div class="delivery__section">
+            <div>
+              <div class="delivery__map">
+                <img src="/img/img-map-sdek.png">
+              </div>
+              <div class="form-subtitle">вы выбрали пункт пвз</div>
+              <div class="location">
+                <div class="location__top">
+                  <div class="location__row">
+                    <div class="location__title">САНКТ-ПЕТЕРБУРГ</div>
+                    <button class="location__btn">Изменить</button>
+                  </div>
+                  <span class="location__address">Ул. Студенческая, 14, Корп. 2, Стр. 1, Пом. 4Н</span>
+                </div>
+                <div class="location__bottom">
+                  <div class="location__subtitle">График работы:</div>
+                  <div>
+                    <span class="location__item">Пн-Пт с 10 до 20</span>
+                    <span class="location__item">Сб с 11 до 21</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="form-row">
+                <div>
+                  <div class="form-subtitle">способ оплаты</div>
+                  <ul class="delivery__payments">
+                    <li>
+                      <label>
+                        <input class="form-radio" type="radio" name="Способ оплаты" value="Наличными при получении">
+                        <span>
+                          наличными при получении
+                        </span>
+                      </label>
+                    </li>
+                    <li>
+                      <label>
+                        <input class="form-radio" type="radio" name="Способ оплаты" value="Картой при получении">
+                        <span>
+                          картой при получении
+                        </span>
+                      </label>
+                    </li>
+                    <li>
+                      <label>
+                        <input class="form-radio" type="radio" name="Способ оплаты" value="Картой на сайте">
+                        <span>картой на сайте</span>
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+                <div>
+
+                  <div class="form-subtitle">Подтвердите ваше согласие</div>
+                  <label class="form-checkbox form-checkbox--black">
+                    <input class="visually-hidden" type="checkbox" required="" data-validate="confirm">
+                    <span>
+                      <span>Даю согласие на обработку политикой конфиденциальности c <a href="#" target="_blank" rel="nofollow noreferer noopener">Политикой конфиденциальности</a> и <a href="#" target="_blank" rel="nofollow noreferer noopener">Публичной офертой ознакомлен</a>.
+                      </span>
+                    </span>
+                  </label>
+                </div>
+
+              </div>
+              <div class="delivery__info">
+                <div class="delivery__title">Доставка</div>
+                <div class="delivery__details">
+                  <dl class="delivery__detail">
+                    <dt>сдэк до пункта пвз</dt>
+                    <dd>{ от 2 до 3х дней }</dd>
+                  </dl>
+                  <dl class="delivery__detail">
+                    <dt>стоимость</dt>
+                    <dd>0.00 ₽</dd>
+                  </dl>
+                </div>
+              </div>
+            </div>
+          </div>
+        </template>
+
+        <template id="pickup">
+          <div class="delivery__section">
+            <div>
+              <div class="delivery__map">
+                <img src="/img/img-map-pickup.png">
+              </div>
+              <div class="form-subtitle">шоурум</div>
+
+              <div class="location">
+                <div class="location__top">
+                  <div class="location__row">
+                    <div class="location__title">Москва</div>
+                  </div>
+                  <span class="location__address">Большой Сухаревский пер, д. 13, стр. 1.</span>
+                </div>
+
+                <div class="location__bottom">
+                  <div class="location__subtitle">График работы:</div>
+                  <div class="location__list">
+                    <span class="location__item">ПН-ПТ с 12 до 21 </span>
+                    <span class="location__item"> СБ с 12 до 18</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             <div class="form-row">
-              <div class="form-field">
-                <input class="form-input"
-                       type="text"
-                       name="Имя"
-                       required>
-                <label>имя <span>*</span></label>
-              </div>
-              <div class="form-field">
-                <input class="form-input"
-                       type="text"
-                       name="Фамилия"
-                       required>
-                <label>Фамилия <span>*</span></label>
-              </div>
-            </div>
-            <div class="form-row">
-              <div class="form-field">
-                <input class="form-input"
-                       type="tel"
-                       name="Контактный телефон"
-                       required>
-                <label>телефон <span>*</span></label>
-              </div>
-              <div class="form-field">
-                <input class="form-input"
-                       type="mail"
-                       name="Контактная почта"
-                       required>
-                <label>E-mail <span>*</span></label>
-              </div>
-            </div>
-          </div>
-        </fieldset>
-
-        <fieldset class="order-fieldset">
-          <legend class="form-subtitle">выбор доставки</legend>
-          <div class="delivery">
-            <div class="delivery__type"
-                 id="delivery-type">
-              <label>
-                <input class="form-radio-tab"
-                       type="radio"
-                       name="Тип доставки"
-                       data-delivery-type="courier"
-                       value="Доставка"
-                       checked>
-                <span>Курьерская</span>
-              </label>
-              <label>
-                <input class="form-radio-tab"
-                       type="radio"
-                       name="Тип доставки"
-                       data-delivery-type="delivery"
-                       value="Доставка">
-                <span>Сдэк до ПВЗ</span>
-              </label>
-              <label>
-                <input class="form-radio-tab"
-                       type="radio"
-                       name="Тип доставки"
-                       data-delivery-type="pickup"
-                       value="Доставка">
-                <span>Самовывоз</span>
-              </label>
-            </div>
-            <div id="delivery-type-container">
-
-            </div>
-          </div>
-        </fieldset>
-
-        <div class="order-result">
-          <div class="order-result__total">
-            <div class="order-result__total-amount">Итого: <span>26 300 ₽</span></div>
-            <button class="btn btn--dark">подтвердить</button>
-          </div>
-        </div>
-
-      </form>
-
-    </div>
-    <aside class="page__aside">
-
-      <ul class="order__list">
-        <li class="basket-product basket-product--sm">
-
-          <div class="basket-product__cont">
-            <div class="basket-product__img">
-              <img src="/img/img-product-1.png"
-                   alt="">
-            </div>
-
-            <div class="basket-product__details">
               <div>
-                <h2 class="basket-product__title">MASHA ANDRIANOVA</h2>
-                <div class="basket-product__info">
-                  <div class="basket-product__category">Платье</div>
-                  <div class="basket-product__price">
-                    <span>17 300 ₽</span>
-                  </div>
-                </div>
-
-                <div class="size">
-                  <div class="size__top">Размер</div>
-                  <div class="size__item">
-                    sm
-                  </div>
-                </div>
-
-                <div class="basket-product__count">
-                  1
-                </div>
+                <div class="form-subtitle">способ оплаты</div>
+                <ul class="delivery__payments">
+                  <li>
+                    <label>
+                      <input class="form-radio" type="radio" name="Способ оплаты" value="Наличными при получении">
+                      <span>
+                        наличными при получении
+                      </span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input class="form-radio" type="radio" name="Способ оплаты" value="Картой при получении">
+                      <span>
+                        картой при получении
+                      </span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input class="form-radio" type="radio" name="Способ оплаты" value="Картой на сайте">
+                      <span>
+                        картой на сайте
+                      </span>
+                    </label>
+                  </li>
+                </ul>
               </div>
-
-            </div>
-          </div>
-
-        </li>
-        <li class="basket-product basket-product--sm">
-
-          <div class="basket-product__cont">
-            <div class="basket-product__img">
-              <img src="/img/img-product-1.png"
-                   alt="">
-            </div>
-
-            <div class="basket-product__details">
               <div>
-                <h2 class="basket-product__title">MASHA ANDRIANOVA</h2>
-                <div class="basket-product__info">
-                  <div class="basket-product__category">Платье</div>
-                  <div class="basket-product__price">
-                    <span>17 300 ₽</span>
-                  </div>
-                </div>
-
-                <div class="size">
-                  <div class="size__top">Размер</div>
-                  <div class="size__item">
-                    sm
-                  </div>
-                </div>
-
-                <div class="basket-product__count">
-                  1
-                </div>
+                <div class="form-subtitle">Подтвердите ваше согласие</div>
+                <label class="form-checkbox form-checkbox--black">
+                  <input class="visually-hidden" type="checkbox" required="" data-validate="confirm">
+                  <span>
+                    <span>Даю согласие на обработку политикой конфиденциальности c <a href="#" target="_blank" rel="nofollow noreferer noopener">Политикой конфиденциальности</a> и <a href="#" target="_blank" rel="nofollow noreferer noopener">Публичной офертой ознакомлен</a>.
+                    </span>
+                  </span>
+                </label>
               </div>
-
             </div>
           </div>
-
-        </li>
-        <li class="basket-product basket-product--sm">
-
-          <div class="basket-product__cont">
-            <div class="basket-product__img">
-              <img src="/img/img-product-1.png"
-                   alt="">
-            </div>
-
-            <div class="basket-product__details">
-              <div>
-                <h2 class="basket-product__title">MASHA ANDRIANOVA</h2>
-                <div class="basket-product__info">
-                  <div class="basket-product__category">Платье</div>
-                  <div class="basket-product__price">
-                    <span>17 300 ₽</span>
-                  </div>
-                </div>
-
-                <div class="size">
-                  <div class="size__top">Размер</div>
-                  <div class="size__item">
-                    sm
-                  </div>
-                </div>
-
-                <div class="basket-product__count">
-                  1
-                </div>
-              </div>
-
-            </div>
-          </div>
-
-        </li>
-        <li class="basket-product basket-product--sm">
-
-          <div class="basket-product__cont">
-            <div class="basket-product__img">
-              <img src="/img/img-product-1.png"
-                   alt="">
-            </div>
-
-            <div class="basket-product__details">
-              <div>
-                <h2 class="basket-product__title">MASHA ANDRIANOVA</h2>
-                <div class="basket-product__info">
-                  <div class="basket-product__category">Платье</div>
-                  <div class="basket-product__price">
-                    <span>17 300 ₽</span>
-                  </div>
-                </div>
-
-                <div class="size">
-                  <div class="size__top">Размер</div>
-                  <div class="size__item">
-                    sm
-                  </div>
-                </div>
-
-                <div class="basket-product__count">
-                  1
-                </div>
-              </div>
-
-            </div>
-          </div>
-
-        </li>
-      </ul>
-
-    </aside>
-  </div>
-</section>
-
-<template id="courier">
-  <div class="delivery__section">
-    <div>
-      <div class="form-subtitle">Адрес</div>
-      <div class="order-fieldset__cont">
-        <div class="form-field form-field--select">
-          <select class="form-select"
-                  name="Страна"
-                  id="">
-            <option value=""
-                    selected></option>
-            <option value="1">Российская федерация</option>
-            <option value="2">Беларусь</option>
-          </select>
-          <label>страна <span>*</span></label>
-        </div>
-        <div class="form-row">
-          <div class="form-field form-field--select">
-            <select class="form-select"
-                    name="Город"
-                    id="">
-              <option value=""
-                      selected></option>
-              <option value="1">Москва и моск. область</option>
-              <option value="2">Пенза и пенз. область</option>
-            </select>
-            <label>город <span>*</span></label>
-          </div>
-          <div class="form-field">
-            <input class="form-input"
-                   type="text"
-                   name="Индекс"
-                   required>
-            <label>индекс <span>*</span></label>
-          </div>
-        </div>
-        <div class="form-field">
-          <input class="form-input"
-                 type="text"
-                 name="Адрес"
-                 required>
-          <label>адрес <span>*</span></label>
-        </div>
-      </div>
-    </div>
-    <div>
-      <div class="form-row">
-        <div>
-          <div class="form-subtitle">способ оплаты</div>
-          <ul class="delivery__payments">
-            <li>
-              <label>
-                <input class="form-radio"
-                       type="radio"
-                       name="Способ оплаты"
-                       value="Наличными при получении">
-                <span>
-                  наличными при получении
-                </span>
-              </label>
-            </li>
-            <li>
-              <label>
-                <input class="form-radio"
-                       type="radio"
-                       name="Способ оплаты"
-                       value="Картой при получении">
-                <span>
-                  картой при получении
-                </span>
-              </label>
-            </li>
-            <li>
-              <label>
-                <input class="form-radio"
-                       type="radio"
-                       name="Способ оплаты"
-                       value="Картой на сайте">
-                <span>картой на сайте</span>
-              </label>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <div class="form-subtitle">Подтвердите ваше согласие</div>
-          <label class="form-checkbox form-checkbox--black">
-            <input class="visually-hidden"
-                   type="checkbox"
-                   required=""
-                   data-validate="confirm">
-            <span>
-              <span>Даю согласие на обработку политикой конфиденциальности c <a href="#"
-   target="_blank"
-   rel="nofollow noreferer noopener">Политикой конфиденциальности</a> и <a href="#"
-   target="_blank"
-   rel="nofollow noreferer noopener">Публичной офертой ознакомлен</a>.
-</span>
-            </span>
-          </label>
-        </div>
-      </div>
-      <div class="delivery__info">
-        <div class="delivery__title">Доставка</div>
-        <div class="delivery__details">
-          <dl class="delivery__detail">
-            <dt>курьерская До двери</dt>
-            <dd>{ от 1 до 3х дней }</dd>
-          </dl>
-          <dl class="delivery__detail">
-            <dt>стоимость</dt>
-            <dd>0.00 ₽</dd>
-          </dl>
-          <dl class="delivery__detail">
-            <dt>Первый платёж</dt>
-            <dd></dd>
-          </dl>
-          <dl class="delivery__detail">
-            <dt>долями</dt>
-            <dd>5 457 ₽</dd>
-          </dl>
-        </div>
-      </div>
-    </div>
-  </div>
-</template>
-
-<template id="delivery">
-  <div class="delivery__section">
-    <div>
-      <div class="delivery__map">
-        <img src="/img/img-map-sdek.png">
-      </div>
-      <div class="form-subtitle">вы выбрали пункт пвз</div>
-      <div class="location">
-        <div class="location__top">
-          <div class="location__row">
-            <div class="location__title">САНКТ-ПЕТЕРБУРГ</div>
-            <button class="location__btn">Изменить</button>
-          </div>
-          <span class="location__address">Ул. Студенческая, 14, Корп. 2, Стр. 1, Пом. 4Н</span>
-        </div>
-        <div class="location__bottom">
-          <div class="location__subtitle">График работы:</div>
-          <div>
-            <span class="location__item">Пн-Пт с 10 до 20</span>
-            <span class="location__item">Сб с 11 до 21</span>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div>
-      <div class="form-row">
-        <div>
-          <div class="form-subtitle">способ оплаты</div>
-          <ul class="delivery__payments">
-            <li>
-              <label>
-                <input class="form-radio"
-                       type="radio"
-                       name="Способ оплаты"
-                       value="Наличными при получении">
-                <span>
-                  наличными при получении
-                </span>
-              </label>
-            </li>
-            <li>
-              <label>
-                <input class="form-radio"
-                       type="radio"
-                       name="Способ оплаты"
-                       value="Картой при получении">
-                <span>
-                  картой при получении
-                </span>
-              </label>
-            </li>
-            <li>
-              <label>
-                <input class="form-radio"
-                       type="radio"
-                       name="Способ оплаты"
-                       value="Картой на сайте">
-                <span>картой на сайте</span>
-              </label>
-            </li>
-          </ul>
-        </div>
-        <div>
-
-          <div class="form-subtitle">Подтвердите ваше согласие</div>
-          <label class="form-checkbox form-checkbox--black">
-            <input class="visually-hidden"
-                   type="checkbox"
-                   required=""
-                   data-validate="confirm">
-            <span>
-              <span>Даю согласие на обработку политикой конфиденциальности c <a href="#"
-   target="_blank"
-   rel="nofollow noreferer noopener">Политикой конфиденциальности</a> и <a href="#"
-   target="_blank"
-   rel="nofollow noreferer noopener">Публичной офертой ознакомлен</a>.
-</span>
-            </span>
-          </label>
-        </div>
-
-      </div>
-      <div class="delivery__info">
-        <div class="delivery__title">Доставка</div>
-        <div class="delivery__details">
-          <dl class="delivery__detail">
-            <dt>сдэк до пункта пвз</dt>
-            <dd>{ от 2 до 3х дней }</dd>
-          </dl>
-          <dl class="delivery__detail">
-            <dt>стоимость</dt>
-            <dd>0.00 ₽</dd>
-          </dl>
-        </div>
-      </div>
-    </div>
-  </div>
-</template>
-
-<template id="pickup">
-  <div class="delivery__section">
-    <div>
-      <div class="delivery__map">
-        <img src="/img/img-map-pickup.png">
-      </div>
-      <div class="form-subtitle">шоурум</div>
-
-      <div class="location">
-        <div class="location__top">
-          <div class="location__row">
-            <div class="location__title">Москва</div>
-          </div>
-          <span class="location__address">Большой Сухаревский пер, д. 13, стр. 1.</span>
-        </div>
-
-        <div class="location__bottom">
-          <div class="location__subtitle">График работы:</div>
-          <div class="location__list">
-            <span class="location__item">ПН-ПТ с 12 до 21 </span>
-            <span class="location__item"> СБ с 12 до 18</span>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="form-row">
-      <div>
-        <div class="form-subtitle">способ оплаты</div>
-        <ul class="delivery__payments">
-          <li>
-            <label>
-              <input class="form-radio"
-                     type="radio"
-                     name="Способ оплаты"
-                     value="Наличными при получении">
-              <span>
-                наличными при получении
-              </span>
-            </label>
-          </li>
-          <li>
-            <label>
-              <input class="form-radio"
-                     type="radio"
-                     name="Способ оплаты"
-                     value="Картой при получении">
-              <span>
-                картой при получении
-              </span>
-            </label>
-          </li>
-          <li>
-            <label>
-              <input class="form-radio"
-                     type="radio"
-                     name="Способ оплаты"
-                     value="Картой на сайте">
-              <span>
-                картой на сайте
-              </span>
-            </label>
-          </li>
-        </ul>
-      </div>
-      <div>
-        <div class="form-subtitle">Подтвердите ваше согласие</div>
-        <label class="form-checkbox form-checkbox--black">
-          <input class="visually-hidden"
-                 type="checkbox"
-                 required=""
-                 data-validate="confirm">
-          <span>
-            <span>Даю согласие на обработку политикой конфиденциальности c <a href="#"
-   target="_blank"
-   rel="nofollow noreferer noopener">Политикой конфиденциальности</a> и <a href="#"
-   target="_blank"
-   rel="nofollow noreferer noopener">Публичной офертой ознакомлен</a>.
-</span>
-          </span>
-        </label>
-      </div>
-    </div>
-  </div>
-</template>
+        </template>
 
 
       </main>
     </div>
     <footer class="site__footer footer">
-  <div class="footer__cont">
-    <div class="container">
-      <div class="footer__top">
-        <div class="footer__form">
-          <div class="footer__item">
-            Подпишитесь на&nbsp;нашу рассылку и&nbsp;получите -10%&nbsp;на&nbsp;первый заказ </div>
-          <form action=""
-                id="subscribe"
-                data-validate>
-            <div class="footer__form-field">
-              <input class="form-input footer__form-input"
-                     type="mail"
-                     name="Почта"
-                     required
-                     placeholder="E-mail"
-                     data-validate="email">
-              <button class="btn-reset footer__form-btn"
-                      type="submit">
-                <svg width="29"
-                     height="16"
-                     aria-hidden="true">
-                  <use xlink:href="img/sprite.svg#icon-average-arrow"></use>
-                </svg>
-              </button>
+      <div class="footer__cont">
+        <div class="container">
+          <div class="footer__top">
+            <div class="footer__form">
+              <div class="footer__item">
+                Подпишитесь на&nbsp;нашу рассылку и&nbsp;получите -10%&nbsp;на&nbsp;первый заказ </div>
+              <form action="" id="subscribe" data-validate>
+                <div class="footer__form-field">
+                  <input class="form-input footer__form-input" type="mail" name="Почта" required placeholder="E-mail" data-validate="email">
+                  <button class="btn-reset footer__form-btn" type="submit">
+                    <svg width="29" height="16" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#icon-average-arrow"></use>
+                    </svg>
+                  </button>
+                </div>
+                <label class="form-checkbox">
+                  <input class="visually-hidden" type="checkbox" required="" data-validate="confirm">
+                  <span>
+                    <span>Соглашаюсь с <a href="#" target="_blank" rel="nofollow noreferer noopener">политикой конфиденциальности</a> и <a href="#" target="_blank" rel="nofollow noreferer noopener">условиями публичной оферты</a>.</span>
+                  </span>
+                </label>
+              </form>
             </div>
-            <label class="form-checkbox">
-              <input class="visually-hidden"
-                     type="checkbox"
-                     required=""
-                     data-validate="confirm">
-              <span>
-                <span>Соглашаюсь с <a href="#"
-   target="_blank"
-   rel="nofollow noreferer noopener">политикой конфиденциальности</a> и <a href="#"
-   target="_blank"
-   rel="nofollow noreferer noopener">условиями публичной оферты</a>.</span>
-              </span>
-            </label>
-          </form>
-        </div>
-        <div class="footer__nav">
-          <ul class="footer__list">
-            <li><a class="footer__item"
-                 href="#">О нас</a></li>
-            <li><a class="footer__item"
-                 href="#">ДОСТАВКА И ВОЗВРАТ</a></li>
-            <li><a class="footer__item"
-                 href="#">УСЛОВИЯ И ПОЛОЖЕНИЯ</a></li>
-          </ul>
-          <ul class="footer__list">
-            <li><a class="footer__item"
-                 href="#">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</a></li>
-            <li><a class="footer__item"
-                 href="#">ПОМОЩЬ</a></li>
-          </ul>
-        </div>
-        <ul class="list-reset footer__contacts d-none-sm">
-          <li><a class="footer__item"
-               href="#">+7 (999) 999—99—99</a></li>
-          <li><a class="footer__item"
-               href="">russia@mail.ru</a></li>
-        </ul>
-      </div>
+            <div class="footer__nav">
+              <ul class="footer__list">
+                <li><a class="footer__item" href="#">О нас</a></li>
+                <li><a class="footer__item" href="#">ДОСТАВКА И ВОЗВРАТ</a></li>
+                <li><a class="footer__item" href="#">УСЛОВИЯ И ПОЛОЖЕНИЯ</a></li>
+              </ul>
+              <ul class="footer__list">
+                <li><a class="footer__item" href="#">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</a></li>
+                <li><a class="footer__item" href="#">ПОМОЩЬ</a></li>
+              </ul>
+            </div>
+            <ul class="list-reset footer__contacts d-none-sm">
+              <li><a class="footer__item" href="#">+7 (999) 999—99—99</a></li>
+              <li><a class="footer__item" href="">russia@mail.ru</a></li>
+            </ul>
+          </div>
 
-      <div class="footer__bottom">
-        <div class="footer__logo">
-          <a href="/">
-            <img src="/img/logo-footer.svg"
-                 alt="Logo">
-          </a>
+          <div class="footer__bottom">
+            <div class="footer__logo">
+              <a href="/">
+                <img src="/img/logo-footer.svg" alt="Logo">
+              </a>
+            </div>
+            <ul class="list-reset footer__contacts d-none-lg">
+              <li><a class="footer__item" href="#">+7 (999) 999—99—99</a></li>
+              <li><a class="footer__item" href="">russia@mail.ru</a></li>
+            </ul>
+            <ul class="list-reset social">
+              <li><a href="#"><img src="/img/icon-vk.svg" alt="VK"></a></li>
+            </ul>
+          </div>
         </div>
-        <ul class="list-reset footer__contacts d-none-lg">
-          <li><a class="footer__item"
-               href="#">+7 (999) 999—99—99</a></li>
-          <li><a class="footer__item"
-               href="">russia@mail.ru</a></li>
-        </ul>
-        <ul class="list-reset social">
-          <li><a href="#"><img src="/img/icon-vk.svg"
-                   alt="VK"></a></li>
-        </ul>
+      </div>
+    </footer>
+    <div class="scroll-top" id="scroll-top">
+      <a class="scroll-top__link" href="#site-top" aria-label="Наверх страницы">
+        <svg width="14" height="8" aria-hidden="true">
+          <use xlink:href="img/sprite.svg#icon-up"></use>
+        </svg>
+      </a>
+    </div>
+    <div class="hystmodal hystmodal--simple" id="send-ok-modal" aria-hidden="true">
+      <div class="hystmodal__wrap">
+        <div class="hystmodal__window hystmodal__window--form" role="dialog" aria-modal="true">
+          <div class="modal">
+            <button class="modal__close" type="button" aria-label="Close window" data-hystclose>
+              <svg class="modal__close-icon" width="32" height="32" aria-hidden="true">
+                <use xlink:href="img/sprite.svg#icon-cross"></use>
+              </svg>
+            </button>
+            <div class="title-md modal__title">Спасибо за заявку!</div>
+            <div class="modal__text">Мы свяжемся с вами в ближайшее время и обсудим все детали.</div>
+            <div class="modal__bottom-btn">
+              <button class="btn-reset btn" data-hystclose>Хорошо</button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</footer>
-<div class="scroll-top"
-     id="scroll-top">
-  <a class="scroll-top__link"
-     href="#site-top"
-     aria-label="Наверх страницы">
-    <svg width="14"
-         height="8"
-         aria-hidden="true">
-      <use xlink:href="img/sprite.svg#icon-up"></use>
-    </svg>
-  </a>
-</div>
-<div class="hystmodal hystmodal--simple"
-     id="send-ok-modal"
-     aria-hidden="true">
-  <div class="hystmodal__wrap">
-    <div class="hystmodal__window hystmodal__window--form"
-         role="dialog"
-         aria-modal="true">
-      <div class="modal">
-        <button class="modal__close"
-                type="button"
-                aria-label="Close window"
-                data-hystclose>
-          <svg class="modal__close-icon"
-               width="32"
-               height="32"
-               aria-hidden="true">
-            <use xlink:href="img/sprite.svg#icon-cross"></use>
-          </svg>
-        </button>
-        <div class="title-md modal__title">Спасибо за заявку!</div>
-<div class="modal__text">Мы свяжемся с вами в ближайшее время и обсудим все детали.</div>
-<div class="modal__bottom-btn">
-  <button class="btn-reset btn"
-          data-hystclose>Хорошо</button>
-</div>
-      </div>
-    </div>
-  </div>
-</div>
   </div>
   <script src="js/vendor-bundle.js"></script>
-<script src="js/main.js" type="module"></script>
+  <script src="js/main.js" type="module"></script>
 </body>
 
 </html>

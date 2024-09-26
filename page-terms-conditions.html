@@ -3,768 +3,633 @@
 
 <head>
   <meta charset="utf-8">
-<meta name="viewport"
-      content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible"
-      content="ie=edge">
-<link rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="favicon-16x16.png">
-<link rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="favicon-32x32.png">
-<link rel="apple-touch-icon"
-      sizes="180x180"
-      href="apple-touch-icon.png">
-<link rel="manifest"
-      href="site.webmanifest">
-<link rel="preload"
-      href="fonts/opensans-regular.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin>
-<link rel="stylesheet"
-      href="style/vendor-bundle.css">
-<link rel="stylesheet"
-      href="style/main.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="preload" href="fonts/opensans-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="style/vendor-bundle.css">
+  <link rel="stylesheet" href="style/main.css">
   <title>Главная</title>
 </head>
 
 <body class="indent-reset site">
-  <div aria-hidden="true"
-       id="site-top"></div>
+  <div aria-hidden="true" id="site-top"></div>
   <div class="site__container">
     <header class="site__header header">
-  <div class="container">
-    <div class="header__wrap">
-      <div class="header__left">
-        <ul class="list-reset header__list">
-          <li class="header__item d-none-lg">
-            <button id="btn-mob-menu"
-                    class="btn-reset header__burger">
-              <svg width="30"
-                   height="16"
-                   aria-hidden="true">
-                <use xlink:href="img/sprite.svg#icon-burger"></use>
-              </svg>
-            </button>
-          </li>
-          <li class="header__item d-none-sm">
-            <button id="btn-catalog-menu"
-                    class="btn-reset">
-              каталог
-            </button>
-          </li>
-          <li class="header__item d-none-sm">
-            <button id="btn-customers-menu"
-                    class="btn-reset">
-              покупателям
-            </button>
-          </li>
-          <li class="header__item d-none-sm">
-            <a href="#">Контакты</a>
-          </li>
-        </ul>
-      </div>
-      <div class="header__middle">
-        <a class="logo"
-           href="/">
-          <img src="/img/logo.svg"
-               alt="Logo FRONT">
-        </a>
-      </div>
-      <div class="header__right">
-        <ul class="list-reset header__list header__list--justify-end">
+      <div class="container">
+        <div class="header__wrap">
+          <div class="header__left">
+            <ul class="list-reset header__list">
+              <li class="header__item d-none-lg">
+                <button id="btn-mob-menu" class="btn-reset header__burger">
+                  <svg width="30" height="16" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#icon-burger"></use>
+                  </svg>
+                </button>
+              </li>
+              <li class="header__item d-none-sm">
+                <button id="btn-catalog-menu" class="btn-reset">
+                  каталог
+                </button>
+              </li>
+              <li class="header__item d-none-sm">
+                <button id="btn-customers-menu" class="btn-reset">
+                  покупателям
+                </button>
+              </li>
+              <li class="header__item d-none-sm">
+                <a href="#">Контакты</a>
+              </li>
+            </ul>
+          </div>
+          <div class="header__middle">
+            <a class="logo" href="/">
+              <img src="/img/logo.svg" alt="Logo FRONT">
+            </a>
+          </div>
+          <div class="header__right">
+            <ul class="list-reset header__list header__list--justify-end">
 
-          <li class="header__item">
-            <button class="btn-reset header__search">
-              <svg width="24"
-                   height="24"
-                   aria-hidden="true">
-                <use xlink:href="img/sprite.svg#icon-search"></use>
-              </svg>
-            </button>
-          </li>
-          <li class="header__item d-none-sm">
-            <button class="language language--lg">ENglish</button>
-          </li>
-          <li class="header__item d-none-sm">
-            <a class="header__login"
-               href="#">
-              <svg width="24"
-                   height="24"
-                   aria-hidden="true">
-                <use xlink:href="img/sprite.svg#icon-person"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="header__item">
-            <a class="header__basket"
-               data-backet="1"
-               href="#">
-              <svg width="24"
-                   height="24"
-                   aria-hidden="true">
-                <use xlink:href="img/sprite.svg#icon-basket"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
+              <li class="header__item">
+                <button class="btn-reset header__search">
+                  <svg width="24" height="24" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#icon-search"></use>
+                  </svg>
+                </button>
+              </li>
+              <li class="header__item d-none-sm">
+                <button class="language language--lg">ENglish</button>
+              </li>
+              <li class="header__item d-none-sm">
+                <a class="header__login" href="#">
+                  <svg width="24" height="24" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#icon-person"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="header__item">
+                <a class="header__basket" data-backet="1" href="#">
+                  <svg width="24" height="24" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#icon-basket"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-  <div id="mob-menu"
-     class="header-modal"
-     aria-hidden="true">
-  <div class="header-modal__content">
-    <div class="container">
-      <div class="header-modal__top">
-        <button class="btn-reset header-modal__close">
-          <svg width="16"
-               height="16"
-               aria-hidden="true">
-            <use xlink:href="img/sprite.svg#icon-close"></use>
-          </svg>
-        </button>
-        <button class="language d-none-lg">ENglish</button>
-      </div>
-      <nav class="menu">
-        <ul>
-          <li class="menu__item">
-            <details class="menu__dropdown">
-              <summary class="menu__link">
-                Каталог
-                <svg width="10"
-                     height="17"
-                     aria-hidden="true">
-                  <use xlink:href="img/sprite.svg#icon-small-arrow"></use>
+      <div id="mob-menu" class="header-modal" aria-hidden="true">
+        <div class="header-modal__content">
+          <div class="container">
+            <div class="header-modal__top">
+              <button class="btn-reset header-modal__close">
+                <svg width="16" height="16" aria-hidden="true">
+                  <use xlink:href="img/sprite.svg#icon-close"></use>
                 </svg>
-              </summary>
+              </button>
+              <button class="language d-none-lg">ENglish</button>
+            </div>
+            <nav class="menu">
               <ul>
                 <li class="menu__item">
                   <details class="menu__dropdown">
                     <summary class="menu__link">
-                      Одежда
-                      <svg width="10"
-                           height="17"
-                           aria-hidden="true">
+                      Каталог
+                      <svg width="10" height="17" aria-hidden="true">
                         <use xlink:href="img/sprite.svg#icon-small-arrow"></use>
                       </svg>
                     </summary>
                     <ul>
                       <li class="menu__item">
-                        <a class="menu__link"
-                           href="#">посмотреть все</a>
+                        <details class="menu__dropdown">
+                          <summary class="menu__link">
+                            Одежда
+                            <svg width="10" height="17" aria-hidden="true">
+                              <use xlink:href="img/sprite.svg#icon-small-arrow"></use>
+                            </svg>
+                          </summary>
+                          <ul>
+                            <li class="menu__item">
+                              <a class="menu__link" href="#">посмотреть все</a>
+                            </li>
+                            <li class="menu__item">
+                              <a class="menu__link" href="#">женское</a>
+                            </li>
+                            <li class="menu__item">
+                              <a class="menu__link" href="#">мужское</a>
+                            </li>
+                          </ul>
+                        </details>
                       </li>
                       <li class="menu__item">
-                        <a class="menu__link"
-                           href="#">женское</a>
+                        <a class="menu__link" href="#">Аксессуары</a>
                       </li>
                       <li class="menu__item">
-                        <a class="menu__link"
-                           href="#">мужское</a>
+                        <a class="menu__link menu__link--purple" href="#">SALE</a>
+                      </li>
+                      <li class="menu__item">
+                        <a class="menu__link" href="#">Дизайнеры</a>
+                      </li>
+                      <li class="menu__item">
+                        <a class="menu__link" href="#">Свадебная коллекция</a>
+                      </li>
+                      <li class="menu__item">
+                        <a class="menu__link" href="#">Дом</a>
+                      </li>
+                      <li class="menu__item">
+                        <a class="menu__link" href="#">Подарки</a>
+                      </li>
+                      <li class="menu__item">
+                        <a class="menu__link" href="#">Подарочные сертификаты</a>
                       </li>
                     </ul>
                   </details>
                 </li>
                 <li class="menu__item">
-                  <a class="menu__link"
-                     href="#">Аксессуары</a>
+                  <details class="menu__dropdown">
+                    <summary class="menu__link">
+                      Покупателям
+                      <svg width="10" height="17" aria-hidden="true">
+                        <use xlink:href="img/sprite.svg#icon-small-arrow"></use>
+                      </svg>
+                    </summary>
+                    <ul>
+                      <li class="menu__item">
+                        <a class="menu__link" href="#">Доставка и оплата</a>
+                      </li>
+                      <li class="menu__item">
+                        <a class="menu__link" href="#">Помощь</a>
+                      </li>
+                      <li class="menu__item">
+                        <a class="menu__link" href="#">Политика</a>
+                      </li>
+                      <li class="menu__item">
+                        <a class="menu__link" href="#">Оферта</a>
+                      </li>
+                      <li class="menu__item">
+                        <a class="menu__link" href="#">Подарочный сертификат</a>
+                      </li>
+                    </ul>
+                  </details>
                 </li>
                 <li class="menu__item">
-                  <a class="menu__link menu__link--purple"
-                     href="#">SALE</a>
+                  <a class="menu__link menu__link--purple" href="#">О нас</a>
                 </li>
                 <li class="menu__item">
-                  <a class="menu__link"
-                     href="#">Дизайнеры</a>
+                  <a class="menu__link" href="#">Блог</a>
                 </li>
                 <li class="menu__item">
-                  <a class="menu__link"
-                     href="#">Свадебная коллекция</a>
-                </li>
-                <li class="menu__item">
-                  <a class="menu__link"
-                     href="#">Дом</a>
-                </li>
-                <li class="menu__item">
-                  <a class="menu__link"
-                     href="#">Подарки</a>
-                </li>
-                <li class="menu__item">
-                  <a class="menu__link"
-                     href="#">Подарочные сертификаты</a>
+                  <a class="menu__link" href="#">Контакты</a>
                 </li>
               </ul>
-            </details>
-          </li>
-          <li class="menu__item">
-            <details class="menu__dropdown">
-              <summary class="menu__link">
-                Покупателям
-                <svg width="10"
-                     height="17"
-                     aria-hidden="true">
-                  <use xlink:href="img/sprite.svg#icon-small-arrow"></use>
+            </nav>
+          </div>
+
+        </div>
+      </div>
+      <div id="catalog-menu" class="header-modal" aria-hidden="true">
+        <div class="header-modal__content">
+          <div class="container">
+            <div class="header-modal__top">
+              <button class="btn-reset header-modal__close">
+                <svg width="16" height="16" aria-hidden="true">
+                  <use xlink:href="img/sprite.svg#icon-close"></use>
                 </svg>
-              </summary>
+              </button>
+            </div>
+            <nav class="menu">
               <ul>
                 <li class="menu__item">
-                  <a class="menu__link"
-                     href="#">Доставка и оплата</a>
+                  <details class="menu__dropdown">
+                    <summary class="menu__link">
+                      Одежда
+                      <svg width="10" height="17" aria-hidden="true">
+                        <use xlink:href="img/sprite.svg#icon-small-arrow"></use>
+                      </svg>
+                    </summary>
+                    <ul>
+                      <li class="menu__item">
+                        <a class="menu__link" href="#">посмотреть все</a>
+                      </li>
+                      <li class="menu__item">
+                        <a class="menu__link" href="#">женское</a>
+                      </li>
+                      <li class="menu__item">
+                        <a class="menu__link" href="#">мужское</a>
+                      </li>
+                      <li class="menu__item">
+                        <a class="menu__link" href="#">детское</a>
+                      </li>
+                    </ul>
+                  </details>
                 </li>
                 <li class="menu__item">
-                  <a class="menu__link"
-                     href="#">Помощь</a>
+                  <a class="menu__link" href="#">Аксессуары</a>
                 </li>
                 <li class="menu__item">
-                  <a class="menu__link"
-                     href="#">Политика</a>
+                  <a class="menu__link menu__link--purple" href="#">SALE</a>
                 </li>
                 <li class="menu__item">
-                  <a class="menu__link"
-                     href="#">Оферта</a>
+                  <a class="menu__link" href="#">Дизайнеры</a>
                 </li>
                 <li class="menu__item">
-                  <a class="menu__link"
-                     href="#">Подарочный сертификат</a>
+                  <a class="menu__link" href="#">Свадебная коллекция</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#">Дом</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#">Подарки</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#">Подарочные сертификаты</a>
                 </li>
               </ul>
-            </details>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link menu__link--purple"
-               href="#">О нас</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link"
-               href="#">Блог</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link"
-               href="#">Контакты</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
+            </nav>
+          </div>
 
-  </div>
-</div>
-<div id="catalog-menu"
-     class="header-modal"
-     aria-hidden="true">
-  <div class="header-modal__content">
-    <div class="container">
-      <div class="header-modal__top">
-        <button class="btn-reset header-modal__close">
-          <svg width="16"
-               height="16"
-               aria-hidden="true">
-            <use xlink:href="img/sprite.svg#icon-close"></use>
-          </svg>
-        </button>
+        </div>
       </div>
-      <nav class="menu">
-        <ul>
-          <li class="menu__item">
-            <details class="menu__dropdown">
-              <summary class="menu__link">
-                Одежда
-                <svg width="10"
-                     height="17"
-                     aria-hidden="true">
-                  <use xlink:href="img/sprite.svg#icon-small-arrow"></use>
+      <div id="customers-menu" class="header-modal" aria-hidden="true">
+        <div class="header-modal__content">
+          <div class="container">
+            <div class="header-modal__top">
+              <button class="btn-reset header-modal__close">
+                <svg width="16" height="16" aria-hidden="true">
+                  <use xlink:href="img/sprite.svg#icon-close"></use>
                 </svg>
-              </summary>
+              </button>
+            </div>
+            <nav class="menu">
               <ul>
                 <li class="menu__item">
-                  <a class="menu__link"
-                     href="#">посмотреть все</a>
+                  <a class="menu__link" href="#">Доставка и оплата</a>
                 </li>
                 <li class="menu__item">
-                  <a class="menu__link"
-                     href="#">женское</a>
+                  <a class="menu__link" href="#">Помощь</a>
                 </li>
                 <li class="menu__item">
-                  <a class="menu__link"
-                     href="#">мужское</a>
+                  <a class="menu__link" href="#">Политика</a>
                 </li>
                 <li class="menu__item">
-                  <a class="menu__link"
-                     href="#">детское</a>
+                  <a class="menu__link" href="#">Оферта</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#">Подарочный сертификат</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#">О нас</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#">Блог</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#">Контакты</a>
                 </li>
               </ul>
-            </details>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link"
-               href="#">Аксессуары</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link menu__link--purple"
-               href="#">SALE</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link"
-               href="#">Дизайнеры</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link"
-               href="#">Свадебная коллекция</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link"
-               href="#">Дом</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link"
-               href="#">Подарки</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link"
-               href="#">Подарочные сертификаты</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
+            </nav>
+          </div>
 
-  </div>
-</div>
-<div id="customers-menu"
-     class="header-modal"
-     aria-hidden="true">
-  <div class="header-modal__content">
-    <div class="container">
-      <div class="header-modal__top">
-        <button class="btn-reset header-modal__close">
-          <svg width="16"
-               height="16"
-               aria-hidden="true">
-            <use xlink:href="img/sprite.svg#icon-close"></use>
-          </svg>
-        </button>
+        </div>
       </div>
-      <nav class="menu">
-        <ul>
-          <li class="menu__item">
-            <a class="menu__link"
-               href="#">Доставка и оплата</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link"
-               href="#">Помощь</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link"
-               href="#">Политика</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link"
-               href="#">Оферта</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link"
-               href="#">Подарочный сертификат</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link"
-               href="#">О нас</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link"
-               href="#">Блог</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link"
-               href="#">Контакты</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-
-  </div>
-</div>
-</header>
+    </header>
     <div class="site__content">
       <main>
         <section class="page">
-  <div class="container">
-    <div class="page__centered">
-      <h1 class="title page__title">Условия и положения</h1>
-      <p>
-        УСЛОВИЯ ПРОДАЖИ ТОВАРОВ ИНТЕРНЕТ-МАГАЗИНА ООО «ФРОНТ»
-      </p>
+          <div class="container">
+            <div class="page__centered">
+              <h1 class="title page__title">Условия и положения</h1>
+              <p>
+                УСЛОВИЯ ПРОДАЖИ ТОВАРОВ ИНТЕРНЕТ-МАГАЗИНА ООО «ФРОНТ»
+              </p>
 
-      <p>
-        <b>1. ПОНЯТИЯ И СОКРАЩЕНИЯ</b>
-        <br>
-        Интернет-магазин – официальный Интернет-сайт Продавца, расположенный по адресу front.fashion, на котором представлены Товары, предлагаемые Продавцом Покупателям для оформления заказов, а также условия оплаты и доставки таких Товаров.
-        <br>
-        Пользователь – физическое лицо, принимающее условия настоящего Соглашения и имеющее намерение оформить Заказ в Интернет-магазине. Соглашаясь с условиями Оферты, Покупатель подтверждает, что он является дееспособным гражданином, достигшим 18 лет.
-        <br>
-        Покупатель – авторизованный Пользователь, оформивший заказ на Сайте.
-        <br>
-        Заказ – запрос Покупателя на приобретение Товаров, оформленный надлежащим образом по правилам Интернет-магазина.
-        <br>
-        Продавец – ООО «ФРОНТ» ОГРН 1207700245928, ИНН 7743343498, КПП 774301001, адрес: РФ, г. Москва, Ленинградский проспект д. 77, крп 3, принимающий заказы через Сайт с целью продажи товаров.
-        <br>
-        Сайт – сайт Интернет - магазина ООО «ФРОНТ» в сети Интернет, расположенный по адресу: front.fashion
-        <br>
-        Товар – объект соглашения сторон, перечень наименований ассортимента, представленный для продажи в Интернет-магазине.
-      </p>
+              <p>
+                <b>1. ПОНЯТИЯ И СОКРАЩЕНИЯ</b>
+                <br>
+                Интернет-магазин – официальный Интернет-сайт Продавца, расположенный по адресу front.fashion, на котором представлены Товары, предлагаемые Продавцом Покупателям для оформления заказов, а также условия оплаты и доставки таких Товаров.
+                <br>
+                Пользователь – физическое лицо, принимающее условия настоящего Соглашения и имеющее намерение оформить Заказ в Интернет-магазине. Соглашаясь с условиями Оферты, Покупатель подтверждает, что он является дееспособным гражданином, достигшим 18 лет.
+                <br>
+                Покупатель – авторизованный Пользователь, оформивший заказ на Сайте.
+                <br>
+                Заказ – запрос Покупателя на приобретение Товаров, оформленный надлежащим образом по правилам Интернет-магазина.
+                <br>
+                Продавец – ООО «ФРОНТ» ОГРН 1207700245928, ИНН 7743343498, КПП 774301001, адрес: РФ, г. Москва, Ленинградский проспект д. 77, крп 3, принимающий заказы через Сайт с целью продажи товаров.
+                <br>
+                Сайт – сайт Интернет - магазина ООО «ФРОНТ» в сети Интернет, расположенный по адресу: front.fashion
+                <br>
+                Товар – объект соглашения сторон, перечень наименований ассортимента, представленный для продажи в Интернет-магазине.
+              </p>
 
-      <p>
-        <b>2. ОБЩИЕ ПОЛОЖЕНИЯ</b>
-        <br>
-        2.1. Производя заказ Товаров через Интернет-магазин, Пользователь таким образом соглашается с данными условиями продажи Товаров (далее – Условия). Данное Соглашение распространяется на все виды Товаров и услуг, представленных на Сайте, пока такие предложения с описанием присутствуют в каталоге Интернет-магазина.
-        <br>
-        2.2. Производя заказ Товаров через Интернет-магазин, Пользователь таким образом подтверждает, что ознакомился с Политикой конфиденциальности, размещенной на Сайте, и дает Продавцу согласие на обработку его персональных данных в соответствии с условиями указанной Политики.
-        <br>
-        2.3. Настоящие Условия, а также информация о Товаре, представленная на Сайте, являются публичной офертой в соответствии с требованиями законодательства Российской Федерации.
-        <br>
-        2.4. Публичная оферта вступает в силу с момента ее акцепта Посетителем Сайта/Покупателем, и действует до момента отзыва акцепта Публичной оферты.
-        <br>
-        2.5. Публичная оферта признается акцептованной Пользователем/ Покупателем с момента регистрации Пользователя на Сайте или оформления Покупателем Заказа.
-        <br>
-        2.6. Права на любые результаты интеллектуальной деятельности (включая публикации, тексты и фотографии), содержащиеся на Сайте, принадлежат Продавцу. Любое использование указанных результатов интеллектуальной деятельности возможно исключительно с письменного согласия Продавца.
-        <br>
-        2.7. Интернет-магазин и предоставляемые сервисы могут временно, частично или полностью быть недоступны по причине проведения профилактических или иных работ, или по любым другим причинам технического характера. Техническая служба Продавца имеет право периодически проводить необходимые профилактические или иные работы с предварительным уведомлением Пользователей/ Покупателей или без такового.
-      </p>
+              <p>
+                <b>2. ОБЩИЕ ПОЛОЖЕНИЯ</b>
+                <br>
+                2.1. Производя заказ Товаров через Интернет-магазин, Пользователь таким образом соглашается с данными условиями продажи Товаров (далее – Условия). Данное Соглашение распространяется на все виды Товаров и услуг, представленных на Сайте, пока такие предложения с описанием присутствуют в каталоге Интернет-магазина.
+                <br>
+                2.2. Производя заказ Товаров через Интернет-магазин, Пользователь таким образом подтверждает, что ознакомился с Политикой конфиденциальности, размещенной на Сайте, и дает Продавцу согласие на обработку его персональных данных в соответствии с условиями указанной Политики.
+                <br>
+                2.3. Настоящие Условия, а также информация о Товаре, представленная на Сайте, являются публичной офертой в соответствии с требованиями законодательства Российской Федерации.
+                <br>
+                2.4. Публичная оферта вступает в силу с момента ее акцепта Посетителем Сайта/Покупателем, и действует до момента отзыва акцепта Публичной оферты.
+                <br>
+                2.5. Публичная оферта признается акцептованной Пользователем/ Покупателем с момента регистрации Пользователя на Сайте или оформления Покупателем Заказа.
+                <br>
+                2.6. Права на любые результаты интеллектуальной деятельности (включая публикации, тексты и фотографии), содержащиеся на Сайте, принадлежат Продавцу. Любое использование указанных результатов интеллектуальной деятельности возможно исключительно с письменного согласия Продавца.
+                <br>
+                2.7. Интернет-магазин и предоставляемые сервисы могут временно, частично или полностью быть недоступны по причине проведения профилактических или иных работ, или по любым другим причинам технического характера. Техническая служба Продавца имеет право периодически проводить необходимые профилактические или иные работы с предварительным уведомлением Пользователей/ Покупателей или без такового.
+              </p>
 
-      <p>
-        <b>3. ПРЕДМЕТ СОГЛАШЕНИЯ</b>
-        3.1. Продавец передает, а Покупатель принимает и оплачивает Товары на условиях, указанных в настоящих Условиях.
-        <br>
-        3.2. Право собственности на Заказанные Товары переходит к Покупателю с момента фактической передачи Товара Покупателю и оплаты последним полной стоимости Товара. Риск его случайной гибели или повреждения Товара переходит к Покупателю с момента фактической передачи Товара Покупателю.
-        <br>
-        3.3. Договор розничной купли-продажи дистанционным способом между Продавцом и Покупателем считается заключенным с момента выдачи Продавцом Покупателю кассового или товарного чека либо иного документа, подтверждающего оплату товара.
-      </p>
+              <p>
+                <b>3. ПРЕДМЕТ СОГЛАШЕНИЯ</b>
+                3.1. Продавец передает, а Покупатель принимает и оплачивает Товары на условиях, указанных в настоящих Условиях.
+                <br>
+                3.2. Право собственности на Заказанные Товары переходит к Покупателю с момента фактической передачи Товара Покупателю и оплаты последним полной стоимости Товара. Риск его случайной гибели или повреждения Товара переходит к Покупателю с момента фактической передачи Товара Покупателю.
+                <br>
+                3.3. Договор розничной купли-продажи дистанционным способом между Продавцом и Покупателем считается заключенным с момента выдачи Продавцом Покупателю кассового или товарного чека либо иного документа, подтверждающего оплату товара.
+              </p>
 
-      <p>
-        <b>4. ЦЕНА ТОВАРА</b>
-        <br>
-        4.1. Цена на каждую позицию Товара указана на сайте Интернет-магазина.
-        <br>
-        4.2. Продавец имеет право в одностороннем порядке изменить цену на любую позицию Товара. Изменение Продавцом цены на оплаченный Покупателем Товар не допускается.
-        <br>
-        4.3. Продавец указывает стоимость доставки Товара на сайте Интернет-магазина либо сообщает Покупателю при оформлении заказа.
-        <br>
-        4.4. Предложение Продавца о заключении договора на конкретный товар действует в течение срока нахождения товара на Сайте Продавца при условии наличия данного товара на складе Продавца.
-        <br>
-        4.5. Обязательства Покупателя по оплате Товара считаются исполненными с момента поступления Продавцу денежных средств.
-        <br>
-        4.6. Расчеты между Продавцом и Покупателем за Товар производятся способами, указанными на сайте Интернет-магазина в разделе Оплата.
-        <br>
-        4.7. Продавец вправе без согласования с Покупателем передавать свои права и обязанности по исполнению Договора третьим лицам
-        <br>
-        4.8. Предложения о скидках не распространяется на товары, представленные в разделе SALE.
-      </p>
+              <p>
+                <b>4. ЦЕНА ТОВАРА</b>
+                <br>
+                4.1. Цена на каждую позицию Товара указана на сайте Интернет-магазина.
+                <br>
+                4.2. Продавец имеет право в одностороннем порядке изменить цену на любую позицию Товара. Изменение Продавцом цены на оплаченный Покупателем Товар не допускается.
+                <br>
+                4.3. Продавец указывает стоимость доставки Товара на сайте Интернет-магазина либо сообщает Покупателю при оформлении заказа.
+                <br>
+                4.4. Предложение Продавца о заключении договора на конкретный товар действует в течение срока нахождения товара на Сайте Продавца при условии наличия данного товара на складе Продавца.
+                <br>
+                4.5. Обязательства Покупателя по оплате Товара считаются исполненными с момента поступления Продавцу денежных средств.
+                <br>
+                4.6. Расчеты между Продавцом и Покупателем за Товар производятся способами, указанными на сайте Интернет-магазина в разделе Оплата.
+                <br>
+                4.7. Продавец вправе без согласования с Покупателем передавать свои права и обязанности по исполнению Договора третьим лицам
+                <br>
+                4.8. Предложения о скидках не распространяется на товары, представленные в разделе SALE.
+              </p>
 
-      <p>
-        <b>5. ОФОРМЛЕНИЕ И ОПЛАТА ЗАКАЗА</b>
-        <br>
-        5.1. Заказ Товара осуществляется Покупателем через сайт Интернет-магазина в сети Интернет, по почте info@front.fashion или по телефону +7 (926) 650-27-67.
-        <br>
-        5.2. При регистрации на сайте Интернет-магазина или при оформлении заказа по почте info@front.fashion или по телефону +7 (926) 650-27-67. Покупатель обязуется предоставить следующую регистрационную информацию:
-        <br>
-        5.2.1. Фамилия, имя, отчество (при наличии);
-        <br>
-        5.2.2. Адрес электронной почты;
-        <br>
-        5.2.3. Номер стационарного (мобильного) телефона;
-        <br>
-        5.2.4. Почтовый адрес (адрес доставки и/ или получения заказа);
-        <br>
-        5.2.5. Имя пользователя (логин) и пароль;
-        <br>
-        5.2.6. Возраст (дата рождения)
-        <br>
-        5.3. Наименование, количество, ассортимент, артикул, цена выбранного Покупателем Товара указываются в корзине Покупателя на сайте Интернет-магазина или сообщаются Покупателю при оформлении заказа по почте info@front.fashion или по телефону +7 (926) 650-27-67.
-        <br>
-        5.4. Если Продавцу необходима дополнительная информация, он вправе запросить ее у Покупателя. В случае непредоставления необходимой информации Покупателем, Продавец не несет ответственности за выбранный Покупателем Товар и вправе расторгнуть договор в одностороннем порядке.
-        <br>
-        5.5. Принятие Покупателем условий настоящей Оферты осуществляется посредством внесения Покупателем соответствующих данных в регистрационную форму/оформления заказа на сайте Интернет-магазина или при сообщении данных, указанных в п. 5.2. настоящих Условий при оформлении заказа по телефону по почте info@front.fashion или по телефону +7 (926) 650-27-67.
-        <br>
-        5.6. Продавец не несет ответственности за содержание и достоверность информации, предоставленной Покупателем при оформлении Заказа. Покупатель несет ответственность за достоверность предоставленной информации при оформлении Заказа.
-        <br>
-        5.7. Продавец вправе в одностороннем порядке расторгнуть договор, в случае, если Покупатель не предоставляет достоверные данные, необходимые для оформления и доставки заказа, не отвечает однозначно на поставленные вопросы, связанные с доставкой, прибегает к оскорблениям кого-либо или не выходит на связь более суток.
-        <br>
-        5.8. Оплата Заказа производится Покупателем согласно условиям, указанным в разделе «Способы оплаты» Интернет-магазина.
-        <br>
-        5.8.1. Покупатель вправе оплатить товар наличным платежом или с помощью безналичного расчета, а именно:
-      </p>
-      <ul>
-        <li>
-          путем внесения предоплаты на Сайте (банковской картой). Заказ может быть оплачен онлайн картами Visa, Mastercard, Maesto, American Express, Мир, а также через сервисы Google Pay, Apple Pay.
-        </li>
-        <li>
-          при получении товара у курьера;
-        </li>
-        <li>
-          наложенным платежом в почтовом отделении;
-        </li>
-      </ul>
-      <p>
-        5.8.2. Безопасность платежей гарантируется использованием SSL протокола для передачи конфиденциальной информации
-      </p>
+              <p>
+                <b>5. ОФОРМЛЕНИЕ И ОПЛАТА ЗАКАЗА</b>
+                <br>
+                5.1. Заказ Товара осуществляется Покупателем через сайт Интернет-магазина в сети Интернет, по почте info@front.fashion или по телефону +7 (926) 650-27-67.
+                <br>
+                5.2. При регистрации на сайте Интернет-магазина или при оформлении заказа по почте info@front.fashion или по телефону +7 (926) 650-27-67. Покупатель обязуется предоставить следующую регистрационную информацию:
+                <br>
+                5.2.1. Фамилия, имя, отчество (при наличии);
+                <br>
+                5.2.2. Адрес электронной почты;
+                <br>
+                5.2.3. Номер стационарного (мобильного) телефона;
+                <br>
+                5.2.4. Почтовый адрес (адрес доставки и/ или получения заказа);
+                <br>
+                5.2.5. Имя пользователя (логин) и пароль;
+                <br>
+                5.2.6. Возраст (дата рождения)
+                <br>
+                5.3. Наименование, количество, ассортимент, артикул, цена выбранного Покупателем Товара указываются в корзине Покупателя на сайте Интернет-магазина или сообщаются Покупателю при оформлении заказа по почте info@front.fashion или по телефону +7 (926) 650-27-67.
+                <br>
+                5.4. Если Продавцу необходима дополнительная информация, он вправе запросить ее у Покупателя. В случае непредоставления необходимой информации Покупателем, Продавец не несет ответственности за выбранный Покупателем Товар и вправе расторгнуть договор в одностороннем порядке.
+                <br>
+                5.5. Принятие Покупателем условий настоящей Оферты осуществляется посредством внесения Покупателем соответствующих данных в регистрационную форму/оформления заказа на сайте Интернет-магазина или при сообщении данных, указанных в п. 5.2. настоящих Условий при оформлении заказа по телефону по почте info@front.fashion или по телефону +7 (926) 650-27-67.
+                <br>
+                5.6. Продавец не несет ответственности за содержание и достоверность информации, предоставленной Покупателем при оформлении Заказа. Покупатель несет ответственность за достоверность предоставленной информации при оформлении Заказа.
+                <br>
+                5.7. Продавец вправе в одностороннем порядке расторгнуть договор, в случае, если Покупатель не предоставляет достоверные данные, необходимые для оформления и доставки заказа, не отвечает однозначно на поставленные вопросы, связанные с доставкой, прибегает к оскорблениям кого-либо или не выходит на связь более суток.
+                <br>
+                5.8. Оплата Заказа производится Покупателем согласно условиям, указанным в разделе «Способы оплаты» Интернет-магазина.
+                <br>
+                5.8.1. Покупатель вправе оплатить товар наличным платежом или с помощью безналичного расчета, а именно:
+              </p>
+              <ul>
+                <li>
+                  путем внесения предоплаты на Сайте (банковской картой). Заказ может быть оплачен онлайн картами Visa, Mastercard, Maesto, American Express, Мир, а также через сервисы Google Pay, Apple Pay.
+                </li>
+                <li>
+                  при получении товара у курьера;
+                </li>
+                <li>
+                  наложенным платежом в почтовом отделении;
+                </li>
+              </ul>
+              <p>
+                5.8.2. Безопасность платежей гарантируется использованием SSL протокола для передачи конфиденциальной информации
+              </p>
 
-      <p>
-        <b>6. ДОСТАВКА И ПЕРЕДАЧА ТОВАРА ПОКУПАТЕЛЮ</b>
-        <br>
-        6.1. Если Договор заключен с условием о доставке Товара Покупателю, Продавец обязан в установленный Договором срок доставить Товар в место, указанное Покупателем в обязательном порядке.
-        <br>
-        6.2. Место доставки или передачи Товара Покупатель указывает при оформлении Заказа на приобретение Товара.
-        <br>
-        6.3. Срок доставки Товара Покупателю состоит из срока обработки заказа и срока доставки. Сроки и стоимость доставки, указанные на Сайте, являются ознакомительными. Точные сроки и стоимость доставки согласуются при оформлении заказа на Сайте.
-        <br>
-        6.4. Доставленный Товар передается Покупателю, а при отсутствии Покупателя – любому лицу, предъявившему квитанцию или иной документ, подтверждающий заключение Договора или оформление доставки Товара, а также полномочия на получение Товара.
-        <br>
-        6.5. Информация о Товаре доводится до сведения Покупателя в технической документации, прилагаемой к Товару, на этикетках, путем нанесения маркировки или иным способом, принятым для отдельных видов товаров.
-        <br>
-        6.6. Доставка за рубеж возможна только при 100% предоплате, включая стоимость доставки.
-        <br>
-        6.7. Заказы с доставкой на международный адрес могут облагаться ввозными таможенными пошлинами и налогами. Продавец не несет ответственность за таможенные пошлины. Стоимость доставки не включает дополнительные местные расходы (пошлины, таможенные сборы, налоги/НДС на транспортные услуги, а также любые местные пошлины, сборы и налоги, когда таковые являются применимыми). Размер пошлины рассчитывается исходя из полной стоимости заказа, невзирая на скидки и стоимость доставки, которые предоставил Продавец.
-      </p>
+              <p>
+                <b>6. ДОСТАВКА И ПЕРЕДАЧА ТОВАРА ПОКУПАТЕЛЮ</b>
+                <br>
+                6.1. Если Договор заключен с условием о доставке Товара Покупателю, Продавец обязан в установленный Договором срок доставить Товар в место, указанное Покупателем в обязательном порядке.
+                <br>
+                6.2. Место доставки или передачи Товара Покупатель указывает при оформлении Заказа на приобретение Товара.
+                <br>
+                6.3. Срок доставки Товара Покупателю состоит из срока обработки заказа и срока доставки. Сроки и стоимость доставки, указанные на Сайте, являются ознакомительными. Точные сроки и стоимость доставки согласуются при оформлении заказа на Сайте.
+                <br>
+                6.4. Доставленный Товар передается Покупателю, а при отсутствии Покупателя – любому лицу, предъявившему квитанцию или иной документ, подтверждающий заключение Договора или оформление доставки Товара, а также полномочия на получение Товара.
+                <br>
+                6.5. Информация о Товаре доводится до сведения Покупателя в технической документации, прилагаемой к Товару, на этикетках, путем нанесения маркировки или иным способом, принятым для отдельных видов товаров.
+                <br>
+                6.6. Доставка за рубеж возможна только при 100% предоплате, включая стоимость доставки.
+                <br>
+                6.7. Заказы с доставкой на международный адрес могут облагаться ввозными таможенными пошлинами и налогами. Продавец не несет ответственность за таможенные пошлины. Стоимость доставки не включает дополнительные местные расходы (пошлины, таможенные сборы, налоги/НДС на транспортные услуги, а также любые местные пошлины, сборы и налоги, когда таковые являются применимыми). Размер пошлины рассчитывается исходя из полной стоимости заказа, невзирая на скидки и стоимость доставки, которые предоставил Продавец.
+              </p>
 
-      <p>
-        <b>7. ВОЗВРАТ ТОВАРА</b>
-        <br>
-        7.1. Возврат осуществляется по требованию Покупателя в соответствии с «Правилами Возврата», указанными на Сайте.
-        <br>
-        7.2. Возврат Товара осуществляется на основании письменного заявления Покупателя по форме, предоставленной Продавцом.
-        <br>
-        7.3. Покупатель вправе вернуть товар надлежащего качества в любое время до его передачи, а после передачи товара - в течение 7 дней, при условии, что сохранены его товарный вид, потребительские свойства, а также при наличии документа, подтверждающего факт и условия покупки указанного товара.
-        <br>
-        7.4. В случае возврата товара надлежащего качества, Покупатель осуществляет возврат самостоятельно и за свой счет.
-        <br>
-        7.5. В случае возврата или обмена товара ненадлежащего качества, на основании письменного обращения Покупателя по адресу электронной почты info@front.fashion Продавец назначает вызов курьера на удобную для Покупателя дату и время и отправляет на адрес электронной почты бланк заявления о возврате товара.
-        <br>
-        7.6. Оплата услуг транспортных компаний в случае возврата или обмена товара ненадлежащего качества осуществляется за счет Продавца.
-        <br>
-        7.7. Возврат или обмен Товара ненадлежащего качества осуществляется Покупателем при наличии документа, подтверждающего факт и условия покупки у Продавца указанного товара.
-        <br>
-        7.8. Продавец проверяет возвращенный товар на соответствие критериям возврата. В случае разногласий Продавец вправе отказаться от возврата или обмена товара.
-      </p>
+              <p>
+                <b>7. ВОЗВРАТ ТОВАРА</b>
+                <br>
+                7.1. Возврат осуществляется по требованию Покупателя в соответствии с «Правилами Возврата», указанными на Сайте.
+                <br>
+                7.2. Возврат Товара осуществляется на основании письменного заявления Покупателя по форме, предоставленной Продавцом.
+                <br>
+                7.3. Покупатель вправе вернуть товар надлежащего качества в любое время до его передачи, а после передачи товара - в течение 7 дней, при условии, что сохранены его товарный вид, потребительские свойства, а также при наличии документа, подтверждающего факт и условия покупки указанного товара.
+                <br>
+                7.4. В случае возврата товара надлежащего качества, Покупатель осуществляет возврат самостоятельно и за свой счет.
+                <br>
+                7.5. В случае возврата или обмена товара ненадлежащего качества, на основании письменного обращения Покупателя по адресу электронной почты info@front.fashion Продавец назначает вызов курьера на удобную для Покупателя дату и время и отправляет на адрес электронной почты бланк заявления о возврате товара.
+                <br>
+                7.6. Оплата услуг транспортных компаний в случае возврата или обмена товара ненадлежащего качества осуществляется за счет Продавца.
+                <br>
+                7.7. Возврат или обмен Товара ненадлежащего качества осуществляется Покупателем при наличии документа, подтверждающего факт и условия покупки у Продавца указанного товара.
+                <br>
+                7.8. Продавец проверяет возвращенный товар на соответствие критериям возврата. В случае разногласий Продавец вправе отказаться от возврата или обмена товара.
+              </p>
 
-      <p>
-        <b>8. ЗАКАЗ ТОВАРА ПО ИНДИВИДУАЛЬНЫМ МЕРКАМ ИЛИ ВЫБРАННЫМ ПОКУПАТЕЛЕМ ИНДИВИДУАЛЬНЫМ ПАРАМЕТРАМ</b>
-        <br>
-        8.1. Покупатель вправе по согласованию с Продавцом заказать в Интернет-магазине товар, выполненный по индивидуальным меркам или параметрам (имеющий индивидуально-определенные свойства).
-        <br>
-        8.2. Заказ, оформление, доставка и оплата товара, выполненного по индивидуальным меркам или параметрам, осуществляется в соответствии с Условиями с особенностями, установленными настоящим разделом.
-        <br>
-        8.3. Внешний вид изделия, материал, стоимость и сроки изготовления согласовываются Покупателем и Продавцом при оформлении заказа.
-        <br>
-        8.4. Продавец вправе запрашивать у Покупателя дополнительную информацию, необходимую для оформления заказа. В случае непредоставления необходимой информации Покупателем, Продавец вправе отказаться от выполнения заказа по индивидуальным меркам/параметрам.
-        <br>
-        8.5. Продавец вправе отказаться от выполнения заказа и заключения договора с Покупателем в случае недостаточности технических средств и производственных мощностей для производства товара по индивидуальным меркам/параметрам Покупателя, при отсутствии на складе Продавца необходимых материалов и комплектующих для изготовления такого товара.
-        <br>
-        8.6. Покупатель не вправе отказаться от товара надлежащего качества, сделанного на заказ (имеющего индивидуально-определенные свойства), если указанный товар может быть использован исключительно приобретающим его Покупателем.
-        <br>
-        8.7 Предложения о скидках не распространяются на товар, изготовленный по индивидуальным меркам.
-      </p>
+              <p>
+                <b>8. ЗАКАЗ ТОВАРА ПО ИНДИВИДУАЛЬНЫМ МЕРКАМ ИЛИ ВЫБРАННЫМ ПОКУПАТЕЛЕМ ИНДИВИДУАЛЬНЫМ ПАРАМЕТРАМ</b>
+                <br>
+                8.1. Покупатель вправе по согласованию с Продавцом заказать в Интернет-магазине товар, выполненный по индивидуальным меркам или параметрам (имеющий индивидуально-определенные свойства).
+                <br>
+                8.2. Заказ, оформление, доставка и оплата товара, выполненного по индивидуальным меркам или параметрам, осуществляется в соответствии с Условиями с особенностями, установленными настоящим разделом.
+                <br>
+                8.3. Внешний вид изделия, материал, стоимость и сроки изготовления согласовываются Покупателем и Продавцом при оформлении заказа.
+                <br>
+                8.4. Продавец вправе запрашивать у Покупателя дополнительную информацию, необходимую для оформления заказа. В случае непредоставления необходимой информации Покупателем, Продавец вправе отказаться от выполнения заказа по индивидуальным меркам/параметрам.
+                <br>
+                8.5. Продавец вправе отказаться от выполнения заказа и заключения договора с Покупателем в случае недостаточности технических средств и производственных мощностей для производства товара по индивидуальным меркам/параметрам Покупателя, при отсутствии на складе Продавца необходимых материалов и комплектующих для изготовления такого товара.
+                <br>
+                8.6. Покупатель не вправе отказаться от товара надлежащего качества, сделанного на заказ (имеющего индивидуально-определенные свойства), если указанный товар может быть использован исключительно приобретающим его Покупателем.
+                <br>
+                8.7 Предложения о скидках не распространяются на товар, изготовленный по индивидуальным меркам.
+              </p>
 
-      <p>
-        <b>9. ВОЗВРАТ ДЕНЕЖНЫХ СРЕДСТВ</b>
-        <br>
-        9.1. Возврат денежных средств осуществляется в соответствии со «Способами возврата денежных средств», указанными на Сайте.
-        <br>
-        9.2. Если иное не согласовано Сторонами дополнительно при оформлении возврата товара, способ возврата денежных средств совпадает со способом оплаты и осуществляется следующими способами:
-      </p>
-      <ul>
-        <li>
-          наличным расчетом;
-        </li>
-        <li>
-          банковским переводом;
-        </li>
-        <li>
-          почтовым переводом.
-        </li>
-      </ul>
-      <p>
-        9.3. Возврат денежных средств осуществляется при условии корректного оформления всех документов, составляет 10 дней с момента получения соответствующего требования, но не ранее поступления возвращаемых товаров на склад.
-        <br>
-        9.4. Продавец вправе дополнительно запрашивать персональные данные Покупателя для осуществления возврата.
-        <br>
-        9.5. Сумма к возврату складывается из стоимости оплаченных возвращаемых товаров. Стоимость за доставку заказа до Покупателя при возврате товара надлежащего качества не возвращается.
-      </p>
-      <p>
-        <b>10. ФОРС-МАЖОР</b>
-        <br>
-        10.1. Любая из Сторон освобождается от ответственности за полное или частичное неисполнение своих обязательств по настоящему Договору, если это неисполнение было вызвано обстоятельствами непреодолимой силы, возникшими после подписания настоящего Договора. «Обстоятельства Непреодолимой Силы» означают чрезвычайные события или обстоятельства, которые такая Сторона не могла предвидеть или предотвратить доступными ей средствами. Такие чрезвычайные события или обстоятельства включают в себя, в частности: забастовки, наводнения, пожары, землетрясения и иные стихийные бедствия, войны, военные действия, действия российских или иностранных государственных органов, а также любые иные обстоятельства, выходящие за пределы разумного контроля любой из Сторон. Изменения действующего законодательства или нормативных актов, прямо или косвенно влияющие на какую-либо из Сторон, не рассматриваются как Обстоятельства непреодолимой силы, однако, в случае внесения таких изменений, которые не позволяют любой из Сторон исполнить какие-либо из ее обязательств по настоящему Договору, Стороны обязаны незамедлительно принять решение относительно порядка работы по устранению этой проблемы с тем, чтобы обеспечить Сторонам продолжение исполнения настоящего Договора.
-      </p>
-      <p>
-        <b>11. ПРОЧИЕ УСЛОВИЯ</b>
-        <br>
-        11.1. К отношениям между Покупателем и Продавцом применяется право Российской Федерации.
-        <br>
-        11.2. Действующая версия Условий размещена на странице: «Условия и положения».
-        <br>
-        11.3. Продавец оставляет за собой право вносить изменения в Условия в одностороннем порядке. Новая редакция Условий вступает в силу немедленно после ее размещения на Сайте, если иное не предусмотрено новой редакцией, и считаются доведенными до сведения Покупателя с момента такого размещения. При этом Покупатель обязуется самостоятельно регулярно отслеживать изменения в Условиях, размещенных на Сайте.
-        <br>
-        11.4. По всем вопросам, связанным с содержанием данных Условий, Покупатель может обращаться по телефону +7 (926) 650-27-67 или по электронной почте info@front.fashion.
-      </p>
+              <p>
+                <b>9. ВОЗВРАТ ДЕНЕЖНЫХ СРЕДСТВ</b>
+                <br>
+                9.1. Возврат денежных средств осуществляется в соответствии со «Способами возврата денежных средств», указанными на Сайте.
+                <br>
+                9.2. Если иное не согласовано Сторонами дополнительно при оформлении возврата товара, способ возврата денежных средств совпадает со способом оплаты и осуществляется следующими способами:
+              </p>
+              <ul>
+                <li>
+                  наличным расчетом;
+                </li>
+                <li>
+                  банковским переводом;
+                </li>
+                <li>
+                  почтовым переводом.
+                </li>
+              </ul>
+              <p>
+                9.3. Возврат денежных средств осуществляется при условии корректного оформления всех документов, составляет 10 дней с момента получения соответствующего требования, но не ранее поступления возвращаемых товаров на склад.
+                <br>
+                9.4. Продавец вправе дополнительно запрашивать персональные данные Покупателя для осуществления возврата.
+                <br>
+                9.5. Сумма к возврату складывается из стоимости оплаченных возвращаемых товаров. Стоимость за доставку заказа до Покупателя при возврате товара надлежащего качества не возвращается.
+              </p>
+              <p>
+                <b>10. ФОРС-МАЖОР</b>
+                <br>
+                10.1. Любая из Сторон освобождается от ответственности за полное или частичное неисполнение своих обязательств по настоящему Договору, если это неисполнение было вызвано обстоятельствами непреодолимой силы, возникшими после подписания настоящего Договора. «Обстоятельства Непреодолимой Силы» означают чрезвычайные события или обстоятельства, которые такая Сторона не могла предвидеть или предотвратить доступными ей средствами. Такие чрезвычайные события или обстоятельства включают в себя, в частности: забастовки, наводнения, пожары, землетрясения и иные стихийные бедствия, войны, военные действия, действия российских или иностранных государственных органов, а также любые иные обстоятельства, выходящие за пределы разумного контроля любой из Сторон. Изменения действующего законодательства или нормативных актов, прямо или косвенно влияющие на какую-либо из Сторон, не рассматриваются как Обстоятельства непреодолимой силы, однако, в случае внесения таких изменений, которые не позволяют любой из Сторон исполнить какие-либо из ее обязательств по настоящему Договору, Стороны обязаны незамедлительно принять решение относительно порядка работы по устранению этой проблемы с тем, чтобы обеспечить Сторонам продолжение исполнения настоящего Договора.
+              </p>
+              <p>
+                <b>11. ПРОЧИЕ УСЛОВИЯ</b>
+                <br>
+                11.1. К отношениям между Покупателем и Продавцом применяется право Российской Федерации.
+                <br>
+                11.2. Действующая версия Условий размещена на странице: «Условия и положения».
+                <br>
+                11.3. Продавец оставляет за собой право вносить изменения в Условия в одностороннем порядке. Новая редакция Условий вступает в силу немедленно после ее размещения на Сайте, если иное не предусмотрено новой редакцией, и считаются доведенными до сведения Покупателя с момента такого размещения. При этом Покупатель обязуется самостоятельно регулярно отслеживать изменения в Условиях, размещенных на Сайте.
+                <br>
+                11.4. По всем вопросам, связанным с содержанием данных Условий, Покупатель может обращаться по телефону +7 (926) 650-27-67 или по электронной почте info@front.fashion.
+              </p>
 
-      <p>
-        <b>12. Реквизиты Продавца</b>
-      </p>
-      <p>
-        Продавец:
-        <br>
-        ООО «ФРОНТ»
-        <br>
-        Адрес (место нахождения): РФ, г. Москва, Ленинградский проспект д. 77, крп 3
-        <br>
-        Электронная почта: info@front.fashion
-        <br>
-        Тел: +7 (926) 650-27-67
-        <br>
-        ОГРН: 1207700245928
-        <br>
-        КПП: 774301001
-        <br>
-        ИНН: 7743343498
-      </p>
-    </div>
-  </div>
-</section>
+              <p>
+                <b>12. Реквизиты Продавца</b>
+              </p>
+              <p>
+                Продавец:
+                <br>
+                ООО «ФРОНТ»
+                <br>
+                Адрес (место нахождения): РФ, г. Москва, Ленинградский проспект д. 77, крп 3
+                <br>
+                Электронная почта: info@front.fashion
+                <br>
+                Тел: +7 (926) 650-27-67
+                <br>
+                ОГРН: 1207700245928
+                <br>
+                КПП: 774301001
+                <br>
+                ИНН: 7743343498
+              </p>
+            </div>
+          </div>
+        </section>
 
 
       </main>
     </div>
     <footer class="site__footer footer">
-  <div class="footer__cont">
-    <div class="container">
-      <div class="footer__top">
-        <div class="footer__form">
-          <div class="footer__item">
-            Подпишитесь на&nbsp;нашу рассылку и&nbsp;получите -10%&nbsp;на&nbsp;первый заказ </div>
-          <form action=""
-                id="subscribe"
-                data-validate>
-            <div class="footer__form-field">
-              <input class="form-input footer__form-input"
-                     type="mail"
-                     name="Почта"
-                     required
-                     placeholder="E-mail"
-                     data-validate="email">
-              <button class="btn-reset footer__form-btn"
-                      type="submit">
-                <svg width="29"
-                     height="16"
-                     aria-hidden="true">
-                  <use xlink:href="img/sprite.svg#icon-average-arrow"></use>
-                </svg>
-              </button>
+      <div class="footer__cont">
+        <div class="container">
+          <div class="footer__top">
+            <div class="footer__form">
+              <div class="footer__item">
+                Подпишитесь на&nbsp;нашу рассылку и&nbsp;получите -10%&nbsp;на&nbsp;первый заказ </div>
+              <form action="" id="subscribe" data-validate>
+                <div class="footer__form-field">
+                  <input class="form-input footer__form-input" type="mail" name="Почта" required placeholder="E-mail" data-validate="email">
+                  <button class="btn-reset footer__form-btn" type="submit">
+                    <svg width="29" height="16" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#icon-average-arrow"></use>
+                    </svg>
+                  </button>
+                </div>
+                <label class="form-checkbox">
+                  <input class="visually-hidden" type="checkbox" required="" data-validate="confirm">
+                  <span>
+                    <span>Соглашаюсь с <a href="#" target="_blank" rel="nofollow noreferer noopener">политикой конфиденциальности</a> и <a href="#" target="_blank" rel="nofollow noreferer noopener">условиями публичной оферты</a>.</span>
+                  </span>
+                </label>
+              </form>
             </div>
-            <label class="form-checkbox">
-              <input class="visually-hidden"
-                     type="checkbox"
-                     required=""
-                     data-validate="confirm">
-              <span>
-                <span>Соглашаюсь с <a href="#"
-   target="_blank"
-   rel="nofollow noreferer noopener">политикой конфиденциальности</a> и <a href="#"
-   target="_blank"
-   rel="nofollow noreferer noopener">условиями публичной оферты</a>.</span>
-              </span>
-            </label>
-          </form>
-        </div>
-        <div class="footer__nav">
-          <ul class="footer__list">
-            <li><a class="footer__item"
-                 href="#">О нас</a></li>
-            <li><a class="footer__item"
-                 href="#">ДОСТАВКА И ВОЗВРАТ</a></li>
-            <li><a class="footer__item"
-                 href="#">УСЛОВИЯ И ПОЛОЖЕНИЯ</a></li>
-          </ul>
-          <ul class="footer__list">
-            <li><a class="footer__item"
-                 href="#">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</a></li>
-            <li><a class="footer__item"
-                 href="#">ПОМОЩЬ</a></li>
-          </ul>
-        </div>
-        <ul class="list-reset footer__contacts d-none-sm">
-          <li><a class="footer__item"
-               href="#">+7 (999) 999—99—99</a></li>
-          <li><a class="footer__item"
-               href="">russia@mail.ru</a></li>
-        </ul>
-      </div>
+            <div class="footer__nav">
+              <ul class="footer__list">
+                <li><a class="footer__item" href="#">О нас</a></li>
+                <li><a class="footer__item" href="#">ДОСТАВКА И ВОЗВРАТ</a></li>
+                <li><a class="footer__item" href="#">УСЛОВИЯ И ПОЛОЖЕНИЯ</a></li>
+              </ul>
+              <ul class="footer__list">
+                <li><a class="footer__item" href="#">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</a></li>
+                <li><a class="footer__item" href="#">ПОМОЩЬ</a></li>
+              </ul>
+            </div>
+            <ul class="list-reset footer__contacts d-none-sm">
+              <li><a class="footer__item" href="#">+7 (999) 999—99—99</a></li>
+              <li><a class="footer__item" href="">russia@mail.ru</a></li>
+            </ul>
+          </div>
 
-      <div class="footer__bottom">
-        <div class="footer__logo">
-          <a href="/">
-            <img src="/img/logo-footer.svg"
-                 alt="Logo">
-          </a>
+          <div class="footer__bottom">
+            <div class="footer__logo">
+              <a href="/">
+                <img src="/img/logo-footer.svg" alt="Logo">
+              </a>
+            </div>
+            <ul class="list-reset footer__contacts d-none-lg">
+              <li><a class="footer__item" href="#">+7 (999) 999—99—99</a></li>
+              <li><a class="footer__item" href="">russia@mail.ru</a></li>
+            </ul>
+            <ul class="list-reset social">
+              <li><a href="#"><img src="/img/icon-vk.svg" alt="VK"></a></li>
+            </ul>
+          </div>
         </div>
-        <ul class="list-reset footer__contacts d-none-lg">
-          <li><a class="footer__item"
-               href="#">+7 (999) 999—99—99</a></li>
-          <li><a class="footer__item"
-               href="">russia@mail.ru</a></li>
-        </ul>
-        <ul class="list-reset social">
-          <li><a href="#"><img src="/img/icon-vk.svg"
-                   alt="VK"></a></li>
-        </ul>
+      </div>
+    </footer>
+    <div class="scroll-top" id="scroll-top">
+      <a class="scroll-top__link" href="#site-top" aria-label="Наверх страницы">
+        <svg width="14" height="8" aria-hidden="true">
+          <use xlink:href="img/sprite.svg#icon-up"></use>
+        </svg>
+      </a>
+    </div>
+    <div class="hystmodal hystmodal--simple" id="send-ok-modal" aria-hidden="true">
+      <div class="hystmodal__wrap">
+        <div class="hystmodal__window hystmodal__window--form" role="dialog" aria-modal="true">
+          <div class="modal">
+            <button class="modal__close" type="button" aria-label="Close window" data-hystclose>
+              <svg class="modal__close-icon" width="32" height="32" aria-hidden="true">
+                <use xlink:href="img/sprite.svg#icon-cross"></use>
+              </svg>
+            </button>
+            <div class="title-md modal__title">Спасибо за заявку!</div>
+            <div class="modal__text">Мы свяжемся с вами в ближайшее время и обсудим все детали.</div>
+            <div class="modal__bottom-btn">
+              <button class="btn-reset btn" data-hystclose>Хорошо</button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</footer>
-<div class="scroll-top"
-     id="scroll-top">
-  <a class="scroll-top__link"
-     href="#site-top"
-     aria-label="Наверх страницы">
-    <svg width="14"
-         height="8"
-         aria-hidden="true">
-      <use xlink:href="img/sprite.svg#icon-up"></use>
-    </svg>
-  </a>
-</div>
-<div class="hystmodal hystmodal--simple"
-     id="send-ok-modal"
-     aria-hidden="true">
-  <div class="hystmodal__wrap">
-    <div class="hystmodal__window hystmodal__window--form"
-         role="dialog"
-         aria-modal="true">
-      <div class="modal">
-        <button class="modal__close"
-                type="button"
-                aria-label="Close window"
-                data-hystclose>
-          <svg class="modal__close-icon"
-               width="32"
-               height="32"
-               aria-hidden="true">
-            <use xlink:href="img/sprite.svg#icon-cross"></use>
-          </svg>
-        </button>
-        <div class="title-md modal__title">Спасибо за заявку!</div>
-<div class="modal__text">Мы свяжемся с вами в ближайшее время и обсудим все детали.</div>
-<div class="modal__bottom-btn">
-  <button class="btn-reset btn"
-          data-hystclose>Хорошо</button>
-</div>
-      </div>
-    </div>
-  </div>
-</div>
   </div>
   <script src="js/vendor-bundle.js"></script>
-<script src="js/main.js" type="module"></script>
+  <script src="js/main.js" type="module"></script>
 </body>
 
 </html>
