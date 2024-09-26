@@ -194,7 +194,7 @@
         <div class="header-modal__content">
           <div class="container">
             <div class="header-modal__top">
-              <button class="btn header-modal__close">
+              <button class="btn-reset header-modal__close">
                 <svg width="16" height="16" aria-hidden="true">
                   <use xlink:href="img/sprite.svg#icon-close"></use>
                 </svg>
@@ -379,7 +379,7 @@
               </div>
               <div class="catalog__products">
                 <div class="filters">
-                  <details class="filters__item filters__item--black" data-toggle="dropdown">
+                  <details class="filters__item filters__item--black d-none-lg" data-toggle="dropdown">
                     <summary>
                       фильтры
                       <svg width="8" height="12" aria-hidden="true">
@@ -799,23 +799,8 @@
                       </div>
                     </article>
                   </li>
-                  <li class="catalog__item catalog__item--wide">
-                    <article class="product">
-                      <div class="product__img">
-                        <img src="/img/img-product-1.png" alt="MASHA ANDRIANOVA">
-                      </div>
-                      <div class="product__bottom">
-                        <h3 class="product__title">
-                          <a href="#">MASHA ANDRIANOVA</a>
-                        </h3>
-                        <div class="product__info">
-                          <span class="product__category">Платье</span>
-                          <span class="product__price">17 300 ₽</span>
-                        </div>
-                      </div>
-                    </article>
-                  </li>
-                  <li class="catalog__item catalog__item--wide">
+
+                  <li class="catalog__item">
                     <article class="promo-code">
                       <div class="promo-code__cont">
                         <div class="promo-code__grid">
@@ -830,6 +815,55 @@
                       </div>
                     </article>
                   </li>
+
+                  <li class="catalog__item">
+                    <article class="product product--none">
+                      <div class="product__img">
+                        <img src="/img/img-product-1.png" alt="MASHA ANDRIANOVA">
+                      </div>
+                      <div class="product__bottom">
+                        <h3 class="product__title">
+                          <a href="#">MASHA ANDRIANOVA</a>
+                        </h3>
+                        <div class="product__info" data-info="Cообщить о поступлении">
+                          <span class="product__category">Платье</span>
+                          <span class="product__price">17 300 ₽</span>
+                        </div>
+                      </div>
+                    </article>
+                  </li>
+                  <li class="catalog__item">
+                    <article class="product">
+                      <div class="product__img">
+                        <img src="/img/img-product-1.png" alt="MASHA ANDRIANOVA">
+                      </div>
+                      <div class="product__bottom">
+                        <h3 class="product__title">
+                          <a href="#">MASHA ANDRIANOVA</a>
+                        </h3>
+                        <div class="product__info">
+                          <span class="product__category">Платье</span>
+                          <span class="product__price">17 300 ₽</span>
+                        </div>
+                      </div>
+                    </article>
+                  </li>
+                  <li class="catalog__item ">
+                    <article class="product">
+                      <div class="product__img">
+                        <img src="/img/img-product-1.png" alt="MASHA ANDRIANOVA">
+                      </div>
+                      <div class="product__bottom">
+                        <h3 class="product__title">
+                          <a href="#">MASHA ANDRIANOVA</a>
+                        </h3>
+                        <div class="product__info">
+                          <span class="product__category">Платье</span>
+                          <span class="product__price">17 300 ₽</span>
+                        </div>
+                      </div>
+                    </article>
+                  </li>
                   <li class="catalog__item">
                     <article class="product">
                       <div class="product__img">
@@ -862,55 +896,7 @@
                       </div>
                     </article>
                   </li>
-                  <li class="catalog__item catalog__item--wide">
-                    <article class="product">
-                      <div class="product__img">
-                        <img src="/img/img-product-1.png" alt="MASHA ANDRIANOVA">
-                      </div>
-                      <div class="product__bottom">
-                        <h3 class="product__title">
-                          <a href="#">MASHA ANDRIANOVA</a>
-                        </h3>
-                        <div class="product__info">
-                          <span class="product__category">Платье</span>
-                          <span class="product__price">17 300 ₽</span>
-                        </div>
-                      </div>
-                    </article>
-                  </li>
                   <li class="catalog__item">
-                    <article class="product">
-                      <div class="product__img">
-                        <img src="/img/img-product-1.png" alt="MASHA ANDRIANOVA">
-                      </div>
-                      <div class="product__bottom">
-                        <h3 class="product__title">
-                          <a href="#">MASHA ANDRIANOVA</a>
-                        </h3>
-                        <div class="product__info">
-                          <span class="product__category">Платье</span>
-                          <span class="product__price">17 300 ₽</span>
-                        </div>
-                      </div>
-                    </article>
-                  </li>
-                  <li class="catalog__item">
-                    <article class="product">
-                      <div class="product__img">
-                        <img src="/img/img-product-1.png" alt="MASHA ANDRIANOVA">
-                      </div>
-                      <div class="product__bottom">
-                        <h3 class="product__title">
-                          <a href="#">MASHA ANDRIANOVA</a>
-                        </h3>
-                        <div class="product__info">
-                          <span class="product__category">Платье</span>
-                          <span class="product__price">17 300 ₽</span>
-                        </div>
-                      </div>
-                    </article>
-                  </li>
-                  <li class="catalog__item catalog__item--wide">
                     <article class="product">
                       <div class="product__img">
                         <img src="/img/img-product-1.png" alt="MASHA ANDRIANOVA">
@@ -964,7 +950,7 @@
               <form action="" id="subscribe" data-validate>
                 <div class="footer__form-field">
                   <input class="form-input footer__form-input" type="mail" name="Почта" required placeholder="E-mail" data-validate="email">
-                  <button class="btn footer__form-btn" type="submit">
+                  <button class="btn-reset footer__form-btn" type="submit">
                     <svg width="29" height="16" aria-hidden="true">
                       <use xlink:href="img/sprite.svg#icon-average-arrow"></use>
                     </svg>

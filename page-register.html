@@ -297,227 +297,86 @@
       </div>
     </header>
     <div class="site__content">
+      <div class="breadcrumbs" typeof="BreadcrumbList" vocab="https://schema.org/">
+        <div class="container">
+          <a href="page-main.html">Главная</a>&ensp;&frasl;&ensp;<span>Личный кабинет</span>&ensp;&frasl;&ensp;<span class="current-item">Регистрация</span>
+        </div>
+      </div>
+
       <main>
-        <section class="hero">
-          <div class="swiper hero-slider slider">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-              <!-- Slides -->
-              <div class="swiper-slide">
-                <div class="hero__slide">
-                  <div class="hero__img">
-                    <img src="/img/img-bg-hero-1.png" alt="Новая
-                     Коллекция">
-                  </div>
-                  <div class="hero__descr">
+        <section class="auth page">
+          <div class="container ">
+            <h1 class="title page__title">Личный кабинет</h1>
+            <div class="page__centered">
+              <div class="auth__cont">
+                <div class="links links--max-width">
+                  <ul class="links__list">
 
-                    <h2 class="title hero__title">
-                      Новая
-                      Коллекция
-                    </h2>
-                    <a href="#" class="btn btn--view">
-                      Смотреть
-                    </a>
+                    <li>
+                      <a class="links__item" href="/page-login.html">вход</a>
+                    </li>
 
-                  </div>
+                    <li>
+                      <a class="links__item is-selected" href="">регистрация</a>
+                    </li>
+
+                  </ul>
                 </div>
 
-              </div>
-              <div class="swiper-slide">
-                <div class="hero__slide">
-                  <div class="hero__img">
-                    <img src="/img/img-bg-hero-1.png" alt="Новая
-                     Коллекция">
+                <form class="auth-register" id="register-form">
+                  <div class="form-subtitle">личные данные</div>
+                  <div class="auth-register__cont">
+                    <div class="form-row">
+                      <div class="form-field">
+                        <input class="form-input" type="text" name="Имя" required>
+                        <label>имя <span>*</span></label>
+                      </div>
+                      <div class="form-field">
+                        <input class="form-input" type="text" name="Фамилия" required>
+                        <label>фамилия <span>*</span> </label>
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="form-field">
+                        <input class="form-input" type="tel" name="Контактный телефон" required>
+                        <label>Телефон <span>*</span></label>
+                      </div>
+                      <div class="form-field">
+                        <input class="form-input" type="mail" name="Контактная почты" required>
+                        <label>E-mail <span>*</span></label>
+                      </div>
+                    </div>
+                    <div class="form-field flatpickr" data-id="birthday">
+                      <input class="form-input" id="birthday" type="date" name="День рождение" required data-input>
+                      <label>День рождение </label>
+                      <a class="flatpickr-clear visually-hidden" title="clear" data-clear>
+                      </a>
+                    </div>
+                    <div class="form-field">
+                      <input class="form-input" type="password" name="Пароль" required>
+                      <label>пароль <span>*</span> </label>
+                    </div>
+
+                    <div>
+                      <div class="form-subtitle form-subtitle--sm">Подтвердите ваше согласие</div>
+                      <label class="form-checkbox form-checkbox--black">
+                        <input class="visually-hidden" type="checkbox" required="" data-validate="confirm">
+                        <span>
+                          <span>Даю согласие на обработку политикой конфиденциальности c <a href="#" target="_blank" rel="nofollow noreferer noopener">Политикой конфиденциальности</a> и <a href="#" target="_blank" rel="nofollow noreferer noopener">Публичной офертой ознакомлен</a>.
+                          </span>
+                        </span>
+                      </label>
+                    </div>
                   </div>
-                  <div class="hero__descr">
-
-                    <h2 class="title hero__title">
-                      Новая
-                      Коллекция2
-                    </h2>
-                    <a href="#" class="btn btn--view">
-                      Смотреть
-                    </a>
-
-                  </div>
-                </div>
-
-              </div>
-              <div class="swiper-slide">
-                <div class="hero__slide">
-                  <div class="hero__img">
-                    <img src="/img/img-bg-hero-1.png" alt="Новая
-                     Коллекция">
-                  </div>
-                  <div class="hero__descr">
-
-                    <h2 class="title hero__title">
-                      Новая
-                      Коллекция3
-                    </h2>
-                    <a href="#" class="btn btn--view">
-                      Смотреть
-                    </a>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-
-
-
-
-
-
-            <div class="swiper-pagination hero__pagination"></div>
-
-            <div class="hero__btn-prev d-none-sm"></div>
-            <div class="hero__btn-next d-none-sm"></div>
-
-          </div>
-        </section>
-        <section class="about">
-          <div class="about__wrap">
-            <div class="container">
-              <div class="about__cont">
-                <div class="about__descr">
-                  <div class="about__name">FRONT</div>
-                  <h2 class="title about__title">
-                    <a href="">О проекте</a>
-                  </h2>
-                  <div class="about__img d-none-lg">
-                    <img src="/img/img-about-1.png" alt="О проекте">
-                  </div>
-                  <div class="about__txt">
-                    <p>
-                      Проект FRONT родился в 2020 году на волне поисков национального и культурного кода в моде и стиле жизни. Мы, основательницы <strong>FRONT Ольга Михайловская</strong> и <strong>Евгения Филиппова</strong>, ищем ремесленников
-                      и маленькие традиционные производства, дизайнеров, работающих
-                      с <strong>национальными и культурными традициями</strong>, и уже создали свою собственную линию, которая так и называется FRONT.
-                    </p>
-                    <p>
-                      Все это создается с использованием ручных техник и уникальных, созданных специально для нас, принтов. Это абсолютно <strong>штучный товар</strong>, и мы этим гордимся!
-                    </p>
-                  </div>
-
-                  <a class="btn btn--view" href="#">Смотреть</a>
-                </div>
-                <div class="about__img d-none-sm">
-                  <img src="/img/img-about-1.png" alt="О проекте">
-                </div>
+                  <button class="btn btn--dark" type="submit">зарегистрироваться</button>
+                </form>
               </div>
             </div>
+
+
           </div>
         </section>
 
-        <section class="categories">
-          <div class="container">
-            <ul class="list-reset categories__list">
-              <li class="category">
-                <div class="category__img">
-                  <img src="/img/img-category-clothes.png" alt="Одежда">
-                </div>
-                <h3 class="category__title">
-                  <a href="#">Одежда</a>
-                </h3>
-              </li>
-              <li class="category">
-                <div class="category__img">
-                  <img src="/img/img-category-house.png" alt="Одежда">
-                </div>
-                <h3 class="category__title">
-                  <a href="#">Дом</a>
-                </h3>
-              </li>
-              <li class="category">
-                <div class="category__img">
-                  <img src="/img/img-category-accessories.png" alt="Одежда">
-                </div>
-                <h3 class="category__title">
-                  <a href="">Аксессуары</a>
-                </h3>
-              </li>
-
-            </ul>
-          </div>
-        </section>
-        <section class="products products--background-image">
-          <div class="container">
-            <h2 class="title products__title products__title--large">Бестселлеры</h2>
-
-            <ul class="products__list">
-              <li>
-                <article class="product">
-                  <div class="product__img">
-                    <img src="/img/img-product-1.png" alt="MASHA ANDRIANOVA">
-                  </div>
-                  <div class="product__bottom">
-                    <h3 class="product__title">
-                      <a href="#">MASHA ANDRIANOVA</a>
-                    </h3>
-                    <div class="product__info">
-                      <span class="product__category">Платье</span>
-                      <span class="product__price">17 300</span>
-                    </div>
-                  </div>
-                </article>
-              </li>
-              <li>
-                <article class="product">
-                  <div class="product__img">
-                    <img src="/img/img-product-1.png" alt="MASHA ANDRIANOVA">
-                  </div>
-                  <div class="product__bottom">
-                    <h3 class="product__title">
-                      <a href="#">MASHA ANDRIANOVA</a>
-                    </h3>
-                    <div class="product__info">
-                      <span class="product__category">Платье</span>
-                      <span class="product__price">17 300</span>
-                    </div>
-                  </div>
-                </article>
-              </li>
-              <li>
-                <article class="product">
-                  <div class="product__img">
-                    <img src="/img/img-product-1.png" alt="MASHA ANDRIANOVA">
-                  </div>
-                  <div class="product__bottom">
-                    <h3 class="product__title">
-                      <a href="#">MASHA ANDRIANOVA</a>
-                    </h3>
-                    <div class="product__info">
-                      <span class="product__category">Платье</span>
-                      <span class="product__price">17 300</span>
-                    </div>
-                  </div>
-                </article>
-              </li>
-              <li>
-                <article class="product">
-                  <div class="product__img">
-                    <img src="/img/img-product-1.png" alt="MASHA ANDRIANOVA">
-                  </div>
-                  <div class="product__bottom">
-                    <h3 class="product__title">
-                      <a href="#">MASHA ANDRIANOVA</a>
-                    </h3>
-                    <div class="product__info">
-                      <span class="product__category">Платье</span>
-                      <span class="product__price">17 300</span>
-                    </div>
-                  </div>
-                </article>
-              </li>
-            </ul>
-
-            <a href="#" class="products__link">Смотреть всё
-              <svg width="87" height="16" aria-hidden="true">
-                <use xlink:href="img/sprite.svg#icon-long-arrow"></use>
-              </svg>
-            </a>
-          </div>
-        </section>
 
       </main>
     </div>

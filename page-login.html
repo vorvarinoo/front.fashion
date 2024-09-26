@@ -194,7 +194,7 @@
         <div class="header-modal__content">
           <div class="container">
             <div class="header-modal__top">
-              <button class="btn header-modal__close">
+              <button class="btn-reset header-modal__close">
                 <svg width="16" height="16" aria-hidden="true">
                   <use xlink:href="img/sprite.svg#icon-close"></use>
                 </svg>
@@ -297,24 +297,56 @@
       </div>
     </header>
     <div class="site__content">
-      <main>
-        <section class="search">
-          <div class="container">
-            <form action="">
-              <input type="text">
+      <div class="breadcrumbs" typeof="BreadcrumbList" vocab="https://schema.org/">
+        <div class="container">
+          <a href="page-main.html">Главная</a>&ensp;&frasl;&ensp;<span>Личный кабинет</span>&ensp;&frasl;&ensp;<span class="current-item">Вход</span>
+        </div>
+      </div>
 
-              <div>
-                <label for="">
-                  <input type="radio" name="" id="">
-                </label>
-                <label for="">
-                  <input type="radio" name="" id="">
-                </label>
-                <label for="">
-                  <input type="radio" name="" id="">
-                </label>
+      <main>
+        <section class="auth page">
+          <div class="container">
+            <h1 class="title page__title">Личный кабинет</h1>
+
+            <div class="page__centered">
+              <div class="auth__cont">
+                <div class="links links--max-width">
+                  <ul class="links__list">
+
+                    <li>
+                      <a class="links__item is-selected" href="">вход</a>
+                    </li>
+
+                    <li>
+                      <a class="links__item" href="/page-register.html">регистрация</a>
+                    </li>
+
+                  </ul>
+
+                </div>
+                <form class="auth-login" id="login-form">
+                  <div class="auth-login__cont">
+                    <div class="form-field">
+                      <input class="form-input" type="mail" name="Контактная почты" required>
+                      <label>E-mail </label>
+                    </div>
+                    <div>
+                      <div class="form-field">
+                        <input class="form-input" type="password" name="Пароль" required>
+                        <label>пароль </label>
+                      </div>
+                      <a class="auth-login__pass" href="">Забыли пароль?</a>
+                    </div>
+
+                  </div>
+
+
+
+                  <button class="btn btn--dark" type="submit">войти</button>
+                </form>
               </div>
-            </form>
+            </div>
+
           </div>
         </section>
 
@@ -331,7 +363,7 @@
               <form action="" id="subscribe" data-validate>
                 <div class="footer__form-field">
                   <input class="form-input footer__form-input" type="mail" name="Почта" required placeholder="E-mail" data-validate="email">
-                  <button class="btn footer__form-btn" type="submit">
+                  <button class="btn-reset footer__form-btn" type="submit">
                     <svg width="29" height="16" aria-hidden="true">
                       <use xlink:href="img/sprite.svg#icon-average-arrow"></use>
                     </svg>

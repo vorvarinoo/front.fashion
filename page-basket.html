@@ -194,7 +194,7 @@
         <div class="header-modal__content">
           <div class="container">
             <div class="header-modal__top">
-              <button class="btn header-modal__close">
+              <button class="btn-reset header-modal__close">
                 <svg width="16" height="16" aria-hidden="true">
                   <use xlink:href="img/sprite.svg#icon-close"></use>
                 </svg>
@@ -304,233 +304,237 @@
       </div>
       <main>
         <section class="basket page">
-          <div class="container page__cont">
-            <div class="page__section">
-              <h1 class="title page__title">корзина</h1>
-              <ul class="basket__list">
-                <li class="basket-product">
 
-                  <div class="basket-product__cont">
-                    <div class="basket-product__img">
-                      <img src="img/img-product-1.png" alt="">
-                    </div>
+          <div class="container ">
+            <h1 class="title page__title">корзина</h1>
+            <div class="page__flex">
+              <div class="page__section">
 
-                    <div class="basket-product__details">
-                      <div>
-                        <h2 class="basket-product__title">MASHA ANDRIANOVA</h2>
-                        <div class="basket-product__info">
-                          <div class="basket-product__category">Платье</div>
-                          <div class="basket-product__price">
-                            <del>17 900 ₽</del>
-                            <span>17 300 ₽</span>
-                          </div>
-                        </div>
+                <ul class="basket__list">
+                  <li class="basket-product">
 
-                        <div class="size">
-                          <div class="size__top">Размер</div>
-                          <div class="size__item">
-                            sm
-                          </div>
-                        </div>
-
-                        <div class="basket-product__code">Код товара 5567890</div>
-                      </div>
-                      <div class="stepper">
-                        <button class="stepper__btn stepper__btn--down" aria-label="Уменьшить количество"></button>
-                        <label>
-                          <input type="text" value="1" maxlength="3">
-                        </label>
-                        <button class="stepper__btn stepper__btn--up" aria-label="Увеличить количество"></button>
+                    <div class="basket-product__cont">
+                      <div class="basket-product__img">
+                        <img src="img/img-product-1.png" alt="">
                       </div>
 
-                    </div>
-
-                    <div class="basket-product__delete">
-                      <svg width="18" height="18" aria-hidden="true">
-                        <use xlink:href="img/sprite.svg#icon-cross"></use>
-                      </svg>
-                    </div>
-                  </div>
-
-                </li>
-                <li class="basket-product">
-
-                  <div class="basket-product__cont">
-                    <div class="basket-product__img">
-                      <img src="img/img-product-1.png" alt="">
-                    </div>
-
-                    <div class="basket-product__details">
-                      <div>
-                        <h2 class="basket-product__title">MASHA ANDRIANOVA</h2>
-                        <div class="basket-product__info">
-                          <div class="basket-product__category">Платье</div>
-                          <div class="basket-product__price">
-                            <del>17 900 ₽</del>
-                            <span>17 300 ₽</span>
+                      <div class="basket-product__details">
+                        <div>
+                          <h2 class="basket-product__title">MASHA ANDRIANOVA</h2>
+                          <div class="basket-product__info">
+                            <div class="basket-product__category">Платье</div>
+                            <div class="basket-product__price">
+                              <del>17 900 ₽</del>
+                              <span>17 300 ₽</span>
+                            </div>
                           </div>
+
+                          <div class="size">
+                            <div class="size__top">Размер</div>
+                            <div class="size__item">
+                              sm
+                            </div>
+                          </div>
+
+                          <div class="basket-product__code">Код товара 5567890</div>
+                        </div>
+                        <div class="stepper">
+                          <button class="stepper__btn stepper__btn--down" aria-label="Уменьшить количество"></button>
+                          <label>
+                            <input type="text" value="1" maxlength="3">
+                          </label>
+                          <button class="stepper__btn stepper__btn--up" aria-label="Увеличить количество"></button>
                         </div>
 
-                        <div class="size">
-                          <div class="size__top">Размер</div>
-                          <div class="size__item">
-                            sm
+                      </div>
+
+                      <div class="basket-product__delete">
+                        <svg width="18" height="18" aria-hidden="true">
+                          <use xlink:href="img/sprite.svg#icon-cross"></use>
+                        </svg>
+                      </div>
+                    </div>
+
+                  </li>
+                  <li class="basket-product">
+
+                    <div class="basket-product__cont">
+                      <div class="basket-product__img">
+                        <img src="img/img-product-1.png" alt="">
+                      </div>
+
+                      <div class="basket-product__details">
+                        <div>
+                          <h2 class="basket-product__title">MASHA ANDRIANOVA</h2>
+                          <div class="basket-product__info">
+                            <div class="basket-product__category">Платье</div>
+                            <div class="basket-product__price">
+                              <del>17 900 ₽</del>
+                              <span>17 300 ₽</span>
+                            </div>
                           </div>
+
+                          <div class="size">
+                            <div class="size__top">Размер</div>
+                            <div class="size__item">
+                              sm
+                            </div>
+                          </div>
+
+                          <div class="basket-product__code">Код товара 5567890</div>
+                        </div>
+                        <div class="stepper">
+                          <button class="stepper__btn stepper__btn--down" aria-label="Уменьшить количество"></button>
+                          <label>
+                            <input type="text" value="1" maxlength="3">
+                          </label>
+                          <button class="stepper__btn stepper__btn--up" aria-label="Увеличить количество"></button>
                         </div>
 
-                        <div class="basket-product__code">Код товара 5567890</div>
-                      </div>
-                      <div class="stepper">
-                        <button class="stepper__btn stepper__btn--down" aria-label="Уменьшить количество"></button>
-                        <label>
-                          <input type="text" value="1" maxlength="3">
-                        </label>
-                        <button class="stepper__btn stepper__btn--up" aria-label="Увеличить количество"></button>
                       </div>
 
+                      <div class="basket-product__delete">
+                        <svg width="18" height="18" aria-hidden="true">
+                          <use xlink:href="img/sprite.svg#icon-cross"></use>
+                        </svg>
+                      </div>
                     </div>
 
-                    <div class="basket-product__delete">
-                      <svg width="18" height="18" aria-hidden="true">
-                        <use xlink:href="img/sprite.svg#icon-cross"></use>
-                      </svg>
-                    </div>
-                  </div>
+                  </li>
+                  <li class="basket-product">
 
-                </li>
-                <li class="basket-product">
+                    <div class="basket-product__cont">
+                      <div class="basket-product__img">
+                        <img src="img/img-product-1.png" alt="">
+                      </div>
 
-                  <div class="basket-product__cont">
-                    <div class="basket-product__img">
-                      <img src="img/img-product-1.png" alt="">
-                    </div>
-
-                    <div class="basket-product__details">
-                      <div>
-                        <h2 class="basket-product__title">MASHA ANDRIANOVA</h2>
-                        <div class="basket-product__info">
-                          <div class="basket-product__category">Платье</div>
-                          <div class="basket-product__price">
-                            <del>17 900 ₽</del>
-                            <span>17 300 ₽</span>
+                      <div class="basket-product__details">
+                        <div>
+                          <h2 class="basket-product__title">MASHA ANDRIANOVA</h2>
+                          <div class="basket-product__info">
+                            <div class="basket-product__category">Платье</div>
+                            <div class="basket-product__price">
+                              <del>17 900 ₽</del>
+                              <span>17 300 ₽</span>
+                            </div>
                           </div>
+
+                          <div class="size">
+                            <div class="size__top">Размер</div>
+                            <div class="size__item">
+                              sm
+                            </div>
+                          </div>
+
+                          <div class="basket-product__code">Код товара 5567890</div>
+                        </div>
+                        <div class="stepper">
+                          <button class="stepper__btn stepper__btn--down" aria-label="Уменьшить количество"></button>
+                          <label>
+                            <input type="text" value="1" maxlength="3">
+                          </label>
+                          <button class="stepper__btn stepper__btn--up" aria-label="Увеличить количество"></button>
                         </div>
 
-                        <div class="size">
-                          <div class="size__top">Размер</div>
-                          <div class="size__item">
-                            sm
+                      </div>
+
+                      <div class="basket-product__delete">
+                        <svg width="18" height="18" aria-hidden="true">
+                          <use xlink:href="img/sprite.svg#icon-cross"></use>
+                        </svg>
+                      </div>
+                    </div>
+
+                  </li>
+                  <li class="basket-product">
+
+                    <div class="basket-product__cont">
+                      <div class="basket-product__img">
+                        <img src="img/img-product-1.png" alt="">
+                      </div>
+
+                      <div class="basket-product__details">
+                        <div>
+                          <h2 class="basket-product__title">MASHA ANDRIANOVA</h2>
+                          <div class="basket-product__info">
+                            <div class="basket-product__category">Платье</div>
+                            <div class="basket-product__price">
+                              <del>17 900 ₽</del>
+                              <span>17 300 ₽</span>
+                            </div>
                           </div>
+
+                          <div class="size">
+                            <div class="size__top">Размер</div>
+                            <div class="size__item">
+                              sm
+                            </div>
+                          </div>
+
+                          <div class="basket-product__code">Код товара 5567890</div>
+                        </div>
+                        <div class="stepper">
+                          <button class="stepper__btn stepper__btn--down" aria-label="Уменьшить количество"></button>
+                          <label>
+                            <input type="text" value="1" maxlength="3">
+                          </label>
+                          <button class="stepper__btn stepper__btn--up" aria-label="Увеличить количество"></button>
                         </div>
 
-                        <div class="basket-product__code">Код товара 5567890</div>
-                      </div>
-                      <div class="stepper">
-                        <button class="stepper__btn stepper__btn--down" aria-label="Уменьшить количество"></button>
-                        <label>
-                          <input type="text" value="1" maxlength="3">
-                        </label>
-                        <button class="stepper__btn stepper__btn--up" aria-label="Увеличить количество"></button>
                       </div>
 
-                    </div>
-
-                    <div class="basket-product__delete">
-                      <svg width="18" height="18" aria-hidden="true">
-                        <use xlink:href="img/sprite.svg#icon-cross"></use>
-                      </svg>
-                    </div>
-                  </div>
-
-                </li>
-                <li class="basket-product">
-
-                  <div class="basket-product__cont">
-                    <div class="basket-product__img">
-                      <img src="img/img-product-1.png" alt="">
-                    </div>
-
-                    <div class="basket-product__details">
-                      <div>
-                        <h2 class="basket-product__title">MASHA ANDRIANOVA</h2>
-                        <div class="basket-product__info">
-                          <div class="basket-product__category">Платье</div>
-                          <div class="basket-product__price">
-                            <del>17 900 ₽</del>
-                            <span>17 300 ₽</span>
-                          </div>
-                        </div>
-
-                        <div class="size">
-                          <div class="size__top">Размер</div>
-                          <div class="size__item">
-                            sm
-                          </div>
-                        </div>
-
-                        <div class="basket-product__code">Код товара 5567890</div>
+                      <div class="basket-product__delete">
+                        <svg width="18" height="18" aria-hidden="true">
+                          <use xlink:href="img/sprite.svg#icon-cross"></use>
+                        </svg>
                       </div>
-                      <div class="stepper">
-                        <button class="stepper__btn stepper__btn--down" aria-label="Уменьшить количество"></button>
-                        <label>
-                          <input type="text" value="1" maxlength="3">
-                        </label>
-                        <button class="stepper__btn stepper__btn--up" aria-label="Увеличить количество"></button>
-                      </div>
-
                     </div>
 
-                    <div class="basket-product__delete">
-                      <svg width="18" height="18" aria-hidden="true">
-                        <use xlink:href="img/sprite.svg#icon-cross"></use>
-                      </svg>
-                    </div>
-                  </div>
-
-                </li>
-              </ul>
-            </div>
-            <div class="page__aside">
-              <div class="order-summary">
-                <div class="order-summary__row">
-                  <div class="order-summary__label">Сумма заказа</div>
-                  <div class="order-summary__value">26 300 ₽</div>
-                </div>
-                <div>
-                  <div class="order-summary__label">Доставка</div>
-                  <div class="order-summary__delivery">
-                    <p>
-                      Окончательная сумма зависит от выбранного Вами способа доставки на странице оформления заказа.
-                    </p>
-                  </div>
-
-                  <details class="accordion">
-                    <summary class="accordion__title accordion__title--icon-reverse">промокод</summary>
-                    <div class="accordion__cont">
-                      <form class="order-summary__form" inert>
-                        <input class="form-input order-summary__form-input" value="spring15" type="text" placeholder="введите промокод">
-                        <button class="form-btn order-summary__form-btn">Применить</button>
-                      </form>
-                    </div>
-                  </details>
-                </div>
-                <div class="order-summary__bottom">
-                  <div class="order-summary__row order-summary__row--lg">
-                    <div class="order-summary__label">итого:</div>
-                    <a class="order-summary__value" href="#">26 300 ₽</a>
-                  </div>
-
-                  <div class="order-summary__btn">оформить заказ</div>
-
-                  <div class="order-summary__info">
-                    <p>
-                      Бесплатная доставка по Москве и МО<br>
-                      Бесплатная доставка от 15 000 ₽
-                    </p>
-                  </div>
-                </div>
+                  </li>
+                </ul>
               </div>
+              <aside class="page__aside">
+                <div class="order-summary">
+                  <div class="order-summary__row">
+                    <div class="order-summary__label">Сумма заказа</div>
+                    <div class="order-summary__value">26 300 ₽</div>
+                  </div>
+                  <div>
+                    <div class="order-summary__label">Доставка</div>
+                    <div class="order-summary__delivery">
+                      <p>
+                        Окончательная сумма зависит от выбранного Вами способа доставки на странице оформления заказа.
+                      </p>
+                    </div>
 
+                    <details class="accordion">
+                      <summary class="accordion__title accordion__title--icon-reverse">промокод</summary>
+                      <div class="accordion__cont">
+                        <form class="order-summary__form" inert>
+                          <input class="form-input order-summary__form-input" value="spring15" type="text" placeholder="введите промокод">
+                          <button class="form-btn order-summary__form-btn">Применить</button>
+                        </form>
+                      </div>
+                    </details>
+                  </div>
+                  <div class="order-summary__bottom">
+                    <div class="order-summary__row order-summary__row--lg">
+                      <div class="order-summary__label">итого:</div>
+                      <a class="order-summary__value" href="#">26 300 ₽</a>
+                    </div>
+
+                    <div class="btn btn--dark">оформить заказ</div>
+
+                    <div class="order-summary__info">
+                      <p>
+                        Бесплатная доставка по Москве и МО<br>
+                        Бесплатная доставка от 15 000 ₽
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+              </aside>
             </div>
           </div>
         </section>
@@ -548,7 +552,7 @@
               <form action="" id="subscribe" data-validate>
                 <div class="footer__form-field">
                   <input class="form-input footer__form-input" type="mail" name="Почта" required placeholder="E-mail" data-validate="email">
-                  <button class="btn footer__form-btn" type="submit">
+                  <button class="btn-reset footer__form-btn" type="submit">
                     <svg width="29" height="16" aria-hidden="true">
                       <use xlink:href="img/sprite.svg#icon-average-arrow"></use>
                     </svg>
