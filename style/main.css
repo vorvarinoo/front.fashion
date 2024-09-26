@@ -3067,8 +3067,15 @@ strong {
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
 }
-.filters__item[data-toggle=dropdown] > summary:hover {
-  color: var(--green);
+@media (hover: hover) {
+  .filters__item[data-toggle=dropdown] > summary:hover {
+    color: var(--green);
+  }
+}
+@media (hover: none) {
+  .filters__item[data-toggle=dropdown] > summary:active {
+    color: var(--green);
+  }
 }
 .filters__item > div {
   position: absolute;
