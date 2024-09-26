@@ -1605,6 +1605,11 @@ strong {
     margin-bottom: 48px;
   }
 }
+@media (max-width: 768px) {
+  .page__title--sm {
+    font-size: 22px;
+  }
+}
 .page__subtitle {
   margin-bottom: 20px;
 
