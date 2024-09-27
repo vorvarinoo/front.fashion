@@ -1,0 +1,64 @@
+.availability-form {
+  &__descr {
+    font-weight: 300;
+    font-size: 14px;
+    color: var(--black-90);
+  }
+
+  &__input {
+    background-color: #f5f5f5;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--black-90);
+    padding: 20px;
+
+    margin-bottom: 5px;
+
+    &::placeholder {
+      color: #bdbdbd;
+    }
+  }
+}
+
+
+.tooltip {
+  position: absolute;
+  background-color: var(--black-90);
+  padding: 8px 16px;
+  border-radius: 2px;
+  font-weight: 400;
+  font-size: 10px;
+  letter-spacing: -0.01em;
+  color: var(--white);
+
+  pointer-events: all;
+
+  z-index: 2;
+  white-space: nowrap;
+  top: -40px;
+  left: 85%;
+  transform: translateX(-50%);
+
+  display: none;
+  /* Скрыто по умолчанию */
+}
+
+.tooltip__inner {
+  position: relative;
+  font-size: 14px;
+  white-space: nowrap;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -95%;
+    right: 40%;
+    transform: translate(-50%, 0);
+    width: 18px;
+    height: 15px;
+    clip-path: polygon(0% 0%, 100% 0%, 50% 50%);
+    background-color: var(--black-90);
+  }
+}

@@ -53,55 +53,50 @@
                data-hystmodal="#sizes-modal">таблица размеров</a></div>
           <ul class="product-page__size-list">
 
-            <li>
-              <label class="product-page__label"
-                     data-disable>
-                <input type="checkbox"
-                       name="sizeGroup">
+            <li class="product-page__label">
+              <div data-tooltip="написать о наличии">
                 <span>s</span>
-              </label>
+              </div>
             </li>
-            <li>
-              <label class="product-page__label">
-                <input type="checkbox"
-                       name="sizeGroup">
+            <li class="product-page__label">
+              <label>
+                <input type="radio"
+                       name="Размер">
                 <span>sm</span>
               </label>
             </li>
-            <li>
-              <label class="product-page__label"
-                     data-disable>
-                <input type="checkbox"
-                       name="sizeGroup">
+            <li class="product-page__label">
+              <label>
+                <input type="radio"
+                       name="Размер">
                 <span>m</span>
               </label>
             </li>
-            <li>
-              <label class="product-page__label">
-                <input type="checkbox"
-                       name="sizeGroup">
+            <li class="product-page__label">
+              <label>
+                <input type="radio"
+                       name="Размер">
                 <span>ml</span>
               </label>
             </li>
-            <li>
-              <label class="product-page__label">
-                <input type="checkbox"
-                       name="sizeGroup">
+            <li class="product-page__label">
+              <div data-tooltip="написать о наличии">
                 <span>l</span>
-              </label>
+              </div>
             </li>
-            <li>
-              <label class="product-page__label">
-                <input type="checkbox"
-                       name="sizeGroup">
+            <li class="product-page__label">
+              <label>
+                <input type="radio"
+                       name="Размер">
                 <span>lxl</span>
               </label>
             </li>
 
-
           </ul>
         </div>
-        <button class="btn btn--dark">в корзину</button>
+        <div id="product-page-btns">
+          <button class="btn btn--dark">в корзину</button>
+        </div>
 
         <div class="product-page__descr">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -160,3 +155,19 @@
     </div>
   </div>
 </section>
+
+<template id="availability-block">
+  <form id="availability-form"
+        class="availability">
+    <div class="availability-form__descr">Мы сообщим, когда вещь будет в наличии</div>
+    <input class="form-input availability__input"
+           type="mail">
+    <button class="btn availability__btn">отправить</button>
+  </form>
+</template>
+
+<template id="tooltip-template">
+  <div class="tooltip">
+    <div class="tooltip__inner"></div>
+  </div>
+</template>

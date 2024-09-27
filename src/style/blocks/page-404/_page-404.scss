@@ -1,0 +1,55 @@
+.page-404 {
+  padding: 100px 0 75px;
+
+  @include media-min ($lg) {
+    padding: 170px 0;
+  }
+
+  &__cont {
+    display: grid;
+    row-gap: 20px;
+
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 48px;
+    max-width: 510px;
+  }
+
+  &__label {
+    justify-self: center;
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: -0.05em;
+    color: var(--green);
+    background-color: #f3f3f3;
+    padding: 6px;
+  }
+
+  &__title {
+    margin: 0;
+    text-align: center;
+  }
+
+  &__descr {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    color: #4f4f4f;
+    max-width: 415px;
+    margin: 0 auto;
+    padding: 0 25px;
+
+    @include media-min ($lg) {
+      padding: 0;
+    }
+  }
+
+  &__btn {
+    margin: 0 auto;
+
+    @include media-min ($lg) {
+      max-width: 240px;
+    }
+  }
+}

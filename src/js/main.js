@@ -44,8 +44,13 @@ import {
   passwordToggle,
 } from './modules/input.js';
 
+import {
+  ititToltip,
+} from './modules/radio-sizes.js';
+
 document.addEventListener( 'DOMContentLoaded', () => {
   iosVhFix();
+
 
   window.addEventListener( 'load', () => {
     validateForms();
@@ -59,5 +64,7 @@ document.addEventListener( 'DOMContentLoaded', () => {
     // checkFilledInputDate();
     // appendBtnReset();
     passwordToggle();
+    ititToltip();
   } );
+
 } );

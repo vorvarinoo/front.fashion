@@ -106,18 +106,4 @@
     }
   }
 
-  & p + ul {
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-
-  & p {
-    margin: 0;
-    margin-top: 32px;
-  }
-
-  & ul + p {
-    margin-top: 0;
-  }
-
 }

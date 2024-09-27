@@ -145,60 +145,69 @@
     --color-size-text: var(--black-90);
     --background-item-color: #f5f5f5;
     --border-item-color: #f5f5f5;
-    cursor: pointer;
 
-    &:hover {
-      --color-size-text: var(--purple);
-    }
-
-    &[data-disable] {
-      --color-size-text: #b8b8b8;
-      --background-item-color: #f5f5f5;
-      --border-item-color: #f5f5f5;
-    }
+    position: relative;
 
     & input {
-      position: absolute;
-      appearance: none;
+      @include visually-hidden
     }
 
-    & span {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      min-width: 32px;
-      height: 32px;
+    & label,
+    & div {
+      cursor: pointer;
 
-      border-radius: 300px;
-      padding: 5px;
-      border-width: 1px;
-      border-style: solid;
-      border-color: var(--border-item-color);
-      background-color: var(--background-item-color);
+      & span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 32px;
+        height: 32px;
 
-      font-weight: 400;
-      font-size: 12px;
-      text-transform: uppercase;
-      text-align: center;
-      color: var(--color-size-text);
+        border-radius: 300px;
+        padding: 5px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: var(--border-item-color);
 
-      transition: border-color .2s ease-in-out, color .2s ease-in-out, background-color .2s ease-in-out;
+        font-weight: 400;
+        font-size: 12px;
+        text-transform: uppercase;
+        text-align: center;
 
-      user-select: none;
-      white-space: nowrap;
+        background-color: var(--background-item-color);
+
+        transition: border-color .2s ease-in-out, color .2s ease-in-out, background-color .2s ease-in-out;
+
+        user-select: none;
+        white-space: nowrap;
+      }
     }
 
-    &[data-disable] > input:checked + span {
-      --color-size-text: #b8b8b8;
-      --background-item-color: #f5f5f5;
-      --border-item-color: #f5f5f5;
+    & label {
+
+      :hover {
+        --color-size-text: var(--purple);
+      }
+
+      & span {
+        color: var(--color-size-text);
+
+      }
+
+      & > input:checked + span {
+        --border-item-color: var(--purple);
+        --color-size-text: var(--purple);
+        --background-item-color: transparent;
+      }
     }
 
-    & > input:checked + span {
-      --border-item-color: var(--purple);
-      --color-size-text: var(--purple);
-      --background-item-color: transparent;
+    & div {
+      & span {
+        color: #bdbdbd;
+      }
     }
+
+
   }
 
   &__descr {
