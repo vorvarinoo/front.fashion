@@ -45,7 +45,7 @@ import {
 } from './modules/input.js';
 
 import {
-  ititToltip,
+  initTooltip,
 } from './modules/radio-sizes.js';
 
 document.addEventListener( 'DOMContentLoaded', () => {
@@ -64,7 +64,7 @@ document.addEventListener( 'DOMContentLoaded', () => {
     // checkFilledInputDate();
     // appendBtnReset();
     passwordToggle();
-    ititToltip();
+    initTooltip();
   } );
 
 } );

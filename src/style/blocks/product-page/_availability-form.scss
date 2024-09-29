@@ -1,8 +1,9 @@
-.availability-form {
+.availability {
   &__descr {
     font-weight: 300;
     font-size: 14px;
-    color: var(--black-90);
+    color: var(--191919);
+    margin-bottom: 20px;
   }
 
   &__input {
@@ -13,6 +14,7 @@
     text-transform: uppercase;
     color: var(--black-90);
     padding: 20px;
+    border: none;
 
     margin-bottom: 5px;
 
@@ -20,29 +22,40 @@
       color: #bdbdbd;
     }
   }
+
+  &__btn {
+    background: var(--purple);
+    padding: 20px;
+    width: 100%;
+
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.05em;
+    color: var(--white);
+
+  }
 }
 
 
 .tooltip {
+  display: none;
   position: absolute;
-  background-color: var(--black-90);
-  padding: 8px 16px;
-  border-radius: 2px;
+  top: -20px;
+
+  width: 120px;
+
   font-weight: 400;
   font-size: 10px;
+  line-height: 1;
   letter-spacing: -0.01em;
   color: var(--white);
+  background-color: var(--black-90);
+  padding: 10px;
 
-  pointer-events: all;
-
-  z-index: 2;
-  white-space: nowrap;
-  top: -40px;
-  left: 85%;
-  transform: translateX(-50%);
-
-  display: none;
-  /* Скрыто по умолчанию */
+  &:hover {
+    display: flex;
+  }
 }
 
 .tooltip__inner {

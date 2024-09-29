@@ -48,6 +48,12 @@ input[type="checkbox"].visually-hidden {
   }
 }
 
+.d-none-md {
+  @include media-min ($md) {
+    display: none !important;
+  }
+}
+
 .d-none-lg {
   @include media-min ($lg) {
     display: none !important;
@@ -58,4 +64,8 @@ input[type="checkbox"].visually-hidden {
   @include media-min ($xl) {
     display: none !important;
   }
+}
+
+.alt-font {
+  font-family: $alt-font, Arial, Helvetica, sans-serif;
 }

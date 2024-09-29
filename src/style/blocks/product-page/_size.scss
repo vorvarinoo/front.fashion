@@ -1,0 +1,75 @@
+.size {
+  --color-size-text: var(--black-90);
+  --background-item-color: #f5f5f5;
+  --border-item-color: #f5f5f5;
+
+  position: relative;
+
+  &--out-stock {
+    &:hover {
+      & > .tooltip {
+        display: block;
+      }
+    }
+  }
+
+  & input {
+    @include visually-hidden
+  }
+
+  & label,
+  & div {
+    cursor: pointer;
+
+    & span {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 32px;
+      height: 32px;
+
+      border-radius: 300px;
+      padding: 5px;
+      border-width: 1px;
+      border-style: solid;
+      border-color: var(--border-item-color);
+
+      font-weight: 400;
+      font-size: 12px;
+      text-transform: uppercase;
+      text-align: center;
+
+      background-color: var(--background-item-color);
+
+      transition: border-color .2s ease-in-out, color .2s ease-in-out, background-color .2s ease-in-out;
+
+      user-select: none;
+      white-space: nowrap;
+    }
+  }
+
+  & label {
+
+    :hover {
+      --color-size-text: var(--purple);
+    }
+
+    & span {
+      color: var(--color-size-text);
+
+    }
+
+    & > input:checked + span {
+      --border-item-color: var(--purple);
+      --color-size-text: var(--purple);
+      --background-item-color: transparent;
+    }
+  }
+
+  & div {
+    & span {
+      color: #bdbdbd;
+    }
+  }
+
+}

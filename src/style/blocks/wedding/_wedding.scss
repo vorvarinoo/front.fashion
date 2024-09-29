@@ -1,0 +1,308 @@
+.wedding {
+  padding-top: 0;
+}
+
+.wedding-hero {
+  position: relative;
+  background-image: url('../img/img-wedding-dresses.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 428px;
+
+  @include media-min ($lg) {
+    padding-bottom: 569px;
+  }
+
+  &__title {
+    position: absolute;
+    font-weight: 700;
+    font-size: 32px;
+    text-transform: uppercase;
+    color: var(--white);
+    max-width: 290px;
+    bottom: 90px;
+
+    @include media-min ($lg) {
+      font-size: 48px;
+      bottom: none;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}
+
+.wedding-intro {
+  padding: 60px 0;
+
+  @include media-min ($lg) {
+    padding-top: 100px;
+  }
+
+  &__inner {
+    display: grid;
+    align-items: flex-start;
+    row-gap: 24px;
+
+    @include media-min ($xl) {
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 58px;
+    }
+  }
+
+  &__title {
+    justify-self: flex-start;
+    justify-content: flex-start;
+
+    display: grid;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: var(--purple);
+    max-width: 290px;
+
+    @include media-min ($md) {
+      align-self: flex-start;
+      max-width: 570px;
+      width: 100%;
+    }
+
+    @include media-min ($lg) {
+      font-size: 48px;
+    }
+
+    & > div {
+      width: 50%;
+
+      @include media-min ($md) {
+        width: 100%;
+      }
+    }
+
+    & > span {
+      justify-self: flex-end;
+      font-weight: 700;
+      width: 50%;
+
+      @include media-min ($md) {
+        padding-left: 50px;
+        width: 100%;
+        white-space: nowrap;
+      }
+
+      @include media-min ($lg) {
+        padding-left: 70px;
+        width: 100%;
+      }
+    }
+  }
+
+  &__flex {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__subtitle {
+
+    display: grid;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 0.6;
+    opacity: 0.64;
+    text-transform: uppercase;
+    color: #6c8377;
+
+    margin-bottom: 32px;
+
+    justify-items: flex-end;
+
+    @include media-min ($lg) {
+      font-size: 48px;
+    }
+
+    @include media-min ($xl) {
+      margin-bottom: 0;
+      margin-top: 32px;
+      max-width: 460px;
+      order: 1;
+      margin-left: auto;
+    }
+
+    & > span {
+
+      margin-right: 40px;
+
+      @include media-min ($lg) {
+        margin-right: 100px;
+      }
+    }
+
+    & div > span {
+      font-size: 55px;
+      -webkit-font-feature-settings: "normal";
+      -moz-font-feature-settings: "normal";
+      font-feature-settings: "normal";
+      font-variant-numeric: oldstyle-nums;
+
+      @include media-min ($lg) {
+        font-size: 96px;
+      }
+    }
+  }
+
+  &__descr {
+    grid-column-start: 1;
+
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.2;
+    color: var(--black-90);
+
+    span {
+      font-weight: 400;
+      text-transform: uppercase;
+      color: var(--purple);
+    }
+  }
+}
+
+.wedding-dress {
+  &__title {
+    font-weight: 700;
+    font-size: 32px;
+    text-transform: uppercase;
+    color: var(--black-90);
+    margin-bottom: 16px;
+
+    @include media-min ($lg) {
+      font-size: 36px;
+      margin-bottom: 30px;
+    }
+
+    & span {
+      -webkit-font-feature-settings: "normal";
+      -moz-font-feature-settings: "normal";
+      font-feature-settings: "normal";
+      font-variant-numeric: oldstyle-nums;
+      font-size: 64px;
+    }
+  }
+
+  &__list {
+    @include list-reset;
+    display: grid;
+
+    &--sm {
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 20px;
+      row-gap: 32px;
+    }
+  }
+
+  &__item {}
+
+  &__grid {
+    display: flex;
+    justify-content: space-between;
+
+    grid-template-columns: 0.9fr 0.4fr;
+    column-gap: 72px;
+
+    @include media-min ($lg) {}
+  }
+
+  &__img {
+    max-width: 800px;
+
+    display: none;
+
+    @include media-min ($md) {
+      display: grid;
+    }
+  }
+
+  &__aside {
+
+    width: 100%;
+    display: grid;
+    row-gap: 32px;
+
+    @include media-min ($md) {
+      max-width: 300px;
+    }
+
+    @include media-min ($lg) {
+      max-width: 345px;
+    }
+  }
+
+  &__btn {
+    background: var(--purple);
+    padding: 12px 60px;
+
+    width: 100%;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--white);
+
+    @include media-min ($md) {
+      padding: 12px 50px;
+    }
+
+    & span {
+      max-width: 100px;
+      margin: 0 auto;
+    }
+  }
+}
+
+.accessories {
+  background: #6c8377;
+  padding: 40px 16px 60px;
+
+  @include media-min ($lg) {
+    padding: 40px 40px 140px;
+  }
+
+  &__label {
+    font-weight: 300;
+    font-size: 18px;
+    color: var(--white);
+    opacity: 0.32;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 36px;
+    text-transform: uppercase;
+    color: var(--white);
+
+    margin-bottom: 24px;
+  }
+
+  &__link {
+    position: relative;
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: var(--white);
+    padding-right: 42px;
+
+    &::after {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 26px;
+      height: 16px;
+      background-image: url("data:image/svg+xml,%3Csvg width='26' height='16' viewBox='0 0 26 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M24.9825 8.7071C25.373 8.31658 25.373 7.68342 24.9825 7.29289L18.6185 0.928931C18.228 0.538406 17.5948 0.538406 17.2043 0.928931C16.8138 1.31946 16.8138 1.95262 17.2043 2.34314L22.8611 8L17.2043 13.6569C16.8138 14.0474 16.8138 14.6805 17.2043 15.0711C17.5948 15.4616 18.228 15.4616 18.6185 15.0711L24.9825 8.7071ZM8.48888e-08 9L24.2754 9L24.2754 7L-8.48888e-08 7L8.48888e-08 9Z' fill='white' /%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+    }
+  }
+}

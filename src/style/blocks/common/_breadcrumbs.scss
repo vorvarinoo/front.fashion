@@ -6,6 +6,12 @@
 
   padding-top: 48px;
 
+  &--absolute {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+  }
+
   & a {
     color: inherit;
     text-decoration-color: transparent;
@@ -22,6 +28,7 @@
       }
     }
   }
+
 
   & .current-item {
     color: #4f4f4f;
