@@ -161,3 +161,60 @@
     }
   }
 }
+
+
+.social {
+  @include list-reset;
+
+
+  display: grid;
+  row-gap: 10px;
+  margin-bottom: 15px;
+
+  &__item {
+
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: .8;
+    background-color: var(--green);
+    border-radius: 100%;
+
+    @include media-min ($lg) {
+      width: 60px;
+      height: 60px;
+    }
+
+    & svg {
+      @include media-min ($lg) {
+        width: 24px;
+        height: 24px;
+      }
+    }
+
+    &--whatsapp {
+      & svg {
+        @include media-min ($lg) {
+          width: 28px;
+          height: 28px;
+        }
+      }
+    }
+  }
+
+  & a {
+    color: var(--white);
+  }
+
+}
+
+.items-fixed {
+  position: fixed;
+  bottom: 30px;
+  right: max(30px, calc((100% - var(--max-site-width, 1440px) - 100px) / 2));
+  z-index: 1;
+  display: grid;
+  justify-items: center;
+}

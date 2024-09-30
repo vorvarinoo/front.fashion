@@ -9,6 +9,11 @@ const sliderConfig = {
     spaceBetween: 30,
     watchSlidesProgress: true,
     effect: "fade",
+    loop: true,
+    autoplay: {
+      delay: 2000,
+      disableOnInteraction: false,
+    },
     navigation: {
       nextEl: ".hero__btn-next",
       prevEl: ".hero__btn-prev",

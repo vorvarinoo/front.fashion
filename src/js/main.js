@@ -48,6 +48,10 @@ import {
   initTooltip,
 } from './modules/radio-sizes.js';
 
+import {
+  initSearch,
+} from './modules/search.js';
+
 document.addEventListener( 'DOMContentLoaded', () => {
   iosVhFix();
 
@@ -65,6 +69,7 @@ document.addEventListener( 'DOMContentLoaded', () => {
     // appendBtnReset();
     passwordToggle();
     initTooltip();
+    initSearch();
   } );
 
 } );

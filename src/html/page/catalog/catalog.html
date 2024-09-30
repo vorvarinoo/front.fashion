@@ -2,507 +2,14 @@
   <div class="container">
     <h1 class="title page__title catalog__title">Каталог</h1>
     <div class="catalog__cont">
-      <div class="sidebar d-none-sm">
-        <ul class="sidebar__list sidebar__list--category">
-          <li>
-            <a class="sidebar__link sidebar__link--active"
-               href="#">всё</a>
-          </li>
-          <li>
-            <a class="sidebar__link"
-               href="#">Одежда</a>
-          </li>
-          <li>
-            <a class="sidebar__link"
-               href="#">Аксессуары</a>
-          </li>
-          <li>
-            <a class="sidebar__link"
-               href="#">Дом</a>
-          </li>
-          <li>
-            <a class="sidebar__link"
-               href="#">SPRING SALE</a>
-          </li>
-        </ul>
-        <div class="sidebar__brand">
-          <div class="sidebar__title">бренд:</div>
-          <ul class="sidebar__list sidebar__list--brand">
-            <li>
-              <a class="sidebar__link sidebar__link--active"
-                 href="">Любой</a>
-            </li>
-            <li>
-              <a class="sidebar__link"
-                 href="">front</a>
-            </li>
-            <li>
-              <a class="sidebar__link"
-                 href="">Masha Andrianova</a>
-            </li>
-            <li>
-              <a class="sidebar__link"
-                 href="">Linen Sky</a>
-            </li>
-            <li>
-              <a class="sidebar__link"
-                 href="">Yulia Ten</a>
-            </li>
-            <li>
-              <a class="sidebar__link"
-                 href="">Аня Толстая</a>
-            </li>
-            <li>
-              <a class="sidebar__link"
-                 href="">ATLAS MIRA</a>
-            </li>
-            <li>
-              <a class="sidebar__link"
-                 href="">Sl1p</a>
-            </li>
-            <li>
-              <a class="sidebar__link"
-                 href="">Дизайн и ремесла</a>
-            </li>
-            <li>
-              <a class="sidebar__link"
-                 href="">OMUT</a>
-            </li>
-            <li>
-              <a class="sidebar__link"
-                 href="">alvaar</a>
-            </li>
-            <li>
-              <a class="sidebar__link"
-                 href="">MyBacio</a>
-            </li>
-            <li>
-              <a class="sidebar__link"
-                 href="">Katya Yakunina</a>
-            </li>
-            <li>
-              <a class="sidebar__link"
-                 href="">Baboo</a>
-            </li>
-            <li>
-              <a class="sidebar__link"
-                 href="">Quilt Lab 18</a>
-            </li>
-          </ul>
-        </div>
 
-      </div>
+      @include('sidebar.html')
+
       <div class="catalog__products">
-        <div class="filters">
-          <details class="filters__item filters__item--black d-none-lg"
-                   data-toggle="dropdown">
-            <summary>
-              фильтры
-              <svg width="8"
-                   height="12"
-                   aria-hidden="true">
-                <use xlink:href="img/sprite.svg#icon-small-arrow"></use>
-              </svg>
-            </summary>
-            <div class="filters__cont">
-              <ul>
-                <li>
-                  <details class="filters__accordion">
-                    <summary>
-                      дизайнер
-                      <svg width="8"
-                           height="12"
-                           aria-hidden="true">
-                        <use xlink:href="img/sprite.svg#icon-small-arrow"></use>
-                      </svg>
-                    </summary>
-                    <ul>
-                      <li>
-                        <label class="filters__label">
-                          Любой
-                          <input type="checkbox">
-                          <span></span>
-                        </label>
-                      </li>
-                      <li>
-                        <label class="filters__label">
-                          Linen Sky
-                          <input type="checkbox">
-                          <span></span>
-                        </label>
-                      </li>
-                      <li>
-                        <label class="filters__label">
-                          Yulia Ten
-                          <input type="checkbox">
-                          <span></span>
-                        </label>
-                      </li>
-                      <li>
-                        <label class="filters__label">
-                          Аня Толстая
-                          <input type="checkbox">
-                          <span></span>
-                        </label>
-                      </li>
-                      <li>
-                        <label class="filters__label">
-                          ATLAS MIRA
-                          <input type="checkbox">
-                          <span></span>
-                        </label>
-                      </li>
-                      <li>
-                        <label class="filters__label">
-                          Sl1p
-                          <input type="checkbox">
-                          <span></span>
-                        </label>
-                      </li>
-                      <li>
-                        <label class="filters__label">
-                          Дизайн и ремесла
-                          <input type="checkbox">
-                          <span></span>
-                        </label>
-                      </li>
-                      <li>
-                        <label class="filters__label">
-                          OMUT
-                          <input type="checkbox">
-                          <span></span>
-                        </label>
-                      </li>
-                      <li>
-                        <label class="filters__label">
-                          alvaar
-                          <input type="checkbox">
-                          <span></span>
-                        </label>
-                      </li>
-                      <li>
-                        <label class="filters__label">
-                          MyBacio
-                          <input type="checkbox">
-                          <span></span>
-                        </label>
-                      </li>
-                      <li>
-                        <label class="filters__label">
-                          Katya Yakunina
-                          <input type="checkbox">
-                          <span></span>
-                        </label>
-                      </li>
-                      <li>
-                        <label class="filters__label">
-                          Baboo
-                          <input type="checkbox">
-                          <span></span>
-                        </label>
-                      </li>
-                      <li>
-                        <label class="filters__label">
-                          Quilt Lab 18
-                          <input type="checkbox">
-                          <span></span>
-                        </label>
-                      </li>
-                    </ul>
-                  </details>
-                </li>
-                <li>
-                  <details class="filters__accordion">
-                    <summary>
-                      размер
-                      <svg width="8"
-                           height="12"
-                           aria-hidden="true">
-                        <use xlink:href="img/sprite.svg#icon-small-arrow"></use>
-                      </svg>
-                    </summary>
-                    <ul>
-                      <li>
-                        <label class="filters__label">
-                          L
-                          <input type="checkbox">
-                          <span></span>
-                        </label>
-                      </li>
-                      <li>
-                        <label class="filters__label">
-                          L
-                          <input type="checkbox">
-                          <span></span>
-                        </label>
-                      </li>
-                    </ul>
-                  </details>
-                </li>
-                <li>
-                  <details class="filters__accordion">
-                    <summary>
-                      предзаказ
-                      <svg width="8"
-                           height="12"
-                           aria-hidden="true">
-                        <use xlink:href="img/sprite.svg#icon-small-arrow"></use>
-                      </svg>
-                    </summary>
-                    <ul>
-                      <li>
-                        <label class="filters__label">
-                          L
-                          <input type="checkbox">
-                          <span></span>
-                        </label>
-                      </li>
-                      <li>
-                        <label class="filters__label">
-                          L
-                          <input type="checkbox">
-                          <span></span>
-                        </label>
-                      </li>
-                    </ul>
-                  </details>
-                </li>
-                <li>
-                  <details class="filters__accordion">
-                    <summary>
-                      одежда
-                      <svg width="8"
-                           height="12"
-                           aria-hidden="true">
-                        <use xlink:href="img/sprite.svg#icon-small-arrow"></use>
-                      </svg>
-                    </summary>
-                    <ul>
-                      <li>
-                        <label class="filters__label">
-                          L
-                          <input type="checkbox">
-                          <span></span>
-                        </label>
-                      </li>
-                      <li>
-                        <label class="filters__label">
-                          L
-                          <input type="checkbox">
-                          <span></span>
-                        </label>
-                      </li>
-                    </ul>
-                  </details>
-                </li>
-              </ul>
-              <button class="filters__btn">Применить</button>
-            </div>
-          </details>
-          <details class="filters__item d-none-sm"
-                   data-toggle="dropdown">
-            <summary>
-              размер
-              <svg width="8"
-                   height="12"
-                   aria-hidden="true">
-                <use xlink:href="img/sprite.svg#icon-small-arrow"></use>
-              </svg>
-            </summary>
-            <div class="filters__cont">
-              <ul>
-                <li>
-                  <label class="filters__label">
-                    L
-                    <input type="checkbox">
-                    <span></span>
-                  </label>
-                </li>
-                <li>
-                  <label class="filters__label">
-                    XL
-                    <input type="checkbox">
-                    <span></span>
-                  </label>
-                </li>
-                <li>
-                  <label class="filters__label">
-                    XXL
-                    <input type="checkbox">
-                    <span></span>
-                  </label>
-                </li>
-              </ul>
-              <button class="filters__btn">Применить</button>
-            </div>
-          </details>
-          <details class="filters__item d-none-sm"
-                   data-toggle="dropdown">
-            <summary>
-              дизайн
-              <svg width="8"
-                   height="12"
-                   aria-hidden="true">
-                <use xlink:href="img/sprite.svg#icon-small-arrow"></use>
-              </svg>
-            </summary>
-            <div class="filters__cont">
-              <ul>
-                <li>
-                  <label class="filters__label">
-                    Любой
-                    <input type="checkbox">
-                    <span></span>
-                  </label>
-                </li>
-                <li>
-                  <label class="filters__label">
-                    Linen Sky
-                    <input type="checkbox">
-                    <span></span>
-                  </label>
-                </li>
-                <li>
-                  <label class="filters__label">
-                    Yulia Ten
-                    <input type="checkbox">
-                    <span></span>
-                  </label>
-                </li>
-                <li>
-                  <label class="filters__label">
-                    Аня Толстая
-                    <input type="checkbox">
-                    <span></span>
-                  </label>
-                </li>
-                <li>
-                  <label class="filters__label">
-                    ATLAS MIRA
-                    <input type="checkbox">
-                    <span></span>
-                  </label>
-                </li>
-                <li>
-                  <label class="filters__label">
-                    Sl1p
-                    <input type="checkbox">
-                    <span></span>
-                  </label>
-                </li>
-                <li>
-                  <label class="filters__label">
-                    Дизайн и ремесла
-                    <input type="checkbox">
-                    <span></span>
-                  </label>
-                </li>
-                <li>
-                  <label class="filters__label">
-                    OMUT
-                    <input type="checkbox">
-                    <span></span>
-                  </label>
-                </li>
-                <li>
-                  <label class="filters__label">
-                    alvaar
-                    <input type="checkbox">
-                    <span></span>
-                  </label>
-                </li>
-                <li>
-                  <label class="filters__label">
-                    MyBacio
-                    <input type="checkbox">
-                    <span></span>
-                  </label>
-                </li>
-                <li>
-                  <label class="filters__label">
-                    Katya Yakunina
-                    <input type="checkbox">
-                    <span></span>
-                  </label>
-                </li>
-                <li>
-                  <label class="filters__label">
-                    Baboo
-                    <input type="checkbox">
-                    <span></span>
-                  </label>
-                </li>
-                <li>
-                  <label class="filters__label">
-                    Quilt Lab 18
-                    <input type="checkbox">
-                    <span></span>
-                  </label>
-                </li>
-              </ul>
-              <button class="filters__btn">Применить</button>
-            </div>
-          </details>
-          <details class="filters__item"
-                   data-toggle="dropdown">
-            <summary>
-              сортировать
-              <svg width="8"
-                   height="12"
-                   aria-hidden="true">
-                <use xlink:href="img/sprite.svg#icon-small-arrow"></use>
-              </svg>
-            </summary>
-            <div class="filters__cont">
-              <ul>
-                <li>
-                  <label class="filters__label">
-                    порядок: по умолчанию
-                    <input type="radio"
-                           name="sortingGroup"
-                           checked>
-                    <span></span>
-                  </label>
-                </li>
-                <li>
-                  <label class="filters__label">
-                    порядок: сперва старые
-                    <input type="radio"
-                           name="sortingGroup">
-                    <span></span>
-                  </label>
-                </li>
-                <li>
-                  <label class="filters__label">
-                    порядок: сперва новые
-                    <input type="radio"
-                           name="sortingGroup">
-                    <span></span>
-                  </label>
-                </li>
-                <li>
-                  <label class="filters__label">
-                    цена: по возрастанию
-                    <input type="radio"
-                           name="sortingGroup">
-                    <span></span>
-                  </label>
-                </li>
-                <li>
-                  <label class="filters__label">
-                    цена: по убыванию
-                    <input type="radio"
-                           name="sortingGroup">
-                    <span></span>
-                  </label>
-                </li>
-              </ul>
-              <button class="filters__btn">Применить</button>
-            </div>
-          </details>
-        </div>
+        @include('filters.html')
 
         <ul class="catalog__products-list catalog__products-list--2-1">
+
           <li class="catalog__item">
             <article class="product product--border"
                      data-discount="30">
@@ -514,19 +21,23 @@
                 <h3 class="product__title">
                   <a href="#">MASHA ANDRIANOVA</a>
                 </h3>
-                <div class="product__info"
-                     data-info="Бестселлер">
-                  <div class="product__info-left">
+                <div class="product__info">
+                  <div class="product__detail">
                     <span class="product__category">Платье</span>
                     <div class="product__price">
                       <del>17 300 ₽</del>
                       <span>15 300 ₽</span>
                     </div>
                   </div>
+
+                  <div class="product__note">
+                    <span>Предзаказ</span>
+                  </div>
                 </div>
               </div>
             </article>
           </li>
+
           <li class="catalog__item">
             <article class="product product--border">
               <div class="product__img">
@@ -538,8 +49,14 @@
                   <a href="#">MASHA ANDRIANOVA</a>
                 </h3>
                 <div class="product__info">
-                  <span class="product__category">Платье</span>
-                  <span class="product__price">17 300 ₽</span>
+                  <div class="product__detail">
+                    <span class="product__category">Платье</span>
+                    <span class="product__price">17 300 ₽</span>
+                  </div>
+
+                  <div class="product__note">
+                    <span>сообщить о поступлении</span>
+                  </div>
                 </div>
               </div>
             </article>
@@ -571,10 +88,12 @@
                 <h3 class="product__title">
                   <a href="#">MASHA ANDRIANOVA</a>
                 </h3>
-                <div class="product__info"
-                     data-info="Cообщить о поступлении">
-                  <span class="product__category">Платье</span>
-                  <span class="product__price">17 300 ₽</span>
+                <div class="product__info">
+                  <div class="product__detail">
+                    <span class="product__category">Платье</span>
+                    <span class="product__price">17 300 ₽</span>
+                  </div>
+
                 </div>
               </div>
             </article>
@@ -590,8 +109,10 @@
                   <a href="#">MASHA ANDRIANOVA</a>
                 </h3>
                 <div class="product__info">
-                  <span class="product__category">Платье</span>
-                  <span class="product__price">17 300 ₽</span>
+                  <div class="product__detail">
+                    <span class="product__category">Платье</span>
+                    <span class="product__price">17 300 ₽</span>
+                  </div>
                 </div>
               </div>
             </article>
@@ -607,8 +128,10 @@
                   <a href="#">MASHA ANDRIANOVA</a>
                 </h3>
                 <div class="product__info">
-                  <span class="product__category">Платье</span>
-                  <span class="product__price">17 300 ₽</span>
+                  <div class="product__detail">
+                    <span class="product__category">Платье</span>
+                    <span class="product__price">17 300 ₽</span>
+                  </div>
                 </div>
               </div>
             </article>
@@ -624,8 +147,10 @@
                   <a href="#">MASHA ANDRIANOVA</a>
                 </h3>
                 <div class="product__info">
-                  <span class="product__category">Платье</span>
-                  <span class="product__price">17 300 ₽</span>
+                  <div class="product__detail">
+                    <span class="product__category">Платье</span>
+                    <span class="product__price">17 300 ₽</span>
+                  </div>
                 </div>
               </div>
             </article>
@@ -641,8 +166,10 @@
                   <a href="#">MASHA ANDRIANOVA</a>
                 </h3>
                 <div class="product__info">
-                  <span class="product__category">Платье</span>
-                  <span class="product__price">17 300 ₽</span>
+                  <div class="product__detail">
+                    <span class="product__category">Платье</span>
+                    <span class="product__price">17 300 ₽</span>
+                  </div>
                 </div>
               </div>
             </article>
@@ -658,8 +185,10 @@
                   <a href="#">MASHA ANDRIANOVA</a>
                 </h3>
                 <div class="product__info">
-                  <span class="product__category">Платье</span>
-                  <span class="product__price">17 300 ₽</span>
+                  <div class="product__detail">
+                    <span class="product__category">Платье</span>
+                    <span class="product__price">17 300 ₽</span>
+                  </div>
                 </div>
               </div>
             </article>

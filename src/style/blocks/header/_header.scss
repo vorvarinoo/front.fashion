@@ -1,21 +1,26 @@
 .header {
   --container-padding: 20px;
 
-  background-color: var(--green-96);
-  padding: 16px 0;
   min-height: 50px;
   position: fixed;
   z-index: 3;
   width: 100%;
 
-  @include media-min ($lg) {
-    padding: 24px 0;
-  }
 
   &__wrap {
+    position: relative;
+    background-color: var(--green-96);
+  }
+
+  &__cont {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 16px 0;
+
+    @include media-min ($lg) {
+      padding: 24px 0;
+    }
   }
 
   &__left,

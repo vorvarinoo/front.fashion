@@ -73,12 +73,19 @@
                href="">russia@mail.ru</a></li>
         </ul>
         <ul class="list-reset social">
-          <li><a href="#"><img src="/img/icon-vk.svg"
-                   alt="VK"></a></li>
+          <li><a href="#"
+               aria-label="Vkontakte">
+              <svg width="24"
+                   height="24"
+                   aria-hidden="true">
+                <use xlink:href="img/sprite.svg#icon-vk"></use>
+              </svg></a>
+          </li>
         </ul>
       </div>
     </div>
   </div>
 </footer>
-@include('../common/scroll-top.html')
+
+@include('social-fixed.html')
 @include('../modal/index.html')

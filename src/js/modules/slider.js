@@ -11,7 +11,7 @@ const initSliders = () => {
   initSlider( '.hero-slider', sliderConfig.hero );
   initSlider( '.slider-products', sliderConfig.products );
   initSlider( '.product-page__slider', sliderConfig.productPage );
-  initSlider( '.gift-certificate__slider', sliderConfig.giftСertificate );
+  initSlider( '.gift-certificate__slider .swiper', sliderConfig.giftСertificate );
 };
 
 export {

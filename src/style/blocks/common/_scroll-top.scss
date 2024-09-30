@@ -1,7 +1,4 @@
 .scroll-top {
-  position: fixed;
-  bottom: 60px;
-  right: max(15px, calc((100% - var(--max-site-width, 1440px) - 100px) / 2));
   display: flex;
   align-items: center;
   justify-content: center;
@@ -10,7 +7,7 @@
   opacity: 0;
   pointer-events: none;
   transition: opacity .25s ease-in-out;
-  z-index: 1;
+
 
   &--show {
     opacity: 1;

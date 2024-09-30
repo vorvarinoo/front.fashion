@@ -15,7 +15,45 @@
     }
 
     &--brand {
-      row-gap: 15px;
+      row-gap: 10px;
+    }
+  }
+
+  &__dropdown {
+
+    & > summary {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      & svg {
+        color: #828282;
+        opacity: .7;
+        transition: color .2s ease-in-out, transform .1s ease-in-out;
+      }
+    }
+
+    &[open] {
+      & > summary {
+        & svg {
+          opacity: 1;
+          transform: rotate(90deg);
+        }
+      }
+    }
+
+    & > ul {
+      @include list-reset;
+
+      display: grid;
+      row-gap: 8px;
+      padding: 10px 0 0 15px;
+
+      & .sidebar__dropdown {
+        & a {
+          text-transform: lowercase;
+        }
+      }
     }
   }
 
@@ -28,6 +66,19 @@
     &--active {
       color: var(--black-90);
     }
+
+    @media (hover: hover) {
+      &:hover {
+        opacity: .8;
+      }
+    }
+
+    @media (hover: none) {
+      &:active {
+        opacity: .8;
+      }
+    }
+
   }
 
   &__title {

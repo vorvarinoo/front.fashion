@@ -41,3 +41,27 @@
   background: rgba(183, 211, 196, 0.1);
   border-color: var(--green);
 }
+
+.fslightbox-container {
+  background: rgba(196, 196, 196, 0.9) !important;
+}
+
+.fslightbox-slide-number-container {
+  color: var(--black-90) !important;
+}
+
+.fslightbox-slash {
+  background: var(--black-90) !important
+}
+
+.fslightbox-toolbar-button[title="Enter fullscreen"] {
+  display: none !important;
+}
+
+.hystmodal__shadow {
+  background: rgba(196, 196, 196, 0.9) !important;
+}
+
+.hystmodal__shadow--show {
+  opacity: 1;
+}
