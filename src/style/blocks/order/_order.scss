@@ -3,14 +3,23 @@
   &__form {
     display: grid;
     row-gap: 60px;
+
+    @include media-min ($lg) {
+      max-width: 680px;
+    }
   }
 
   &__list {
     @include list-reset;
     max-width: 330px;
+    display: none;
 
     position: sticky;
     top: calc(var(--offset-top) + 24px);
+
+    @include media-min ($lg) {
+      display: block;
+    }
 
     &--row {
       max-width: 100%;
@@ -31,21 +40,6 @@
         padding-right: 0;
       }
 
-    }
-  }
-
-  & .page__section {
-    @include media-min ($lg) {
-      max-width: 680px;
-    }
-  }
-
-  & .page__aside {
-    display: none;
-    margin-top: 80px;
-
-    @include media-min ($lg) {
-      display: block;
     }
   }
 }

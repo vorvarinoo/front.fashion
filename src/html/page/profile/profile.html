@@ -79,7 +79,8 @@
               <input class="form-input"
                      type="mail"
                      name="пароль"
-                     required>
+                     required
+                     autocomplete="new-password">
               <label>пароль </label>
               <a href="#">Изменить</a>
             </div>
@@ -95,13 +96,10 @@
       </section>
       <aside class="page__aside">
 
-        <div class="help-block">
-          <h2 class="title help-block__title">не нашли ответ?</h2>
-          <div class="help-block__text">Свяжитесь с&nbsp;нами, и&nbsp;мы обязательно&nbsp;найдем решение</div>
-          <a class="btn btn--white"
-             href="#">контакты</a>
-        </div>
-
+        @include('../../common/help-block.html', {
+        title: 'Нужна помощь?',
+        text: 'Свяжитесь с&nbsp;нами, и&nbsp;мы обязательно&nbsp;найдем решение',
+        })
 
       </aside>
     </div>

@@ -2,12 +2,13 @@
   --color-size-text: var(--black-90);
   --background-item-color: #f5f5f5;
   --border-item-color: #f5f5f5;
+  pointer-events: none;
 
   position: relative;
 
-  &--out-stock {
+  &__out-stock {
     &:hover {
-      & > .tooltip {
+      & + .tooltip {
         display: block;
       }
     }
@@ -17,9 +18,11 @@
     @include visually-hidden
   }
 
-  & label,
-  & div {
+  &__out-stock,
+  &__in-stock,
+  &__selected {
     cursor: pointer;
+    pointer-events: auto;
 
     & span {
       display: flex;
@@ -48,15 +51,13 @@
     }
   }
 
-  & label {
-
+  &__in-stock {
     :hover {
       --color-size-text: var(--purple);
     }
 
     & span {
       color: var(--color-size-text);
-
     }
 
     & > input:checked + span {
@@ -66,10 +67,57 @@
     }
   }
 
-  & div {
+  &__out-stock {
     & span {
       color: #bdbdbd;
     }
   }
 
+  &__selected {
+    --border-item-color: var(--purple);
+    --color-size-text: var(--purple);
+    --background-item-color: transparent;
+
+
+    & span {
+      color: var(--color-size-text);
+    }
+
+    display: flex;
+    cursor: none;
+    pointer-events: none;
+  }
 }
+
+
+// .size {
+//   &__top {
+//     font-weight: 400;
+//     font-size: 12px;
+//     text-transform: uppercase;
+//     color: var(--black-90);
+
+//     margin-bottom: 5px;
+
+//   }
+
+//   &__selected {
+//     width: 32px;
+//     height: 32px;
+//     border-radius: 100%;
+//     border: 1px solid var(--purple);
+//     background-color: transparent;
+
+//     font-weight: 400;
+//     font-size: 12px;
+//     letter-spacing: 0.02em;
+//     text-transform: uppercase;
+//     text-align: center;
+//     color: var(--purple);
+
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     padding: 5px;
+//   }
+// }

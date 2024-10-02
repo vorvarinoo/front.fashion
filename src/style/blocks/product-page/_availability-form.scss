@@ -33,45 +33,5 @@
     font-size: 14px;
     letter-spacing: 0.05em;
     color: var(--white);
-
-  }
-}
-
-
-.tooltip {
-  display: none;
-  position: absolute;
-  top: -20px;
-
-  width: 120px;
-
-  font-weight: 400;
-  font-size: 10px;
-  line-height: 1;
-  letter-spacing: -0.01em;
-  color: var(--white);
-  background-color: var(--black-90);
-  padding: 10px;
-
-  &:hover {
-    display: flex;
-  }
-}
-
-.tooltip__inner {
-  position: relative;
-  font-size: 14px;
-  white-space: nowrap;
-
-  &::after {
-    content: '';
-    position: absolute;
-    bottom: -95%;
-    right: 40%;
-    transform: translate(-50%, 0);
-    width: 18px;
-    height: 15px;
-    clip-path: polygon(0% 0%, 100% 0%, 50% 50%);
-    background-color: var(--black-90);
   }
 }

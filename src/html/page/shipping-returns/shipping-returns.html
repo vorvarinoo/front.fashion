@@ -85,7 +85,12 @@
 
       </section>
       <aside class="page__aside">
-        @include('../help/help-block.html')
+
+@include('../../common/help-block.html', {
+title: 'не нашли ответ?',
+text: 'Свяжитесь с&nbsp;нами, и&nbsp;мы обязательно&nbsp;найдем решение',
+})
+
       </aside>
     </div>
   </div>

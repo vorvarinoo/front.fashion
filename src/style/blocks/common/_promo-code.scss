@@ -1,4 +1,5 @@
 .promo-code {
+
   padding: 4px;
 
   @include media-min ($md) {}
@@ -8,16 +9,6 @@
 
   }
 
-  // &__inner {
-  //   position: relative;
-  //   max-height: 288px;
-  //   height: 100%;
-
-  //   @include media-min ($xl) {
-  //     max-height: 100%;
-  //   }
-  // }
-
   &__cont {
     background-color: var(--green);
     display: flex;
@@ -26,16 +17,9 @@
     min-height: 288px;
 
     @include media-min ($md) {
-      min-height: 80%;
+      min-height: 79%;
     }
 
-    @include media-min ($lg) {
-      min-height: 80%;
-    }
-
-    @include media-min ($xl) {
-      min-height: 85%;
-    }
   }
 
   &__grid {

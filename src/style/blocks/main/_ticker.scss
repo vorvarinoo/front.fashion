@@ -1,0 +1,67 @@
+.ticker {
+  overflow-x: hidden;
+  max-width: 100%;
+  padding: 20px 0 10px;
+
+  @include media-min ($lg) {
+    padding: 40px 0 20px;
+  }
+
+  &--header {
+    position: absolute;
+    z-index: 2;
+    padding: 6px 0;
+    background-color: var(--white);
+
+    @include media-min ($lg) {
+      padding: 14px 0;
+    }
+  }
+
+
+  &__item {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    animation: ticker 7s linear infinite;
+    cursor: default;
+
+    & span {
+      white-space: nowrap;
+      width: 100%;
+      padding-left: 8px;
+      font-weight: 400;
+      font-size: 16px;
+      text-transform: uppercase;
+
+      @include media-min ($lg) {
+        font-size: 28px;
+      }
+
+      &:nth-child(odd) {
+        color: var(--green);
+      }
+
+      &:nth-child(even) {
+        color: var(--purple);
+      }
+    }
+
+    &:hover {
+      animation-play-state: paused;
+    }
+  }
+}
+
+
+
+
+@keyframes ticker {
+  0% {
+    transform: translateX(-50%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}

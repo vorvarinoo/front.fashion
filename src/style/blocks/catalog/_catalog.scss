@@ -135,7 +135,9 @@
     display: grid;
 
     &--wide {
-      @include media-max ($md) {}
+      @include media-max ($md) {
+        grid-column: 1 / 2 span;
+      }
     }
 
   }

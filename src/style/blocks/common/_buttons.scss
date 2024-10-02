@@ -23,14 +23,6 @@
     }
   }
 
-  //
-  // justify-content: center;
-  // align-items: center;
-  // padding: var(--btn-offset, var(--btn-offset-vertical, 14px) var(--btn-offset-horizontal, 26px));
-  // color: var(--btn-text);
-  // background-color: var(--btn-bg);
-  // text-decoration: none;
-
   &--icon-reverse {
     & svg {
       margin-right: 0;
@@ -46,7 +38,7 @@
     font-size: 15px;
     text-transform: uppercase;
 
-    display: inline-flex;
+    display: inline-block;
     align-items: center;
     text-align: center;
 
@@ -73,7 +65,6 @@
         background-color: var(--purple);
       }
     }
-
   }
 
   &--white {
@@ -86,7 +77,6 @@
     color: var(--black-90);
     max-width: 240px;
     width: 100%;
-
   }
 
   &--purple {

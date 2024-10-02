@@ -1,6 +1,5 @@
 .footer {
 
-
   &__cont {
     padding: 50px 0;
     background-color: var(--gray-dark);
@@ -49,13 +48,6 @@
       display: grid;
       row-gap: 20px;
     }
-
-    & .just-validate-error-label {
-      position: absolute;
-      bottom: -20px;
-      left: 0;
-    }
-
   }
 
   &__item {
@@ -77,11 +69,6 @@
     font-size: 18px;
     font-weight: 300;
     color: var(--white);
-
-    &.is-invalid + button {
-      color: var(--error, #BD0300);
-      border-color: var(--error, #BD0300);
-    }
 
     &::placeholder {
       color: #bdbdbd;
@@ -182,6 +169,8 @@
     background-color: var(--green);
     border-radius: 100%;
 
+    transition: opacity .2s ease-in-out;
+
     @include media-min ($lg) {
       width: 60px;
       height: 60px;
@@ -202,6 +191,18 @@
         }
       }
     }
+
+    @media (hover: hover) {
+      &:hover {
+        opacity: .9;
+      }
+    }
+
+    @media (hover: none) {
+      &:active {
+        opacity: .9;
+      }
+    }
   }
 
   & a {
@@ -213,8 +214,12 @@
 .items-fixed {
   position: fixed;
   bottom: 30px;
-  right: max(30px, calc((100% - var(--max-site-width, 1440px) - 100px) / 2));
+  right: max(30px, calc((100% - (1890px - 100px)) / 2));
   z-index: 1;
   display: grid;
   justify-items: center;
+
+  @include media-min ($lg) {
+    bottom: 70px;
+  }
 }

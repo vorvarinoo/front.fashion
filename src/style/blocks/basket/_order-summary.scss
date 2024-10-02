@@ -1,16 +1,14 @@
 .order-summary {
   display: grid;
+  grid-template-columns: 100%;
   row-gap: 50px;
-
-  padding-top: 24px;
+  width: 100%;
 
   @include media-min ($lg) {
     border-top: 1px solid var(--gray-light);
-
-    max-width: 330px;
-
     position: sticky;
     top: calc(var(--offset-top) + 24px);
+    width: 330px;
   }
 
   &__row {
@@ -28,6 +26,11 @@
         color: var(--black-90);
       }
     }
+
+    &--sum {
+      padding: 24px 0;
+
+    }
   }
 
   &__label {
@@ -42,6 +45,7 @@
     font-size: 14px;
     text-transform: uppercase;
     color: var(--black-90);
+    flex-shrink: 0;
   }
 
   &__delivery {
@@ -49,7 +53,7 @@
     line-height: 1.7;
     color: var(--black-90);
 
-    padding: 24px 0;
+    padding-bottom: 24px;
 
     & > *:first-child {
       margin-top: 0;
@@ -66,13 +70,6 @@
     --main-form-color: var(--purple);
 
     display: flex;
-
-    &[inert] {
-      --main-form-color: var(--black-90);
-
-      pointer-events: none;
-      user-select: none;
-    }
   }
 
   &__form-input {
@@ -97,6 +94,19 @@
       box-shadow: none;
       border-color: var(--main-form-color);
     }
+
+    &[disabled] {
+      --main-form-color: var(--black-90);
+
+      pointer-events: none;
+      user-select: none;
+    }
+
+    &[disabled] + .form-btn {
+      background-color: var(--black-90);
+      pointer-events: none;
+      user-select: none;
+    }
   }
 
   &__form-btn {
@@ -108,12 +118,25 @@
     color: var(--white);
 
     background-color: var(--main-form-color);
+
+    transition: opacity .2s ease-in-out;
+
+    @media (hover: hover) {
+      &:hover {
+        opacity: .8;
+      }
+    }
+
+    @media (hover: none) {
+      &:active {
+        opacity: .8;
+      }
+    }
   }
 
-  & .btn {
+  &__btn {
 
     margin: 32px auto;
-
 
     @include media-min ($lg) {
       margin-bottom: 32px;

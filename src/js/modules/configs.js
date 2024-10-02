@@ -23,26 +23,6 @@ const sliderConfig = {
       clickable: true,
     },
   },
-  products: {
-    slidesPerView: 2,
-    grid: {
-      fill: 'row',
-      rows: 2,
-    },
-    spaceBetween: 16,
-
-    breakpoints: {
-      768: {
-        grid: {
-          rows: 1,
-        },
-        slidesPerView: 4,
-        spaceBetween: 11,
-        freeMode: true,
-      },
-    },
-  },
-
   productPage: {
     slidesPerView: 1,
     watchSlidesProgress: true,
@@ -125,7 +105,7 @@ const validateConfig = {
   justValidate: {
     errorFieldCssClass: 'is-invalid',
     errorLabelStyle: {
-      color: 'var(--error)',
+      color: 'var(--purple)',
       marginTop: '6px',
       fontSize: '12px',
       textAlign: 'left',

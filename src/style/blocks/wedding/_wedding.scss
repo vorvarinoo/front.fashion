@@ -192,6 +192,11 @@
   &__list {
     @include list-reset;
     display: grid;
+    row-gap: 40px;
+
+    @include media-min ($lg) {
+      row-gap: 80px;
+    }
 
     &--sm {
       grid-template-columns: repeat(2, 1fr);

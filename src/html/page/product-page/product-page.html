@@ -68,15 +68,19 @@
                data-hystmodal="#sizes-modal">таблица размеров</a></div>
           <ul class="product-page__size-list">
 
-            <li class="size size--out-stock">
-              <div class="size__div">
+            <li class="size">
+              <div class="size__out-stock">
                 <span data-size>s</span>
               </div>
-              <div class="tooltip">Нет в наличии</div>
+              <div class="tooltip">
+                <div class="tooltip__inner">
+                  написать о наличии
+                </div>
+              </div>
             </li>
 
             <li class="size">
-              <label class="size__label">
+              <label class="size__in-stock">
                 <input type="radio"
                        name="Размер">
                 <span data-size>sm</span>
@@ -84,7 +88,7 @@
             </li>
 
             <li class="size">
-              <label class="size__label">
+              <label class="size__in-stock">
                 <input type="radio"
                        name="Размер">
                 <span data-size>m</span>
@@ -92,22 +96,26 @@
             </li>
 
             <li class="size">
-              <label class="size__label">
+              <label class="size__in-stock">
                 <input type="radio"
                        name="Размер">
                 <span data-size>ml</span>
               </label>
             </li>
 
-            <li class="size size--out-stock">
-              <div class="size__div">
+            <li class="size">
+              <div class="size__out-stock">
                 <span data-size>l</span>
               </div>
-              <div class="tooltip">Нет в наличии</div>
+              <div class="tooltip">
+                <div class="tooltip__inner">
+                  написать о наличии
+                </div>
+              </div>
             </li>
 
             <li class="size">
-              <label class="size__label">
+              <label class="size__in-stock">
                 <input type="radio"
                        name="Размер">
                 <span data-size>lxl</span>
@@ -200,12 +208,4 @@
 
 <template id="btn-basket">
   <button class="btn btn--dark">в корзину</button>
-</template>
-
-<template id="tooltip-template">
-  <div class="tooltip"
-       id="tooltip"
-       data-delivery-type="availability-block">
-    <div class="tooltip__inner"></div>
-  </div>
 </template>

@@ -1,239 +1,244 @@
 <section class="order page">
-  <div class="container page__flex">
-    <div class="page__section">
+  <div class="container">
+    <h1 class="title page__title">оформление заказа</h1>
+    <div class="page__flex">
+      <div class="page__section">
+        <form id="order-form"
+              class="order__form">
 
-      <h1 class="title page__title">оформление заказа</h1>
-      <form id="order-form"
-            class="order__form">
+          <fieldset class="order-fieldset">
+            <legend class="form-subtitle">личные данные</legend>
 
-        <fieldset class="order-fieldset">
-          <legend class="form-subtitle">личные данные</legend>
-
-          <div class="order-fieldset__cont">
-            <div class="form-row">
-              <div class="form-field">
-                <input class="form-input"
-                       type="text"
-                       name="Имя"
-                       required>
-                <label>имя <span>*</span></label>
+            <div class="order-fieldset__cont">
+              <div class="form-row">
+                <div class="form-field">
+                  <input class="form-input"
+                         type="text"
+                         name="Имя"
+                         required>
+                  <label>имя <span>*</span></label>
+                </div>
+                <div class="form-field">
+                  <input class="form-input"
+                         type="text"
+                         name="Фамилия"
+                         required>
+                  <label>Фамилия <span>*</span></label>
+                </div>
               </div>
-              <div class="form-field">
-                <input class="form-input"
-                       type="text"
-                       name="Фамилия"
-                       required>
-                <label>Фамилия <span>*</span></label>
+              <div class="form-row">
+                <div class="form-field">
+                  <input class="form-input"
+                         type="tel"
+                         name="Контактный телефон"
+                         required>
+                  <label>телефон <span>*</span></label>
+                </div>
+                <div class="form-field">
+                  <input class="form-input"
+                         type="mail"
+                         name="Контактная почта"
+                         required>
+                  <label>E-mail <span>*</span></label>
+                </div>
               </div>
             </div>
-            <div class="form-row">
-              <div class="form-field">
-                <input class="form-input"
-                       type="tel"
-                       name="Контактный телефон"
-                       required>
-                <label>телефон <span>*</span></label>
+          </fieldset>
+
+          <fieldset class="order-fieldset">
+            <legend class="form-subtitle">выбор доставки</legend>
+            <div class="delivery">
+              <div class="delivery__type"
+                   id="delivery-type">
+                <label>
+                  <input class="form-radio-tab"
+                         type="radio"
+                         name="Тип доставки"
+                         data-delivery-type="courier"
+                         value="Доставка"
+                         checked>
+                  <span>Курьерская</span>
+                </label>
+                <label>
+                  <input class="form-radio-tab"
+                         type="radio"
+                         name="Тип доставки"
+                         data-delivery-type="delivery"
+                         value="Доставка">
+                  <span>Сдэк до ПВЗ</span>
+                </label>
+                <label>
+                  <input class="form-radio-tab"
+                         type="radio"
+                         name="Тип доставки"
+                         data-delivery-type="pickup"
+                         value="Доставка">
+                  <span>Самовывоз</span>
+                </label>
               </div>
-              <div class="form-field">
-                <input class="form-input"
-                       type="mail"
-                       name="Контактная почта"
-                       required>
-                <label>E-mail <span>*</span></label>
+              <div id="delivery-type-container">
+
               </div>
+            </div>
+          </fieldset>
+
+          <div class="order-result">
+            <div class="order-result__total">
+              <div class="order-result__total-amount">Итого: <span>26 300 ₽</span></div>
+              <button class="btn btn--dark">подтвердить</button>
             </div>
           </div>
-        </fieldset>
 
-        <fieldset class="order-fieldset">
-          <legend class="form-subtitle">выбор доставки</legend>
-          <div class="delivery">
-            <div class="delivery__type"
-                 id="delivery-type">
-              <label>
-                <input class="form-radio-tab"
-                       type="radio"
-                       name="Тип доставки"
-                       data-delivery-type="courier"
-                       value="Доставка"
-                       checked>
-                <span>Курьерская</span>
-              </label>
-              <label>
-                <input class="form-radio-tab"
-                       type="radio"
-                       name="Тип доставки"
-                       data-delivery-type="delivery"
-                       value="Доставка">
-                <span>Сдэк до ПВЗ</span>
-              </label>
-              <label>
-                <input class="form-radio-tab"
-                       type="radio"
-                       name="Тип доставки"
-                       data-delivery-type="pickup"
-                       value="Доставка">
-                <span>Самовывоз</span>
-              </label>
+        </form>
+
+      </div>
+      <aside class="page__aside">
+
+        <ul class="order__list">
+          <li class="basket-product basket-product--sm">
+
+            <div class="basket-product__cont">
+              <div class="basket-product__img">
+                <img src="/img/img-product-1.png"
+                     alt="">
+              </div>
+
+              <div class="basket-product__details">
+                <div>
+                  <h2 class="basket-product__title">MASHA ANDRIANOVA</h2>
+                  <div class="basket-product__info">
+                    <div class="basket-product__category">Платье</div>
+                    <div class="basket-product__price">
+                      <span>17 300 ₽</span>
+                    </div>
+                  </div>
+
+                  <div class="basket-product__size">Размер</div>
+
+                  <div class="size">
+                    <div class="size__selected">
+                      <span>sm</span>
+                    </div>
+                  </div>
+
+                  <div class="basket-product__count">
+                    1
+                  </div>
+                </div>
+
+              </div>
             </div>
-            <div id="delivery-type-container">
 
+          </li>
+          <li class="basket-product basket-product--sm">
+
+            <div class="basket-product__cont">
+              <div class="basket-product__img">
+                <img src="/img/img-product-1.png"
+                     alt="">
+              </div>
+
+              <div class="basket-product__details">
+                <div>
+                  <h2 class="basket-product__title">MASHA ANDRIANOVA</h2>
+                  <div class="basket-product__info">
+                    <div class="basket-product__category">Платье</div>
+                    <div class="basket-product__price">
+                      <span>17 300 ₽</span>
+                    </div>
+                  </div>
+
+                  <div class="basket-product__size">Размер</div>
+
+                  <div class="size">
+                    <div class="size__selected">
+                      <span>sm</span>
+                    </div>
+                  </div>
+
+                  <div class="basket-product__count">
+                    1
+                  </div>
+                </div>
+
+              </div>
             </div>
-          </div>
-        </fieldset>
 
-        <div class="order-result">
-          <div class="order-result__total">
-            <div class="order-result__total-amount">Итого: <span>26 300 ₽</span></div>
-            <button class="btn btn--dark">подтвердить</button>
-          </div>
-        </div>
+          </li>
+          <li class="basket-product basket-product--sm">
 
-      </form>
+            <div class="basket-product__cont">
+              <div class="basket-product__img">
+                <img src="/img/img-product-1.png"
+                     alt="">
+              </div>
 
+              <div class="basket-product__details">
+                <div>
+                  <h2 class="basket-product__title">MASHA ANDRIANOVA</h2>
+                  <div class="basket-product__info">
+                    <div class="basket-product__category">Платье</div>
+                    <div class="basket-product__price">
+                      <span>17 300 ₽</span>
+                    </div>
+                  </div>
+
+                  <div class="basket-product__size">Размер</div>
+
+                  <div class="size">
+                    <div class="size__selected">
+                      <span>sm</span>
+                    </div>
+                  </div>
+
+                  <div class="basket-product__count">
+                    1
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </li>
+          <li class="basket-product basket-product--sm">
+
+            <div class="basket-product__cont">
+              <div class="basket-product__img">
+                <img src="/img/img-product-1.png"
+                     alt="">
+              </div>
+
+              <div class="basket-product__details">
+                <div>
+                  <h2 class="basket-product__title">MASHA ANDRIANOVA</h2>
+                  <div class="basket-product__info">
+                    <div class="basket-product__category">Платье</div>
+                    <div class="basket-product__price">
+                      <span>17 300 ₽</span>
+                    </div>
+                  </div>
+
+                  <div class="basket-product__size">Размер</div>
+
+                  <div class="size">
+                    <div class="size__selected">
+                      <span>sm</span>
+                    </div>
+                  </div>
+
+                  <div class="basket-product__count">
+                    1
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </li>
+        </ul>
+
+      </aside>
     </div>
-    <aside class="page__aside">
-
-      <ul class="order__list">
-        <li class="basket-product basket-product--sm">
-
-          <div class="basket-product__cont">
-            <div class="basket-product__img">
-              <img src="/img/img-product-1.png"
-                   alt="">
-            </div>
-
-            <div class="basket-product__details">
-              <div>
-                <h2 class="basket-product__title">MASHA ANDRIANOVA</h2>
-                <div class="basket-product__info">
-                  <div class="basket-product__category">Платье</div>
-                  <div class="basket-product__price">
-                    <span>17 300 ₽</span>
-                  </div>
-                </div>
-
-                <div class="size">
-                  <div class="size__top">Размер</div>
-                  <div class="size__item">
-                    sm
-                  </div>
-                </div>
-
-                <div class="basket-product__count">
-                  1
-                </div>
-              </div>
-
-            </div>
-          </div>
-
-        </li>
-        <li class="basket-product basket-product--sm">
-
-          <div class="basket-product__cont">
-            <div class="basket-product__img">
-              <img src="/img/img-product-1.png"
-                   alt="">
-            </div>
-
-            <div class="basket-product__details">
-              <div>
-                <h2 class="basket-product__title">MASHA ANDRIANOVA</h2>
-                <div class="basket-product__info">
-                  <div class="basket-product__category">Платье</div>
-                  <div class="basket-product__price">
-                    <span>17 300 ₽</span>
-                  </div>
-                </div>
-
-                <div class="size">
-                  <div class="size__top">Размер</div>
-                  <div class="size__item">
-                    sm
-                  </div>
-                </div>
-
-                <div class="basket-product__count">
-                  1
-                </div>
-              </div>
-
-            </div>
-          </div>
-
-        </li>
-        <li class="basket-product basket-product--sm">
-
-          <div class="basket-product__cont">
-            <div class="basket-product__img">
-              <img src="/img/img-product-1.png"
-                   alt="">
-            </div>
-
-            <div class="basket-product__details">
-              <div>
-                <h2 class="basket-product__title">MASHA ANDRIANOVA</h2>
-                <div class="basket-product__info">
-                  <div class="basket-product__category">Платье</div>
-                  <div class="basket-product__price">
-                    <span>17 300 ₽</span>
-                  </div>
-                </div>
-
-                <div class="size">
-                  <div class="size__top">Размер</div>
-                  <div class="size__item">
-                    sm
-                  </div>
-                </div>
-
-                <div class="basket-product__count">
-                  1
-                </div>
-              </div>
-
-            </div>
-          </div>
-
-        </li>
-        <li class="basket-product basket-product--sm">
-
-          <div class="basket-product__cont">
-            <div class="basket-product__img">
-              <img src="/img/img-product-1.png"
-                   alt="">
-            </div>
-
-            <div class="basket-product__details">
-              <div>
-                <h2 class="basket-product__title">MASHA ANDRIANOVA</h2>
-                <div class="basket-product__info">
-                  <div class="basket-product__category">Платье</div>
-                  <div class="basket-product__price">
-                    <span>17 300 ₽</span>
-                  </div>
-                </div>
-
-                <div class="size">
-                  <div class="size__top">Размер</div>
-                  <div class="size__item">
-                    sm
-                  </div>
-                </div>
-
-                <div class="basket-product__count">
-                  1
-                </div>
-              </div>
-
-            </div>
-          </div>
-
-        </li>
-      </ul>
-
-    </aside>
   </div>
 </section>
 

@@ -19,7 +19,12 @@
         </button>
         @include('@template.html')
       </div>
-      @include('../page/help/help-block.html')
+
+      @include('../common/help-block.html', {
+      title: 'Нужна помощь?',
+      text: 'Не&nbsp;смогли определиться с&nbsp;размером&nbsp;&mdash; свяжитесь с&nbsp;нами и&nbsp;мы&nbsp;подскажем',
+      })
+
     </div>
   </div>
 

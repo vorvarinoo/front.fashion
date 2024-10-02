@@ -3,27 +3,6 @@ import {
   breakpointChecker,
 } from './utils.js';
 
-import {
-  observerConfig,
-}
-from './configs.js';
-
-
-
-// const initStickyHeader = ( node, target ) => {
-//   if ( !node || !target ) return;
-//   const cb = ( entries ) => {
-//     entries.forEach( ( entry ) => {
-//       if ( !entry.isIntersecting ) {
-//         node.classList.add( 'is-sticky' );
-//       } else {
-//         node.classList.remove( 'is-sticky' );
-//       }
-//     } );
-//   };
-
-//   new IntersectionObserver( cb, observerConfig.header ).observe( target );
-// };
 
 const resetOffsetTop = ( node ) => {
   if ( !node ) return;
@@ -43,7 +22,6 @@ export const initHeaderMenu = () => {
       openId: 'btn-customers-menu',
       modalId: 'customers-menu'
     },
-    // Добавьте другие кнопки и модальные окна по необходимости
   ];
 
   const headerNode = document.querySelector( '.header' );
@@ -55,10 +33,10 @@ export const initHeaderMenu = () => {
     const modalNode = document.getElementById( modalId );
     const modalOpenNode = document.getElementById( openId );
 
-    // Проверяем, существуют ли все необходимые элементы
+
     if ( !modalNode || !modalOpenNode ) return;
 
-    const modalCloseNode = modalNode.querySelector( '.header-modal__close' ); // Предполагается, что кнопка закрытия внутри модального окна
+    const modalCloseNode = modalNode.querySelector( '.header-modal__close' );
 
     const onEscKeydown = ( evt ) => {
       if ( isEscKey( evt ) && modalNode.getAttribute( 'aria-hidden' ) === 'false' ) {
@@ -78,13 +56,13 @@ export const initHeaderMenu = () => {
       document.removeEventListener( 'keydown', onEscKeydown );
     }
 
-    // Обработчик события для кнопки открытия
+
     modalOpenNode.addEventListener( 'click', ( evt ) => {
       evt.preventDefault();
       openModal();
     } );
 
-    // Проверка перед добавлением обработчика события для кнопки закрытия
+
     if ( modalCloseNode ) {
       modalCloseNode.addEventListener( 'click', ( evt ) => {
         evt.preventDefault();
@@ -93,13 +71,12 @@ export const initHeaderMenu = () => {
     }
   } );
 
-  // Проверка перед использованием функций
+
   breakpointChecker( () => {
     resetOffsetTop( headerNode );
   }, () => {
     resetOffsetTop( headerNode );
   } );
 
-  // initStickyHeader( headerNode, headerTopNode );
-  // initStickyHeader( contentNode, headerTopNode );
+
 };

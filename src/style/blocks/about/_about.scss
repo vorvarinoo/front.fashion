@@ -26,9 +26,9 @@
 
     @include media-min ($md) {
       padding-bottom: 150px;
+      padding-top: 0;
     }
 
-    @include media-min ($lg) {}
 
     & span {
       margin-top: -30px;
@@ -219,8 +219,6 @@
     background-image: linear-gradient(to bottom, var(--purple) 70%, var(--white) 70%);
   }
 
-  &__cont {}
-
   &__label {
 
     max-width: 76px;
@@ -256,7 +254,7 @@
 
       position: relative;
 
-      top: -165px;
+      top: -200px;
     }
   }
 
