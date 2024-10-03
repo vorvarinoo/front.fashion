@@ -19,68 +19,129 @@
   <div aria-hidden="true" id="site-top"></div>
   <div class="site__container">
     <header class="site__header header">
-      <div class="container">
-        <div class="header__wrap">
-          <div class="header__left">
-            <ul class="list-reset header__list">
-              <li class="header__item d-none-lg">
-                <button id="btn-mob-menu" class="btn-reset header__burger">
-                  <svg width="30" height="16" aria-hidden="true">
-                    <use xlink:href="img/sprite.svg#icon-burger"></use>
-                  </svg>
-                </button>
-              </li>
-              <li class="header__item d-none-sm">
-                <button id="btn-catalog-menu" class="btn-reset">
-                  каталог
-                </button>
-              </li>
-              <li class="header__item d-none-sm">
-                <button id="btn-customers-menu" class="btn-reset">
-                  покупателям
-                </button>
-              </li>
-              <li class="header__item d-none-sm">
-                <a href="#">Контакты</a>
-              </li>
-            </ul>
-          </div>
-          <div class="header__middle">
-            <a class="logo" href="/">
-              <img src="/img/logo.svg" alt="Logo FRONT">
-            </a>
-          </div>
-          <div class="header__right">
-            <ul class="list-reset header__list header__list--justify-end">
+      <div class="header__wrap">
+        <div class="container">
+          <div class="header__cont">
+            <div class="header__left">
+              <ul class="list-reset header__list">
+                <li class="header__item d-none-lg">
+                  <button id="btn-mob-menu" class="btn-reset header__burger">
+                    <svg width="30" height="16" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#icon-burger"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="header__item d-none-sm">
+                  <button id="btn-catalog-menu" class="btn-reset">
+                    каталог
+                  </button>
+                </li>
+                <li class="header__item d-none-sm">
+                  <button id="btn-customers-menu" class="btn-reset">
+                    покупателям
+                  </button>
+                </li>
+                <li class="header__item d-none-sm">
+                  <a href="#">Контакты</a>
+                </li>
+              </ul>
+            </div>
+            <div class="header__middle">
+              <a class="logo" href="/">
+                <img src="/img/logo.svg" alt="Logo FRONT">
+              </a>
+            </div>
+            <div class="header__right">
+              <ul class="list-reset header__list header__list--justify-end">
 
-              <li class="header__item">
-                <button class="btn-reset header__search">
-                  <svg width="24" height="24" aria-hidden="true">
-                    <use xlink:href="img/sprite.svg#icon-search"></use>
-                  </svg>
-                </button>
-              </li>
-              <li class="header__item d-none-sm">
-                <button class="language language--lg">ENglish</button>
-              </li>
-              <li class="header__item d-none-sm">
-                <a class="header__login" href="#">
-                  <svg width="24" height="24" aria-hidden="true">
-                    <use xlink:href="img/sprite.svg#icon-person"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="header__item">
-                <a class="header__basket" data-backet="1" href="#">
-                  <svg width="24" height="24" aria-hidden="true">
-                    <use xlink:href="img/sprite.svg#icon-basket"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
+                <li class="header__item">
+                  <button class="btn-reset header__search">
+                    <svg width="24" height="24" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#icon-search"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="header__item d-none-sm">
+                  <button class="language language--lg">ENglish</button>
+                </li>
+                <li class="header__item d-none-sm">
+                  <a class="header__login" href="#">
+                    <svg width="24" height="24" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#icon-person"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="header__item">
+                  <a class="header__basket" data-backet="1" href="#">
+                    <svg width="24" height="24" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#icon-basket"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
+
+      <div class="header-search">
+
+        <div class="header-search__wrap">
+          <div class="container">
+            <form class="header-search__form">
+
+              <div class="header-search__cont">
+                <div class="header-search__left">
+                  <div class="header-search__input">
+
+                    <input type="search" class="form-input" name="Поиск" placeholder="Поиск" autocomplete="off">
+
+                    <div class="header-search__btns">
+                      <button class="header-search__btn header-search__btn header-search__btn--search" type="submit">
+                        <svg class="header-search__btn-arrow" width="27" height="8" aria-hidden="true">
+                          <use xlink:href="img/sprite.svg#icon-arrow-search"></use>
+                        </svg>
+                      </button>
+                      <button class="header-search__btn header-search__btn--close" type="button">
+                        <svg class="header-search__btn-arrow" width="9" height="10" aria-hidden="true">
+                          <use xlink:href="img/sprite.svg#icon-cross"></use>
+                        </svg>
+                      </button>
+                    </div>
+
+                  </div>
+
+                  <ul class="header-search__list">
+                    <li>Верхнее платье</li>
+                    <li>Верхнее-туника</li>
+                    <li>Сарафан</li>
+                    <li>Халат-кимоно</li>
+                  </ul>
+                </div>
+                <div class="header-search__checkboxs">
+                  <label class="header-search__checkbox">
+                    <input type="checkbox" name="Тип товара">
+                    <span>Бестселлер</span>
+                  </label>
+                  <label class="header-search__checkbox">
+                    <input type="checkbox" name="Тип товара">
+                    <span>Limited</span>
+                  </label>
+                  <label class="header-search__checkbox">
+                    <input type="checkbox" name="Тип товара">
+                    <span>Предзаказ</span>
+                  </label>
+                </div>
+              </div>
+
+            </form>
+
+          </div>
+        </div>
+
+
+      </div>
+
       <div id="mob-menu" class="header-modal" aria-hidden="true">
         <div class="header-modal__content">
           <div class="container">
@@ -297,7 +358,7 @@
       </div>
     </header>
     <div class="site__content">
-      <div class="breadcrumbs" typeof="BreadcrumbList" vocab="https://schema.org/">
+      <div class="breadcrumbs d-none-sm" typeof="BreadcrumbList" vocab="https://schema.org/">
         <div class="container">
           <a href="page-main.html">Главная</a>&ensp;&frasl;&ensp;<a href="page-catalog.html">Каталог</a>&ensp;&frasl;&ensp;<span class="current-item">Masha Andrianova</span>
         </div>
@@ -312,30 +373,40 @@
                 <div class="swiper-wrapper">
                   <!-- Slides -->
                   <div class="swiper-slide">
-                    <img src="/img/img-product-page-2.png" alt="MASHA ANDRIANOVA">
+                    <a data-fslightbox="galleryProduct" href="/img/img-product-page-2.png">
+                      <img src="/img/img-product-page-2.png" alt="MASHA ANDRIANOVA">
+                    </a>
                   </div>
 
                   <div class="swiper-slide">
-                    <img src="/img/img-product-page-1.png" alt="MASHA ANDRIANOVA">
+                    <a data-fslightbox="gallery" href="/img/img-product-page-1.png">
+                      <img src="/img/img-product-page-1.png" alt="MASHA ANDRIANOVA">
+                    </a>
                   </div>
 
                   <div class="swiper-slide">
-                    <img src="/img/img-product-page-2.png" alt="MASHA ANDRIANOVA">
+                    <a data-fslightbox="galleryProduct" href="/img/img-product-page-2.png">
+                      <img src="/img/img-product-page-2.png" alt="MASHA ANDRIANOVA">
+                    </a>
                   </div>
 
                   <div class="swiper-slide">
-                    <img src="/img/img-product-page-1.png" alt="MASHA ANDRIANOVA">
+                    <a data-fslightbox="galleryProduct" href="/img/img-product-page-1.png">
+                      <img src="/img/img-product-page-1.png" alt="MASHA ANDRIANOVA">
+                    </a>
                   </div>
 
                   <div class="swiper-slide">
-                    <img src="/img/img-product-page-2.png" alt="MASHA ANDRIANOVA">
+                    <a data-fslightbox="galleryProduct" href="/img/img-product-page-2.png">
+                      <img src="/img/img-product-page-2.png" alt="MASHA ANDRIANOVA">
+                    </a>
                   </div>
                 </div>
 
-                <div class="swiper-pagination"></div>
+                <div class="swiper-pagination d-none-lg"></div>
 
-                <div class="swiper-button-prev slider-controls-btn"></div>
-                <div class="swiper-button-next slider-controls-btn"></div>
+                <div class="swiper-button-prev slider-controls-btn d-none-sm"></div>
+                <div class="swiper-button-next slider-controls-btn d-none-sm"></div>
 
               </div>
             </div>
@@ -350,50 +421,64 @@
                   </div>
                 </div>
                 <div class="product-page__size">
-                  <div class="product-page__size-top"><span>Размер</span> <a href="">таблица размеров</a></div>
+                  <div class="product-page__size-top"><span>Размер</span> <a href="#" data-hystmodal="#sizes-modal">таблица размеров</a></div>
                   <ul class="product-page__size-list">
 
-                    <li>
-                      <label class="product-page__label" data-disable>
-                        <input type="checkbox" name="sizeGroup">
-                        <span>s</span>
-                      </label>
+                    <li class="size">
+                      <div class="size__out-stock">
+                        <span data-size>s</span>
+                      </div>
+                      <div class="tooltip">
+                        <div class="tooltip__inner">
+                          написать о наличии
+                        </div>
+                      </div>
                     </li>
-                    <li>
-                      <label class="product-page__label">
-                        <input type="checkbox" name="sizeGroup">
-                        <span>sm</span>
-                      </label>
-                    </li>
-                    <li>
-                      <label class="product-page__label" data-disable>
-                        <input type="checkbox" name="sizeGroup">
-                        <span>m</span>
-                      </label>
-                    </li>
-                    <li>
-                      <label class="product-page__label">
-                        <input type="checkbox" name="sizeGroup">
-                        <span>ml</span>
-                      </label>
-                    </li>
-                    <li>
-                      <label class="product-page__label">
-                        <input type="checkbox" name="sizeGroup">
-                        <span>l</span>
-                      </label>
-                    </li>
-                    <li>
-                      <label class="product-page__label">
-                        <input type="checkbox" name="sizeGroup">
-                        <span>lxl</span>
+
+                    <li class="size">
+                      <label class="size__in-stock">
+                        <input type="radio" name="Размер">
+                        <span data-size>sm</span>
                       </label>
                     </li>
 
+                    <li class="size">
+                      <label class="size__in-stock">
+                        <input type="radio" name="Размер">
+                        <span data-size>m</span>
+                      </label>
+                    </li>
+
+                    <li class="size">
+                      <label class="size__in-stock">
+                        <input type="radio" name="Размер">
+                        <span data-size>ml</span>
+                      </label>
+                    </li>
+
+                    <li class="size">
+                      <div class="size__out-stock">
+                        <span data-size>l</span>
+                      </div>
+                      <div class="tooltip">
+                        <div class="tooltip__inner">
+                          написать о наличии
+                        </div>
+                      </div>
+                    </li>
+
+                    <li class="size">
+                      <label class="size__in-stock">
+                        <input type="radio" name="Размер">
+                        <span data-size>lxl</span>
+                      </label>
+                    </li>
 
                   </ul>
                 </div>
-                <button class="btn btn--dark">в корзину</button>
+                <div id="container-btns">
+                  <button class="btn btn--dark">в корзину</button>
+                </div>
 
                 <div class="product-page__descr">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -452,6 +537,20 @@
             </div>
           </div>
         </section>
+
+        <template id="availability">
+          <form id="availability-form" class="availability">
+            <div class="availability__descr">Мы сообщим, когда вещь будет в наличии</div>
+            <input class="visually-hidden" type="text" name="Размер" value="">
+            <input class="visually-hidden" type="text" name="Продукт" value="MASHA ANDRIANOVA">
+            <input class="form-input availability__input" type="mail" placeholder="EMAIL" name="Конкактная почта">
+            <button class="form-btn availability__btn">отправить</button>
+          </form>
+        </template>
+
+        <template id="btn-basket">
+          <button class="btn btn--dark">в корзину</button>
+        </template>
 
         <section class="products">
           <div class="container">
@@ -524,11 +623,7 @@
               </li>
             </ul>
 
-            <a href="#" class="products__link">Смотреть всё
-              <svg width="87" height="16" aria-hidden="true">
-                <use xlink:href="img/sprite.svg#icon-long-arrow"></use>
-              </svg>
-            </a>
+
           </div>
         </section>
 
@@ -542,9 +637,9 @@
             <div class="footer__form">
               <div class="footer__item">
                 Подпишитесь на&nbsp;нашу рассылку и&nbsp;получите -10%&nbsp;на&nbsp;первый заказ </div>
-              <form action="" id="subscribe" data-validate>
+              <form action="" id="subscribe">
                 <div class="footer__form-field">
-                  <input class="form-input footer__form-input" type="mail" name="Почта" required placeholder="E-mail" data-validate="email">
+                  <input class="form-input footer__form-input" type="mail" name="Контактная почта" required placeholder="E-mail">
                   <button class="btn-reset footer__form-btn" type="submit">
                     <svg width="29" height="16" aria-hidden="true">
                       <use xlink:href="img/sprite.svg#icon-average-arrow"></use>
@@ -587,18 +682,41 @@
               <li><a class="footer__item" href="">russia@mail.ru</a></li>
             </ul>
             <ul class="list-reset social">
-              <li><a href="#"><img src="/img/icon-vk.svg" alt="VK"></a></li>
+              <li><a href="#" aria-label="Vkontakte">
+                  <svg width="24" height="24" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#icon-vk"></use>
+                  </svg></a>
+              </li>
             </ul>
           </div>
         </div>
       </div>
     </footer>
-    <div class="scroll-top" id="scroll-top">
-      <a class="scroll-top__link" href="#site-top" aria-label="Наверх страницы">
-        <svg width="14" height="8" aria-hidden="true">
-          <use xlink:href="img/sprite.svg#icon-up"></use>
-        </svg>
-      </a>
+
+    <div class="items-fixed">
+      <ul class="social">
+        <li>
+          <a class="social__item" href="#" target="_blank" aria-label="Telegram">
+            <svg width="20" height="20" aria-hidden="true">
+              <use xlink:href="img/sprite.svg#icon-telegram"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a class="social__item social__item--whatsapp" href="#" target="_blank" aria-label="Whatsapp">
+            <svg width="29" height="24" aria-hidden="true">
+              <use xlink:href="img/sprite.svg#icon-whatsapp"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <div class="scroll-top" id="scroll-top">
+        <a class="scroll-top__link" href="#site-top" aria-label="Наверх страницы">
+          <svg width="14" height="8" aria-hidden="true">
+            <use xlink:href="img/sprite.svg#icon-up"></use>
+          </svg>
+        </a>
+      </div>
     </div>
     <div class="hystmodal hystmodal--simple" id="send-ok-modal" aria-hidden="true">
       <div class="hystmodal__wrap">
@@ -613,6 +731,165 @@
             <div class="modal__text">Мы свяжемся с вами в ближайшее время и обсудим все детали.</div>
             <div class="modal__bottom-btn">
               <button class="btn-reset btn" data-hystclose>Хорошо</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hystmodal hystmodal--simple" id="sizes-modal" aria-hidden="true">
+      <div class="hystmodal__wrap">
+        <div class="hystmodal__window hystmodal__window--form" role="dialog" aria-modal="true">
+          <div class="modal modal--sizes">
+            <button class="modal__close" type="button" aria-label="Close window" data-hystclose>
+              <svg class="modal__close-icon" width="32" height="32" aria-hidden="true">
+                <use xlink:href="img/sprite.svg#icon-cross"></use>
+              </svg>
+            </button>
+            <div class="modal-size">
+              <div class="title modal-size__title">
+                Таблица размеров
+              </div>
+
+              <table class="modal-size__table">
+                <thead>
+                  <tr>
+                    <th>INT</th>
+                    <th>RU</th>
+                    <th>IT</th>
+                    <th>FR</th>
+                    <th>USA</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>One size</td>
+                    <td>42-48</td>
+                    <td>38-42</td>
+                    <td>36-42</td>
+                    <td>4-8</td>
+                  </tr>
+                  <tr>
+                    <td>S</td>
+                    <td>42-44</td>
+                    <td>38</td>
+                    <td>36-38</td>
+                    <td>4</td>
+                  </tr>
+                  <tr>
+                    <td>S-M</td>
+                    <td>44-46</td>
+                    <td>38-40</td>
+                    <td>38</td>
+                    <td>4-6</td>
+                  </tr>
+                  <tr>
+                    <td>M</td>
+                    <td>46</td>
+                    <td>40</td>
+                    <td>38-40</td>
+                    <td>6</td>
+                  </tr>
+                  <tr>
+                    <td>M-L</td>
+                    <td>46-48</td>
+                    <td>40-42</td>
+                    <td>40</td>
+                    <td>6-8</td>
+                  </tr>
+                  <tr>
+                    <td>L</td>
+                    <td>48-52</td>
+                    <td>44-46</td>
+                    <td>42-44</td>
+                    <td>8-10</td>
+                  </tr>
+                  <tr>
+                    <td>Lxl</td>
+                    <td>52</td>
+                    <td>48</td>
+                    <td>46</td>
+                    <td>12</td>
+                  </tr>
+                </tbody>
+              </table>
+
+            </div>
+          </div>
+
+          <div class="help-block ">
+            <h2 class="title help-block__title">Нужна помощь?</h2>
+            <div class="help-block__text">Не&nbsp;смогли определиться с&nbsp;размером&nbsp;&mdash; свяжитесь с&nbsp;нами и&nbsp;мы&nbsp;подскажем</div>
+            <a class="btn btn--white" href="#">контакты</a>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+    <div class="hystmodal hystmodal--simple" id="callback-modal" aria-hidden="true">
+      <div class="hystmodal__wrap">
+        <div class="hystmodal__window hystmodal__window--form" role="dialog" aria-modal="true">
+          <div class="modal">
+            <button class="modal__close" type="button" aria-label="Close window" data-hystclose>
+              <svg class="modal__close-icon" width="32" height="32" aria-hidden="true">
+                <use xlink:href="img/sprite.svg#icon-cross"></use>
+              </svg>
+            </button>
+            <div class="modal-callback">
+              <div>
+                <div class="modal-callback__title">
+                  оставьте свои данные
+                  и&nbsp;мы&nbsp;свяжемся с вами
+                </div>
+
+                <form id="callback-form" class="modal-callback__form">
+                  <input class="form-input modal-callback__input" type="text" placeholder="имя" name="Имя">
+                  <input class="form-input modal-callback__input" type="tel" placeholder="телефон" name="Контактный телефон">
+                  <input class="form-input modal-callback__input" type="mail" placeholder="e-mail" name="Контактная почта">
+                  <button class="btn modal-callback__btn" type="submit">отправить</button>
+                </form>
+
+                <div class="modal-callback__policy">
+                  Нажимая на кнопку, вы соглашаетесь
+                  с&nbsp;<a href="#">политикой конфеденциальности
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hystmodal hystmodal--simple" id="discount-modal" aria-hidden="true">
+      <div class="hystmodal__wrap">
+        <div class="hystmodal__window hystmodal__window--form" role="dialog" aria-modal="true">
+          <div class="modal modal--discount">
+            <button class="modal__close" type="button" aria-label="Close window" data-hystclose>
+              <svg class="modal__close-icon" width="32" height="32" aria-hidden="true">
+                <use xlink:href="img/sprite.svg#icon-cross"></use>
+              </svg>
+            </button>
+            <div class="modal-discount">
+              <div class="modal-discount__top">
+                <div class="modal-discount__img">
+                  <img src="/img/img-modal-discount.png">
+                </div>
+              </div>
+              <div class="modal-discount__bottom">
+                <div class="modal-discount__title">
+                  -10% при подписке на&nbsp;новости
+                </div>
+                <form id="discount-form" class="modal-discount__form">
+                  <input class="form-input modal-discount__input" type="mail" placeholder="e-mail" name="Контактная почта">
+                  <button class="btn modal-discount__btn" type="submit">подтвердить</button>
+                </form>
+                <div class="modal-discount__text">
+                  В&nbsp;рассылке мы&nbsp;рассказываем последние новости бренда и&nbsp;признаёмся в&nbsp;любви к&nbsp;традиционному костюму.
+                </div>
+
+              </div>
+
+
             </div>
           </div>
         </div>

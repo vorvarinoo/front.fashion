@@ -1,11 +1,8 @@
 document.addEventListener( 'DOMContentLoaded', function() {
-  // Проверяем, есть ли на странице элемент с классом media__list
+
   const grid = document.querySelector( '.media__list' );
 
-  if ( !grid ) return; // Если элемента нет, прекращаем выполнение
-
-  // Скрываем элемент .media__list до полной загрузки
-
+  if ( !grid ) return;
 
   function resizeGridItem( item ) {
     const grid = document.getElementsByClassName( "media__list" )[ 0 ];
@@ -27,10 +24,9 @@ document.addEventListener( 'DOMContentLoaded', function() {
     resizeGridItem( item );
   }
 
-  // Ждем полной загрузки всех ресурсов страницы
   window.addEventListener( 'load', function() {
-    resizeAllGridItems(); // Выполняем расчет размеров
-    grid.classList.add( 'is-visible' ); // Показываем .media__list
+    resizeAllGridItems();
+    grid.classList.add( 'is-visible' );
   } );
 
   window.addEventListener( "resize", resizeAllGridItems );

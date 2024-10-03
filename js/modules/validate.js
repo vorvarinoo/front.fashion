@@ -41,14 +41,14 @@ export const validateForms = () => {
           validationRules.addField( `${formID} [data-validate="name"]`, [ {
             rule: 'required',
             value: true,
-            errorMessage: 'Поле обязательно для заполнения'
+            errorMessage: 'Обязательно для заполнения'
           }, ] );
           break;
         case 'email':
           validationRules.addField( `${formID} [data-validate="email"]`, [ {
               rule: 'required',
               value: true,
-              errorMessage: 'Поле обязательно для заполнения'
+              errorMessage: 'Обязательно для заполнения'
             },
             {
               rule: 'email',
@@ -60,7 +60,7 @@ export const validateForms = () => {
           validationRules.addField( `${formID} [data-validate="phone"]`, [ {
               rule: 'required',
               value: true,
-              errorMessage: 'Поле обязательно для заполнения',
+              errorMessage: 'Обязательно для заполнения',
             },
             {
               rule: 'minLength',
@@ -73,7 +73,7 @@ export const validateForms = () => {
           validationRules.addField( `${formID} [data-validate="message"]`, [ {
               rule: 'required',
               value: true,
-              errorMessage: 'Поле обязательно для заполнения',
+              errorMessage: 'Обязательно для заполнения',
             },
             {
               rule: 'minLength',

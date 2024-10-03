@@ -12,7 +12,7 @@
   <link rel="preload" href="fonts/opensans-regular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="style/vendor-bundle.css">
   <link rel="stylesheet" href="style/main.css">
-  <title>Страница</title>
+  <title>Главная</title>
 </head>
 
 <body class="indent-reset site">
@@ -360,10 +360,269 @@
     <div class="site__content">
       <div class="breadcrumbs" typeof="BreadcrumbList" vocab="https://schema.org/">
         <div class="container">
-          <a href="page-main.html">Главная</a>&ensp;&frasl;&ensp;<span class="current-item">Пример тестовой страницы</span>
+          <a href="page-main.html">Главная</a>&ensp;&frasl;&ensp;<a href="page-catalog.html">Каталог</a>&ensp;&frasl;&ensp;<span class="current-item">Подарки</span>
         </div>
       </div>
+
       <main>
+        <section class="catalog page">
+          <div class="container">
+            <h1 class="title page__title catalog__title">Каталог</h1>
+            <div class="catalog__cont">
+              <div class="sidebar d-none-sm">
+                <ul class="sidebar__list sidebar__list--category">
+                  <li>
+                    <a class="sidebar__link " href="#">всё</a>
+                  </li>
+                  <li>
+                    <details class="sidebar__dropdown">
+                      <summary class="sidebar__link">
+                        Одежда
+                        <svg width="8" height="13" aria-hidden="true">
+                          <use xlink:href="img/sprite.svg#icon-small-arrow"></use>
+                        </svg>
+                      </summary>
+                      <ul>
+                        <li>
+                          <a class="sidebar__link" href="#">Посмотерть все</a>
+                        </li>
+                        <li>
+                          <details class="sidebar__dropdown">
+                            <summary class="sidebar__link">
+                              Женское
+                              <svg width="8" height="13" aria-hidden="true">
+                                <use xlink:href="img/sprite.svg#icon-small-arrow"></use>
+                              </svg>
+                            </summary>
+                            <ul>
+                              <li>
+                                <a class="sidebar__link" href="#">верхняя одежда</a>
+                              </li>
+                              <li>
+                                <a class="sidebar__link" href="#">верхняя одежда</a>
+                              </li>
+                            </ul>
+                          </details>
+                        </li>
+                        <li>
+                          <details class="sidebar__dropdown">
+                            <summary class="sidebar__link">
+                              Мужское
+                              <svg width="8" height="13" aria-hidden="true">
+                                <use xlink:href="img/sprite.svg#icon-small-arrow"></use>
+                              </svg>
+                            </summary>
+                            <ul>
+                              <li>
+                                <a class="sidebar__link" href="#">верхняя одежда</a>
+                              </li>
+                              <li>
+                                <a class="sidebar__link" href="#">верхняя одежда</a>
+                              </li>
+                            </ul>
+                          </details>
+                        </li>
+                        <li>
+                          <a class="sidebar__link" href="#">Детское</a>
+                        </li>
+                      </ul>
+                    </details>
+                  </li>
+                  <li>
+                    <a class="sidebar__link" href="#">Аксессуары</a>
+                  </li>
+                  <li>
+                    <a class="sidebar__link" href="#">Дом</a>
+                  </li>
+                  <li>
+                    <a class="sidebar__link" href="#">SPRING SALE</a>
+                  </li>
+                </ul>
+                <div class="sidebar__brand">
+                  <div class="sidebar__title">бренд:</div>
+                  <ul class="sidebar__list sidebar__list--brand">
+                    <li>
+                      <a class="sidebar__link" href="">Любой</a>
+                    </li>
+                    <li>
+                      <a class="sidebar__link" href="">front</a>
+                    </li>
+                    <li>
+                      <a class="sidebar__link" href="">Masha Andrianova</a>
+                    </li>
+                    <li>
+                      <a class="sidebar__link" href="">Linen Sky</a>
+                    </li>
+                    <li>
+                      <a class="sidebar__link" href="">Yulia Ten</a>
+                    </li>
+                    <li>
+                      <a class="sidebar__link" href="">Аня Толстая</a>
+                    </li>
+                    <li>
+                      <a class="sidebar__link" href="">ATLAS MIRA</a>
+                    </li>
+                    <li>
+                      <a class="sidebar__link" href="">Sl1p</a>
+                    </li>
+                    <li>
+                      <a class="sidebar__link" href="">Дизайн и ремесла</a>
+                    </li>
+                    <li>
+                      <a class="sidebar__link" href="">OMUT</a>
+                    </li>
+                    <li>
+                      <a class="sidebar__link" href="">alvaar</a>
+                    </li>
+                    <li>
+                      <a class="sidebar__link" href="">MyBacio</a>
+                    </li>
+                    <li>
+                      <a class="sidebar__link" href="">Katya Yakunina</a>
+                    </li>
+                    <li>
+                      <a class="sidebar__link" href="">Baboo</a>
+                    </li>
+                    <li>
+                      <a class="sidebar__link" href="">Quilt Lab 18</a>
+                    </li>
+                  </ul>
+                </div>
+
+              </div>
+
+              <div class="gift-certificate">
+
+                <div class="gift-certificate__slider">
+                  <div class="swiper">
+                    <div class="swiper-wrapper">
+
+                      <div class="swiper-slide gift-certificate__slide">
+                        <a data-fslightbox="galleryCertificate" href="/img/img-gift-certificate-1.png">
+                          <img src="/img/img-gift-certificate-1.png" alt="Сертификат 1">
+                        </a>
+                      </div>
+                      <div class="swiper-slide gift-certificate__slide">
+
+                        <a data-fslightbox="galleryCertificate" href="/img/img-gift-certificate-1.png">
+                          <img src="/img/img-gift-certificate-1.png" alt="Сертификат 2">
+                        </a>
+
+                      </div>
+                      <div class="swiper-slide gift-certificate__slide">
+
+                        <a data-fslightbox="galleryCertificate" href="/img/img-gift-certificate-1.png">
+                          <img src="/img/img-gift-certificate-1.png" alt="Сертификат 3">
+                        </a>
+
+                      </div>
+                      <div class="swiper-slide gift-certificate__slide">
+                        <a data-fslightbox="galleryCertificate" href="/img/img-gift-certificate-1.png">
+                          <img src="/img/img-gift-certificate-1.png" alt="Сертификат 4">
+                        </a>
+
+                      </div>
+
+                      <div class="swiper-slide gift-certificate__slide">
+
+                        <a data-fslightbox="galleryCertificate" href="/img/img-gift-certificate-1.png">
+                          <img src="/img/img-gift-certificate-1.png" alt="Сертификат 4">
+                        </a>
+
+                      </div>
+                    </div>
+
+
+
+                  </div>
+
+                  <div class="swiper-button-prev gift-certificate__btn-prev"></div>
+                  <div class="swiper-button-next gift-certificate__btn-next"></div>
+                </div>
+
+
+
+                <div>
+                  <h2 class="title gift-certificate__title">подарочный сертификат</h2>
+
+                  <form class="gift-certificate__form" id="gift-certificate-form">
+                    <div class="gift-certificate__pagination"></div>
+                    <div class="gift-certificate__form-label">номинал</div>
+                    <div class="gift-certificate__form-value">
+                      <select name="Номинал" id="">
+                        <option value="3000" select>3000</option>
+                        <option value="5000">5000</option>
+                        <option value="7000">7000</option>
+                        <option value="10000">10000</option>
+                        <option value="15000">15000</option>
+                        <option value="20000">20000</option>
+                      </select>
+                    </div>
+
+                    <div class="gift-certificate__form-cont">
+                      <input class="form-input gift-certificate__form-input" type="mail" placeholder="E-mail, на который отправим сертификат">
+                      <input class="form-input gift-certificate__form-input" type="mail" placeholder="E-mail для получения чека">
+                      <input class="form-input gift-certificate__form-input" type="tel" placeholder="Контактный телефон">
+                      <input class="form-input gift-certificate__form-input" type="text" placeholder="Текст поздравления">
+                    </div>
+                    <button class="btn btn--dark gift-certificate__form-btn" type="submit">в корзину</button>
+                  </form>
+                </div>
+
+                <div class="gift-certificate__item">
+                  <div class="gift-certificate__subtitle">Как подарить сертификат:</div>
+                  <div class="gift-certificate__descr">
+                    <ul>
+                      <li>
+                        Выберите один из 5 вариантов сертификата;
+                      </li>
+                      <li>
+                        Выберите номинал сертификата от 3 000 до 20 000 ₽;
+                      </li>
+                      <li>
+                        Укажите свой e-mail и контактный телефон;
+                      </li>
+                      <li>
+                        Укажите e-mail получателя;
+                      </li>
+                      <li>
+                        Укажите текст поздравления в поле: Текст поздравления.
+                      </li>
+                      <li>
+                        Нажмите «Добавить в корзину», оформите заказ и произведите оплату;
+                      </li>
+                      <li>
+                        После оформления и оплаты заказа, мы свяжемся с вами для подтверждения деталей.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="gift-certificate__item">
+                  <div class="gift-certificate__subtitle">Как воспользоваться сертификатом:</div>
+                  <div class="gift-certificate__descr">
+                    <ul>
+                      <li>
+                        Получателю сертификата будет выдан уникальный код, который необходимо ввести в поле Промокод в Корзине при оформлении заказа;
+                      </li>
+                      <li>
+                        Скидка по сертификату будет автоматически применена;
+                      </li>
+                      <li>
+                        В случае необходимости доплаты по заказу, вы можете произвести её картой онлайн на этапе Оформления заказа.
+                      </li>
+                    </ul>
+                    <p>
+                      Сумма сертификата не подлежит частичному использованию, в случае покупки на сумму, меньшую номинала сертификата, остаток денежных средств не возвращается. Подарочные сертификаты FRONT не подлежат обмену и возврату.
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </section>
+
 
       </main>
     </div>

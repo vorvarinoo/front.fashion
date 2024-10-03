@@ -12,7 +12,7 @@
   <link rel="preload" href="fonts/opensans-regular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="style/vendor-bundle.css">
   <link rel="stylesheet" href="style/main.css">
-  <title>Страница</title>
+  <title>Главная</title>
 </head>
 
 <body class="indent-reset site">
@@ -360,10 +360,65 @@
     <div class="site__content">
       <div class="breadcrumbs" typeof="BreadcrumbList" vocab="https://schema.org/">
         <div class="container">
-          <a href="page-main.html">Главная</a>&ensp;&frasl;&ensp;<span class="current-item">Пример тестовой страницы</span>
+          <a href="page-main.html">Главная</a>&ensp;&frasl;&ensp;<span class="current-item">Корзина</span>
         </div>
       </div>
       <main>
+        <section class="basket page">
+
+          <div class="container ">
+            <h1 class="title page__title">корзина</h1>
+            <div class="page__flex">
+              <div class="page__section">
+
+
+                <h2 class="alt-font basket__empty">В корзине пока нет товаров</h2>
+              </div>
+
+              <aside class="page__aside">
+                <div class="order-summary">
+                  <div class="order-summary__top">
+                    <div class="order-summary__row order-summary__row--sum">
+                      <div class="order-summary__label">Сумма заказа</div>
+                      <div class="order-summary__value">0 ₽</div>
+                    </div>
+                    <div>
+
+
+                      <details class="accordion" open>
+                        <summary class="accordion__title accordion__title--icon-reverse">промокод</summary>
+                        <div class="accordion__cont">
+                          <form class="order-summary__form">
+                            <input class="form-input order-summary__form-input" type="text" placeholder="введите промокод">
+                            <button class="form-btn order-summary__form-btn">активировать</button>
+                          </form>
+                        </div>
+                      </details>
+                    </div>
+                  </div>
+                  <div class="order-summary__bottom">
+                    <div class="order-summary__row order-summary__row--lg">
+                      <div class="order-summary__label">итого:</div>
+                      <a class="order-summary__value" href="#">0 ₽</a>
+                    </div>
+
+                    <div class="btn btn--dark order-summary__btn">оформить заказ</div>
+
+                    <div class="order-summary__info">
+                      <p>
+                        Бесплатная доставка по Москве и МО<br>
+                        Бесплатная доставка от 15 000 ₽
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+              </aside>
+
+            </div>
+          </div>
+        </section>
+
 
       </main>
     </div>

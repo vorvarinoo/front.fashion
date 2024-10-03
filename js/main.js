@@ -31,14 +31,25 @@ import {
 } from './modules/stepper.js';
 
 import {
-  initTabs,
-} from './modules/tabs.js';
-
-import {
   initDeliveryType,
 } from './modules/delivery-type.js';
 
 import './modules/flatpickr.js';
+
+import {
+  passwordToggle,
+} from './modules/input-pass.js';
+
+import {
+  initTooltip,
+} from './modules/radio-sizes.js';
+
+import {
+  initSearch,
+} from './modules/search.js';
+
+
+
 
 document.addEventListener( 'DOMContentLoaded', () => {
   iosVhFix();
@@ -50,9 +61,10 @@ document.addEventListener( 'DOMContentLoaded', () => {
     initScrollTop();
     initHeaderMenu();
     initStepper();
-    initTabs();
     initDeliveryType();
-    checkFilledInputDate();
-    appendBtnReset();
+    passwordToggle();
+    initTooltip();
+    initSearch();
   } );
+
 } );

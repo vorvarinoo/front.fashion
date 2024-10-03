@@ -12,7 +12,7 @@
   <link rel="preload" href="fonts/opensans-regular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="style/vendor-bundle.css">
   <link rel="stylesheet" href="style/main.css">
-  <title>Страница</title>
+  <title>Главная</title>
 </head>
 
 <body class="indent-reset site">
@@ -358,12 +358,23 @@
       </div>
     </header>
     <div class="site__content">
-      <div class="breadcrumbs" typeof="BreadcrumbList" vocab="https://schema.org/">
-        <div class="container">
-          <a href="page-main.html">Главная</a>&ensp;&frasl;&ensp;<span class="current-item">Пример тестовой страницы</span>
-        </div>
-      </div>
       <main>
+        <section class="page page-404">
+          <div class="container">
+            <div class="page__centered">
+              <div class="page-404__cont">
+                <div class="page-404__label">404 page</div>
+                <h1 class="title page__title page-404__title">
+                  Ой! Страница не&nbsp;найдена
+                </h1>
+                <div class="page-404__descr">Извините, страницы которую вы&nbsp;ищите не&nbsp;существует или была&nbsp;удалена.</div>
+              </div>
+
+              <a class="btn btn--dark page-404__btn" href="/">вернуться назад</a>
+            </div>
+          </div>
+        </section>
+
 
       </main>
     </div>
