@@ -23,7 +23,6 @@
       display: flex;
       flex-direction: row-reverse;
       align-items: flex-start;
-
       margin-bottom: 52px;
       min-height: 500px;
     }
@@ -33,7 +32,6 @@
 
   &__designer-info {
     padding: 30px 20px 280px;
-
     width: 100%;
     margin-left: auto;
     background-color: var(--green);
@@ -48,7 +46,6 @@
     width: 180px;
     height: 260px;
     position: absolute;
-
     bottom: -30px;
     left: 15px;
     flex-shrink: 0;
@@ -59,9 +56,7 @@
       top: 72px;
       width: 300px;
       height: 440px;
-
     }
-
   }
 
   &__designer-title {
@@ -95,7 +90,6 @@
     text-transform: uppercase;
     text-align: center;
     color: var(--gray-light);
-
     margin-bottom: 30px;
 
     @include media-min ($lg) {
@@ -114,7 +108,6 @@
 
     @include media-min ($md) {
       grid-template-columns: repeat(3, 1fr);
-
     }
 
     @include media-min ($xl) {
@@ -139,7 +132,5 @@
         grid-column: 1 / 2 span;
       }
     }
-
   }
-
 }

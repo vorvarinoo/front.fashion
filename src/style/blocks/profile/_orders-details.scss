@@ -1,6 +1,5 @@
 .orders-details {
   display: grid;
-
   border-top: 1px solid var(--green);
   border-bottom: 1px solid var(--green);
   margin-bottom: 40px;
@@ -44,7 +43,6 @@
       padding: 20px 0;
       grid-template-rows: min-content;
       align-self: flex-start;
-
       border-bottom: 1px dashed var(--gray-light);
 
       @include media-min ($md) {
@@ -61,7 +59,6 @@
     & dd {
       margin: 0;
       padding: 0;
-
       font-weight: 500;
       font-size: 14px;
       text-transform: uppercase;
@@ -83,8 +80,8 @@
 
   &__btn {
     @include btn-reset;
+    
     padding: 20px 0;
-
     font-weight: 500;
     font-size: 14px;
     text-transform: uppercase;

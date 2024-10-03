@@ -19,7 +19,6 @@
     font-size: 36px;
     text-transform: uppercase;
     color: var(--green);
-
     margin-bottom: 30px;
 
     @include media-min ($lg) {
@@ -64,7 +63,6 @@
   &__grid {
     display: grid;
 
-
     @include media-min ($lg) {
       grid-template-columns: repeat(3, 1fr);
     }
@@ -94,5 +92,4 @@
       width: max-content;
     }
   }
-
 }

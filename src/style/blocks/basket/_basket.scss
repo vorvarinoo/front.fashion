@@ -19,9 +19,7 @@
 
 .basket-product {
   width: 100%;
-
   padding: 20px 0;
-
   border-bottom: 1px solid var(--gray-light);
 
   @include media-min ($md) {
@@ -75,14 +73,12 @@
   &__img {
     max-width: 96px;
     height: 128px;
-
     margin-right: 16px;
     flex-shrink: 0;
 
     @include media-min ($md) {
       max-width: 175px;
       height: 225px;
-
       margin-right: 48px;
     }
 
@@ -108,7 +104,6 @@
     font-weight: 500;
     font-size: 14px;
     color: var(--green);
-
     margin-bottom: 10px;
 
     @include media-min ($md) {
@@ -134,9 +129,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 8px;
-
     flex-shrink: 0;
-
     font-weight: 500;
     font-size: 14px;
     color: var(--black-90);
@@ -179,18 +172,14 @@
     text-transform: uppercase;
     color: var(--black-90);
     margin-bottom: 4px;
-
   }
 
   &__count {
-
     font-weight: 400;
     font-size: 12px;
     text-transform: uppercase;
     color: var(--black-90);
     margin-top: auto;
-
-
 
     &::after {
       content: 'шт.';
@@ -203,7 +192,6 @@
     font-size: 12px;
     text-transform: uppercase;
     color: #bdbdbd;
-
     margin-top: 20px;
     margin-bottom: 10px;
 
@@ -218,10 +206,8 @@
     position: absolute;
     top: 0;
     right: 0;
-
     cursor: pointer;
     user-select: none;
-
     transition: color .2s ease-in-out;
 
     @include media-min ($xl) {

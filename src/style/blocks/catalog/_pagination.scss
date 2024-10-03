@@ -12,7 +12,6 @@
     display: flex;
     align-items: center;
     gap: 10px;
-
     transition: color .2s ease-in-out;
 
     @include media-min ($lg) {
@@ -33,7 +32,6 @@
     & a {
       font-size: inherit;
       color: inherit;
-
       transition: color .2s ease-in-out;
 
       &:hover {

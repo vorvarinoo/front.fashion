@@ -1,12 +1,10 @@
 .hero {
-
   &__slide {
     position: relative;
   }
 
   &__img {
     position: relative;
-
     background: var(--gray-light), linear-gradient(45deg, rgba(0, 0, 0, 0.24) 0%, rgba(0, 0, 0, 0) 50.52%);
     padding-bottom: 480px;
 
@@ -46,7 +44,6 @@
     max-width: 300px;
     margin-bottom: 24px;
 
-
     @include media-min ($lg) {
       font-size: 48px;
       margin-bottom: 36px;
@@ -63,7 +60,6 @@
       right: 0;
     }
   }
-
 
   &__pagination {
     bottom: 5px !important;
@@ -92,5 +88,4 @@
   &__btn-prev {
     left: 64px;
   }
-
 }

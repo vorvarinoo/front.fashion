@@ -5,7 +5,6 @@
     padding: 50px 0 60px;
   }
 
-
   &__cont {
     width: 100%;
 
@@ -46,7 +45,6 @@
     flex-grow: 0;
     max-width: 420px;
     width: 100%;
-
     display: grid;
     grid-template-rows: min-content;
     align-content: flex-start;
@@ -90,7 +88,6 @@
     & > del + span {
       color: var(--purple);
       margin-left: 10px;
-
       display: flex;
       align-items: center;
 
@@ -106,16 +103,12 @@
     }
   }
 
-  &__size {}
-
   &__size-top {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     font-weight: 400;
     font-size: 14px;
-
     margin-bottom: 20px;
 
     @include media-min ($lg) {
@@ -135,13 +128,17 @@
 
   &__size-list {
     @include list-reset;
+
     display: flex;
     flex-wrap: wrap;
     column-gap: 20px;
     row-gap: 12px;
   }
 
-  &__label {}
+  &__btns {
+    display: grid;
+    row-gap: 10px;
+  }
 
   &__descr {
     font-weight: 300;
@@ -158,9 +155,7 @@
 
   &__note {
     margin-top: 10px;
-
     display: none;
-
     background-color: var(--green);
     color: var(--white);
     padding: 8px 20px;

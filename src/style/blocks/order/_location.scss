@@ -2,7 +2,6 @@
   padding: 20px 15px;
   display: grid;
   row-gap: 30px;
-
   border: 1px solid var(--gray-light);
 
   &__row {
@@ -47,16 +46,13 @@
   &__list {
     display: flex;
     flex-wrap: wrap;
-
   }
 
   &__item {
     font-weight: 300;
     font-size: 12px;
     color: var(--black-90);
-
     margin-right: 15px;
-
     word-wrap: none;
 
     &:last-child {

@@ -53,7 +53,6 @@
   &__title {
     justify-self: flex-start;
     justify-content: flex-start;
-
     display: grid;
     font-weight: 400;
     font-size: 30px;
@@ -104,7 +103,6 @@
   }
 
   &__subtitle {
-
     display: grid;
     font-weight: 700;
     font-size: 30px;
@@ -112,9 +110,7 @@
     opacity: 0.64;
     text-transform: uppercase;
     color: #6c8377;
-
     margin-bottom: 32px;
-
     justify-items: flex-end;
 
     @include media-min ($lg) {
@@ -130,7 +126,6 @@
     }
 
     & > span {
-
       margin-right: 40px;
 
       @include media-min ($lg) {
@@ -153,7 +148,6 @@
 
   &__descr {
     grid-column-start: 1;
-
     font-weight: 300;
     font-size: 16px;
     line-height: 1.2;
@@ -191,6 +185,7 @@
 
   &__list {
     @include list-reset;
+
     display: grid;
     row-gap: 40px;
 
@@ -205,21 +200,15 @@
     }
   }
 
-  &__item {}
-
   &__grid {
     display: flex;
     justify-content: space-between;
-
     grid-template-columns: 0.9fr 0.4fr;
     column-gap: 72px;
-
-    @include media-min ($lg) {}
   }
 
   &__img {
     max-width: 800px;
-
     display: none;
 
     @include media-min ($md) {
@@ -228,7 +217,6 @@
   }
 
   &__aside {
-
     width: 100%;
     display: grid;
     row-gap: 32px;
@@ -245,7 +233,6 @@
   &__btn {
     background: var(--purple);
     padding: 12px 60px;
-
     width: 100%;
     font-weight: 400;
     font-size: 14px;
@@ -285,7 +272,6 @@
     font-size: 36px;
     text-transform: uppercase;
     color: var(--white);
-
     margin-bottom: 24px;
   }
 

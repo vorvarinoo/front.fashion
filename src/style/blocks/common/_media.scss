@@ -9,9 +9,9 @@
 
   &__list {
     @include list-reset;
+
     min-height: 100vh;
     opacity: 0;
-
     display: grid;
     column-gap: 32px;
     row-gap: 32px;
@@ -19,7 +19,6 @@
     grid-auto-rows: 0;
     align-items: flex-start;
     justify-content: center;
-
     transition: opacity .5s ease-in-out;
 
     &.is-visible {
@@ -33,9 +32,7 @@
 
   &__item {
     position: relative;
-
     text-align: center;
-
     transition: opacity .3s ease-in-out;
 
     @include media-min ($md) {
@@ -63,7 +60,6 @@
   &__subtitle {
     width: 100%;
     max-width: 300px;
-
     font-size: 24px;
     text-transform: uppercase;
     color: var(--black-90);
@@ -89,23 +85,20 @@
 
     width: 100%;
     max-width: 300px;
-
     font-size: 16px;
     color: #4f4f4f;
-
     display: -webkit-box;
     overflow: hidden;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 7;
   }
 
-
   &__link {
     font-size: 14px;
     text-decoration: underline;
     color: var(--purple);
 
-    &:before {
+    &::before {
       content: '';
       position: absolute;
       top: 0;

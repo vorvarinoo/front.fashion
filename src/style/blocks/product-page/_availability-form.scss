@@ -2,7 +2,7 @@
   &__descr {
     font-weight: 300;
     font-size: 14px;
-    color: var(--191919);
+    color: var(--black-90);
     margin-bottom: 20px;
   }
 
@@ -11,27 +11,14 @@
     font-weight: 400;
     font-size: 14px;
     letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: var(--black-90);
+    color: var(--purple);
     padding: 20px;
     border: none;
-
     margin-bottom: 5px;
 
     &::placeholder {
       color: #bdbdbd;
+      text-transform: uppercase;
     }
-  }
-
-  &__btn {
-    background: var(--purple);
-    padding: 20px;
-    width: 100%;
-
-    text-transform: uppercase;
-    font-weight: 400;
-    font-size: 14px;
-    letter-spacing: 0.05em;
-    color: var(--white);
   }
 }

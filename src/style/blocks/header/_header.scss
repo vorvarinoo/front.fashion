@@ -6,7 +6,6 @@
   z-index: 3;
   width: 100%;
 
-
   &__wrap {
     position: relative;
     background-color: var(--green-96);
@@ -69,11 +68,9 @@
     }
   }
 
-
   &__basket {
     position: relative;
     margin-right: 10px;
-
     align-items: center;
 
     &::after {

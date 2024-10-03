@@ -79,11 +79,8 @@
       @include indent-reset;
     }
 
-
     @include media-min ($lg) {
       margin-bottom: 50px;
     }
   }
-
-
 }

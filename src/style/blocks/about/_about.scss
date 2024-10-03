@@ -21,7 +21,6 @@
     line-height: 1;
     text-transform: uppercase;
     color: var(--green);
-
     display: grid;
 
     @include media-min ($md) {
@@ -44,11 +43,9 @@
   }
 
   &__subtitle-bottom {
-
     @include media-min ($lg) {
       justify-self: flex-end;
       margin-right: 148px;
-
     }
   }
 
@@ -56,12 +53,10 @@
 
 .about-first {
   padding: 48px 0 35px;
-
   background-image: linear-gradient(to bottom, var(--green) 30%, var(--white) 30%);
 
   @include media-min ($lg) {
     background-image: linear-gradient(to bottom, var(--green) 45%, var(--white) 45%);
-
     padding-bottom: 240px;
   }
 
@@ -80,7 +75,6 @@
       grid-auto-flow: row;
       column-gap: 56px;
       row-gap: 0;
-
       margin-bottom: 84px;
     }
   }
@@ -100,23 +94,15 @@
       color: var(--white);
 
       @include media-min ($lg) {
-
         grid-row: 1 / 6;
-
       }
     }
 
     &--second {
-
       @include media-min ($lg) {
         grid-column: 2 / 3 span;
         grid-row-start: 14;
       }
-    }
-
-    &--third {
-      @include media-min ($lg) {}
-
     }
 
     &--fourth {
@@ -131,14 +117,12 @@
   }
 
   &__item {
-
     &--img-first {
       align-self: flex-end;
 
       @include media-min ($lg) {
         grid-column: 1;
         grid-row: 11 / 15;
-        // grid-row-end: 9;
       }
 
       & > div {
@@ -153,11 +137,9 @@
     }
 
     &--img-second {
-
       @include media-min ($lg) {
         grid-column: 2;
-        grid-row-start: 1;
-        grid-row-end: 5;
+        grid-row: 1 / 5;
       }
 
       & > div {
@@ -220,7 +202,6 @@
   }
 
   &__label {
-
     max-width: 76px;
     width: 100%;
     margin-bottom: 40px;
@@ -249,17 +230,13 @@
     @include media-min ($md) {
       margin: 0;
       row-gap: 56px;
-
       width: 100%;
-
       position: relative;
-
       top: -200px;
     }
   }
 
   &__img {
-
     &--first {
       & > div {
         padding-bottom: 130%;
@@ -311,13 +288,11 @@
 
     @include media-min ($md) {
       font-size: 18px;
-
       max-width: 410px;
       margin-right: 90px;
       margin-top: auto;
       margin-bottom: auto;
       padding-bottom: 150px;
-
     }
 
     & span {
@@ -327,7 +302,6 @@
 }
 
 .about-third {
-
   @include media-min ($md) {
     background-image: linear-gradient(to bottom, var(--green) 30%, var(--white) 30%);
     background-position: center 50px;
@@ -425,22 +399,17 @@
     row-gap: 14px;
 
     @include media-min ($md) {
-      flex-basis: 100%;
-      flex: 1;
+      flex: 1 100%;
       margin-right: 48px;
-
       position: relative;
       top: -100px;
-
       row-gap: 40px;
     }
   }
 
   &__right {
     @include media-min ($md) {
-
-      flex-basis: 100%;
-      flex: 1;
+      flex: 1 100%;
     }
 
     & .about-third__img {
@@ -459,7 +428,6 @@
     color: var(--black);
     margin-bottom: 32px;
 
-
     @include media-min ($md) {
       font-size: 18px;
     }
@@ -475,7 +443,6 @@
         text-transform: uppercase;
         font-size: 36px;
         font-family: $alt-font, Arial, Helvetica, sans-serif;
-
         margin-top: 26px;
       }
 
@@ -540,7 +507,6 @@
 
       @include media-min ($md) {
         left: 10%;
-
       }
 
       @include media-min ($lg) {
@@ -572,17 +538,14 @@
   }
 
   &__bottom {
-
     @include media-min ($lg) {
       display: flex;
       justify-content: space-between;
-
     }
   }
 
   &__item {
-    flex-basis: 100%;
-    flex: 1;
+    flex: 1 100%;
     margin-bottom: 74px;
 
     &:first-child {

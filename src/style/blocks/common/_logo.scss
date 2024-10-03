@@ -1,6 +1,5 @@
 .logo {
   display: grid;
-
   max-width: 126px;
 
   @include media-min ($lg) {

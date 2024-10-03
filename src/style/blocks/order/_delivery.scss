@@ -1,10 +1,8 @@
 .delivery {
-
   &__type {
     @include list-reset;
 
     position: relative;
-
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-items: stretch;
@@ -23,7 +21,6 @@
   &__section {
     display: grid;
     row-gap: 60px;
-
     padding: 60px 0 0;
   }
 
@@ -40,6 +37,7 @@
 
   &__payments {
     @include list-reset;
+
     display: grid;
     row-gap: 10px;
   }
@@ -60,9 +58,7 @@
     font-size: 36px;
     text-transform: uppercase;
     color: var(--green);
-
     font-family: $alt-font, Arial, Helvetica, sans-serif;
-
     margin-bottom: 50px;
   }
 

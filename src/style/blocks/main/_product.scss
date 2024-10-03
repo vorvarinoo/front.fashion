@@ -2,7 +2,6 @@
   position: relative;
   border: 1px solid transparent;
   padding: 3px;
-
   transition: opacity .2s ease-in-out;
 
   @include media-min ($xl) {
@@ -44,7 +43,6 @@
   }
 
   &[data-discount] {
-
     &::before {
       content: '-'attr(data-discount)'%';
       position: absolute;
@@ -55,11 +53,9 @@
       width: 40px;
       height: 40px;
       pointer-events: none;
-
       display: flex;
       justify-content: center;
       align-items: center;
-
       font-weight: 500;
       font-size: 14px;
       color: var(--white);

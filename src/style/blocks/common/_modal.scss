@@ -1,6 +1,7 @@
 .modal {
   --modal-icon-color: var(--white);
   --modal-bg: var(--green);
+
   position: relative;
   margin: 0 auto;
   padding: 24px 90px;
@@ -12,6 +13,7 @@
   &--sizes {
     --modal-icon-color: #bdbdbd;
     --modal-bg: var(--white);
+
     padding: 32px 10px;
     max-width: 740px;
 
@@ -60,7 +62,6 @@
     width: var(--modal-icon-size, var(--modal-icon-width, 15px));
     height: var(--smodal-icon-size, var(--modal-icon-height, 15px));
     color: var(--modal-icon-color, currentColor);
-
     transition: color .2s ease-in-out;
   }
 }
@@ -97,9 +98,7 @@
       font-size: var(--main-size-text);
       text-transform: uppercase;
       color: var(--black-90);
-
       padding-bottom: 12px;
-
     }
 
 
@@ -110,7 +109,6 @@
       font-size: var(--main-size-text);
       text-transform: uppercase;
       color: var(--black-90);
-
       padding: 12px 0;
       width: 127px;
     }
@@ -133,8 +131,6 @@
     text-transform: uppercase;
     text-align: center;
     color: var(--white);
-
-
     margin: 0 auto;
     margin-bottom: 24px;
   }
@@ -168,7 +164,6 @@
     font-weight: 300;
     font-size: 12px;
     line-height: 1.5;
-    text-align: center;
     color: var(--white);
     max-width: 250px;
     text-align: center;
@@ -205,7 +200,6 @@
 
   &__bottom {
     padding: 30px 24px 20px;
-
     display: grid;
     row-gap: 20px;
 
@@ -221,12 +215,9 @@
     text-transform: uppercase;
     text-align: center;
     color: var(--white);
-
   }
 
   &__form {
-
-
     @include media-min ($lg) {
       display: flex;
     }
@@ -234,7 +225,6 @@
 
   &__input {
     margin-bottom: 10px;
-
     font-weight: 400;
     font-size: 12px;
     letter-spacing: 0.1em;
@@ -256,7 +246,6 @@
     background-color: var(--purple);
     padding: 16px;
     width: 100%;
-
     font-weight: 400;
     font-size: 12px;
     letter-spacing: 0.1em;
@@ -275,7 +264,6 @@
     line-height: 1.6;
     text-align: center;
     color: var(--white);
-
     max-width: 350px;
     margin: 0 auto;
 

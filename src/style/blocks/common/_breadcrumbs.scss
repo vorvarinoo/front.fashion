@@ -1,8 +1,6 @@
 .breadcrumbs {
-
   color: var(--accent);
   background-color: transparent;
-
   padding-top: 48px;
 
   &--absolute {
@@ -17,8 +15,6 @@
     transition: color .2s ease-in-out,
       text-decoration-color .2s ease-in-out;
 
-
-
     @media (hover: hover) {
       &:hover {
         text-decoration-color: var(--accent);
@@ -31,7 +27,6 @@
       }
     }
   }
-
 
   & .current-item {
     color: #4f4f4f;

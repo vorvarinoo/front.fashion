@@ -136,12 +136,17 @@
 
           </ul>
         </div>
-        <div id="container-btns">
-          <button class="btn btn--dark">в корзину</button>
-        </div>
 
-        <div class="product-page__descr">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        <div class="product-page__btns">
+          <button class="btn btn--dark">Предзаказ</button>
+          <div id="container-btns">
+            <button id="notify-arrival-btn"
+                    class="btn btn--gray">сообщить о поступлении</button>
+          </div>
+
+          <div class="product-page__descr">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </div>
         </div>
 
         <div>
@@ -201,7 +206,6 @@
 <template id="availability">
   <form id="availability-form"
         class="availability">
-    <div class="availability__descr">Мы сообщим, когда вещь будет в наличии</div>
     <input class="visually-hidden"
            type="text"
            name="Размер"
@@ -214,7 +218,7 @@
            type="mail"
            placeholder="EMAIL"
            name="Конкактная почта">
-    <button class="btn availability__btn">отправить</button>
+    <button class="form-btn btn btn--dark-purple">отправить</button>
   </form>
 </template>
 

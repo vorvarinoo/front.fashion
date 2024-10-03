@@ -29,7 +29,6 @@
 
     &--sum {
       padding: 24px 0;
-
     }
   }
 
@@ -52,7 +51,6 @@
     font-size: 14px;
     line-height: 1.7;
     color: var(--black-90);
-
     padding-bottom: 24px;
 
     & > *:first-child {
@@ -79,7 +77,6 @@
     border-top: 1px solid transparent;
     border-bottom: 1px solid transparent;
     border-left: 1px solid transparent;
-
     font-weight: 400;
     font-size: 12px;
     text-transform: uppercase;
@@ -94,48 +91,9 @@
       box-shadow: none;
       border-color: var(--main-form-color);
     }
-
-    &[disabled] {
-      --main-form-color: var(--black-90);
-
-      pointer-events: none;
-      user-select: none;
-    }
-
-    &[disabled] + .form-btn {
-      background-color: var(--black-90);
-      pointer-events: none;
-      user-select: none;
-    }
-  }
-
-  &__form-btn {
-    @include btn-reset;
-
-    padding: 12px;
-    font-size: 12px;
-    text-transform: uppercase;
-    color: var(--white);
-
-    background-color: var(--main-form-color);
-
-    transition: opacity .2s ease-in-out;
-
-    @media (hover: hover) {
-      &:hover {
-        opacity: .8;
-      }
-    }
-
-    @media (hover: none) {
-      &:active {
-        opacity: .8;
-      }
-    }
   }
 
   &__btn {
-
     margin: 32px auto;
 
     @include media-min ($lg) {
@@ -144,7 +102,6 @@
   }
 
   &__info {
-
     text-align: center;
     font-weight: 400;
     font-size: 14px;
