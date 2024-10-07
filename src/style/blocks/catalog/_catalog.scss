@@ -117,7 +117,7 @@
 
     &--2-1 {
       @include media-max ($md) {
-        & li:nth-child(3n) {
+        & li:nth-child(5n+1) {
           grid-column: 1 / -1;
         }
       }
