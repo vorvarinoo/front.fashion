@@ -22,32 +22,16 @@
     }
   }
 
-  &--none {
-    & .product__title {
-      color: #828282;
-    }
-
-    & .product__info[data-info] {
-      &::after {
-        color: #828282;
-        border-color: #828282;
-      }
-    }
-
-    & .product__category {
-      color: #828282;
-    }
-
-    & .product__price {
-      color: #828282;
-    }
-
-    & .product__note {
-      --main-color: #828282;
-    }
+  &--out-stock {
+    --color-prodoct: #828282;
+    --color-prodoct-category: #828282;
+    --color-prodoct-price: #828282;
   }
 
   &[data-discount] {
+    --color-prodoct: var(--purple);
+    --color-prodoct-price: var(--purple);
+
     &::before {
       content: '-'attr(data-discount)'%';
       position: absolute;
@@ -71,25 +55,16 @@
       }
     }
 
-    & .product__title {
-      color: var(--purple);
-    }
-
-    & .product__price {
-      color: var(--purple);
-    }
   }
 
   &--border {
+    --color-prodoct: var(--purple);
+
     border-color: var(--purple);
     padding: 3px;
 
     @include media-min ($xl) {
       padding: 10px;
-    }
-
-    & .product__title {
-      color: var(--purple);
     }
   }
 
@@ -115,7 +90,7 @@
   &__title {
     @include indent-reset;
 
-    color: var(--green);
+    color: var(--color-prodoct, var(--green));
     font-size: 12px;
     margin-bottom: 8px;
 
@@ -142,10 +117,12 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    column-gap: 12px;
 
     @include media-min ($md) {
       flex-direction: row;
       align-items: flex-end;
+
     }
 
   }
@@ -162,18 +139,10 @@
     }
   }
 
-  &__info-left {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-
-    @include media-min ($md) {
-      flex-direction: row;
-    }
-  }
 
   &__category {
     margin-right: 10px;
+    color: var(--color-prodoct-category, var(--black-90));
   }
 
   &__price {
@@ -182,7 +151,7 @@
     align-items: center;
     font-weight: 500;
     font-size: 14px;
-    color: var(--black-90);
+    color: var(--color-prodoct-price, var(--black-90));
 
     @include media-min ($md) {
       justify-content: flex-start;
@@ -201,15 +170,17 @@
   }
 
   &__note {
-    --main-color: var(--purple);
-
     & span {
       font-weight: 400;
       font-size: 10px;
       text-align: center;
-      color: var(--main-color);
-      border: 1px solid var(--main-color);
+      color: var(--color-prodoct, var(--purple));
+      border: 1px solid var(--color-prodoct, var(--purple));
       padding: 3px 5px;
+
+      @include media-min ($md) {
+        padding: 5px 8px;
+      }
     }
   }
 }

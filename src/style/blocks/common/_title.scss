@@ -1,5 +1,6 @@
 .title {
-  margin: 0;
+  @include indent-reset;
+
   font-family: $alt-font, Arial, Helvetica, sans-serif;
   line-height: 1.2;
 }

@@ -14,10 +14,21 @@ const appendBtnReset = () => {
   element.appendChild( newButton );
 }
 
+const confirmDate = () => {
+  const element = document.querySelector( '.form-field.flatpickr' );
+
+  if ( !element ) return;
+  const closeBtn = element.querySelector( '.form-field__confirm' )
+
+  element.addEventListener( 'change', function( e ) {
+    console.log( e.target.value )
+  } );
+}
+
 
 
 flatpickr( '[data-id="birthday"]', {
-  dateFormat: "m.d.Y",
+  dateFormat: "d.m.Y",
   "locale": "ru",
   allowInput: true,
   wrap: true,
