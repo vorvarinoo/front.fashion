@@ -1,0 +1,175 @@
+.about-third {
+  @include media-min ($md) {
+    background-image: linear-gradient(to bottom, var(--green) 30%, var(--white) 30%);
+    background-position: center 50px;
+  }
+
+  @include media-min ($xl) {
+    background-image: linear-gradient(to bottom, var(--green) 47%, var(--white) 47%);
+    background-position: center 100px;
+  }
+
+  &__img {
+    &--first {
+      margin-bottom: 14px;
+
+      @include media-min ($md) {
+        margin-bottom: 48px;
+      }
+
+      & > div {
+        padding-bottom: 110%;
+
+        @include media-min ($md) {
+          padding-bottom: 100%;
+        }
+      }
+    }
+
+    &--second {
+      padding-top: 35px;
+
+      @include media-min ($md) {
+        padding-top: 54px;
+      }
+
+      & > div {
+        padding-bottom: 140%;
+
+        @include media-min ($lg) {
+          padding-bottom: 145%;
+        }
+      }
+    }
+
+    &--third {
+      align-self: flex-start;
+
+      & > div {
+        padding-bottom: 150%;
+
+        @include media-min ($md) {
+          padding-bottom: 153%;
+        }
+      }
+    }
+
+    &--fourth {
+      grid-column: 1 / 2 span;
+
+      @include media-min ($lg) {
+        padding: 0 60px;
+      }
+
+      & > div {
+        padding-bottom: 82%;
+
+        @include media-min ($md) {
+          padding-bottom: 70%;
+        }
+      }
+    }
+
+    & > div {
+      position: relative;
+      height: 0;
+    }
+
+    & img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__cont {
+    @include media-min ($md) {
+      display: flex;
+    }
+  }
+
+  &__imgs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 10px;
+    row-gap: 14px;
+    margin-bottom: 40px;
+
+    @include media-min ($md) {
+      grid-template-columns: 1fr .95fr;
+      column-gap: 23px;
+      flex: 1 100%;
+      margin-right: 48px;
+      position: relative;
+      top: -129px;
+      margin-bottom: 0;
+    }
+  }
+
+  &__right {
+    @include media-min ($md) {
+      flex: 1 100%;
+    }
+
+    & .about-third__img {
+      display: none;
+
+      @include media-min ($md) {
+        display: block;
+      }
+    }
+  }
+
+  &__text {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--black);
+    margin-bottom: 32px;
+
+    @include media-min ($md) {
+      font-size: 18px;
+    }
+
+    &--bottom {
+      @include media-min ($md) {
+        margin-left: 56px;
+        margin-right: 10px;
+      }
+    }
+
+    & > div {
+      display: inline;
+
+      @include media-min ($md) {
+        display: block;
+        font-weight: 500;
+        color: var(--green);
+        line-height: 1.2;
+        text-transform: uppercase;
+        font-size: 36px;
+        font-family: $alt-font, Arial, Helvetica, sans-serif;
+        margin-top: 26px;
+      }
+
+      & > span {
+        @include media-min ($md) {
+          font-weight: 500;
+        }
+      }
+
+      & > div {
+        display: inline;
+        color: var(--purple);
+      }
+    }
+
+    & span {
+      font-weight: 600;
+    }
+  }
+}

@@ -2,6 +2,10 @@
   padding: 70px 45px 0 0;
   flex-shrink: 0;
 
+  &--pt-reset {
+    padding-top: 0;
+  }
+
   &__list {
     @include list-reset;
 
@@ -20,6 +24,11 @@
   }
 
   &__dropdown {
+    &[open] > {
+      & .sidebar__link {
+        color: var(--black-90);
+      }
+    }
 
     & > summary {
       display: flex;
@@ -47,11 +56,18 @@
 
       display: grid;
       row-gap: 8px;
-      padding: 10px 0 0 15px;
+      padding: 12px 0 8px 20px;
 
       & .sidebar__dropdown {
+
+        & > ul {
+          padding-top: 10px;
+          padding-left: 0;
+        }
+
         & a {
-          text-transform: lowercase;
+          text-transform: none;
+          font-size: 14px;
         }
       }
     }
@@ -63,19 +79,21 @@
     font-size: 16px;
     text-transform: uppercase;
 
+    transition: color .2s ease-in-out;
+
     &--active {
       color: var(--black-90);
     }
 
     @media (hover: hover) {
       &:hover {
-        opacity: .8;
+        color: var(--black-90)
       }
     }
 
     @media (hover: none) {
       &:active {
-        opacity: .8;
+        color: var(--black-90)
       }
     }
 

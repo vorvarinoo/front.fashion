@@ -61,13 +61,13 @@
     }
   }
 
-  // & input:valid ~ &__confirm {
-  //   opacity: 0;
-  // }
+  & input:valid ~ &__confirm {
+    opacity: 0;
+  }
 
-  // & input:focus-visible ~ &__confirm {
-  //   opacity: 1;
-  // }
+  & input:focus-visible ~ &__confirm {
+    opacity: 1;
+  }
 
 
 

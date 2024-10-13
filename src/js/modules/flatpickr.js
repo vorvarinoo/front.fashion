@@ -12,19 +12,11 @@ const appendBtnReset = () => {
   newButton.setAttribute( 'onclick', 'document.querySelector( ".flatpickr-clear" ).click();' );
 
   element.appendChild( newButton );
+};
+
+const confirmCalendar = () => {
+  const confirmBtn = document.querySelector( 'form-field__confirm' );
 }
-
-const confirmDate = () => {
-  const element = document.querySelector( '.form-field.flatpickr' );
-
-  if ( !element ) return;
-  const closeBtn = element.querySelector( '.form-field__confirm' )
-
-  element.addEventListener( 'change', function( e ) {
-    console.log( e.target.value )
-  } );
-}
-
 
 
 flatpickr( '[data-id="birthday"]', {

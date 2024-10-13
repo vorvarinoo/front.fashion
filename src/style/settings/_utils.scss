@@ -69,3 +69,7 @@ input[type="checkbox"].visually-hidden {
 .alt-font {
   font-family: $alt-font, Arial, Helvetica, sans-serif;
 }
+
+.current-item {
+  white-space: nowrap;
+}

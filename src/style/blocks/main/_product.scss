@@ -171,6 +171,7 @@
 
   &__note {
     & span {
+      display: inline-block;
       font-weight: 400;
       font-size: 10px;
       text-align: center;
@@ -179,7 +180,7 @@
       padding: 3px 5px;
 
       @include media-min ($md) {
-        padding: 5px 8px;
+        padding: 4px 8px;
       }
     }
   }

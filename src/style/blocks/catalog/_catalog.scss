@@ -61,14 +61,10 @@
 
   &__designer-title {
     font-weight: 500;
-    font-size: 26px;
+    font-size: 24px;
     text-transform: uppercase;
     color: var(--white);
     margin-bottom: 30px;
-
-    @include media-min ($lg) {
-      font-size: 28px;
-    }
   }
 
   &__designer-txt {

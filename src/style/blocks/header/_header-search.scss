@@ -5,37 +5,40 @@
   &--visible {
     & .header-search__wrap {
       display: block;
-
       @include anim(fade-down, .4s);
     }
   }
 
   &__wrap {
-    position: absolute;
-    background-color: var(--white);
+    position: fixed;
+    top: var(--offset-top, 0);
+    left: 0;
+    right: 0;
+    bottom: 0;
     width: 100%;
     display: none;
     z-index: -1;
-    border-radius: 0 0 8px 8px;
+    overflow-y: auto;
+    overscroll-behavior: none;
+    // box-shadow: 0px 5px 5px -5px rgba(34, 60, 80, 0.6);
 
-    @include media-min ($md) {
-      background-color: transparent;
+    @include media-min ($lg) {}
+  }
+
+  &__top {
+    padding: 20px 0;
+    background-color: var(--white);
+
+    @include media-min ($lg) {
+      padding: 30px 0;
     }
   }
 
-  &__form {
-    padding: 20px 10px;
-    border-radius: 0 0 8px 8px;
-    box-shadow: 0 5px 10px 2px rgba(34, 60, 80, 0.2);
-
-    @include media-min ($md) {
-      background-color: var(--white);
-    }
-  }
 
   &__cont {
     display: grid;
     row-gap: 15px;
+
 
     @include media-min ($md) {
       display: flex;
@@ -43,39 +46,24 @@
     }
   }
 
-  &__left {
-    max-width: 500px;
-    width: 100%;
-
-    @include media-min ($md) {
-      margin-right: 30px;
-    }
-  }
-
   &__input {
     position: relative;
-    margin-bottom: 10px;
+    width: 100%;
 
     & input {
       background-color: var(--white);
       border: none;
       border-bottom: 1px solid var(--gray-light);
-      padding-left: 0;
+      padding: 0;
       font-weight: 400;
-      font-size: 12px;
+      font-size: 14px;
+      line-height: 1.4;
       color: var(--black-90);
+      padding: 0 0 8px;
 
       &:focus-visible {
         border-color: var(--green);
         box-shadow: none;
-
-        & + .header-search__btns > .header-search__btn--search {
-          display: none;
-        }
-
-        & + .header-search__btns > .header-search__btn--close {
-          display: block;
-        }
       }
 
       &:not(:placeholder-shown) {
@@ -84,88 +72,94 @@
         }
 
         & + .header-search__btns > .header-search__btn--close {
-          display: block;
+          display: flex;
         }
       }
 
+      @include media-min ($lg) {
+        font-size: 16px;
+        padding-bottom: 12px;
+      }
     }
   }
 
   &__btns {
+    display: flex;
+    align-items: flex-start;
     position: absolute;
     right: 0;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 0;
+
   }
 
   &__btn {
     @include btn-reset;
 
+    display: flex;
+
+    &--search {
+      background-size: 100%;
+      background-position: center;
+
+      color: #ACACAC;
+
+
+      & svg {
+        @include media-min ($lg) {
+          width: 24px;
+          height: 24px;
+        }
+      }
+    }
+
     &--close {
       display: none;
+
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-position: center;
+      margin-top: 2px;
+
+      color: #191919;
+
+      & svg {
+        @include media-min ($lg) {
+          width: 19px;
+          height: 19px;
+        }
+      }
     }
+  }
+
+
+  &__bottom {
+    background-color: var(--white);
+    padding-bottom: 20px;
+  }
+
+  &__results {
+    display: grid;
   }
 
   &__list {
-    @include list-reset;
-    
-    overflow-x: scroll;
-    list-style: disc inside;
-    display: flex;
-    column-gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 8px;
+    row-gap: 16px;
+    margin-bottom: 30px;
 
-    &::-webkit-scrollbar {
-      width: 0;
-    }
 
-    @include media-min ($md) {
-      overflow-x: auto;
-      flex-wrap: wrap;
-      row-gap: 10px;
-    }
-
-    & li {
-      flex-shrink: 0;
-      margin-left: 10px;
-      font-weight: 400;
-      font-size: 10px;
-      color: var(--black-90);
+    @include media-min ($lg) {
+      grid-template-columns: repeat(4, 1fr);
+      column-gap: 16px;
+      row-gap: 30px;
+      margin-bottom: 48px;
     }
   }
 
-  &__checkboxs {
-    display: flex;
-    align-items: center;
-    column-gap: 10px;
+  &__link.btn {
+    margin: 0 auto;
+    max-width: 300px;
   }
 
-  &__checkbox {
-
-    & > input {
-      @include visually-hidden;
-
-      &:checked + span {
-        background-color: var(--purple);
-        color: var(--white);
-      }
-    }
-
-    & > span {
-      font-weight: 400;
-      font-size: 10px;
-      text-align: center;
-      color: var(--purple);
-      padding: 5px;
-      border: 1px solid var(--purple);
-      position: relative;
-      display: inline-flex;
-      align-items: center;
-      user-select: none;
-      cursor: pointer;
-
-      @include media-min ($lg) {
-        padding: 5px 10px;
-      }
-    }
-  }
 }

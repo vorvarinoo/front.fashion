@@ -1,0 +1,24 @@
+<section class="catalog page">
+  <div class="container">
+    @include('search.html')
+
+
+    <div class="catalog__cont">
+
+      @include('sidebar.html')
+
+      <div class="catalog__products">
+
+        <div class="catalog-search catalog-search--not-found">
+          <div class="catalog-search__messange">
+            По вашему запросу товаров не&nbsp;найдено
+          </div>
+          <h2 class="title page__title catalog-search__title">Смотреть</h2>
+          @include('categories.html')
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
