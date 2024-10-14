@@ -2,6 +2,10 @@
   background-image: linear-gradient(to bottom, var(--purple) 100%, var(--white) 100%);
 
   @include media-min ($lg) {
+    background-image: linear-gradient(to bottom, var(--purple) 86%, var(--white) 86%);
+  }
+
+  @include media-min ($xl) {
     background-image: linear-gradient(to bottom, var(--purple) 70%, var(--white) 70%);
   }
 
@@ -118,11 +122,11 @@
   &__text {
     font-weight: 300;
     font-size: 14px;
-    line-height: 1.5;
+    line-height: 1.6;
     color: var(--white);
     flex-shrink: 0;
 
-    @include media-min ($md) {
+    @include media-min ($lg) {
       max-width: 410px;
       font-size: 18px;
     }

@@ -8,26 +8,26 @@ const sliderConfig = {
     slidesPerView: 1,
     spaceBetween: 30,
     watchSlidesProgress: true,
-    effect: "fade",
+    effect: 'fade',
     loop: true,
     autoplay: {
       delay: 2000,
       disableOnInteraction: false,
     },
     navigation: {
-      nextEl: ".hero__btn-next",
-      prevEl: ".hero__btn-prev",
+      nextEl: '.hero__btn-next',
+      prevEl: '.hero__btn-prev',
     },
     pagination: {
-      el: ".swiper-pagination",
+      el: '.swiper-pagination',
       clickable: true,
     },
   },
   productPage: {
-    slidesPerView: 1,
+    spaceBetween: 1,
+    slidesPerView: 'auto',
     watchSlidesProgress: true,
     freeMode: true,
-    spaceBetween: 1,
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
@@ -37,7 +37,6 @@ const sliderConfig = {
     },
     breakpoints: {
       524: {
-        slidesPerView: 'auto',
 
       },
     },

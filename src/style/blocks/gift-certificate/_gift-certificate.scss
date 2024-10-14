@@ -34,6 +34,15 @@
     }
   }
 
+  &__btn-prev,
+  &__btn-next {
+    display: none;
+
+    @include media-min ($md) {
+      display: flex;
+    }
+  }
+
   &__btn-prev {
     left: -15%;
 

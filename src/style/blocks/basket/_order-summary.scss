@@ -3,6 +3,7 @@
   grid-template-columns: 100%;
   row-gap: 50px;
   width: 100%;
+  max-width: 330px;
 
   @include media-min ($lg) {
     border-top: 1px solid var(--gray-light);
@@ -68,6 +69,7 @@
     --main-form-color: var(--purple);
 
     display: flex;
+    max-width: 360px;
   }
 
   &__form-input {
@@ -93,6 +95,10 @@
     }
   }
 
+  & .form-btn {
+    padding: 20px 0;
+  }
+
   &__btn {
     margin: 32px auto;
 
@@ -102,7 +108,7 @@
   }
 
   &__info {
-    text-align: center;
+    text-align: start;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
@@ -110,8 +116,5 @@
     text-transform: uppercase;
     color: var(--green);
 
-    @include media-min ($lg) {
-      text-align: start;
-    }
   }
 }

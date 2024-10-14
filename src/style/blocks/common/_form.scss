@@ -61,7 +61,7 @@
     }
   }
 
-  & input:valid ~ &__confirm {
+  & input ~ &__confirm {
     opacity: 0;
   }
 
@@ -140,7 +140,7 @@
   outline: none;
 
   &.is-invalid {
-    border-color: var(--error, var(--purple));
+    border-color: var(--purple);
   }
 
   &--area {

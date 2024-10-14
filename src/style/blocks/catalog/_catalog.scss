@@ -114,7 +114,7 @@
     &--2-1 {
       @include media-max ($md) {
         & li:nth-child(5n+1) {
-          grid-column: 1 / -1;
+          grid-column: 1 / 3;
         }
       }
     }
@@ -122,11 +122,5 @@
 
   &__item {
     display: grid;
-
-    &--wide {
-      @include media-max ($md) {
-        grid-column: 1 / 2 span;
-      }
-    }
   }
 }

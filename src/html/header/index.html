@@ -27,7 +27,7 @@
               </button>
             </li>
             <li class="header__item d-none-sm">
-              <a href="#">Контакты</a>
+              <a href="/page-contacts.html">Контакты</a>
             </li>
           </ul>
         </div>
@@ -55,7 +55,7 @@
             </li>
             <li class="header__item d-none-sm">
               <a class="header__login"
-                 href="#">
+                 href="/page-login.html">
                 <svg width="24"
                      height="24"
                      aria-hidden="true">
@@ -66,7 +66,7 @@
             <li class="header__item">
               <a class="header__basket"
                  data-backet="1"
-                 href="#">
+                 href="/page-basket.html">
                 <svg width="24"
                      height="24"
                      aria-hidden="true">
@@ -80,7 +80,7 @@
     </div>
   </div>
 
-  @include('search.html')
+  @include('search-empty.html'{attr: 'true'})
 
   @include('modal.html')
 </header>

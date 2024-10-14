@@ -1,14 +1,19 @@
 .modal {
   --modal-icon-color: var(--white);
   --modal-bg: var(--green);
+  --modal-text: var(--white);
 
   position: relative;
   margin: 0 auto;
-  padding: 24px 90px;
+  padding: 80px 16px;
   width: 100%;
   max-width: 540px;
   color: var(--modal-text, var(--main-text));
   background-color: var(--modal-bg, var(--main-bg));
+
+  @include media-min ($lg) {
+    padding: 32px 90px;
+  }
 
   &--sizes {
     --modal-icon-color: #bdbdbd;
@@ -45,6 +50,8 @@
   }
 
   &--discount {
+    --modal-icon-color: var(--black-90);
+
     padding: 0;
     max-width: 460px;
   }
@@ -64,11 +71,19 @@
     color: var(--modal-icon-color, currentColor);
     transition: color .2s ease-in-out;
   }
+
+  &__title {
+    margin-bottom: 16px;
+    text-align: center;
+  }
+
+  &__text {
+    margin-bottom: 24px;
+    text-align: center;
+  }
 }
 
 .modal-size {
-
-
   &__title {
     font-size: 24px;
     color: var(--green);
@@ -101,8 +116,6 @@
       padding-bottom: 12px;
     }
 
-
-
     & td {
       text-align: center;
       font-weight: 400;
@@ -118,7 +131,6 @@
 
 .modal-callback {
   display: flex;
-
 
   & > div {
     width: 100%;
@@ -146,7 +158,15 @@
     background-color: transparent;
     color: var(--white);
     text-align: center;
-    text-transform: uppercase;
+    border-color: var(--white);
+    font-size: 12px;
+    font-weight: 400;
+
+    &::placeholder {
+      color: var(--white);
+      text-transform: uppercase;
+      opacity: .8;
+    }
   }
 
   &__btn {
@@ -175,9 +195,14 @@
       text-decoration: underline;
     }
   }
+
+  & .just-validate-error-label {
+    text-align: center !important;
+  }
 }
 
 .modal-discount {
+
   &__img {
     position: relative;
     height: 0;
@@ -218,6 +243,8 @@
   }
 
   &__form {
+    position: relative;
+
     @include media-min ($lg) {
       display: flex;
     }
@@ -228,11 +255,11 @@
     font-weight: 400;
     font-size: 12px;
     letter-spacing: 0.1em;
-    text-transform: uppercase;
     padding: 14px 10px;
-    color: var(--white);
+    color: var(--black-90);
 
     &::placeholder {
+      text-transform: uppercase;
       color: #bdbdbd;
     }
 
@@ -269,6 +296,16 @@
 
     @include media-min ($lg) {
       font-size: 12px;
+    }
+  }
+
+  & .just-validate-error-label {
+    position: absolute;
+    bottom: -20px;
+
+    @include media-max ($lg) {
+      width: 100%;
+      text-align: center !important;
     }
   }
 }

@@ -5,14 +5,15 @@
         <div class="footer__form">
           <div class="footer__item">
             Подпишитесь на&nbsp;нашу рассылку и&nbsp;получите -10%&nbsp;на&nbsp;первый заказ </div>
-          <form action=""
-                id="subscribe">
+          <form id="form-subscribe"
+                data-validate>
             <div class="footer__form-field">
               <input class="form-input footer__form-input"
                      type="mail"
                      name="Контактная почта"
                      required
-                     placeholder="E-mail">
+                     placeholder="E-mail"
+                     data-validate="email">
               <button class="btn-reset footer__form-btn"
                       type="submit">
                 <svg width="29"
@@ -36,24 +37,38 @@
         <div class="footer__nav">
           <ul class="footer__list">
             <li><a class="footer__item"
-                 href="#">О нас</a></li>
+                 href="/page-about.html">О нас</a></li>
             <li><a class="footer__item"
-                 href="#">ДОСТАВКА И ВОЗВРАТ</a></li>
+                 href="/page-shipping-returns.html">ДОСТАВКА И ВОЗВРАТ</a></li>
             <li><a class="footer__item"
-                 href="#">УСЛОВИЯ И ПОЛОЖЕНИЯ</a></li>
+                 href="/page-terms-conditions.html">УСЛОВИЯ И ПОЛОЖЕНИЯ</a></li>
           </ul>
           <ul class="footer__list">
             <li><a class="footer__item"
-                 href="#">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</a></li>
+                 href="/page-policy.html">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</a></li>
             <li><a class="footer__item"
-                 href="#">ПОМОЩЬ</a></li>
+                 href="/page-help.html">ПОМОЩЬ</a></li>
           </ul>
         </div>
         <ul class="list-reset footer__contacts d-none-sm">
-          <li><a class="footer__item"
-               href="#">+7 (999) 999—99—99</a></li>
-          <li><a class="footer__item"
-               href="">russia@mail.ru</a></li>
+          <li>
+
+            <ul class="list-reset footer__contacts footer__contacts--group">
+              <li>
+                <a class="footer__item"
+                   href="#">+7 (999) 999—99—99</a>
+              </li>
+            </ul>
+
+          </li>
+          <li>
+            <ul class="list-reset footer__contacts footer__contacts--group">
+              <li>
+                <a class="footer__item"
+                   href="mailto:russia@mail.ru">russia@mail.ru</a>
+              </li>
+            </ul>
+          </li>
         </ul>
       </div>
 
@@ -65,10 +80,27 @@
           </a>
         </div>
         <ul class="list-reset footer__contacts d-none-lg">
-          <li><a class="footer__item"
-               href="#">+7 (999) 999—99—99</a></li>
-          <li><a class="footer__item"
-               href="">russia@mail.ru</a></li>
+          <li>
+
+            <ul class="list-reset footer__contacts footer__contacts--group">
+              <li>
+                <a class="footer__item"
+                   href="#">+7 (999) 999—99—99</a>
+              </li>
+            </ul>
+
+          </li>
+          <li>
+
+            <ul class="list-reset footer__contacts footer__contacts--group">
+              <li>
+                <a class="footer__item"
+                   href="mailto:russia@mail.ru">russia@mail.ru</a>
+              </li>
+
+            </ul>
+
+          </li>
         </ul>
         <ul class="list-reset social">
           <li><a href="#"

@@ -48,7 +48,10 @@ import {
   initSearch,
 } from './modules/search.js';
 
-
+import {
+  isDiscountModal,
+}
+from './modules/discount-modal.js';
 
 
 document.addEventListener( 'DOMContentLoaded', () => {
@@ -65,6 +68,7 @@ document.addEventListener( 'DOMContentLoaded', () => {
     passwordToggle();
     initTooltip();
     initSearch();
+    isDiscountModal();
   } );
 
 } );

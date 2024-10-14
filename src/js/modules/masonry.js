@@ -5,15 +5,15 @@ document.addEventListener( 'DOMContentLoaded', function() {
   if ( !grid ) return;
 
   function resizeGridItem( item ) {
-    const grid = document.getElementsByClassName( "media__list" )[ 0 ];
+    const grid = document.getElementsByClassName( 'media__list' )[ 0 ];
     const rowHeight = parseInt( window.getComputedStyle( grid ).getPropertyValue( 'grid-auto-rows' ) );
     const rowGap = parseInt( window.getComputedStyle( grid ).getPropertyValue( 'grid-row-gap' ) );
     const rowSpan = Math.ceil( ( item.querySelector( '.media__item' ).getBoundingClientRect().height + rowGap ) / ( rowHeight + rowGap ) );
-    item.style.gridRowEnd = "span " + rowSpan;
+    item.style.gridRowEnd = 'span ' + rowSpan;
   }
 
   function resizeAllGridItems() {
-    const allItems = document.getElementsByClassName( "media__list-item" );
+    const allItems = document.getElementsByClassName( 'media__list-item' );
     for ( let x = 0; x < allItems.length; x++ ) {
       resizeGridItem( allItems[ x ] );
     }
@@ -29,9 +29,9 @@ document.addEventListener( 'DOMContentLoaded', function() {
     grid.classList.add( 'is-visible' );
   } );
 
-  window.addEventListener( "resize", resizeAllGridItems );
+  window.addEventListener( 'resize', resizeAllGridItems );
 
-  const allItems = document.getElementsByClassName( "media__list-item" );
+  const allItems = document.getElementsByClassName( 'media__list-item' );
   for ( let x = 0; x < allItems.length; x++ ) {
     imagesLoaded( allItems[ x ], resizeInstance );
   }

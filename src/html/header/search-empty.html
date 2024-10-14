@@ -1,0 +1,46 @@
+<div class="header-search @if(context.class) {@class}"
+     aria-hidden="@attr">
+  <div class="header-search__wrap">
+    <div class="header-search__inner">
+      <div class="header-search__top">
+        <div class="container">
+          <form>
+            <div class="header-search__cont">
+              <div class="header-search__input">
+
+                <input type="search"
+                       class="form-input"
+                       name="Поиск"
+                       placeholder="Поиск"
+                       autocomplete="off">
+
+                <div class="header-search__btns">
+                  <button class="header-search__btn header-search__btn header-search__btn--search"
+                          type="submit">
+                    <svg width="20"
+                         height="20"
+                         aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#icon-search"></use>
+                    </svg>
+                  </button>
+                  <button class="header-search__btn header-search__btn--close"
+                          type="button">
+                    <svg width="16"
+                         height="16"
+                         aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#icon-cross"></use>
+                    </svg>
+                  </button>
+                </div>
+
+              </div>
+
+            </div>
+
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

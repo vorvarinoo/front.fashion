@@ -9,11 +9,14 @@
       -10% при подписке на&nbsp;новости
     </div>
     <form id="discount-form"
-          class="modal-discount__form">
+          class="modal-discount__form"
+          data-validate>
       <input class="form-input modal-discount__input"
              type="mail"
              placeholder="e-mail"
-             name="Контактная почта">
+             name="Контактная почта"
+             data-validate="email"
+             required>
       <button class="btn modal-discount__btn"
               type="submit">подтвердить</button>
     </form>

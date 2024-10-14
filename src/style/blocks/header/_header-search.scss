@@ -5,6 +5,7 @@
   &--visible {
     & .header-search__wrap {
       display: block;
+
       @include anim(fade-down, .4s);
     }
   }
@@ -20,9 +21,6 @@
     z-index: -1;
     overflow-y: auto;
     overscroll-behavior: none;
-    // box-shadow: 0px 5px 5px -5px rgba(34, 60, 80, 0.6);
-
-    @include media-min ($lg) {}
   }
 
   &__top {
@@ -54,7 +52,6 @@
       background-color: var(--white);
       border: none;
       border-bottom: 1px solid var(--gray-light);
-      padding: 0;
       font-weight: 400;
       font-size: 14px;
       line-height: 1.4;
@@ -89,7 +86,6 @@
     position: absolute;
     right: 0;
     top: 0;
-
   }
 
   &__btn {
@@ -100,9 +96,7 @@
     &--search {
       background-size: 100%;
       background-position: center;
-
       color: #ACACAC;
-
 
       & svg {
         @include media-min ($lg) {
@@ -114,12 +108,10 @@
 
     &--close {
       display: none;
-
       background-repeat: no-repeat;
       background-size: 100%;
       background-position: center;
       margin-top: 2px;
-
       color: #191919;
 
       & svg {
@@ -130,7 +122,6 @@
       }
     }
   }
-
 
   &__bottom {
     background-color: var(--white);
@@ -148,7 +139,6 @@
     row-gap: 16px;
     margin-bottom: 30px;
 
-
     @include media-min ($lg) {
       grid-template-columns: repeat(4, 1fr);
       column-gap: 16px;
@@ -161,5 +151,4 @@
     margin: 0 auto;
     max-width: 300px;
   }
-
 }

@@ -45,6 +45,12 @@
     & form {
       display: grid;
       row-gap: 20px;
+      position: relative;
+    }
+
+    & .just-validate-error-label {
+      position: absolute;
+      bottom: -18px;
     }
   }
 
@@ -124,6 +130,11 @@
     @include media-min ($lg) {
       grid-template-columns: auto;
       justify-items: end;
+    }
+
+    &--group {
+      row-gap: 8px;
+      grid-template-columns: 1fr;
     }
 
   }

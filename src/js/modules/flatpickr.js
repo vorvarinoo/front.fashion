@@ -14,19 +14,23 @@ const appendBtnReset = () => {
   element.appendChild( newButton );
 };
 
-const confirmCalendar = () => {
-  const confirmBtn = document.querySelector( 'form-field__confirm' );
-}
-
-
 flatpickr( '[data-id="birthday"]', {
-  dateFormat: "d.m.Y",
-  "locale": "ru",
+  dateFormat: 'd.m.Y',
+  'locale': 'ru',
   allowInput: true,
   wrap: true,
 
   onReady: function( selectedDates, dateStr, instance ) {
     appendBtnReset();
+
+    const confirmBtn = document.querySelector( '.form-field__confirm' );
+
+    if ( !confirmBtn ) return;
+
+    confirmBtn.addEventListener( 'click', function() {
+      instance.close(); // Закрытие календаря
+    } );
+
   },
 
 } );

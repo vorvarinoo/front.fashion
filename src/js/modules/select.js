@@ -1,21 +1,21 @@
 export const checkFilledSelect = () => {
-  const selectNode = document.querySelectorAll( ".form-select" );
+  const selectNode = document.querySelectorAll('.form-select');
 
-  if ( !selectNode ) return;
+  if (!selectNode) return;
 
-  const handleSelectChange = ( select ) => {
-    if ( select.value !== "" ) {
-      select.setAttribute( 'data-state', '' );
+  const handleSelectChange = (select) => {
+    if (select.value !== '') {
+      select.setAttribute('data-state', '');
     } else {
-      select.removeAttribute( 'data-state' );
+      select.removeAttribute('data-state');
     }
   };
 
-  selectNode.forEach( select => {
-    select.addEventListener( 'change', function() {
-      handleSelectChange( select );
-    } );
+  selectNode.forEach(select => {
+    select.addEventListener('change', function () {
+      handleSelectChange(select);
+    });
 
-    handleSelectChange( select );
-  } );
-}
+    handleSelectChange(select);
+  });
+};

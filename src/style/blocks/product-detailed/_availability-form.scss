@@ -1,0 +1,28 @@
+.availability {
+  &__descr {
+    font-weight: 300;
+    font-size: 14px;
+    color: var(--black-90);
+    margin-bottom: 20px;
+  }
+
+  &__input {
+    background-color: #f5f5f5;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    color: var(--purple);
+    padding: 20px;
+    border: none;
+    margin-bottom: 5px;
+
+    &::placeholder {
+      color: #bdbdbd;
+      text-transform: uppercase;
+    }
+  }
+
+  & .btn {
+    max-width: 100%;
+  }
+}

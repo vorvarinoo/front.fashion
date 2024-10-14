@@ -6,19 +6,32 @@
     </div>
 
     <form id="callback-form"
-          class="modal-callback__form">
-      <input class="form-input modal-callback__input"
-             type="text"
-             placeholder="имя"
-             name="Имя">
-      <input class="form-input modal-callback__input"
-             type="tel"
-             placeholder="телефон"
-             name="Контактный телефон">
-      <input class="form-input modal-callback__input"
-             type="mail"
-             placeholder="e-mail"
-             name="Контактная почта">
+          class="modal-callback__form"
+          data-validate>
+      <div>
+        <input class="form-input modal-callback__input"
+               type="text"
+               placeholder="имя"
+               name="Имя"
+               data-validate="name"
+               required>
+      </div>
+      <div>
+        <input class="form-input modal-callback__input"
+               type="tel"
+               placeholder="телефон"
+               name="Контактный телефон"
+               data-validate="phone"
+               required>
+      </div>
+      <div>
+        <input class="form-input modal-callback__input"
+               type="mail"
+               placeholder="e-mail"
+               name="Контактная почта"
+               data-validate="email"
+               required>
+      </div>
       <button class="btn modal-callback__btn"
               type="submit">отправить</button>
     </form>

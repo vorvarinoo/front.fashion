@@ -66,43 +66,6 @@
       }
     }
 
-    & > div {
-      display: grid;
-      position: absolute;
-      z-index: 2;
-      background-color: var(--white);
-      min-width: 292px;
-      overflow-y: auto;
-      max-height: 298px;
-      width: 100%;
-      right: 0;
-      overscroll-behavior: none;
-      box-shadow: 4px 4px 8px 0 rgba(34, 60, 80, .2);
-      scrollbar-color: var(--green) #f6f6f6;
-      scrollbar-width: thin;
-
-      ::-webkit-scrollbar {
-        width: 5px;
-      }
-
-      ::-webkit-scrollbar-track {
-        background: #f6f6f6;
-      }
-
-      ::-webkit-scrollbar-thumb {
-        background-color: var(--green);
-      }
-
-      ::-webkit-scrollbar-thumb:hover {
-        background-color: var(--green);
-      }
-
-      & > ul {
-        padding: 20px 20px 0;
-        pointer-events: auto;
-      }
-    }
-
     & ul {
       @include list-reset;
 
@@ -110,6 +73,43 @@
       row-gap: 20px;
     }
 
+  }
+
+  &__cont {
+    display: grid;
+    position: absolute;
+    z-index: 2;
+    background-color: var(--white);
+    min-width: 292px;
+    overflow-y: auto;
+    max-height: 298px;
+    width: 100%;
+    right: 0;
+    overscroll-behavior: none;
+    box-shadow: 4px 4px 8px 0 rgba(34, 60, 80, .2);
+    scrollbar-color: var(--green) #f6f6f6;
+    scrollbar-width: thin;
+
+    ::-webkit-scrollbar {
+      width: 5px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #f6f6f6;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background-color: var(--green);
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background-color: var(--green);
+    }
+
+    & > ul {
+      padding: 20px 20px 0;
+      pointer-events: auto;
+    }
   }
 
   &__accordion {
@@ -184,6 +184,8 @@
   &__btn {
     @include btn-reset;
 
+    position: sticky;
+    bottom: 0;
     background-color: var(--green);
     padding: 20px;
     margin-top: 20px;

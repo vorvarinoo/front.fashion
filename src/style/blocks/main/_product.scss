@@ -22,6 +22,20 @@
     }
   }
 
+  &--wedding {
+    padding: 0;
+    border: none;
+
+    & .product__img {
+      padding-bottom: 142%;
+      margin-bottom: 16px;
+    }
+
+    & .product__title {
+      margin-bottom: 4px;
+    }
+  }
+
   &--out-stock {
     --color-prodoct: #828282;
     --color-prodoct-category: #828282;
@@ -74,8 +88,12 @@
 
   &__img {
     position: relative;
-    padding-bottom: 129%;
+    padding-bottom: 124%;
     margin-bottom: 20px;
+
+    @include media-min ($lg) {
+      padding-bottom: 129%;
+    }
 
     & img {
       position: absolute;
@@ -93,6 +111,7 @@
     color: var(--color-prodoct, var(--green));
     font-size: 12px;
     margin-bottom: 8px;
+    text-transform: uppercase;
 
     @include media-min ($lg) {
       font-size: 14px;
@@ -166,7 +185,6 @@
       color: #bdbdbd;
       margin-right: 10px;
     }
-
   }
 
   &__note {

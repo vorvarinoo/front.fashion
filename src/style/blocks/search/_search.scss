@@ -73,8 +73,10 @@
       column-gap: 35px;
       row-gap: 30px;
 
+
       @include media-max ($md) {
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column-reverse;
       }
 
       & .category {

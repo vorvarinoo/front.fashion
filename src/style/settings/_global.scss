@@ -34,7 +34,6 @@ details {
 
     &::-webkit-details-marker {
       display: none;
-      /* Chrome */
     }
   }
 }
@@ -48,7 +47,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .container {
   --max-width: 1232px;
-  
+
   width: min(var(--max-width), 100% - var(--container-padding, 32px));
   margin: 0 auto;
   box-sizing: border-box;

@@ -1,0 +1,86 @@
+<header class="site__header header">
+  <div class="header__wrap">
+    <div class="container">
+      <div class="header__cont">
+        <div class="header__left">
+          <ul class="list-reset header__list">
+            <li class="header__item d-none-lg">
+              <button id="btn-mob-menu"
+                      class="btn-reset header__burger">
+                <svg width="30"
+                     height="16"
+                     aria-hidden="true">
+                  <use xlink:href="img/sprite.svg#icon-burger"></use>
+                </svg>
+              </button>
+            </li>
+            <li class="header__item d-none-sm">
+              <button id="btn-catalog-menu"
+                      class="btn-reset">
+                каталог
+              </button>
+            </li>
+            <li class="header__item d-none-sm">
+              <button id="btn-customers-menu"
+                      class="btn-reset">
+                покупателям
+              </button>
+            </li>
+            <li class="header__item d-none-sm">
+              <a href="/page-contacts.html">Контакты</a>
+            </li>
+          </ul>
+        </div>
+        <div class="header__middle">
+          <a class="logo"
+             href="/">
+            <img src="/img/logo.svg"
+                 alt="Logo FRONT">
+          </a>
+        </div>
+        <div class="header__right">
+          <ul class="list-reset header__list header__list--justify-end">
+
+            <li class="header__item">
+              <button class="btn-reset header__search">
+                <svg width="24"
+                     height="24"
+                     aria-hidden="true">
+                  <use xlink:href="img/sprite.svg#icon-search"></use>
+                </svg>
+              </button>
+            </li>
+            <li class="header__item d-none-sm">
+              <button class="language language--lg">ENglish</button>
+            </li>
+            <li class="header__item d-none-sm">
+              <a class="header__login"
+                 href="/page-login.html">
+                <svg width="24"
+                     height="24"
+                     aria-hidden="true">
+                  <use xlink:href="img/sprite.svg#icon-person"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="header__item">
+              <a class="header__basket"
+                 data-backet="1"
+                 href="/page-basket.html">
+                <svg width="24"
+                     height="24"
+                     aria-hidden="true">
+                  <use xlink:href="img/sprite.svg#icon-basket"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  @include('search-results.html', {class: 'header-search--visible', attr:'false'})
+
+  @include('modal.html')
+</header>
